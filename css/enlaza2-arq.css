@@ -1,0 +1,139 @@
+/*Primero el contenedor.*/
+
+#app{
+    display:flex;
+    flex-direction:column;
+}
+
+/*=========================
+HOME
+
+Hero
+↓
+Categorias
+↓
+Resultados
+↓
+Anuncios
+==========================*/
+
+.estado-home #hero{
+    order:1;
+}
+
+.estado-home #bloque-categorias{
+    order:2;
+}
+
+.estado-home #resultados-bar{
+    order:3;
+}
+
+.estado-home #bloque-anuncios{
+    order:4;
+    display: none;
+}
+
+/*=========================
+BUSQUEDA
+
+Hero
+↓
+Anuncios
+↓
+Categorias
+==========================*/
+
+.estado-busqueda #hero{
+    order:1;
+}
+
+.estado-busqueda #bloque-suggestions{
+    order:2;
+}
+
+.estado-busqueda #bloque-anuncios{
+    order:3;
+}
+
+.estado-busqueda #bloque-categorias{
+    order:4;
+}
+
+.estado-busqueda #resultados-bar{
+    display:none;
+    order:5;
+}
+
+/*=========================
+CATEGORIA
+
+Hero
+↓
+Categorias compactas
+↓
+Badges
+↓
+Anuncios
+==========================*/
+
+.estado-categoria #hero{
+    order:1;
+    background-position: center top;
+}
+
+.estado-categoria #bloque-categorias{
+    order:2;
+}
+
+.estado-categoria #resultados-bar{
+    display:block;
+    order:3;
+}
+
+.estado-categoria .resultados-bar-busqueda{
+    display:none;
+}
+
+.estado-categoria #bloque-anuncios{
+    order:4;
+}
+
+
+/*=========================
+COMPACTAR HERO AL BUSCAR
+==========================*/
+
+.estado-busqueda .blz-hero{
+    min-height:140px;
+    padding:20px 0;
+}
+
+.estado-categoria .blz-hero{
+    min-height:140px;
+    padding:50px 0;
+}
+
+/*======
+ESCRIBIR EN INPUT:  background, banners, categorias 
+========*/
+
+.estado-busqueda .blz-hero{
+    background-position:center top;
+}
+
+.estado-busqueda .blz-categorias-header{
+  /*  opacity:0;
+    max-height:0;*/
+    overflow:hidden;
+    transition:.35s;
+}
+
+.estado-home #resultados-bar{
+    display:none; 
+}
+
+.estado-home .blz-categorias-header{
+    opacity:1;
+    max-height:300px;
+}

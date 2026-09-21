@@ -1,0 +1,117 @@
+/*primary color*/
+.bg-cream {
+    background: radial-gradient(circle at 75% 85%, rgba(255, 230, 200, .4), transparent 55%),
+        linear-gradient(175deg, #71A8E0 0%, #9CBAE0 18%, #D0D4DF 35%, #EBE4DF 48%, #F5E3DC 58%, #F7D4BE 70%, #F7C0A2 84%, #F2B48F 100%);
+
+}
+
+/*font*/
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.bg-yellow-500 {
+    background-color: #F48C06;
+}
+.text-yellow-500 {
+    color: #F48C06;
+}
+.floating { 
+    animation-name: floating; 
+    animation-duration: 3s; 
+    animation-iteration-count: infinite; 
+    animation-timing-function: ease-in-out;
+} 
+@keyframes floating { 
+    0% { transform: translate(0, 0px); } 
+    50% { transform: translate(0, 8px); } 
+    100% { transform: translate(0, -0px); }  
+} 
+.floating-4 { 
+    animation-name: floating; 
+    animation-duration: 4s; 
+    animation-iteration-count: infinite; 
+    animation-timing-function: ease-in-out;
+} 
+@keyframes floating-4 { 
+    0% { transform: translate(0, 0px); } 
+    50% { transform: translate(0, 8px); } 
+    100% { transform: translate(0, -0px); }  
+}
+.text-darken {
+    color: #2F327D;
+}
+
+.titulo-hero {
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: 3.5rem;
+    line-height: 1.1 !important;
+}
+
+ .text-2xl{
+    font-size: 1.6rem !important;
+    line-height: 1.5 !important;
+    text-align: left;
+ }
+
+
+
+/* MOBILE */
+@media (max-width: 768px) {
+.titulo-hero {
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: 2.5rem;
+    line-height: 1.1 !important;
+    text-align: center;
+}
+
+ .text-2xl{
+    font-size: 1.8rem !important;
+    line-height: 1.1 !important;
+    text-align: center;
+ }
+}
+
+/*Imagenes en hero*/
+
+/*=========================
+GALERÍA HERO
+=========================*/
+
+.blz-hero-gallery{
+    position:relative;
+    width:100%;
+    max-width:650px;
+    margin:auto;
+    aspect-ratio:4/3;
+}
+
+.blz-slide{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    object-fit:contain;
+    opacity:0;
+    transition:
+        opacity 1.8s ease-in-out,
+        transform 2.2s ease;
+    transform:scale(1.015);
+    pointer-events:none;
+}
+
+.blz-slide.active{
+    opacity:1;
+    transform:scale(1);
+}
+
+@media(min-width:992px){
+
+    .blz-hero-gallery{
+        max-width:720px;
+
+    }
+
+}

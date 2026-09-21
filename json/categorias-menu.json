@@ -1,0 +1,112 @@
+[
+  {
+    "categoria": "Alquileres, compra/venta",
+    "template": "join",
+    "descr": "Oportunidades y anuncios eventuales",
+    "subcategory": [
+      "alquiler",
+      "vendo",
+      "compro",
+      "perdido",
+      "animador",
+      "taxista",
+      "empleo"
+    ]
+  },
+    {
+    "categoria": "Empleos",
+    "template": "strawberry",
+    "descr": "Oportunidades y anuncios eventuales",
+    "subcategory": [
+      "alquiler",
+      "vendo",
+      "compro",
+      "perdido",
+      "animador",
+      "taxista",
+      "empleo"
+    ]
+  },
+  {
+    "categoria": "Servicios Generales",
+    "template": "refer",
+    "descr": "Reparaciones, remodelación y mejoramiento para tu casa",
+    "subcategory": [
+      "Electricista",
+      "Gasfitero",
+      "Albañilería",
+      "Pintor",
+      "Carpintero",
+      "Soldador",
+      "Drywalleros"
+    ]
+  },
+  {
+    "categoria": "Servicios para el hogar",
+    "template": "diwali",
+    "descr": "Limpieza, ayuda y servicios para tu casa",
+    "subcategory": [
+      "Servicios domésticos",
+      "Cuidadores",
+      "Jardinero",
+      "Mudanza",
+      "Limpieza",
+      "Tapicero",
+      "Vidriero",
+      "Cerrajero",
+      "Paseador caninos" 
+    ]
+  },
+  {
+    "categoria": "Comercio, productos y Alimentos",
+    "template": "candy",
+    "descr": "Encuentra productos y negocios cercanos",
+    "subcategory": [
+      "Restaurante",
+      "Pollerías",
+      "Panadería",
+      "Pastelería",
+      "Abarrotes",
+      "Ropa",
+      "Accesorios",
+      "Juguetes",
+      "Plantas",
+      "Artesanías",
+      "Gas"
+    ]
+  },
+   {
+    "categoria": "Salud y Estética", 
+    "template": "festival",
+    "descr": "Para tu bienestar y la de tus seres queridos",
+    "subcategory": [
+      "Doctor",
+      "Psicólogo",
+      "Policlínico",
+      "Laboratorio",
+      "Spa",
+      "Peluquería",
+      "Manicurista",
+      "Pedicurista",
+      "Gimnasio",
+      "Veterinaria"
+    ]
+  },
+    {
+    "categoria": "Profesionales, técnicos y Educación",
+    "template": "practice",
+    "descr": " Servicios Profesionales y Soporte Educativo",
+    "subcategory": [
+      "Abogado",
+      "Notario",
+      "Ingeniero",
+      "Arquitecto",
+      "Contador",
+      "Diseñadores",
+      "Tecnico electrónico",
+      "Mecánico",
+      "Academia pre-uni",
+      "Profesor"
+    ]
+  }
+]

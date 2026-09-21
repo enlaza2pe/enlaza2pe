@@ -1,0 +1,183 @@
+/* =====================================================
+   FOOTER ENLAZA2
+===================================================== */
+
+.site-footer {
+    margin-top: 50px;
+    padding: 45px 0 25px;
+
+    background:
+        radial-gradient(
+            circle at 75% 85%,
+            rgba(247, 192, 162, .22),
+            transparent 55%
+        ),
+        linear-gradient(
+            175deg,
+            #416F9F 0%,
+            #557FA9 20%,
+            #687F9C 38%,
+            #876F72 58%,
+            #9A695F 76%,
+            #80574F 100%
+        );
+
+    color: #FFF4E8;
+
+    border-top: 1px solid rgba(255, 244, 232, .18);
+}
+
+/* CONTENEDOR PRINCIPAL */
+
+.blz-footer-info {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 35px;
+}
+
+/* COLUMNAS */
+
+.blz-footer-about,
+.blz-footer-column {
+    text-align: left;
+}
+
+.blz-footer-about h4,
+.blz-footer-column h4 {
+    margin: 0 0 15px;
+    color: #FFF7ED;
+    font-size: 17px;
+    font-weight: 800;
+}
+
+.blz-footer-about p {
+    margin: 0 0 12px;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #F9EDE3;
+}
+
+.blz-footer-about strong {
+    color: #FFD0B5;
+}
+
+/* LISTAS */
+
+.blz-footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.blz-footer-column li {
+    color: #F8EDE5;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 12px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.blz-footer-column li i {
+    flex: 0 0 18px;
+    margin-top: 3px;
+    color: #FFD0B5;
+}
+
+/* SEPARADOR */
+
+.blz-footer-divider {
+    width: 100%;
+    height: 1px;
+    margin: 35px 0 22px;
+    background: rgba(255, 244, 232, .22);
+}
+
+/* ZONA LEGAL */
+
+.blz-footer-bottom {
+    text-align: center;
+}
+
+.blz-footer-bottom p {
+    margin: 7px 0;
+    font-size: 13px;
+    line-height: 1.6;
+    color: #F3E5DA;
+}
+
+.blz-footer-bottom strong {
+    color: #FFF7ED;
+}
+
+.blz-footer-links {
+    margin-bottom: 12px;
+}
+
+.blz-footer-links a {
+    color: #FFD0B5;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.blz-footer-links a:hover {
+    text-decoration: underline;
+}
+
+.blz-footer-developed {
+    color: #E9D8CD;
+}
+
+.blz-footer-developed a {
+    color: #FFD0B5;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.blz-footer-developed a:hover {
+    text-decoration: underline;
+}
+
+.blz-footer-separator {
+    margin: 0 5px;
+    color: #94a3b8;
+}
+
+/* =====================================================
+   DESKTOP
+===================================================== */
+
+@media (min-width: 992px) {
+
+    .site-footer {
+        padding: 55px 0 28px;
+    }
+
+    .blz-footer-info {
+        grid-template-columns: 1.5fr 1fr 1fr;
+        gap: 55px;
+    }
+
+    .blz-footer-about p {
+        max-width: 600px;
+    }
+
+    .blz-footer-bottom {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        column-gap: 12px;
+        row-gap: 4px;
+    }
+
+    .blz-footer-links {
+        margin: 0;
+    }
+
+    .blz-footer-bottom p {
+        margin: 0;
+    }
+}

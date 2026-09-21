@@ -1,0 +1,506 @@
+#app {
+    padding-top: var(--nav-height);
+}
+
+.blz-hero {
+    padding: 28px 18px 0;
+    border-radius: 0 0 30px 30px;
+    overflow: hidden;
+    background: radial-gradient(circle at 75% 85%, rgba(255, 230, 200, .4), transparent 55%),
+        linear-gradient(175deg, #71A8E0 0%, #9CBAE0 18%, #D0D4DF 35%, #EBE4DF 48%, #F5E3DC 58%, #F7D4BE 70%, #F7C0A2 84%, #F2B48F 100%);
+
+    /*   min-height: 600px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 15px 0;
+    background: radial-gradient(circle at 75% 85%, rgba(255, 230, 200, 0.4), transparent 55%),
+        linear-gradient(175deg, #71A8E0 0%, #9CBAE0 18%, #D0D4DF 35%, #EBE4DF 48%, #F5E3DC 58%, #F7D4BE 70%, #F7C0A2 84%, #F2B48F 100%);
+    border-radius: 0 0 30px 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+    overflow: hidden;
+    transition: .45s ease;
+    */
+}
+
+
+.blz-hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.blz-hero-left {
+    width: 100%;
+    max-width: 760px;
+    text-align: center;
+    z-index: 2;
+}
+
+.blz-hero-right {
+    display: none;
+}
+
+.blz-logo {
+    display: block;
+    width: 140px;
+    max-width: 65%;
+    height: auto;
+    margin: 10px auto 22px;
+}
+
+.blz-hero-mascota {
+    width: 100%;
+    max-width: 650px;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+.blz-hero-title {
+
+    font-size: 30px;
+    font-family: var(--font-display);
+    line-height: 1.15;
+    font-weight: 800;
+
+}
+
+@media(min-width:768px) {
+
+    .blz-hero-title {
+
+        font-size: 42px;
+
+    }
+
+}
+
+@media(min-width:992px) {
+
+    .blz-hero-title {
+
+        font-size: 58px;
+
+    }
+
+}
+
+@media (min-width:992px) {
+
+    .blz-hero {
+        padding: 40px 160px 50px;
+        min-height: 700px;
+        /*
+        transition: .45s ease;
+        background: radial-gradient(circle at 75% 85%, rgba(255, 230, 200, 0.4), transparent 55%),
+            linear-gradient(175deg, #71A8E0 0%, #9CBAE0 18%, #D0D4DF 35%, #EBE4DF 48%, #F5E3DC 58%, #F7D4BE 70%, #F7C0A2 84%, #F2B48F 100%);
+        padding-top: 20px;*/
+    }
+
+    .blz-hero-content {
+        max-width: 1450px;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 70px;
+    }
+
+    .blz-hero-left {
+        width: 46%;
+        text-align: left;
+    }
+
+    .blz-hero-right {
+        display: flex;
+        width: 54%;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+
+    .blz-logo {
+        display: none;
+    }
+
+    .blz-hero-image {
+        max-width: 1700px;
+        margin: auto;
+    }
+
+}
+
+
+/* ANIMACIÓN SUAVE */
+@keyframes fadeTyping {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+/*=====================================
+PALABRA DINÁMICA
+======================================*/
+ 
+ 
+
+
+
+
+
+.blz-clear-btn {
+    position: absolute;
+    right: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 34px;
+    height: 34px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: transparent;
+    color: #475569;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: .20s;
+}
+
+.blz-clear-btn i {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.blz-clear-btn:hover {
+    background: #f1f5f9;
+    color: #111827;
+}
+
+.blz-clear-btn:active {
+    transform: translateY(-50%) scale(.92);
+}
+
+.suggestions-box {
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .12);
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 392px;
+    display: none;
+    z-index: 9999;
+    scrollbar-width: thin;
+    scrollbar-color: #3b82f6 transparent;
+}
+
+.suggestions-box.activo {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.blz-suggestion {
+    transition: .18s;
+    min-height: 56px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 18px;
+    cursor: pointer;
+}
+
+.blz-suggestion:hover {
+    background: #f8fafc;
+}
+
+.blz-suggestion-main {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+}
+
+.blz-suggestion strong {
+    font-weight: 800;
+    color: #2563eb;
+}
+
+.blz-suggestion-badge {
+    align-self: flex-start;
+    padding: 3px 10px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 600;
+    background: #fffae4;
+    color: #836A21;
+    border: 1px solid #FCD34D;
+}
+
+.suggestions-box div {
+    min-height: 25px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.suggestions-box div:hover {
+    background: #f1f5f9;
+}
+
+.suggestions-box::-webkit-scrollbar {
+    width: 8px;
+}
+
+.suggestions-box::-webkit-scrollbar-thumb {
+    background: #3b82f6;
+    border-radius: 20px;
+}
+
+.suggestions-box::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/*TITULO HERO*/
+
+.blz-categorias-header {
+
+    padding: 20px 15px 5px; 
+    text-align: center;
+}
+
+.blz-categorias-header h2 {
+
+    margin: 0;
+
+    font-size: 24px;
+
+    font-weight: 800;
+
+    color: #0f172a;
+}
+
+.blz-categorias-header p {
+
+    margin-top: 4px;
+
+    color: #64748b;
+
+    font-size: 15px;
+}
+
+@media (min-width:992px) {
+
+    .blz-categorias-header {
+
+        padding: 40px 0 20px;
+        text-align: center;
+    }
+
+    .blz-categorias-header h2 {
+
+        font-size: 38px;
+    }
+
+    .blz-categorias-header p {
+
+        font-size: 18px;
+    }
+
+}
+
+.blz-no-img {
+    width: 250px;
+    height: auto;
+    object-fit: contain;
+    animation: floatSearch 3.2s ease-in-out infinite;
+}
+
+/* =====================================================
+   DESKTOP
+===================================================== */
+
+@media (min-width:992px) {
+
+    .blz-no-result {
+
+        padding: 30px;
+
+        gap: 20px;
+    }
+
+    .blz-no-img {
+        width: 300px;
+        height: auto;
+    }
+
+    .blz-no-title {
+        font-size: 24px;
+    }
+
+    .blz-no-subtitle {
+        font-size: 16px;
+        max-width: 500px;
+    }
+
+    .blz-no-text {
+        font-size: 18px;
+    }
+
+    .blz-no-btn {
+        padding: 14px 28px;
+        font-size: 17px;
+    }
+
+}
+
+
+.blz-slider {
+
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+.blz-slider img {
+
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    opacity: 0;
+
+    transition: .45s;
+
+}
+
+.blz-slider img.activo {
+
+    opacity: 1;
+
+    position: relative;
+
+}
+
+
+/*agregando adicional*/
+
+/* =============================================
+   AGREGAR AL FINAL DE TU CSS (no reemplaza nada,
+   solo suma reglas nuevas y overrides puntuales)
+   ============================================= */
+
+/* Contenedor que decide cuándo pasar a 2 columnas */
+.blz-hero-grid {
+    width: 100%;
+}
+
+/* Columna de texto: en mobile se comporta igual que antes (centrado) */
+.blz-hero-copy {
+    width: 100%;
+}
+
+/* Ilustración: oculta en mobile por defecto */
+.blz-hero-illustration {
+    display: none;
+}
+
+/* Eyebrow (etiqueta pequeña arriba del título) */
+.blz-eyebrow {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: #2563EB;
+    margin: 0 0 10px;
+}
+
+/* Chips de categorías rápidas debajo del buscador */
+.blz-chips {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.blz-chip {
+    font-size: 13px;
+    font-weight: 600;
+    color: #1F3A52;
+    background: #ffffff;
+    border: 1px solid rgba(31, 58, 82, .15);
+    border-radius: 999px;
+    padding: 7px 16px;
+    cursor: pointer;
+    transition: .15s ease;
+    white-space: nowrap;
+}
+
+.blz-chip:hover,
+.blz-chip:focus-visible {
+    border-color: #2563EB;
+    color: #2563EB;
+}
+
+/* =============================================
+   DESKTOP: layout de 2 columnas + ilustración visible
+   ============================================= */
+@media (min-width: 992px) {
+
+    .blz-hero-grid {
+        display: flex;
+        align-items: center;
+        gap: 48px;
+    }
+
+    .blz-hero-copy {
+        flex: 1 1 480px;
+        max-width: 540px;
+        text-align: left;
+    }
+
+    /* el buscador y la palabra dinámica ya no se centran, se alinean a la izquierda */
+    .blz-hero-copy   {
+        justify-content: flex-start;
+    }
+
+    .blz-hero-copy .blz-search-box {
+        max-width: 480px;
+    }
+
+    .blz-hero-copy .blz-chips {
+        justify-content: flex-start;
+    }
+
+    .blz-hero-illustration {
+        display: flex;
+        flex: 1 1 380px;
+        justify-content: flex-end;
+    }
+
+    .blz-hero-illustration svg {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+    }
+}

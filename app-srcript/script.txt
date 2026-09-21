@@ -1,0 +1,221 @@
+/*# 
+
+CONFIGURAR APP SCRIPT EN GOOGLE SHEET 
+
+
+⚙️ PASO 3: PUBLICAR COMO API
+
+1. Clic en **Deploy (Implementar)**
+
+2. Tipo: **Aplicacion web**
+
+3. Configura:
+
+   * Execute as: **Tú**
+   * Who has access: **Anyone**
+  
+4. Implementar, pero cuando salga_ Google hasn’t verified this app
+Advanced > Go to Proyecto sin título (unsafe)
+   
+
+
+4. Copia la URL (algo como):
+
+```
+https://script.google.com/macros/s/XXXX/exec
+```
+De: 
+La implementación se ha actualizado correctamente.
+Versión 1 del 7 may 2026, 1:28
+ID de implementación
+AKfycbzXtc1CF6Y6QRaXab72hxfoygiA5GKT8pz_1gGBweirRLMMDcpzNVkRSYGX-4Xv_-Ee
+Aplicación web
+URL
+https://script.google.com/macros/s/AKfycbzXtc1CF6Y6QRaXab72hxfoygiA5GKT8pz_1gGBweirRLMMDcpzNVkRSYGX-4Xv_-Ee/exec
+
+
+--- 
+
+# 🔥 OPCIONAL (RECOMENDADO): WHATSAPP + SHEET
+
+Combina esto con WhatsApp:
+
+Después del `fetch` agrega:
+
+```javascript
+const mensaje = `Hola, quiero publicar un anuncio:
+
+👤 ${data.nombre}
+📞 ${data.telefono}
+📍 ${data.direccion}
+🛠️ ${data.servicio}`;
+
+window.open(`https://wa.me/519XXXXXXXX?text=${encodeURIComponent(mensaje)}`, "_blank");
+```
+
+---
+
+# 💡 RESULTADO FINAL
+
+✔ Guardas datos en Google Sheets
+✔ Recibes mensaje por WhatsApp
+✔ No pagas nada
+✔ Funciona en GitHub Pages
+
+---
+
+# ⚠️ LIMITACIONES (para que no te sorprenda luego)
+
+* No es ultra rápido (Apps Script tiene ligera latencia)
+* No es ideal para millones de usuarios (pero sí para MVP)
+* No tiene autenticación real
+
+👉 Pero para validar mercado: **perfecto**
+
+---
+
+# 🧠 DECISIÓN ESTRATÉGICA
+
+Tu ruta correcta es:
+
+1. 🟢 Google Sheets (ahora)
+2. 🟡 Firebase (cuando crezcas)
+3. 🔴 Backend propio (cuando monetices fuerte)
+
+---
+ */
+ 
+ function doPost(e) {
+
+  try {
+
+    const sheet =
+      SpreadsheetApp
+      .getActiveSpreadsheet()
+      .getActiveSheet();
+
+    const data =
+      JSON.parse(e.postData.contents);
+
+    /* VALIDAR */
+
+    if (!data.servicios ||
+    !data.nombretelefono) {
+
+      return respuesta("error");
+    }
+
+    /* HONEYPOT */
+
+    if (data.website) {
+      return respuesta("spam");
+    }
+
+    /* LONGITUD */
+
+    if (
+      data.servicios.length > 350 ||
+      data.nombretelefono.length > 80
+    ) {
+      return respuesta("muy largo");
+    }
+
+    /* LIMPIAR */
+
+    const servicios =
+    sanitizar(data.servicios);
+
+    const nombretelefono =
+      sanitizar(data.nombretelefono);
+
+    /* EVITAR FORMULAS */
+
+    const serviciosSeguro =
+      evitarFormula(servicios);
+
+    const nombreSeguro =
+      evitarFormula(nombretelefono);
+
+    /* RATE LIMIT SIMPLE */
+
+    const cache =
+      CacheService.getScriptCache();
+
+    const ipKey =
+      "spam_" + nombreSeguro;
+
+    const existe =
+      cache.get(ipKey);
+
+    if (existe) {
+      return respuesta("espera");
+    }
+
+    cache.put(ipKey, "1", 60);
+
+    /* GUARDAR */
+
+    sheet.appendRow([
+      serviciosSeguro,
+      nombreSeguro,
+      new Date()
+    ]);
+
+    return respuesta("ok");
+
+  } catch(err) {
+
+    return respuesta("error");
+
+  }
+
+}
+
+/* SANITIZAR */
+
+function sanitizar(texto) {
+
+  if (!texto) return "";
+
+  return texto
+    .replace(/[<>]/g, "")
+    .replace(/script/gi, "")
+    .replace(/javascript:/gi, "")
+    .replace(/onerror/gi, "")
+    .replace(/onload/gi, "")
+    .trim();
+
+}
+
+/* EVITAR FORMULAS */
+
+function evitarFormula(texto) {
+
+  if (
+    texto.startsWith("=") ||
+    texto.startsWith("+") ||
+    texto.startsWith("-") ||
+    texto.startsWith("@")
+  ) {
+    return "'" + texto;
+  }
+
+  return texto;
+
+}
+
+/* RESPUESTA */
+
+function respuesta(msg) {
+
+  return ContentService
+    .createTextOutput(
+      JSON.stringify({
+        result: msg
+      })
+    )
+    .setMimeType(
+      ContentService.MimeType.JSON
+    );
+
+}

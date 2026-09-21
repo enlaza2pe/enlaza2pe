@@ -1,0 +1,134 @@
+function doPost(e) {
+
+  try {
+
+    const sheet =
+      SpreadsheetApp
+      .getActiveSpreadsheet()
+      .getActiveSheet();
+
+    const data =
+      JSON.parse(e.postData.contents);
+
+    /* VALIDAR */
+
+    if (!data.servicio ||
+        !data.nombretelefono) {
+
+      return respuesta("error");
+    }
+
+    /* HONEYPOT */
+
+    if (data.website) {
+      return respuesta("spam");
+    }
+
+    /* LONGITUD */
+
+    if (
+      data.servicio.length > 250 ||
+      data.nombretelefono.length > 80
+    ) {
+      return respuesta("muy largo");
+    }
+
+    /* LIMPIAR */
+
+    const servicio =
+      sanitizar(data.servicio);
+
+    const nombretelefono =
+      sanitizar(data.nombretelefono);
+
+    /* EVITAR FORMULAS */
+
+    const servicioSeguro =
+      evitarFormula(servicio);
+
+    const nombreSeguro =
+      evitarFormula(nombretelefono);
+
+    /* RATE LIMIT SIMPLE */
+
+    const cache =
+      CacheService.getScriptCache();
+
+    const ipKey =
+      "spam_" + nombreSeguro;
+
+    const existe =
+      cache.get(ipKey);
+
+    if (existe) {
+      return respuesta("espera");
+    }
+
+    cache.put(ipKey, "1", 60);
+
+    /* GUARDAR */
+
+    sheet.appendRow([
+      servicioSeguro,
+      nombreSeguro,
+      new Date()
+    ]);
+
+    return respuesta("ok");
+
+  } catch(err) {
+
+    return respuesta("error");
+
+  }
+
+}
+
+/* SANITIZAR */
+
+function sanitizar(texto) {
+
+  if (!texto) return "";
+
+  return texto
+    .replace(/[<>]/g, "")
+    .replace(/script/gi, "")
+    .replace(/javascript:/gi, "")
+    .replace(/onerror/gi, "")
+    .replace(/onload/gi, "")
+    .trim();
+
+}
+
+/* EVITAR FORMULAS */
+
+function evitarFormula(texto) {
+
+  if (
+    texto.startsWith("=") ||
+    texto.startsWith("+") ||
+    texto.startsWith("-") ||
+    texto.startsWith("@")
+  ) {
+    return "'" + texto;
+  }
+
+  return texto;
+
+}
+
+/* RESPUESTA */
+
+function respuesta(msg) {
+
+  return ContentService
+    .createTextOutput(
+      JSON.stringify({
+        result: msg
+      })
+    )
+    .setMimeType(
+      ContentService.MimeType.JSON
+    );
+
+}

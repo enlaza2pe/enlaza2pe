@@ -1,0 +1,546 @@
+/* =========================================
+   PASO 1 VISIBLE POR DEFECTO
+========================================= */
+
+#miniStep1 {
+    display: block;
+}
+
+/* =========================================
+   PASO 2 OCULTO POR DEFECTO
+========================================= */
+
+#miniStep2 {
+    display: none;
+}
+
+/* Cuando JS indique que debe mostrarse */
+#miniStep2.blz-step-visible {
+    display: block;
+}
+
+/* =====================================================
+   FORMULARIO DENTRO DEL MENÚ
+   MOBILE FIRST
+===================================================== */
+
+#menu-formulario {
+    width: 100%;
+    display: none;
+    margin-top: 20px;
+}
+
+
+/* =====================================================
+   FORMULARIO ABIERTO
+===================================================== */
+
+#menu-formulario.blz-formulario-abierto {
+    display: block;
+    animation: blzFormularioEntrada .35s ease both;
+}
+
+
+/* =====================================================
+   ANIMACIÓN
+===================================================== */
+
+@keyframes blzFormularioEntrada {
+
+    from {
+        opacity: 0;
+        transform: translateY(18px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* =====================================================
+   CONTENEDOR
+===================================================== */
+
+.blz-publicar-wrapper {
+    width: 100%;
+    padding: 12px 0 20px;
+}
+
+
+/* =====================================================
+   TARJETA
+===================================================== */
+
+.blz-publicar-card {
+
+    width: 100%;
+
+    padding: 22px 18px;
+
+    border-radius: 28px;
+
+    background: #f4f7fb;
+
+    box-shadow:
+        10px 10px 22px rgba(163, 177, 198, .35),
+        -8px -8px 18px rgba(255, 255, 255, .9),
+        inset 1px 1px 2px rgba(255, 255, 255, .8);
+
+}
+
+
+/* =====================================================
+   CABECERA
+===================================================== */
+
+.blz-form-header {
+
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 22px;
+
+}
+
+
+.blz-form-icon {
+
+    flex: 0 0 48px;
+
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 16px;
+
+    background: #ffffff;
+
+    box-shadow:
+        5px 5px 10px rgba(163, 177, 198, .3),
+        -4px -4px 8px rgba(255, 255, 255, .9);
+
+}
+
+
+.blz-form-icon i {
+    font-size: 21px;
+}
+
+
+/* =====================================================
+   TÍTULOS
+===================================================== */
+
+.blz-form-header h3 {
+
+    margin: 0 0 4px;
+
+    font-size: 20px;
+
+    font-weight: 800;
+
+}
+
+
+.blz-form-header p {
+
+    margin: 0;
+
+    font-size: 13px;
+
+    line-height: 1.4;
+
+    opacity: .7;
+
+}
+
+
+/* =====================================================
+   CAMPOS
+===================================================== */
+
+.blz-form-body {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 18px;
+
+}
+
+
+.blz-field {
+
+    width: 100%;
+
+}
+
+
+.blz-field label {
+
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+}
+
+
+/* =====================================================
+   INPUT
+===================================================== */
+
+.blz-input-box {
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    width: 100%;
+
+    min-height: 52px;
+
+    padding: 0 14px;
+
+    border-radius: 18px;
+
+    background: #f4f7fb;
+
+    box-shadow:
+        inset 4px 4px 9px rgba(163, 177, 198, .28),
+        inset -4px -4px 9px rgba(255, 255, 255, .85);
+
+}
+
+
+.blz-input-box > i {
+
+    flex: 0 0 auto;
+
+    margin-right: 10px;
+
+    font-size: 18px;
+
+    opacity: .65;
+
+}
+
+
+.blz-input-box input,
+.blz-input-box textarea {
+
+    width: 100%;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+}
+
+
+/* =====================================================
+   TEXTAREA
+===================================================== */
+
+.blz-textarea-box {
+
+    align-items: flex-start;
+
+    min-height: 120px;
+
+    padding-top: 14px;
+
+}
+
+
+.blz-textarea-box textarea {
+
+    resize: vertical;
+
+    min-height: 85px;
+
+    padding-right: 35px;
+
+}
+
+
+/* =====================================================
+   CONTADOR
+===================================================== */
+
+.blz-counter {
+
+    position: absolute;
+
+    right: 12px;
+    bottom: 9px;
+
+    font-size: 11px;
+
+    opacity: .55;
+
+}
+
+
+.blz-counter-warning {
+    color: #ef4444;
+    opacity: 1;
+}
+
+
+/* =====================================================
+   TEXTO AUXILIAR
+===================================================== */
+
+.blz-field small {
+
+    display: block;
+
+    margin-top: 6px;
+
+    font-size: 11px;
+
+    opacity: .6;
+
+}
+
+
+/* =====================================================
+   HONEYPOT
+===================================================== */
+
+.blz-honeypot {
+
+    position: absolute !important;
+
+    left: -9999px !important;
+
+    width: 1px !important;
+    height: 1px !important;
+
+    opacity: 0 !important;
+
+}
+
+
+/* =====================================================
+   BOTÓN PUBLICAR
+===================================================== */
+
+.blz-btn-publicar {
+
+    width: 100%;
+
+    min-height: 52px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 9px;
+
+    border: none;
+
+    border-radius: 18px;
+
+    cursor: pointer;
+
+    color: #fff;
+
+    font-size: 15px;
+
+    font-weight: 800;
+
+    background:
+        linear-gradient(
+            180deg,
+            #ffb100 0%,
+            #ff6a00 45%,
+            #ff3d00 100%
+        );
+
+    box-shadow:
+        0 7px 16px rgba(255, 80, 0, .28);
+
+    transition:
+        transform .2s ease,
+        box-shadow .2s ease;
+
+}
+
+
+.blz-btn-publicar:hover {
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 10px 22px rgba(255, 80, 0, .38);
+
+}
+
+
+.blz-btn-publicar:active {
+
+    transform: translateY(1px);
+
+}
+
+
+.blz-btn-icon {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+
+/* =====================================================
+   PASO 2
+===================================================== */
+
+.blz-form-success {
+
+    text-align: center;
+
+    padding: 25px 10px;
+
+}
+
+
+.blz-success-icon {
+
+    width: 65px;
+    height: 65px;
+
+    margin: 0 auto 16px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #f4f7fb;
+
+    box-shadow:
+        7px 7px 14px rgba(163, 177, 198, .35),
+        -6px -6px 12px rgba(255, 255, 255, .9);
+
+}
+
+
+.blz-success-icon i {
+
+    font-size: 32px;
+
+}
+
+
+.blz-form-success h3 {
+
+    margin-bottom: 8px;
+
+    font-weight: 800;
+
+}
+
+
+.blz-form-success p {
+
+    margin-bottom: 20px;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+
+    opacity: .7;
+
+}
+
+
+/* =====================================================
+   BOTÓN SECUNDARIO
+===================================================== */
+
+.blz-btn-secondary {
+
+    border: none;
+
+    border-radius: 16px;
+
+    padding: 11px 22px;
+
+    background: #f4f7fb;
+
+    box-shadow:
+        5px 5px 10px rgba(163, 177, 198, .3),
+        -4px -4px 8px rgba(255, 255, 255, .9);
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+}
+
+
+/* =====================================================
+   DESKTOP
+===================================================== */
+
+@media (min-width: 768px) {
+
+    #menu-formulario {
+        margin-top: 24px;
+    }
+
+    .blz-publicar-wrapper {
+        padding: 15px 0 25px;
+    }
+
+    .blz-publicar-card {
+
+        max-width: 520px;
+
+        margin: 0 auto;
+
+        padding: 28px 26px;
+
+    }
+
+}
+
+
+@media (min-width: 992px) {
+
+    .blz-publicar-card {
+        max-width: 560px;
+    }
+
+}
+

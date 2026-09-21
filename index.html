@@ -1,0 +1,512 @@
+<!-- /*
+* Template Name: enlaza2
+* Template Author: Untree.co
+* Template URI: https://untree.co/
+* License: https://creativecommons.org/licenses/by/3.0/
+*/ -->
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Untree.co">
+	<link rel="shortcut icon" href="favicon.png">
+
+	<meta name="description" content="" />
+	<meta name="keywords" content="bootstrap, bootstrap5" />
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+
+	<link rel="stylesheet" href="fonts/icomoon/style.css">
+	<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+	<link rel="stylesheet" href="css/tiny-slider.css">
+	<link rel="stylesheet" href="css/aos.css">
+	<link rel="stylesheet" href="css/glightbox.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/enlaza2-banners.css">
+	<link rel="stylesheet" href="css/enlaza2-blz.css">
+	<link rel="stylesheet" href="css/enlaza2-arq.css">
+	<link rel="stylesheet" href="css/enlaza2-publicacion.css">
+	<link rel="stylesheet" href="css/enlaza2-footer.css">
+	<link rel="stylesheet" href="css/enlaza2-buscador.css">
+
+	<!-- Tailwind -->
+	<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/enlaza2-hero.css">
+	<title>enlaza2.pe &mdash; Directorio de servicios generales carmelinos</title>
+</head>
+
+<body>
+
+	<div class="site-mobile-menu site-navbar-target">
+		<div class="site-mobile-menu-header">
+			<div class="site-mobile-menu-close">
+				<span class="icofont-close js-menu-toggle"></span>
+			</div>
+		</div>
+		<div class="site-mobile-menu-body"></div>
+	</div>
+
+	<!--menu -->
+	<nav class="site-nav">
+		<div class="container">
+			<div class="blz-nav-actions">
+
+				<!-- Logo SOLO DESKTOP -->
+				<a href="index.html" class="blz-nav-logo">
+					<img src="img/logo.png" alt="Enlaza2">
+				</a>
+
+				<!-- Grupo botones -->
+				<div class="blz-nav-buttons">
+
+					<!-- Buscar -->
+					<div class="blz-nav-btn blz-nav-search" id="miniBuscador" onclick="irABuscador()">
+						<i class="bi bi-search"></i>
+						<span></span>
+					</div>
+					<!-- Compartir -->
+					<button class="blz-nav-btn blz-share-btn" onclick="compartirSitio()">
+						<i class="bi bi-reply-fill" style="transform: scaleX(-1);"></i>
+					</button>
+
+					<!-- Publicar -->
+					<div onclick="abrirFormularioPublicar()">
+						<div id="btnNavPublicar" class="blz-nav-btn blz-publish-btn js-menu-toggle">
+							<span class="blz-plus-circle">+</span>
+							<span>Crear Anuncio</span>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+	</nav>
+
+	<!--Menu lateral-->
+	<!--
+	<div>
+		<ul id="menu-categorias" class="js-clone-nav"></ul>
+
+		<div id="menu-formulario"></div>
+	</div>
+-->
+
+
+	<!---=================================PUBLICAR==============================================-->
+
+
+	<div class="js-clone-nav">
+		<div id="menu-formulario">
+			<div class="blz-publicar-wrapper">
+				<div class="blz-publicar-card">
+					<!-- PASO 1 -->
+					<div id="miniStep1" class="blz-form-step">
+						<!-- TODO EL FORMULARIO DEL PASO 1 -->
+						<!-- CABECERA -->
+						<div class="blz-form-header">
+							<div class="blz-form-icon">
+								<i class="bi bi-megaphone-fill"></i>
+							</div>
+							<div>
+								<h3>Sube aquí tu servicio, negocio o producto para que las personas te contacten
+									fácilmente.
+								</h3>
+							</div>
+						</div>
+
+						<!-- FORMULARIO -->
+						<div class="blz-form-body">
+							<!-- SERVICIO -->
+							<div class="blz-field">
+								<label for="miniServicio">Describe el contenido de tu anuncio:</label>
+								<div class="blz-input-box blz-textarea-box">
+									<textarea id="miniServicio" maxlength="350"
+										placeholder="Ej.: Hago Albañilería, gasfitería, electricidad..."></textarea>
+									<div class="blz-counter">
+										<span id="countServicio">350</span>
+									</div>
+								</div>
+							</div>
+
+							<!-- DATOS -->
+							<div class="blz-field">
+								<label for="miniNombreTelefono">Número o Correo de contacto:</label>
+								<div class="blz-input-box">
+									<input type="text" id="miniNombreTelefono" maxlength="80">
+									<div class="blz-counter">
+										<span id="countDatos">80</span>
+									</div>
+								</div>
+							</div>
+
+							<!-- HONEYPOT -->
+							<input type="text" id="gonzalo" name="website" autocomplete="off" tabindex="-1"
+								class="blz-honeypot">
+							<!-- BOTÓN -->
+							<button type="button" id="btnPublicarMini" class="blz-btn-publicar">
+								<span class="blz-btn-icon">
+									<i class="bi bi-send-fill"></i>
+								</span>
+								<span>Procesar</span>
+							</button>
+							<h3>Al procesar estaremos preparando tu anuncio en menos de 12 hr</h3>
+						</div>
+					</div>
+
+
+					<!-- PASO 2 -->
+					<div id="miniStep2" class="blz-form-step blz-form-success">
+						<!-- MENSAJE DE ÉXITO -->
+						<div class="blz-success-icon">
+							<i class="bi bi-check-lg"></i>
+						</div>
+
+						<h3>¡Solicitud enviada!</h3>
+						<p>Recibimos tus datos correctamente.
+							Te contactaremos para ayudarte
+							a publicar tu anuncio.</p>
+
+						<button type="button" id="btnCerrarExito" class="blz-btn-secondary">
+							Entendido
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<!---=================================HERO==============================================-->
+	<!--seccion de CTA (call to action) de busqueda-->
+
+	<main id="app" class="estado-home">
+		<section id="hero">
+			<div class="bg-cream">
+				<div class="max-w-screen-xl px-8 mx-auto flex flex-col lg:flex-row">
+					<!--Left Col-->
+					<div id="hero-col-izquierda"
+						class="hero-col-izquierda flex flex-col w-full lg:w-6/12 justify-center  lg:text-left mb-5 md:mb-0">
+						<!-- LOGO DEL PROYECTO -->
+						<div class="hero-logo">
+							<img src="img/logo.png" alt="enlaza2.pe - Carmen de la Legua Reynoso">
+						</div>
+						<!-- TÍTULO -->
+				 	<h1 data-aos="fade-right" data-aos-once="true"
+							class="titulo-hero text-5xl my-4 font-bold leading-tight text-darken">
+							<span class="text-yellow-500">Encuentra</span> la ayuda que necesitas, hoy
+						</h1>
+				 
+						 <p id="typing" data-aos="fade-down" data-aos-once="true" data-aos-delay="300"
+							class="text-2xl mb-8  text-5xl my-4 font-bold  "></p> 
+						<div data-aos="fade-up" data-aos-once="true" data-aos-delay="700"
+							class="w-full flex items-center justify-center lg:justify-start">
+
+							<div class="blz-search-box">
+
+								<span class="blz-search-icon"><i class="bi bi-search"></i></span>
+
+								<input id="search" type="text" placeholder="Escribe aquí" />
+
+								<button id="btn-search" class="blz-search-btn">Buscar</button>
+
+								<button class="blz-clear-btn" id="btn-clear-search"><i class="bi bi-x-lg"></i></button>
+
+							</div>
+
+						</div>
+					</div>
+					<!--Right Col-->
+					<div class="blz-hero-gallery">
+
+						<img src="img/girl.png" class="blz-slide active" alt="">
+						<img src="img/girl1.png" class="blz-slide" alt="">
+						<img src="img/girl2.png" class="blz-slide" alt="">
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- BANNERS -->
+		<section id="bloque-categorias">
+			<div class="blz-categorias-header">
+				<h2>Explora por categorías</h2>
+				<p>Encuentra rápidamente lo que necesitas</p>
+			</div>
+			<section>
+				<div id="contenedor-banners" class="banners-wrap container categorias-grid"></div>
+				</div>
+			</section>
+		</section>
+
+		<!-- SUBCATEGORIAS -->
+		<section id="resultados-bar" class="resultados-bar container" style="display:none;">
+			<div class="resultados-bar-header">
+				<h3 id="titulo-resultados"></h3>
+				<button id="btn-reset-resultados">✕</button>
+			</div>
+			<div class="resultados-filtro-label">Selecciona: </div>
+			<div id="subcategorias-container" class="blz-badges-wrap"></div>
+		</section>
+
+		<!-- ANUNCIOS DINAMICOS RENDERIZADOS -->
+		<section id="bloque-anuncios" class="mt-4">
+
+			<div class="resultados-bar-busqueda container">
+				<h3 id="titulo-resultados-buscador"></h3>
+			</div>
+
+
+			<div class="posts-entry">
+				<div class="container w-95">
+					<div class="row" id="tipo1"></div>
+				</div>
+			</div>
+		</section>
+
+	</main>
+
+	<!---================================================================================-->
+
+	<!-- POPUP ABRIR ANUNCIO DRAGABLE-->
+	<div id="blz-overlay-bg" class="blz-overlay-bg" onclick="cerrarSheet()"></div>
+	<div id="blz-bottom-sheet" class="blz-bottom-sheet">
+		<div class="blz-sheet-header" id="dragHandle">
+			<div class="blz-drag-bar"></div>
+			<div class="blz-header-content">
+				<button class="blz-close-btn" onclick="cerrarSheet()">✕</button>
+			</div>
+		</div>
+		<div class="blz-sheet-body" id="blz-sheet-content">
+			<!-- aquí se inyecta contenido -->
+		</div>
+	</div>
+
+	<!--PIE DE PAGINA-->
+	<!--<footer class="site-footer mt-5">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-12 text-center">
+					<p class="blz-footer-links">
+						<a href="javascript:void(0)" onclick="abrirTerms()">Términos y Condiciones</a>
+					</p>
+					<p>©
+						<script>document.write(new Date().getFullYear());</script>
+						<strong>enlaza2.pe</strong> | Plataforma de servicios en Carmen de la Legua | Un proyecto
+						desarrollado por
+						<a href="https://blazarsystem.pe" target="_blank">Blazar System</a>
+					</p> 
+				</div>
+			</div>
+		</div>
+	</footer>-->
+
+	<!-- PIE DE PÁGINA -->
+	<footer class="site-footer mt-5">
+		<div class="container">
+
+			<div class="blz-footer-info">
+
+				<!-- DESCRIPCIÓN -->
+
+				<div class="blz-footer-about">
+					<h4>¿Qué es Enlaza2.pe?</h4>
+
+					<p>
+						<strong>Enlaza2.pe</strong> es un lugar donde puedes <strong> publicar
+							y encontrar anuncios de todo tipo.</strong>
+					</p>
+
+					<p>
+						¿Buscas un servicio, quieres vender algo, comprar, alquilar
+						o estás ofreciendo tu trabajo?
+						<strong>Aquí puedes encontrar a alguien que busca justo lo
+							que tú tienes para ofrecer.</strong>
+					</p>
+
+					<p>
+						Todo está ordenado por categorías para que puedas <strong>encontrar lo
+							que necesitas o publicar lo que quieres ofrecer de manera fácil
+							y rápida. </strong>
+
+					</p>
+					<p>
+						<strong>Enlaza2.pe: lo que buscas y lo que ofreces, en un solo lugar.</strong>
+					</p>
+				</div>
+
+
+				<!-- CARACTERÍSTICAS -->
+				<div class="blz-footer-column">
+					<h4>Características principales</h4>
+
+					<ul>
+						<li>
+							<i class="bi bi-megaphone-fill"></i>
+							<span><strong>Anuncios:</strong> breves y directos</span>
+						</li>
+
+						<li>
+							<i class="bi bi-grid-fill"></i>
+							<span><strong>Organización:</strong> categorías y búsqueda</span>
+						</li>
+
+						<li>
+							<i class="bi bi-people-fill"></i>
+							<span><strong>Accesibilidad:</strong> particulares y empresas pueden publicar</span>
+						</li>
+
+						<li>
+							<i class="bi bi-telephone-fill"></i>
+							<span><strong>Datos de contacto:</strong> teléfono, dirección o correo</span>
+						</li>
+					</ul>
+				</div>
+
+				<!-- CATEGORÍAS -->
+				<div class="blz-footer-column">
+					<h4>División de categorías</h4>
+
+					<ul>
+						<li>
+							<i class="bi bi-tools"></i>
+							Servicios generales
+						</li>
+
+						<li>
+							<i class="bi bi-basket-fill"></i>
+							Comercio de productos y alimentos
+						</li>
+
+						<li>
+							<i class="bi bi-heart-pulse-fill"></i>
+							Sector salud, bienestar y cuidado
+						</li>
+
+						<li>
+							<i class="bi bi-briefcase-fill"></i>
+							Sector técnico y profesional
+						</li>
+
+						<li>
+							<i class="bi bi-house-fill"></i>
+							Inmobiliaria y clasificados
+						</li>
+					</ul>
+				</div>
+
+			</div>
+
+			<!-- SEPARADOR -->
+			<div class="blz-footer-divider"></div>
+
+			<!-- PIE LEGAL -->
+			<div class="blz-footer-bottom">
+
+				<div class="blz-footer-links">
+					<a href="javascript:void(0)" onclick="abrirTerms()">
+						Términos y Condiciones
+					</a>
+				</div>
+
+				<p>
+					©
+					<script>document.write(new Date().getFullYear());</script>
+					<strong>enlaza2.pe</strong>
+					<span class="blz-footer-separator">|</span>
+					Plataforma de servicios y clasificados locales en Carmen de la Legua
+				</p>
+
+				<p class="blz-footer-developed">
+					Un proyecto desarrollado por
+					<a href="https://blazarsystem.pe" target="_blank" rel="noopener">
+						Blazar System
+					</a>
+				</p>
+
+			</div>
+
+		</div>
+	</footer>
+
+
+	<!-- =========================================
+     FORMULARIO DE PUBLICACIÓN
+========================================= -->
+
+
+
+	<!-- Preloader -->
+	<div id="overlayer"></div>
+	<div class="loader">
+		<div class="spinner-border text-primary" role="status">
+			<span class="visually-hidden">Loading...</span>
+		</div>
+	</div>
+
+	<!--POPUP TERMINOS Y CONDICIONES-->
+	<div class="blz-terms-overlay" id="blzTerms" style="display:none;">
+		<div class="blz-terms-modal">
+
+			<div class="blz-terms-header">
+				<div class="blz-terms-title">Términos y Condiciones</div>
+				<div class="blz-terms-close" onclick="cerrarTerms()">✕</div>
+			</div>
+
+			<div class="blz-terms-body" id="blzTermsContent">
+				<!-- AQUÍ SE CARGA terminos.html -->
+				<p>Cargando términos...</p>
+			</div>
+
+		</div>
+	</div>
+
+
+
+	<script src="js/enlaza2-preloader.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/tiny-slider.js"></script>
+
+	<script src="js/flatpickr.min.js"></script>
+
+
+	<script src="js/aos.js"></script>
+	<script src="js/glightbox.min.js"></script>
+	<script src="js/navbar.js"></script>
+	<script src="js/counter.js"></script>
+	<script src="js/custom.js"></script>
+
+	<script src="js/enlaza2-costants.js"></script>
+
+	<script src="js/enlaza2-typing-categorias.js"></script>
+
+	<script src="js/enlaza2-renderAnuncios.js"></script>
+	<script src="js/enlaza2-modal.js"></script>
+	<script src="js/enlaza2-visor.js"></script>
+	<script src="js/enlaza2-blz-terms.js"></script>
+	<script src="js/enlaza2-formulario.js"></script>
+	<!--<script src="js/enlaza2-AnuncioViaBusqueda.js"></script>-->
+	<script src="js/enlaza2-AnunciosViaBanners.js"></script>
+	<script src="js/enlaza2-compartir.js"></script>
+	<script src="js/enlaza2-arq-estados.js"></script>
+	<script src="js/enlaza2-galeriahero.js"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/minisearch@7.2.0/dist/umd/index.min.js"></script>
+	<script src="js/enlaza2-buscador.js"></script>
+
+</body>
+
+</html>
