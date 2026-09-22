@@ -1,13 +1,13 @@
-﻿[
+[
   {
     "idanuncio": 1,
     "subcategory": "Psicología",
-    "keywords": "psicologa psicologia terapeuta terapia salud mental ansiedad depresion emocion bienestar consulta sesion jemima basan",
-    "_web": "https://slaverfrancois.github.io/blazarsystem-enlaza2pe-users/jemima-basan-psicologia.html",
+    "keywords": "psicologa psicologia terapeuta terapia salud mental ansiedad depresion emocion bienestar consulta sesion jimena bazan",
+    "_web": "https://slaverfrancois.github.io/blazarsystem-enlaza2pe-users/jimena-bazan-psicologia.html",
     "web": "https://slaverfrancois.github.io/blazarsystem-enlaza2pe-users/marta-lopez-45672134.html",
     "featured": false,
-    "titulo": "<strong style='color: #007bff;'>Psicóloga Jemima Basan</strong>",
-    "descripcion": "Atención psicológica profesional, sesiones individuales para ansiedad, depresión y bienestar emocional. <strong style='color:red;'>Precio a consultar</strong> — Contacto: <a href='tel:+51969313166'>+51 969 313 166</a>",
+    "titulo": "<strong style='color: #007bff;'>Psicóloga Jimena Bazán</strong>",
+    "descripcion": "Atención psicológica profesional, sesiones individuales para ansiedad, depresión y bienestar emocional. <strong style='color:red;'>Precio a consultar</strong> — Contacto: <a href='tel:+549969313166'>+54 9 969 313 166</a>",
     "imagenes": [
       "img/id1/foto1.jpg",
       "img/id1/foto2.jpg"
@@ -16,219 +16,241 @@
     "creado": "17/08/2026"
   },
   {
-  "idanuncio": 2,
-  "subcategory": "Juguetes",
-  "keywords": "juguetes jugueteria venta juegos ninos bebes peluches didacticos educativos entretenimiento li jun",
-  "web": "https://slaverfrancois.github.io/blazarsystem-enlaza2pe-users/li-jun-juguetes.html",
-  "featured": false,
-  "titulo": "<strong style='color: #007bff;'>Juguetes Li Jun</strong>",
-  "descripcion": "Venta de juguetes, juegos didácticos y educativos para niños y bebés. <strong style='color:red;'>Precio a consultar</strong> — Contacto: <a href='tel:+51987685571'>+51 987 685 571</a>",
-  "imagenes": [
-    "img/id2/foto1.jpg"
-  ],
-  "tipoanuncio": 1,
-  "creado": "17/08/2026"
-},
-{
-  "idanuncio": 3,
-  "subcategory": "Veterinaria",
-  "keywords": "veterinario veterinaria animales mascotas perros gatos consulta clinica vacuna desparasitacion cirugia salud animal jorge llerena",
-  "web": "https://slaverfrancois.github.io/blazarsystem-enlaza2pe-users/jorge-llerena-veterinario.html",
-  "featured": false,
-  "titulo": "<strong style='color: #007bff;'>Veterinario Jorge Llerena</strong>",
-  "descripcion": "Atención veterinaria profesional para mascotas, consultas, vacunas, desparasitación y cirugías. <strong style='color:red;'>Precio a consultar</strong> — Contacto: <a href='tel:+51991276489'>+51 991 276 489</a>",
-  "imagenes": [
-    "img/id3/foto1.jpg"
-  ],
-  "tipoanuncio": 1,
-  "creado": "17/08/2026"
-},
-{
-  "idanuncio": 4,
-  "subcategory": "Animador",
-  "keywords": "animador quinceanos funerales eventos maestro ceremonias animacion callao cangri cristian huancahuari",
-  "web": "https://slaverfrancois.github.io/blazarsystem-enlaza2pe-users/cristian-huancahuari-animador.html",
-  "featured": false,
-  "titulo": "<strong style='color: #007bff;'>Animador \"El Cangri del Callao\" — Cristian Huancahuari</strong>",
-  "descripcion": "Animación profesional para quinceaños y funerales. Maestro de ceremonias con experiencia en todo tipo de eventos. <strong style='color:red;'>Precio a consultar</strong> — Contacto: <a href='tel:+51997393418'>+51 997 393 418</a>",
-  "imagenes": [
-    "img/id4/foto1.jpg"
-  ],
-  "tipoanuncio": 1,
-  "creado": "17/08/2026"
-},
-{
-  "idanuncio": 5,
-  "subcategory": "Pollerías",
-  "keywords": "polleria burger hamburguesa pollo broaster parrilla comida rapida delivery restaurante cangri burger",
-  "web": "https://slaverfrancois.github.io/blazarsystem-enlaza2pe-users/cangri-burger-polleria.html",
-  "featured": false,
-  "titulo": "<strong style='color: #007bff;'>Cangri Burger — Pollería</strong>",
-  "descripcion": "Pollería y hamburguesas al carbón, pollo broaster, parrillas y delivery. <strong style='color:red;'>Precio a consultar</strong> — Contacto: <a href='tel:+51992889827'>+51 992 889 827</a>",
-  "imagenes": [
-    "img/id5/foto1.jpg"
-  ],
-  "tipoanuncio": 1,
-  "creado": "17/08/2026"
-},
-{
-  "idanuncio": 6,
-  "subcategory": "Restaurante",
-  "keywords": "chifa comida china arroz chaufa tallarin saltado wonton sopa dim sum delivery restaurante long zhang",
-  "web": "https://slaverfrancois.github.io/blazarsystem-enlaza2pe-users/long-zhang-chifa.html",
-  "featured": false,
-  "titulo": "<strong style='color: #007bff;'>Chifa Long Zhang</strong>",
-  "descripcion": "Auténtica comida chifa: arroz chaufa, tallarín saltado, wonton y más. Delivery disponible. <strong style='color:red;'>Precio a consultar</strong> — Contacto: <a href='tel:+51964378096'>+51 964 378 096</a>",
-  "imagenes": [
-    "img/id6/foto1.jpg"
-  ],
-  "tipoanuncio": 1,
-  "creado": "17/08/2026"
-},
-{
-  "idanuncio": 7,
-  "subcategory": "Mudanza",
-  "keywords": "mudanza flete transporte carga muebles embalaje traslado camion luis bravo",
-  "web": "https://slaverfrancois.github.io/blazarsystem-enlaza2pe-users/luis-bravo-mudanza.html",
-  "featured": false,
-  "titulo": "<strong style='color: #007bff;'>Mudanzas Luis Bravo</strong>",
-  "descripcion": "Servicio de mudanza, flete y traslado de muebles con embalaje incluido. Atención en  y provincias. <strong style='color:red;'>Precio a consultar</strong> — Contacto: <a href='tel:+51922987835'>+51 922 987 835</a>",
-  "imagenes": [
-    "img/id7/foto1.jpg"
-  ],
-  "tipoanuncio": 1,
-  "creado": "17/08/2026"
-},
-{
-  "idanuncio": 8,
-  "subcategory": "Plantas",
-  "keywords": "plantas flores jardineria vivero macetas ornamentales interior exterior angel colona",
-  "web": "https://slaverfrancois.github.io/blazarsystem-enlaza2pe-users/angel-colona-plantas.html",
-  "featured": false,
-  "titulo": "<strong style='color: #007bff;'>Plantas — Angel Colona</strong>",
-  "descripcion": "Venta de plantas ornamentales, flores y macetas para interiores y exteriores. <strong style='color:red;'>Precio a consultar</strong> — Contacto: <a href='tel:+51922462274'>+51 922 462 274</a>",
-  "imagenes": ["img/id8/foto1.jpg"],
-  "tipoanuncio": 1,
-  "creado": "17/08/2026"
-},
-{
-  "idanuncio": 9,
-  "subcategory": "Psicólogo",
-  "keywords": "consejero parejas terapia relaciones matrimonio convivencia conflictos comunicacion amor josue colona",
-  "web": "https://slaverfrancois.github.io/blazarsystem-enlaza2pe-users/josue-colona-consejero-parejas.html",
-  "featured": false,
-  "titulo": "<strong style='color: #007bff;'>Consejero de Parejas — Josué Colona</strong>",
-  "descripcion": "Consejería profesional para parejas, manejo de conflictos, comunicación y fortalecimiento de relaciones. <strong style='color:red;'>Precio a consultar</strong> — Contacto: <a href='tel:+51930533980'>+51 930 533 980</a>",
-  "imagenes": ["img/id9/foto1.jpg"],
-  "tipoanuncio": 1,
-  "creado": "17/08/2026"
-},
-{
-  "idanuncio": 10,
-  "subcategory": "Juguetes",
-  "keywords": "pintando numeros arte oleo manualidades cuadros pintura artesania creativo josue oleo arte",
-  "web": "https://slaverfrancois.github.io/blazarsystem-enlaza2pe-users/josue-oseo-arte-pintando-numeros.html",
-  "featured": false,
-  "titulo": "<strong style='color: #007bff;'>Pintando con Números — Óleo y Arte</strong>",
-  "descripcion": "Kits y clases de pintando con números, arte decorativo y manualidades creativas. <strong style='color:red;'>Precio a consultar</strong> — Contacto: <a href='tel:+51990020497'>+51 990 020 497</a>",
-  "imagenes": ["img/id10/foto1.jpg"],
-  "tipoanuncio": 1,
-  "creado": "17/08/2026"
-},
-{
-  "idanuncio": 11,
-  "subcategory": "Drywalleros",
-  "keywords": "drywall construccion tabiqueria cielo raso divisiones interiores yeso instalacion darwin villacinda",
-  "web": "https://slaverfrancois.github.io/blazarsystem-enlaza2pe-users/darwin-villacinda-drywall.html",
-  "featured": false,
-  "titulo": "<strong style='color: #007bff;'>Construcción en Drywall — Darwin Villacinda</strong>",
-  "descripcion": "Instalación de tabiquería, cielos rasos y divisiones interiores en drywall. Trabajo garantizado. <strong style='color:red;'>Precio a consultar</strong> — Contacto: <a href='tel:+51994776302'>+51 994 776 302</a>",
-  "imagenes": ["img/id11/foto1.jpg"],
-  "tipoanuncio": 1,
-  "creado": "17/08/2026"
-},
-{
-  "idanuncio": 12,
-  "subcategory": "Carpintero",
-  "keywords": "carpintero carpinteria muebles madera puertas ventanas closet cocina instalacion gustavo barreda",
-  "web": "https://slaverfrancois.github.io/blazarsystem-enlaza2pe-users/gustavo-barreda-carpintero.html",
-  "featured": false,
-  "titulo": "<strong style='color: #007bff;'>Carpintero — Gustavo Barreda</strong>",
-  "descripcion": "Fabricación e instalación de muebles, puertas, ventanas y closets a medida en madera. <strong style='color:red;'>Precio a consultar</strong> — Contacto: <a href='tel:+51970685231'>+51 970 685 231</a>",
-  "imagenes": ["img/id12/foto1.jpg"],
-  "tipoanuncio": 1,
-  "creado": "17/08/2026"
-},
-{
-  "idanuncio": 13,
-  "subcategory": "Soldador",
-  "keywords": "soldador construccion metalica metal acero rejas puertas escaleras estructuras soldadura cesar paullo",
-  "web": "https://slaverfrancois.github.io/blazarsystem-enlaza2pe-users/cesar-paullo-construcciones-metalicas.html",
-  "featured": false,
-  "titulo": "<strong style='color: #007bff;'>Construcciones Metálicas — César Paullo</strong>",
-  "descripcion": "Fabricación de rejas, puertas metálicas, escaleras y estructuras de acero con soldadura de calidad. <strong style='color:red;'>Precio a consultar</strong> — Contacto: <a href='tel:+51938887289'>+51 938 887 289</a>",
-  "imagenes": ["img/id13/foto1.jpg"],
-  "tipoanuncio": 1,
-  "creado": "17/08/2026"
-},
-{
-  "idanuncio": 14,
-  "subcategory": "Profesor",
-  "keywords": "profesor ingles clases ingles ensenanza idioma conversacion basico avanzado niños adultos abraham rivas",
-  "web": "https://slaverfrancois.github.io/blazarsystem-enlaza2pe-users/abraham-rivas-profesor-ingles.html",
-  "featured": false,
-  "titulo": "<strong style='color: #007bff;'>Profesor de Inglés — Abraham Rivas</strong>",
-  "descripcion": "Clases de inglés para niños y adultos, todos los niveles. Conversación, gramática y preparación para exámenes. <strong style='color:red;'>Precio a consultar</strong> — Contacto: <a href='tel:+51934805470'>+51 934 805 470</a>",
-  "imagenes": ["img/id14/foto1.jpg"],
-  "tipoanuncio": 1,
-  "creado": "17/08/2026"
-},
-{
-  "idanuncio": 15,
-  "subcategory": "Profesor",
-  "keywords": "profesora primaria clases ensenanza ninos educacion basica matematica lenguaje refuerzo escolar virginia moreano",
-  "web": "https://slaverfrancois.github.io/blazarsystem-enlaza2pe-users/virginia-moreano-profesora-primaria.html",
-  "featured": false,
-  "titulo": "<strong style='color: #007bff;'>Profesora de Primaria — Virginia Moreano</strong>",
-  "descripcion": "Clases y refuerzo escolar para nivel primaria en matemática, comunicación y todas las áreas. <strong style='color:red;'>Precio a consultar</strong> — Contacto: <a href='tel:+51956666887'>+51 956 666 887</a>",
-  "imagenes": ["img/id15/foto1.jpg"],
-  "tipoanuncio": 1,
-  "creado": "17/08/2026"
-},
-{
-  "idanuncio": 16,
-  "subcategory": "Profesor",
-  "keywords": "profesora secundaria clases refuerzo escolar adolescentes matematica ciencias historia comunicacion flor martinez",
-  "web": "https://slaverfrancois.github.io/blazarsystem-enlaza2pe-users/flor-martinez-profesora-secundaria.html",
-  "featured": false,
-  "titulo": "<strong style='color: #007bff;'>Profesora de Secundaria — Flor Martínez</strong>",
-  "descripcion": "Clases de refuerzo escolar para nivel secundaria en todas las áreas curriculares. <strong style='color:red;'>Precio a consultar</strong> — Contacto: <a href='tel:+51902512528'>+51 902 512 528</a>",
-  "imagenes": ["img/id16/foto1.jpg"],
-  "tipoanuncio": 1,
-  "creado": "17/08/2026"
-},
-{
-  "idanuncio": 17,
-  "subcategory": "Taxista",
-  "keywords": "taxi taxista transporte servicio auto privado traslado aeropuerto samuel colona",
-  "web": "https://slaverfrancois.github.io/blazarsystem-enlaza2pe-users/samuel-colona-taxista.html",
-  "featured": false,
-  "titulo": "<strong style='color: #007bff;'>Taxista Profesional — Samuel Colona</strong>",
-  "descripcion": "Servicio de taxi profesional, traslados al aeropuerto, distritos y provincias. Puntual y seguro. <strong style='color:red;'>Precio a consultar</strong> — Contacto: <a href='tel:+51959043525'>+51 959 043 525</a>",
-  "imagenes": ["img/id17/foto1.jpg"],
-  "tipoanuncio": 1,
-  "creado": "17/08/2026"
-},
-{
-  "idanuncio": 18,
-  "subcategory": "Contador",
-  "keywords": "contadora contabilidad contable tributaria impuestos sunat declaracion planillas balance financiero empresa noemi moreano",
-  "web": "https://slaverfrancois.github.io/blazarsystem-enlaza2pe-users/noemi-moreano-contadora.html",
-  "featured": false,
-  "titulo": "<strong style='color: #007bff;'>Contadora — Noemí Moreano</strong>",
-  "descripcion": "Servicios de contabilidad, declaraciones tributarias SUNAT, planillas y asesoría financiera para empresas y personas naturales. <strong style='color:red;'>Precio a consultar</strong> — Contacto: <a href='tel:+51959153507'>+51 959 153 507</a>",
-  "imagenes": ["img/id18/foto1.jpg"],
-  "tipoanuncio": 1,
-  "creado": "17/08/2026"
-}
+    "idanuncio": 2,
+    "subcategory": "Juguetes",
+    "keywords": "juguetes jugueteria venta juegos ninos bebes peluches didacticos educativos entretenimiento li jun",
+    "web": "https://slaverfrancois.github.io/blazarsystem-enlaza2pe-users/li-jin-juguetes.html",
+    "featured": false,
+    "titulo": "<strong style='color: #007bff;'>Juguetes Li Jin</strong>",
+    "descripcion": "Venta de juguetes, juegos didácticos y educativos para niños y bebés. <strong style='color:red;'>Precio a consultar</strong> — Contacto: <a href='tel:+549987685571'>+54 9 987 685 571</a>",
+    "imagenes": [
+      "img/id2/foto1.jpg"
+    ],
+    "tipoanuncio": 1,
+    "creado": "17/08/2026"
+  },
+  {
+    "idanuncio": 3,
+    "subcategory": "Veterinaria",
+    "keywords": "veterinario veterinaria animales mascotas perros gatos consulta clinica vacuna desparasitacion cirugia salud animal javier llerena",
+    "web": "https://slaverfrancois.github.io/blazarsystem-enlaza2pe-users/javier-llerena-veterinario.html",
+    "featured": false,
+    "titulo": "<strong style='color: #007bff;'>Veterinario Javier Llerena</strong>",
+    "descripcion": "Atención veterinaria profesional para mascotas, consultas, vacunas, desparasitación y cirugías. <strong style='color:red;'>Precio a consultar</strong> — Contacto: <a href='tel:+549991276489'>+54 9 991 276 489</a>",
+    "imagenes": [
+      "img/id3/foto1.jpg"
+    ],
+    "tipoanuncio": 1,
+    "creado": "17/08/2026"
+  },
+  {
+    "idanuncio": 4,
+    "subcategory": "Animador",
+    "keywords": "animador quinceanos funerales eventos maestro ceremonias animacion callao cangri cristian huancaya",
+    "web": "https://slaverfrancois.github.io/blazarsystem-enlaza2pe-users/cristian-huancaya-animador.html",
+    "featured": false,
+    "titulo": "<strong style='color: #007bff;'>Animador \"El Cangri del Callao\" — Cristian Huancaya</strong>",
+    "descripcion": "Animación profesional para quinceaños y funerales. Maestro de ceremonias con experiencia en todo tipo de eventos. <strong style='color:red;'>Precio a consultar</strong> — Contacto: <a href='tel:+549997393418'>+54 9 997 393 418</a>",
+    "imagenes": [
+      "img/id4/foto1.jpg"
+    ],
+    "tipoanuncio": 1,
+    "creado": "17/08/2026"
+  },
+  {
+    "idanuncio": 5,
+    "subcategory": "Pollerías",
+    "keywords": "polleria burger hamburguesa pollo broaster parrilla comida rapida delivery restaurante cangri grill",
+    "web": "https://slaverfrancois.github.io/blazarsystem-enlaza2pe-users/cangri-grill-polleria.html",
+    "featured": false,
+    "titulo": "<strong style='color: #007bff;'>Cangri Grill — Pollería</strong>",
+    "descripcion": "Pollería y hamburguesas al carbón, pollo broaster, parrillas y delivery. <strong style='color:red;'>Precio a consultar</strong> — Contacto: <a href='tel:+549992889827'>+54 9 992 889 827</a>",
+    "imagenes": [
+      "img/id5/foto1.jpg"
+    ],
+    "tipoanuncio": 1,
+    "creado": "17/08/2026"
+  },
+  {
+    "idanuncio": 6,
+    "subcategory": "Restaurante",
+    "keywords": "chifa comida china arroz chaufa tallarin saltado wonton sopa dim sum delivery restaurante long chen",
+    "web": "https://slaverfrancois.github.io/blazarsystem-enlaza2pe-users/long-chen-chifa.html",
+    "featured": false,
+    "titulo": "<strong style='color: #007bff;'>Chifa Long Chen</strong>",
+    "descripcion": "Auténtica comida chifa: arroz chaufa, tallarín saltado, wonton y más. Delivery disponible. <strong style='color:red;'>Precio a consultar</strong> — Contacto: <a href='tel:+549964378096'>+54 9 964 378 096</a>",
+    "imagenes": [
+      "img/id6/foto1.jpg"
+    ],
+    "tipoanuncio": 1,
+    "creado": "17/08/2026"
+  },
+  {
+    "idanuncio": 7,
+    "subcategory": "Mudanza",
+    "keywords": "mudanza flete transporte carga muebles embalaje traslado camion lucas bravo",
+    "web": "https://slaverfrancois.github.io/blazarsystem-enlaza2pe-users/lucas-bravo-mudanza.html",
+    "featured": false,
+    "titulo": "<strong style='color: #007bff;'>Mudanzas Lucas Bravo</strong>",
+    "descripcion": "Servicio de mudanza, flete y traslado de muebles con embalaje incluido. Atención en Callao y provincias. <strong style='color:red;'>Precio a consultar</strong> — Contacto: <a href='tel:+549922987835'>+54 9 922 987 835</a>",
+    "imagenes": [
+      "img/id7/foto1.jpg"
+    ],
+    "tipoanuncio": 1,
+    "creado": "17/08/2026"
+  },
+  {
+    "idanuncio": 8,
+    "subcategory": "Plantas",
+    "keywords": "plantas flores jardineria vivero macetas ornamentales interior exterior alan coloma",
+    "web": "https://slaverfrancois.github.io/blazarsystem-enlaza2pe-users/alan-coloma-plantas.html",
+    "featured": false,
+    "titulo": "<strong style='color: #007bff;'>Plantas — Alan Coloma</strong>",
+    "descripcion": "Venta de plantas ornamentales, flores y macetas para interiores y exteriores. <strong style='color:red;'>Precio a consultar</strong> — Contacto: <a href='tel:+549922462274'>+54 9 922 462 274</a>",
+    "imagenes": [
+      "img/id8/foto1.jpg"
+    ],
+    "tipoanuncio": 1,
+    "creado": "17/08/2026"
+  },
+  {
+    "idanuncio": 9,
+    "subcategory": "Psicólogo",
+    "keywords": "consejero parejas terapia relaciones matrimonio convivencia conflictos comunicacion amor jonas coloma",
+    "web": "https://slaverfrancois.github.io/blazarsystem-enlaza2pe-users/jonas-coloma-consejero-parejas.html",
+    "featured": false,
+    "titulo": "<strong style='color: #007bff;'>Consejero de Parejas — Jonás Coloma</strong>",
+    "descripcion": "Consejería profesional para parejas, manejo de conflictos, comunicación y fortalecimiento de relaciones. <strong style='color:red;'>Precio a consultar</strong> — Contacto: <a href='tel:+549930533980'>+54 9 930 533 980</a>",
+    "imagenes": [
+      "img/id9/foto1.jpg"
+    ],
+    "tipoanuncio": 1,
+    "creado": "17/08/2026"
+  },
+  {
+    "idanuncio": 10,
+    "subcategory": "Juguetes",
+    "keywords": "pintando numeros arte oleo manualidades cuadros pintura artesania creativo joel oleo arte",
+    "web": "https://slaverfrancois.github.io/blazarsystem-enlaza2pe-users/joel-oseo-arte-pintando-numeros.html",
+    "featured": false,
+    "titulo": "<strong style='color: #007bff;'>Pintando con Números — Óleo y Arte</strong>",
+    "descripcion": "Kits y clases de pintando con números, arte decorativo y manualidades creativas. <strong style='color:red;'>Precio a consultar</strong> — Contacto: <a href='tel:+549990020497'>+54 9 990 020 497</a>",
+    "imagenes": [
+      "img/id10/foto1.jpg"
+    ],
+    "tipoanuncio": 1,
+    "creado": "17/08/2026"
+  },
+  {
+    "idanuncio": 11,
+    "subcategory": "Drywalleros",
+    "keywords": "drywall construccion tabiqueria cielo raso divisiones interiores yeso instalacion dariel villacorta",
+    "web": "https://slaverfrancois.github.io/blazarsystem-enlaza2pe-users/dariel-villacorta-drywall.html",
+    "featured": false,
+    "titulo": "<strong style='color: #007bff;'>Construcción en Drywall — Dariel Villacorta</strong>",
+    "descripcion": "Instalación de tabiquería, cielos rasos y divisiones interiores en drywall. Trabajo garantizado. <strong style='color:red;'>Precio a consultar</strong> — Contacto: <a href='tel:+549994776302'>+54 9 994 776 302</a>",
+    "imagenes": [
+      "img/id11/foto1.jpg"
+    ],
+    "tipoanuncio": 1,
+    "creado": "17/08/2026"
+  },
+  {
+    "idanuncio": 12,
+    "subcategory": "Carpintero",
+    "keywords": "carpintero carpinteria muebles madera puertas ventanas closet cocina instalacion gabriel barrera",
+    "web": "https://slaverfrancois.github.io/blazarsystem-enlaza2pe-users/gabriel-barrera-carpintero.html",
+    "featured": false,
+    "titulo": "<strong style='color: #007bff;'>Carpintero — Gabriel Barrera</strong>",
+    "descripcion": "Fabricación e instalación de muebles, puertas, ventanas y closets a medida en madera. <strong style='color:red;'>Precio a consultar</strong> — Contacto: <a href='tel:+549970685231'>+54 9 970 685 231</a>",
+    "imagenes": [
+      "img/id12/foto1.jpg"
+    ],
+    "tipoanuncio": 1,
+    "creado": "17/08/2026"
+  },
+  {
+    "idanuncio": 13,
+    "subcategory": "Soldador",
+    "keywords": "soldador construccion metalica metal acero rejas puertas escaleras estructuras soldadura cesar paulo",
+    "web": "https://slaverfrancois.github.io/blazarsystem-enlaza2pe-users/cesar-paulo-construcciones-metalicas.html",
+    "featured": false,
+    "titulo": "<strong style='color: #007bff;'>Construcciones Metálicas — César Paulo</strong>",
+    "descripcion": "Fabricación de rejas, puertas metálicas, escaleras y estructuras de acero con soldadura de calidad. <strong style='color:red;'>Precio a consultar</strong> — Contacto: <a href='tel:+549938887289'>+54 9 938 887 289</a>",
+    "imagenes": [
+      "img/id13/foto1.jpg"
+    ],
+    "tipoanuncio": 1,
+    "creado": "17/08/2026"
+  },
+  {
+    "idanuncio": 14,
+    "subcategory": "Profesor",
+    "keywords": "profesor ingles clases ingles ensenanza idioma conversacion basico avanzado niños adultos adrian rios",
+    "web": "https://slaverfrancois.github.io/blazarsystem-enlaza2pe-users/adrian-rios-profesor-ingles.html",
+    "featured": false,
+    "titulo": "<strong style='color: #007bff;'>Profesor de Inglés — Adrián Ríos</strong>",
+    "descripcion": "Clases de inglés para niños y adultos, todos los niveles. Conversación, gramática y preparación para exámenes. <strong style='color:red;'>Precio a consultar</strong> — Contacto: <a href='tel:+549934805470'>+54 9 934 805 470</a>",
+    "imagenes": [
+      "img/id14/foto1.jpg"
+    ],
+    "tipoanuncio": 1,
+    "creado": "17/08/2026"
+  },
+  {
+    "idanuncio": 15,
+    "subcategory": "Profesor",
+    "keywords": "profesora primaria clases ensenanza ninos educacion basica matematica lenguaje refuerzo escolar veronica moreno",
+    "web": "https://slaverfrancois.github.io/blazarsystem-enlaza2pe-users/veronica-moreno-profesora-primaria.html",
+    "featured": false,
+    "titulo": "<strong style='color: #007bff;'>Profesora de Primaria — Verónica Moreno</strong>",
+    "descripcion": "Clases y refuerzo escolar para nivel primaria en matemática, comunicación y todas las áreas. <strong style='color:red;'>Precio a consultar</strong> — Contacto: <a href='tel:+549956666887'>+54 9 956 666 887</a>",
+    "imagenes": [
+      "img/id15/foto1.jpg"
+    ],
+    "tipoanuncio": 1,
+    "creado": "17/08/2026"
+  },
+  {
+    "idanuncio": 16,
+    "subcategory": "Profesor",
+    "keywords": "profesora secundaria clases refuerzo escolar adolescentes matematica ciencias historia comunicacion flor marina",
+    "web": "https://slaverfrancois.github.io/blazarsystem-enlaza2pe-users/flor-marina-profesora-secundaria.html",
+    "featured": false,
+    "titulo": "<strong style='color: #007bff;'>Profesora de Secundaria — Flor Marina</strong>",
+    "descripcion": "Clases de refuerzo escolar para nivel secundaria en todas las áreas curriculares. <strong style='color:red;'>Precio a consultar</strong> — Contacto: <a href='tel:+549902512528'>+54 9 902 512 528</a>",
+    "imagenes": [
+      "img/id16/foto1.jpg"
+    ],
+    "tipoanuncio": 1,
+    "creado": "17/08/2026"
+  },
+  {
+    "idanuncio": 17,
+    "subcategory": "Taxista",
+    "keywords": "taxi taxista transporte servicio auto privado traslado aeropuerto samir coloma",
+    "web": "https://slaverfrancois.github.io/blazarsystem-enlaza2pe-users/samir-coloma-taxista.html",
+    "featured": false,
+    "titulo": "<strong style='color: #007bff;'>Taxista Profesional — Samir Coloma</strong>",
+    "descripcion": "Servicio de taxi profesional, traslados al aeropuerto, distritos y provincias. Puntual y seguro. <strong style='color:red;'>Precio a consultar</strong> — Contacto: <a href='tel:+549959043525'>+54 9 959 043 525</a>",
+    "imagenes": [
+      "img/id17/foto1.jpg"
+    ],
+    "tipoanuncio": 1,
+    "creado": "17/08/2026"
+  },
+  {
+    "idanuncio": 18,
+    "subcategory": "Contador",
+    "keywords": "contadora contabilidad contable tributaria impuestos sunat declaracion planillas balance financiero empresa noelia moreno",
+    "web": "https://slaverfrancois.github.io/blazarsystem-enlaza2pe-users/noelia-moreno-contadora.html",
+    "featured": false,
+    "titulo": "<strong style='color: #007bff;'>Contadora — Noelia Moreno</strong>",
+    "descripcion": "Servicios de contabilidad, declaraciones tributarias SUNAT, planillas y asesoría financiera para empresas y personas naturales. <strong style='color:red;'>Precio a consultar</strong> — Contacto: <a href='tel:+549959153507'>+54 9 959 153 507</a>",
+    "imagenes": [
+      "img/id18/foto1.jpg"
+    ],
+    "tipoanuncio": 1,
+    "creado": "17/08/2026"
+  }
 ]
