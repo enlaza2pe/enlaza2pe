@@ -1,3 +1,7 @@
+let anuncios = [];
+let categorias = [];
+let anunciosCategoriaActual = [];
+
 /* ========================================================
    BANNERS DESIGNS
 ========================================================= */
@@ -40,203 +44,289 @@ const templatesBanner = {
 
 };
 
-/* =========================================================
-   Carga en paralelo los anuncios y el menú, luego procesa y renderiza las categorías.
-========================================================= */
+/* Cargar los cinco JSON de anuncios y el menú */
 Promise.all([
-  fetch("json/anuncios.json").then(r => r.json()),
-  fetch("json/categorias-menu.json").then(r => r.json())
-])
-  .then(([anunciosData, categoriasData]) => {
+  fetch("json/anuncios-alquileres.json").then(r => {
+    if (!r.ok) throw new Error("Error cargando alquileres");
+    return r.json();
+  }),
 
-    anuncios = anunciosData;
+  fetch("json/anuncios-deliverys.json").then(r => {
+    if (!r.ok) throw new Error("Error cargando delivery");
+    return r.json();
+  }),
+
+  fetch("json/anuncios-empleos.json").then(r => {
+    if (!r.ok) throw new Error("Error cargando empleos");
+    return r.json();
+  }),
+
+  fetch("json/anuncios-serviciosgen.json").then(r => {
+    if (!r.ok) throw new Error("Error cargando servicios");
+    return r.json();
+  }),
+
+  fetch("json/anuncios-promociones.json").then(r => {
+    if (!r.ok) throw new Error("Error cargando promociones");
+    return r.json();
+  }),
+
+  fetch("json/categorias-menu.json").then(r => {
+    if (!r.ok) throw new Error("Error cargando categorías");
+    return r.json();
+  })
+])
+  .then(([
+    anunciosAlq,
+    anunciosDelivery,
+    anunciosEmpleos,
+    anunciosServicios,
+    anunciosPromociones,
+    categoriasData
+  ]) => {
+
+    /* Mantener todos los anuncios disponibles */
+    anuncios = [
+      ...anunciosAlq,
+      ...anunciosDelivery,
+      ...anunciosEmpleos,
+      ...anunciosServicios,
+      ...anunciosPromociones
+    ];
+
     categorias = categoriasData;
+
+    window.anunciosPorCategoria = {
+      "Alquileres": anunciosAlq,
+      "Envíos a domicilio": anunciosDelivery,
+      "Empleos": anunciosEmpleos,
+      "Servicios Generales": anunciosServicios,
+      "Promos": anunciosPromociones
+    };
 
     renderBanners();
 
+    if (categorias.length > 0) {
+      cargarCategoria(categorias[0].categoria, {
+        scroll: false,
+        compacto: false
+      });
+    }
+
+  })
+  .catch(error => {
+    console.error("No se pudieron cargar los datos:", error);
   });
 
-/*======================================================
-RENDER VISUAL DE BANNERS
-=======================================================*/
-function crearBanner(grupo) {
+/** RENDERIZAR LA BARRA DE NAVEGACIÓN */
+function crearBanner(grupo, esPrimero) {
   const tpl = templatesBanner[grupo.template];
-  return `
-    <a class="cta-banner ${tpl.clase}" href="#" data-categoria="${grupo.categoria}">
-      ${tpl.particulas}
-      <div class="cta-content">
-        <p class="cta-eyebrow">
-           ${grupo.subcategory.join(" - ")}
-        </p> 
-        <div class="cta-title-row">
-          <h2 class="cta-title">
-            ${grupo.categoria}
-          </h2> 
-          <span class="cta-button">
-            Seleccionar
-          </span>
-        </div>
-      </div>
+  if (!tpl) {
+    console.warn(
+      `No existe el template "${grupo.template}" para ${grupo.categoria}`
+    );
+  }
+
+    // Si es el primer elemento renderizado de la lista, le inyectamos la clase 'is-active' de entrada
+  const claseActiva = esPrimero ? "is-active" : "";
+
+   return `
+    <a class="cta-banner ${tpl ? tpl.clase : ""} ${claseActiva}" 
+       data-categoria="${grupo.categoria}" 
+       aria-pressed="${esPrimero ? "true" : "false"}" 
+       href="#" >
+       ${tpl ? tpl.particulas : ""}
+       <span class="cta-icon" aria-hidden="true">
+         ${grupo.icono || ""}
+       </span>
+       <span class="cta-content">
+         <span class="cta-title-row">
+           <span class="cta-title">${grupo.categoria}</span>
+         </span>
+       </span>
     </a>
   `;
 }
 
-
 function renderBanners() {
-
-  const contenedor =
-    document.getElementById("contenedor-banners");
-
-  contenedor.innerHTML =
-    categorias
-      .map(grupo => crearBanner(grupo))
-      .join("");
+  const contenedor = document.getElementById("contenedor-banners");
+  if (!contenedor) return;
+  contenedor.innerHTML = categorias
+    .map(grupo => crearBanner(grupo))
+    .join("");
+  console.log("Navegación renderizada:", contenedor.innerHTML);
 }
 
-/* =========================================================
-   EVENT CLICK EN BANNER
-========================================================= */
-
+/*   CLICK EN UNA CATEGORÍA */
 document.addEventListener("click", function (e) {
-
-  const btn = e.target.closest("[data-categoria]");
-
+  const btn = e.target.closest("#contenedor-banners [data-categoria]");
   if (!btn) return;
-
   e.preventDefault();
-
+  
   const categoria = btn.dataset.categoria;
-
-  /*cargarCategoria(categoria);*/
-  ejecutarConLoader(() => {
-    activarCategoria(); /*COMPACTAR INPUT AL CLICKEAR BANNER*/
-    cargarCategoria(categoria);
-  });
+  
+  // Al hacer click de forma manual, pasa a cargarse con su diseño/clase compacta respectiva
+  if(typeof ejecutarConLoader === 'function') {
+      ejecutarConLoader(() => {
+        cargarCategoria(categoria, { scroll: true, compacto: true });
+      });
+  } else {
+      cargarCategoria(categoria, { scroll: true, compacto: true });
+  }
 });
 
-/* =========================================================
-   CARGAR CATEGORIAS
-========================================================= */
-
-function cargarCategoria(categoria) {
-
-  const grupo = categorias.find(x => x.categoria === categoria);
+/* CARGAR CATEGORIAS */
+function cargarCategoria(
+  categoria,
+  { scroll = true, compacto = true } = {}
+) {
+  const grupo = categorias.find(
+    x => x.categoria === categoria
+  );
 
   if (!grupo) return;
 
+  /* Activar únicamente la categoría elegida */
+  document.querySelectorAll(
+    "#contenedor-banners [data-categoria]"
+  ).forEach(btn => {
+    const activo = btn.dataset.categoria === categoria;
+    btn.classList.toggle("is-active", activo);
+    btn.setAttribute("aria-pressed", String(activo));
+  });
+
+  /* Desplazar la barra hasta la categoría elegida */
+  const botonActivo = document.querySelector(
+    "#contenedor-banners [data-categoria].is-active"
+  );
+
+  if (scroll && botonActivo) {
+    botonActivo.scrollIntoView({
+      behavior: "smooth",
+      block: "nearest",
+      inline: "nearest"
+    });
+  }
+
+  /* Anuncios del JSON correspondiente */
+  anunciosCategoriaActual = window.anunciosPorCategoria[categoria] || [];
+
   renderBadges(grupo);
+  renderAnuncios(anunciosCategoriaActual);
 
-  const anunciosFiltrados = anuncios.filter(a => grupo.subcategory.includes(a.subcategory));
-
-  renderAnuncios(anunciosFiltrados);
-
-  document.getElementById("titulo-resultados").textContent = "Resultados para: " + categoria;
+  document.getElementById("titulo-resultados").textContent = "Anuncios de " + categoria;
   document.getElementById("resultados-bar").style.display = "block";
-  document.getElementById("contenedor-banners").classList.add("modo-compacto");
-  document.getElementById("resultados-bar").scrollIntoView({ behavior: "smooth" });
-}
+  document.getElementById("contenedor-banners").classList.toggle("modo-compacto", compacto);
 
-/* =========================================================
-  RENDER BADGES
-========================================================= */
+  /* Solo desplazarse a resultados cuando el usuario elige *//*
+  if (scroll) {
+    document.getElementById("resultados-bar")
+      .scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
+  }*/
+} 
 
+/* RENDER BADGES CON RADIO BUTTON */ 
 function renderBadges(grupo) {
-
-  const contenedor =
-    document.getElementById(
-      "subcategorias-container"
-    );
-
+  const contenedor = document.getElementById("subcategorias-container");
+  if (!contenedor) return;
   contenedor.innerHTML = "";
 
-  grupo.subcategory.forEach(sub => {
+  const subcategorias = [
+    "Todos",
+    ...grupo.subcategory.filter(sub => sub.toLowerCase() !== "todos")
+  ];
 
+  // Mapeo rápido basado en el template para obtener el color de contorno ideal
+  const coloresTemplate = {
+    refer: "#4157d2",      // Azul/Violeta
+    diwali: "#9A2E8F",     // Púrpura/Magenta
+    candy: "#FF6FAE",      // Rosa/Naranja
+    festival: "#A767D9",   // Violeta a Rosa
+    practice: "#2F4A52",   // Teal oscuro
+    join: "#2e7550",       // Verde
+    strawberry: "#E61B56"  // Frambuesa
+  };
+
+  // Obtenemos el color según el template actual o usamos un color base por defecto (#7C6FE8)
+  const colorBorde = coloresTemplate[grupo.template] || '#7C6FE8';
+
+  subcategorias.forEach((sub, index) => {
+    const id = `blz-radio-${index}`;
+    
+    // Inyectamos el color exacto obtenido en el border-color inline
     contenedor.innerHTML += `
-
-      <button
-        class="blz-badge"
-        data-subcategoria="${sub}">
-        ${sub}
-      </button>
+      <label class="blz-badge ${index === 0 ? 'activo' : ''}" 
+             for="${id}" 
+             data-subcategoria="${sub}" 
+             style="border: 1px solid ${colorBorde}; color: ${colorBorde}; display: inline-flex; align-items: center; padding: 4px 7px; margin: 2px; border-radius: 10px; cursor: pointer; font-weight:700;">
+        <input type="radio" id="${id}" name="blz-subcategoria" value="${sub}" ${index === 0 ? "checked" : ""} style="margin-right: 3px;">
+        <span class="blz-radio"></span>
+        <span class="blz-badge-text">${sub}</span>
+      </label>
     `;
   });
-
 }
 
-/* =========================================================
-  EVENT CLICK EN BADGE
-========================================================= */
 
+/*  EVENT CLICK EN BADGE */
 document.addEventListener("click", function (e) {
-
   const badge = e.target.closest("[data-subcategoria]");
   if (!badge) return;
-
+  
   const subcategoria = badge.dataset.subcategoria;
-  /*filtrarSubcategoria(subcategoria);*/
-  ejecutarConLoader(() => {
 
-    filtrarSubcategoria(subcategoria);
+  // Actualizar clase visual activa en las etiquetas
+  document.querySelectorAll("#subcategorias-container .blz-badge").forEach(lbl => {
+     lbl.classList.remove("activo");
   });
+  badge.classList.add("activo");
 
+  if(typeof ejecutarConLoader === 'function') {
+      ejecutarConLoader(() => {
+        filtrarSubcategoria(subcategoria);
+      });
+  } else {
+      filtrarSubcategoria(subcategoria);
+  }
 });
 
-/* =========================================================
-  FILTRAR SUBCATEGORIA
-========================================================= */
+
+/* FILTRAR SUBCATEGORIA */
 
 function filtrarSubcategoria(subcategoria) {
 
-
-
-  const filtrados = anuncios.filter(a => a.subcategory === subcategoria);
+  const filtrados = subcategoria === "Todos"
+    ? anunciosCategoriaActual
+    : anunciosCategoriaActual.filter(
+      a => a.subcategory === subcategoria
+    );
 
   renderAnuncios(filtrados);
-
   document.getElementById("titulo-resultados").textContent = "Resultados para: " + subcategoria;
   document.getElementById("resultados-bar").style.display = "block";
-  document.getElementById("contenedor-banners").classList.add("modo-compacto");
-
 }
+ 
 
-/* =========================================================
-  BOTON X 
-  ========================================================= */
-document.addEventListener("DOMContentLoaded", () => {
-  document.getElementById("btn-reset-resultados").addEventListener("click", activarHome); //funcion
-
-
-});
-
-
-
-
-
-
-/* =========================================================
-  RENDER ANUNCIOS
-========================================================= */
-
+/* RENDER ANUNCIOS */
 function renderAnuncios(lista) {
-
-  document.getElementById("tipo1").innerHTML = "";
-
+  const contenedorTipo1 = document.getElementById("tipo1");
+  if (!contenedorTipo1) return;
+  
+  contenedorTipo1.innerHTML = "";
   lista.forEach(a => {
-
     switch (a.tipoanuncio) {
-
       case 1:
-        document.getElementById("tipo1").innerHTML += diseño1(a);
+        contenedorTipo1.innerHTML += diseño1(a);
         break;
     }
   });
 }
+ 
 
-
-/* =========================================================
-  RENDER PARTICULAS de BANNERS
-======================================================== */
-
+/* RENDER PARTICULAS de BANNERS  */
 function particulasRefer() {
   return `
     <span class="particles">
@@ -360,40 +450,3 @@ function particulasVote() {
     </span>
   `;
 }
-
-
-
-/* =========================================================
-   CARRUSEL HORIZONTAL CON SCROLL
-========================================================= */
-
-/*		<div class="blz-carrusel-wrapper">
-            <span class="blz-carrusel-titulo"></span>
-            <div class="blz-carrusel-container"> 
-              <div id="carrusel-categorias" class="blz-carrusel"></div> 
-              <div class="blz-carrusel-next" id="btnScroll">
-                <img class="js-menu-toggle" src="icons/abajo-caterogorias.png">
-              </div> 
-              <div onclick="abrirCategorias()">
-                <div class="blz-coral js-menu-toggle">Categorías</div>
-              </div> 
-            </div>
-          </div>
-        </div>
-
-function construirCarruselCategorias(categorias) { 
-}*/
-
-/* =======================================
-Helper iconos
-=======================================*/
-/*
-function obtenerNombreIcono(texto) {
-  return texto
-    .toLowerCase()
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .replaceAll("ñ", "n")
-    .replaceAll(" ", "-")
-    .replaceAll("/", "");
-}*/

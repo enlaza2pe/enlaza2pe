@@ -317,40 +317,19 @@ document.addEventListener("DOMContentLoaded", () => {
                     if (formulario) {
                         formulario.classList.add("blz-formulario-abierto");
                     }
-
-
                 } catch (error) {
-
                     console.error(
                         error
                     );
-
                     alert(
                         "No se pudo enviar la solicitud. Inténtalo nuevamente."
                     );
-
-
                 } finally {
                     btnPublicar.disabled = false;
                 }
-
-                /*finally {
-                    btnPublicar.disabled = false;
-                    btnPublicar.innerHTML = `
-                        <span class="blz-btn-icon">
-                            <i class="bi bi-send-fill"></i>
-                        </span>
-                        <span> Publicar mi servicio </span>
-                    `;
-                }*/
-
             }
         );
-
     }
-
-
-
 });
 
 

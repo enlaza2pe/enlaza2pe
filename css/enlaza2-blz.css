@@ -1,6 +1,6 @@
-#app {
+/*#app {
     padding-top: var(--nav-height);
-}
+}*/
 
 .blz-hero {
     padding: 28px 18px 0;
@@ -279,8 +279,9 @@ PALABRA DINÁMICA
 
 .blz-categorias-header {
 
-    padding: 20px 15px 5px; 
-    text-align: center;
+    padding: 10px 15px 10px; 
+    text-align: left;
+    margin-bottom: 4px;
 }
 
 .blz-categorias-header h2 {

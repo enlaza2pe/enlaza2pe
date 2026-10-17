@@ -1,0 +1,190 @@
+/* =====================================================
+   IMPLEMENTACIÓN DE NUEVAS CLASES (DISEÑO HORIZONTAL)
+===================================================== */
+
+.blz-horizontal-card {
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    border: 1px solid #e2e8f0;
+    width: 100%;
+}
+
+/* Forzamos el flujo de izquierda a derecha sin importar Bootstrap */
+.blz-card-flex-wrapper {
+    display: flex !important;
+    flex-direction: row !important;
+    width: 100% !important;
+    min-height: 140px;
+}
+
+/* Área de la imagen fija al 35% */
+.blz-card-image-side {
+    width: 35% !important;
+    min-width: 35% !important;
+    max-width: 35% !important;
+    position: relative;
+    background-color: #f1f5f9;
+}
+
+
+
+/* Efecto sutil al pasar el mouse (solo en PC) */
+@media (min-width: 768px) {
+    .blz-horizontal-card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+}
+
+
+.style-row-container {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    width: 100% !important;
+    margin: 0 !important;
+}
+
+.blz-card-image-wrapper {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+/* Corrige el escalado de cualquier imagen interna de la galería */
+.blz-img-container-fix,
+.blz-img-container-fix img,
+.blz-card-image-side img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center !important;
+    display: block;
+}
+
+/* Área de contenido al 65% orientada en vertical */
+.blz-card-content-side {
+    width: 65% !important;
+    min-width: 65% !important;
+    max-width: 65% !important;
+    padding: 12px;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important; /* Manda los botones al fondo */
+    box-sizing: border-box;
+}
+
+
+/* Ajustes tipográficos legibles */
+.blz-card-title {
+    font-size: 1.4rem !important;
+    margin: 0 0 4px 0 !important;
+    line-height: 1.2 !important;
+    font-weight: 700 !important;
+}
+
+.blz-card-title a {
+    color: #0066cc !important; /* Azul estándar de enlaces para tu público */
+    text-decoration: none !important;
+}
+
+.blz-card-description {
+    font-size: 1rem !important;
+    color: #64748B !important;
+    margin: 0 0 6px 0 !important;
+    line-height: 1.3 !important;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+
+.blz-card-body-text {
+    margin: 0;
+    padding: 0;
+    flex-grow: 1; /* Permite que el texto ocupe el espacio disponible empujando los botones hacia abajo */
+}
+
+/* Contenedor de Botones Inferior */
+.blz-card-actions {
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 15px !important;
+    width: 100% !important;
+    margin-top: auto; /* Anclado magnético al fondo */
+}
+
+/* Estilo unificado para los botones del listado */
+.btn-blz-action {
+    flex: 1; /* Hace que ambos botones midan exactamente lo mismo a lo ancho */
+    padding: 6px 4px;
+    font-size: 0.79rem;
+    font-weight: 700;
+    border-radius: 6px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}
+
+/* Botón Compartir: Sutil */
+.btn-blz-share {
+    background-color: #f1f5f9;
+    color: #475569;
+    border: 1px solid #e2e8f0;
+}
+
+/* Botón VER: Resaltado */
+.btn-blz-view {
+    background-color: #1e3a8afc;
+    color: #ffffff;
+}
+
+/* Ajustes finos para teléfonos muy pequeños */
+@media (max-width: 375px) {
+    .blz-card-actions {
+        gap: 4px !important;
+    }
+    .blz-card-actions .btn {
+        padding: 4px 6px !important;
+        font-size: 0.7rem !important;
+    }
+}
+
+
+/* =====================================================
+   AJUSTE AUTOMÁTICO EXCLUSIVO PARA CELULARES (MOBILE)
+===================================================== */
+
+@media (max-width: 576px) {
+    /* Le damos más porcentaje a la imagen en pantallas chicas (42%) */
+    .blz-card-image-side {
+        width: 42% !important;
+        min-width: 42% !important;
+        max-width: 42% !important;
+    }
+
+    /* Ajustamos el bloque de texto al 58% restante */
+    .blz-card-content-side {
+        width: 58% !important;
+        min-width: 58% !important;
+        max-width: 58% !important;
+        padding: 8px 10px; /* Un poco menos de espacio interno para ganar legibilidad */
+    }
+
+    /* Reducimos ligeramente el tamaño de la letra del título en celular */
+    .blz-card-title {
+        font-size: 0.98rem !important;
+    }
+
+    /* Reducimos el tamaño de la descripción para que no empuje los botones */
+    .blz-card-description {
+        font-size: 0.78rem !important;
+        margin-bottom: 4px !important;
+    }
+}

@@ -1,0 +1,47 @@
+[
+      {
+    "idanuncio": 3,
+    "subcategory": "Veterinaria",
+    "keywords": "veterinario veterinaria animales mascotas perros gatos consulta clinica vacuna desparasitacion cirugia salud animal javier llerena",
+    "web": "https://slaverfrancois.github.io/blazarsystem-enlaza2pe-users/javier-llerena-veterinario.html",
+    "featured": false,
+    "titulo": "<strong style='color: #007bff;'>Veterinario Javier Llerena</strong>",
+    "descripcion": "Atención veterinaria profesional para mascotas, consultas, vacunas, desparasitación y cirugías. <strong style='color:red;'>Precio a consultar</strong> — Contacto: <a href='tel:+549991276489'>+54 9 991 276 489</a>",
+    "imagenes": [
+      "img/id3/foto1.jpg"
+    ],
+    "tipoanuncio": 1,
+    "creado": "17/08/2026",
+    "fvencimiento": "27/08/2026"
+  },
+  {
+    "idanuncio": 4,
+    "subcategory": "Animador",
+    "keywords": "animador quinceanos funerales eventos maestro ceremonias animacion callao cangri cristian huancaya",
+    "web": "https://slaverfrancois.github.io/blazarsystem-enlaza2pe-users/cristian-huancaya-animador.html",
+    "featured": false,
+    "titulo": "<strong style='color: #007bff;'>Animador \"El Cangri del Callao\" — Cristian Huancaya</strong>",
+    "descripcion": "Animación profesional para quinceaños y funerales. Maestro de ceremonias con experiencia en todo tipo de eventos. <strong style='color:red;'>Precio a consultar</strong> — Contacto: <a href='tel:+549997393418'>+54 9 997 393 418</a>",
+    "imagenes": [
+      "img/id4/foto1.jpg"
+    ],
+    "tipoanuncio": 1,
+    "creado": "17/08/2026",
+    "fvencimiento": "27/08/2026"
+  },
+  {
+    "idanuncio": 5,
+    "subcategory": "Pollerías",
+    "keywords": "polleria burger hamburguesa pollo broaster parrilla comida rapida delivery restaurante cangri grill",
+    "web": "https://slaverfrancois.github.io/blazarsystem-enlaza2pe-users/cangri-grill-polleria.html",
+    "featured": false,
+    "titulo": "<strong style='color: #007bff;'>Cangri Grill — Pollería</strong>",
+    "descripcion": "Pollería y hamburguesas al carbón, pollo broaster, parrillas y delivery. <strong style='color:red;'>Precio a consultar</strong> — Contacto: <a href='tel:+549992889827'>+54 9 992 889 827</a>",
+    "imagenes": [
+      "img/id5/foto1.jpg"
+    ],
+    "tipoanuncio": 1,
+    "creado": "17/08/2026",
+    "fvencimiento": "27/08/2026"
+  }
+]

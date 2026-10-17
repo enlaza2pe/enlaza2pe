@@ -11,7 +11,7 @@ const app = document.getElementById("app");
   ========================================================= */
 
 function activarHome() {
-
+/*
     app.classList.remove(
         "estado-home",
         "estado-busqueda",
@@ -29,7 +29,7 @@ function activarHome() {
     window.scrollTo({
         top: document.getElementById("app").offsetTop - 20,
         behavior: "smooth"
-    });
+    });*/
 }
 
 /* =========================================================
@@ -46,7 +46,7 @@ function activarBusqueda() {
     );
 
     app.classList.add("estado-busqueda");
-    document.getElementById("contenedor-banners").classList.remove("modo-compacto");
+  //  document.getElementById("contenedor-banners").classList.remove("modo-compacto");
     document.getElementById("resultados-bar").style.display = "none";
 }
 
@@ -60,6 +60,6 @@ function activarCategoria() {
     );
 
     app.classList.add("estado-categoria");
-    document.getElementById("contenedor-banners").classList.add("modo-compacto");
+    //document.getElementById("contenedor-banners").classList.add("modo-compacto");
 
 }

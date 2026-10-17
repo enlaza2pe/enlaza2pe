@@ -2,8 +2,10 @@
 .bg-cream {
     background: radial-gradient(circle at 75% 85%, rgba(255, 230, 200, .4), transparent 55%),
         linear-gradient(175deg, #71A8E0 0%, #9CBAE0 18%, #D0D4DF 35%, #EBE4DF 48%, #F5E3DC 58%, #F7D4BE 70%, #F7C0A2 84%, #F2B48F 100%);
-
+    clip-path: ellipse(156% 101% at 50% -4%);
 }
+
+
 
 /*font*/
 body {
@@ -14,7 +16,7 @@ body {
     background-color: #F48C06;
 }
 .text-yellow-500 {
-    color: #F48C06;
+    color: #ff6f00;
 }
 .floating { 
     animation-name: floating; 
@@ -45,7 +47,7 @@ body {
 .titulo-hero {
     font-family: var(--font-display);
     font-weight: 800;
-    font-size: 3.5rem;
+    font-size: 1.2rem;
     line-height: 1.1 !important;
 }
 
@@ -62,7 +64,7 @@ body {
 .titulo-hero {
     font-family: var(--font-display);
     font-weight: 800;
-    font-size: 2.5rem;
+    font-size: 1.2rem;
     line-height: 1.1 !important;
     text-align: center;
 }

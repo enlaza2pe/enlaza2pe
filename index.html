@@ -29,13 +29,15 @@
 	<link rel="stylesheet" href="css/tiny-slider.css">
 	<link rel="stylesheet" href="css/aos.css">
 	<link rel="stylesheet" href="css/glightbox.min.css">
+	<link rel="stylesheet" href="css/menu-navegacion.css">
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/enlaza2-banners.css">
 	<link rel="stylesheet" href="css/enlaza2-blz.css">
-	<link rel="stylesheet" href="css/enlaza2-arq.css">
+	<!--<link rel="stylesheet" href="css/enlaza2-arq.css">-->
 	<link rel="stylesheet" href="css/enlaza2-publicacion.css">
 	<link rel="stylesheet" href="css/enlaza2-footer.css">
 	<link rel="stylesheet" href="css/enlaza2-buscador.css">
+	<link rel="stylesheet" href="css/enlaza2-renderanuncios.css">
+
 
 	<!-- Tailwind -->
 	<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
@@ -66,23 +68,26 @@
 
 				<!-- Grupo botones -->
 				<div class="blz-nav-buttons">
-
-					<!-- Buscar -->
-					<div class="blz-nav-btn blz-nav-search" id="miniBuscador" onclick="irABuscador()">
-						<i class="bi bi-search"></i>
-						<span></span>
-					</div>
-					<!-- Compartir -->
-					<button class="blz-nav-btn blz-share-btn" onclick="compartirSitio()">
-						<i class="bi bi-reply-fill" style="transform: scaleX(-1);"></i>
-					</button>
-
 					<!-- Publicar -->
-					<div onclick="abrirFormularioPublicar()">
+					<!--<div onclick="abrirFormularioPublicar()">
 						<div id="btnNavPublicar" class="blz-nav-btn blz-publish-btn js-menu-toggle">
 							<span class="blz-plus-circle">+</span>
 							<span>Crear Anuncio</span>
 						</div>
+					</div>-->
+					<a href="https://wa.me/51991490519?text=%F0%9F%91%8BHola%2C%20quiero%20publicar%20mi%20anuncio%20en%20enlaza2.pe" target="_blank" style="text-decoration: none; color: inherit;">
+						<div>
+							<div id="btnNavPublicar" class="blz-nav-btn blz-publish-btn js-menu-toggle">
+								<span class="blz-plus-circle">+</span>
+								<span>Crear Anuncio</span>
+							</div>
+						</div>
+					</a>
+
+					<div class="blz-footer-links">
+						<a href="javascript:void(0)" onclick="abrirTerms()">
+							<u>Indicaciones importantes</u>
+						</a>
 					</div>
 
 				</div>
@@ -96,11 +101,9 @@
 	<!--
 	<div>
 		<ul id="menu-categorias" class="js-clone-nav"></ul>
-
 		<div id="menu-formulario"></div>
 	</div>
 -->
-
 
 	<!---=================================PUBLICAR==============================================-->
 
@@ -194,22 +197,12 @@
 	<main id="app" class="estado-home">
 		<section id="hero">
 			<div class="bg-cream">
-				<div class="max-w-screen-xl px-8 mx-auto flex flex-col lg:flex-row">
+				<div class="max-w-screen-xl mx-auto flex flex-col lg:flex-row">
 					<!--Left Col-->
 					<div id="hero-col-izquierda"
-						class="hero-col-izquierda flex flex-col w-full lg:w-6/12 justify-center  lg:text-left mb-5 md:mb-0">
-						<!-- LOGO DEL PROYECTO -->
-						<div class="hero-logo">
-							<img src="img/logo.png" alt="enlaza2.pe - Carmen de la Legua Reynoso">
-						</div>
-						<!-- TÍTULO -->
-				 	<h1 data-aos="fade-right" data-aos-once="true"
-							class="titulo-hero text-5xl my-4 font-bold leading-tight text-darken">
-							<span class="text-yellow-500">Encuentra</span> la ayuda que necesitas, hoy
-						</h1>
-				 
-						 <p id="typing" data-aos="fade-down" data-aos-once="true" data-aos-delay="300"
-							class="text-2xl mb-8  text-5xl my-4 font-bold  "></p> 
+						class="hero-col-izquierda flex flex-col w-full lg:w-6/12 justify-center  lg:text-left  md:mb-0">
+						<!--BUSCAR COMENTADO-->
+						<!--
 						<div data-aos="fade-up" data-aos-once="true" data-aos-delay="700"
 							class="w-full flex items-center justify-center lg:justify-start">
 
@@ -217,48 +210,65 @@
 
 								<span class="blz-search-icon"><i class="bi bi-search"></i></span>
 
-								<input id="search" type="text" placeholder="Escribe aquí" />
-
-								<button id="btn-search" class="blz-search-btn">Buscar</button>
-
+								<input id="search" type="text" placeholder="Buscar en enlaza2.pe" />
+ 
 								<button class="blz-clear-btn" id="btn-clear-search"><i class="bi bi-x-lg"></i></button>
 
 							</div>
 
 						</div>
+-->
+						<!-- LOGO DEL PROYECTO -->
+						<div class="hero-logo my-4 flex justify-center lg:justify-start" data-aos="fade-up"
+							data-aos-once="true" data-aos-delay="900">
+							<img src="img/logo.png" class="max-w-[348px] h-auto"
+								alt="enlaza2.pe - Carmen de la Legua Reynoso">
+						</div>
+
+						<!-- TÍTULO -->
+						<p data-aos="fade-right" data-aos-once="true" data-aos-delay="1100"
+							class="titulo-hero text-5xl font-bold leading-tight text-darken">
+							<span class="text-yellow-500">Más</span> anuncios de tu ciudad aquí
+						</p>
+
+						<!--	<p id="typing" data-aos="fade-down" data-aos-once="true" data-aos-delay="300"
+							class="text-2xl mb-8  text-5xl my-4 font-bold  "></p>-->
+
 					</div>
 					<!--Right Col-->
-					<div class="blz-hero-gallery">
+					<!--	<div class="blz-hero-gallery">
 
 						<img src="img/girl.png" class="blz-slide active" alt="">
 						<img src="img/girl1.png" class="blz-slide" alt="">
 						<img src="img/girl2.png" class="blz-slide" alt="">
 
 					</div>
+					-->
 				</div>
 			</div>
 		</section>
 
-		<!-- BANNERS -->
+
+		<!-- NAVEGACIÓN HORIZONTAL DE CATEGORÍAS -->
 		<section id="bloque-categorias">
 			<div class="blz-categorias-header">
-				<h2>Explora por categorías</h2>
-				<p>Encuentra rápidamente lo que necesitas</p>
+				<!--	<h2>Encuentra rápidamente lo que necesitas</h2>-->
+				<p>Selecciona la categoría de tu búsqueda:</p>
 			</div>
+
 			<section>
-				<div id="contenedor-banners" class="banners-wrap container categorias-grid"></div>
+				<div id="contenedor-banners" class="banners-wrap container" aria-label="Categorías de Enlaza2">
 				</div>
 			</section>
 		</section>
 
+
 		<!-- SUBCATEGORIAS -->
 		<section id="resultados-bar" class="resultados-bar container" style="display:none;">
+			<div id="subcategorias-container" class="blz-badges-wrap"></div>
 			<div class="resultados-bar-header">
 				<h3 id="titulo-resultados"></h3>
-				<button id="btn-reset-resultados">✕</button>
 			</div>
-			<div class="resultados-filtro-label">Selecciona: </div>
-			<div id="subcategorias-container" class="blz-badges-wrap"></div>
 		</section>
 
 		<!-- ANUNCIOS DINAMICOS RENDERIZADOS -->
@@ -294,31 +304,25 @@
 		</div>
 	</div>
 
-	<!--PIE DE PAGINA-->
-	<!--<footer class="site-footer mt-5">
-		<div class="container">
-			<div class="row">
-
-				<div class="col-12 text-center">
-					<p class="blz-footer-links">
-						<a href="javascript:void(0)" onclick="abrirTerms()">Términos y Condiciones</a>
-					</p>
-					<p>©
-						<script>document.write(new Date().getFullYear());</script>
-						<strong>enlaza2.pe</strong> | Plataforma de servicios en Carmen de la Legua | Un proyecto
-						desarrollado por
-						<a href="https://blazarsystem.pe" target="_blank">Blazar System</a>
-					</p> 
-				</div>
-			</div>
-		</div>
-	</footer>-->
-
 	<!-- PIE DE PÁGINA -->
 	<footer class="site-footer mt-5">
 		<div class="container">
+			<!-- PIE LEGAL -->
+			<div class="blz-footer-bottom">
+				<p>
+					©
+					<script>document.write(new Date().getFullYear());</script>
+					<strong>enlaza2.pe</strong>
+					<span class="blz-footer-separator">|</span>
+					proyecto <a href="https://blazarsystem.pe" target="_blank" rel="noopener">
+						Blazar System
+					</a>
+				</p>
+			</div>
+			<!-- SEPARADOR -->
+			<div class="blz-footer-divider"></div>
 
-			<div class="blz-footer-info">
+			<div class="blz-footer-info mb-5">
 
 				<!-- DESCRIPCIÓN -->
 
@@ -327,14 +331,8 @@
 
 					<p>
 						<strong>Enlaza2.pe</strong> es un lugar donde puedes <strong> publicar
-							y encontrar anuncios de todo tipo.</strong>
-					</p>
-
-					<p>
-						¿Buscas un servicio, quieres vender algo, comprar, alquilar
-						o estás ofreciendo tu trabajo?
-						<strong>Aquí puedes encontrar a alguien que busca justo lo
-							que tú tienes para ofrecer.</strong>
+							y encontrar anuncios de todo tipo: alquileres, servicios generales, empleos,
+							deliverys</strong>
 					</p>
 
 					<p>
@@ -342,9 +340,6 @@
 							que necesitas o publicar lo que quieres ofrecer de manera fácil
 							y rápida. </strong>
 
-					</p>
-					<p>
-						<strong>Enlaza2.pe: lo que buscas y lo que ofreces, en un solo lugar.</strong>
 					</p>
 				</div>
 
@@ -376,68 +371,11 @@
 					</ul>
 				</div>
 
-				<!-- CATEGORÍAS -->
-				<div class="blz-footer-column">
-					<h4>División de categorías</h4>
-
-					<ul>
-						<li>
-							<i class="bi bi-tools"></i>
-							Servicios generales
-						</li>
-
-						<li>
-							<i class="bi bi-basket-fill"></i>
-							Comercio de productos y alimentos
-						</li>
-
-						<li>
-							<i class="bi bi-heart-pulse-fill"></i>
-							Sector salud, bienestar y cuidado
-						</li>
-
-						<li>
-							<i class="bi bi-briefcase-fill"></i>
-							Sector técnico y profesional
-						</li>
-
-						<li>
-							<i class="bi bi-house-fill"></i>
-							Inmobiliaria y clasificados
-						</li>
-					</ul>
-				</div>
 
 			</div>
 
-			<!-- SEPARADOR -->
-			<div class="blz-footer-divider"></div>
 
-			<!-- PIE LEGAL -->
-			<div class="blz-footer-bottom">
 
-				<div class="blz-footer-links">
-					<a href="javascript:void(0)" onclick="abrirTerms()">
-						Términos y Condiciones
-					</a>
-				</div>
-
-				<p>
-					©
-					<script>document.write(new Date().getFullYear());</script>
-					<strong>enlaza2.pe</strong>
-					<span class="blz-footer-separator">|</span>
-					Plataforma de servicios y clasificados locales en Carmen de la Legua
-				</p>
-
-				<p class="blz-footer-developed">
-					Un proyecto desarrollado por
-					<a href="https://blazarsystem.pe" target="_blank" rel="noopener">
-						Blazar System
-					</a>
-				</p>
-
-			</div>
 
 		</div>
 	</footer>
@@ -475,8 +413,10 @@
 	</div>
 
 
+	<script>
 
-	<script src="js/enlaza2-preloader.js"></script>
+	</script>
+
 	<script src="js/bootstrap.bundle.min.js"></script>
 	<script src="js/tiny-slider.js"></script>
 
@@ -489,20 +429,13 @@
 	<script src="js/counter.js"></script>
 	<script src="js/custom.js"></script>
 
-	<script src="js/enlaza2-costants.js"></script>
-
-	<script src="js/enlaza2-typing-categorias.js"></script>
 
 	<script src="js/enlaza2-renderAnuncios.js"></script>
-	<script src="js/enlaza2-modal.js"></script>
-	<script src="js/enlaza2-visor.js"></script>
-	<script src="js/enlaza2-blz-terms.js"></script>
-	<script src="js/enlaza2-formulario.js"></script>
-	<!--<script src="js/enlaza2-AnuncioViaBusqueda.js"></script>-->
+	<script src="js/enlaza2-visorAnuncios.js"></script>
+	<script src="js/indicacionesimportantes/enlaza2-blz-terms.js"></script>
+	<script src="js/formulario/enlaza2-formulario.js"></script>
 	<script src="js/enlaza2-AnunciosViaBanners.js"></script>
-	<script src="js/enlaza2-compartir.js"></script>
 	<script src="js/enlaza2-arq-estados.js"></script>
-	<script src="js/enlaza2-galeriahero.js"></script>
 
 	<script src="https://cdn.jsdelivr.net/npm/minisearch@7.2.0/dist/umd/index.min.js"></script>
 	<script src="js/enlaza2-buscador.js"></script>

@@ -1,0 +1,92 @@
+[
+    {
+        "idanuncio": 13,
+        "subcategory": "Soldador",
+        "keywords": "soldador construccion metalica metal acero rejas puertas escaleras estructuras soldadura cesar paulo",
+        "web": "https://slaverfrancois.github.io/blazarsystem-enlaza2pe-users/cesar-paulo-construcciones-metalicas.html",
+        "featured": false,
+        "titulo": "<strong style='color: #007bff;'>Construcciones Metálicas — César Paulo</strong>",
+        "descripcion": "Fabricación de rejas, puertas metálicas, escaleras y estructuras de acero con soldadura de calidad. <strong style='color:red;'>Precio a consultar</strong> — Contacto: <a href='tel:+549938887289'>+54 9 938 887 289</a>",
+        "imagenes": [
+            "img/id13/foto1.jpg"
+        ],
+        "tipoanuncio": 1,
+        "creado": "17/08/2026",
+        "fvencimiento": "27/08/2026"
+    },
+    {
+        "idanuncio": 14,
+        "subcategory": "Profesor",
+        "keywords": "profesor ingles clases ingles ensenanza idioma conversacion basico avanzado niños adultos adrian rios",
+        "web": "https://slaverfrancois.github.io/blazarsystem-enlaza2pe-users/adrian-rios-profesor-ingles.html",
+        "featured": false,
+        "titulo": "<strong style='color: #007bff;'>Profesor de Inglés — Adrián Ríos</strong>",
+        "descripcion": "Clases de inglés para niños y adultos, todos los niveles. Conversación, gramática y preparación para exámenes. <strong style='color:red;'>Precio a consultar</strong> — Contacto: <a href='tel:+549934805470'>+54 9 934 805 470</a>",
+        "imagenes": [
+            "img/id14/foto1.jpg"
+        ],
+        "tipoanuncio": 1,
+        "creado": "17/08/2026",
+        "fvencimiento": "27/08/2026"
+    },
+    {
+        "idanuncio": 15,
+        "subcategory": "Profesor",
+        "keywords": "profesora primaria clases ensenanza ninos educacion basica matematica lenguaje refuerzo escolar veronica moreno",
+        "web": "https://slaverfrancois.github.io/blazarsystem-enlaza2pe-users/veronica-moreno-profesora-primaria.html",
+        "featured": false,
+        "titulo": "<strong style='color: #007bff;'>Profesora de Primaria — Verónica Moreno</strong>",
+        "descripcion": "Clases y refuerzo escolar para nivel primaria en matemática, comunicación y todas las áreas. <strong style='color:red;'>Precio a consultar</strong> — Contacto: <a href='tel:+549956666887'>+54 9 956 666 887</a>",
+        "imagenes": [
+            "img/id15/foto1.jpg"
+        ],
+        "tipoanuncio": 1,
+        "creado": "17/08/2026",
+        "fvencimiento": "27/08/2026"
+    },
+    {
+        "idanuncio": 16,
+        "subcategory": "Profesor",
+        "keywords": "profesora secundaria clases refuerzo escolar adolescentes matematica ciencias historia comunicacion flor marina",
+        "web": "https://slaverfrancois.github.io/blazarsystem-enlaza2pe-users/flor-marina-profesora-secundaria.html",
+        "featured": false,
+        "titulo": "<strong style='color: #007bff;'>Profesora de Secundaria — Flor Marina</strong>",
+        "descripcion": "Clases de refuerzo escolar para nivel secundaria en todas las áreas curriculares. <strong style='color:red;'>Precio a consultar</strong> — Contacto: <a href='tel:+549902512528'>+54 9 902 512 528</a>",
+        "imagenes": [
+            "img/id16/foto1.jpg"
+        ],
+        "tipoanuncio": 1,
+        "creado": "17/08/2026",
+        "fvencimiento": "27/08/2026"
+    },
+    {
+        "idanuncio": 17,
+        "subcategory": "Taxista",
+        "keywords": "taxi taxista transporte servicio auto privado traslado aeropuerto samir coloma",
+        "web": "https://slaverfrancois.github.io/blazarsystem-enlaza2pe-users/samir-coloma-taxista.html",
+        "featured": false,
+        "titulo": "<strong style='color: #007bff;'>Taxista Profesional — Samir Coloma</strong>",
+        "descripcion": "Servicio de taxi profesional, traslados al aeropuerto, distritos y provincias. Puntual y seguro. <strong style='color:red;'>Precio a consultar</strong> — Contacto: <a href='tel:+549959043525'>+54 9 959 043 525</a>",
+        "imagenes": [
+            "img/id17/foto1.jpg"
+        ],
+        "tipoanuncio": 1,
+        "creado": "17/08/2026",
+        "fvencimiento": "27/08/2026"
+    },
+    {
+        "idanuncio": 18,
+        "subcategory": "Contador",
+        "keywords": "contadora contabilidad contable tributaria impuestos sunat declaracion planillas balance financiero empresa noelia moreno",
+        "web": "https://slaverfrancois.github.io/blazarsystem-enlaza2pe-users/noelia-moreno-contadora.html",
+        "featured": false,
+        "titulo": "<strong style='color: #007bff;'>Contadora — Noelia Moreno</strong>",
+        "descripcion": "Servicios de contabilidad, declaraciones tributarias SUNAT, planillas y asesoría financiera para empresas y personas naturales. <strong style='color:red;'>Precio a consultar</strong> — Contacto: <a href='tel:+549959153507'>+54 9 959 153 507</a>",
+        "imagenes": [
+            "img/id18/foto1.jpg"
+        ],
+        "tipoanuncio": 1,
+        "creado": "17/08/2026",
+        "fvencimiento": "27/08/2026"
+    }
+]

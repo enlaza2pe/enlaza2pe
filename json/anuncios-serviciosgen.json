@@ -1,0 +1,106 @@
+[ {
+    "idanuncio": 6,
+    "subcategory": "Restaurante",
+    "keywords": "chifa comida china arroz chaufa tallarin saltado wonton sopa dim sum delivery restaurante long chen",
+    "web": "https://slaverfrancois.github.io/blazarsystem-enlaza2pe-users/long-chen-chifa.html",
+    "featured": false,
+    "titulo": "<strong style='color: #007bff;'>Chifa Long Chen</strong>",
+    "descripcion": "Auténtica comida chifa: arroz chaufa, tallarín saltado, wonton y más. Delivery disponible. <strong style='color:red;'>Precio a consultar</strong> — Contacto: <a href='tel:+549964378096'>+54 9 964 378 096</a>",
+    "imagenes": [
+      "img/id6/foto1.jpg"
+    ],
+    "tipoanuncio": 1,
+    "creado": "17/08/2026",
+    "fvencimiento": "27/08/2026"
+  },
+  {
+    "idanuncio": 7,
+    "subcategory": "Mudanza",
+    "keywords": "mudanza flete transporte carga muebles embalaje traslado camion lucas bravo",
+    "web": "https://slaverfrancois.github.io/blazarsystem-enlaza2pe-users/lucas-bravo-mudanza.html",
+    "featured": false,
+    "titulo": "<strong style='color: #007bff;'>Mudanzas Lucas Bravo</strong>",
+    "descripcion": "Servicio de mudanza, flete y traslado de muebles con embalaje incluido. Atención en Callao y provincias. <strong style='color:red;'>Precio a consultar</strong> — Contacto: <a href='tel:+549922987835'>+54 9 922 987 835</a>",
+    "imagenes": [
+      "img/id7/foto1.jpg"
+    ],
+    "tipoanuncio": 1,
+    "creado": "17/08/2026",
+    "fvencimiento": "27/08/2026"
+  },
+  {
+    "idanuncio": 8,
+    "subcategory": "Plantas",
+    "keywords": "plantas flores jardineria vivero macetas ornamentales interior exterior alan coloma",
+    "web": "https://slaverfrancois.github.io/blazarsystem-enlaza2pe-users/alan-coloma-plantas.html",
+    "featured": false,
+    "titulo": "<strong style='color: #007bff;'>Plantas — Alan Coloma</strong>",
+    "descripcion": "Venta de plantas ornamentales, flores y macetas para interiores y exteriores. <strong style='color:red;'>Precio a consultar</strong> — Contacto: <a href='tel:+549922462274'>+54 9 922 462 274</a>",
+    "imagenes": [
+      "img/id8/foto1.jpg"
+    ],
+    "tipoanuncio": 1,
+    "creado": "17/08/2026",
+    "fvencimiento": "27/08/2026"
+  },
+  {
+    "idanuncio": 9,
+    "subcategory": "Psicólogo",
+    "keywords": "consejero parejas terapia relaciones matrimonio convivencia conflictos comunicacion amor jonas coloma",
+    "web": "https://slaverfrancois.github.io/blazarsystem-enlaza2pe-users/jonas-coloma-consejero-parejas.html",
+    "featured": false,
+    "titulo": "<strong style='color: #007bff;'>Consejero de Parejas — Jonás Coloma</strong>",
+    "descripcion": "Consejería profesional para parejas, manejo de conflictos, comunicación y fortalecimiento de relaciones. <strong style='color:red;'>Precio a consultar</strong> — Contacto: <a href='tel:+549930533980'>+54 9 930 533 980</a>",
+    "imagenes": [
+      "img/id9/foto1.jpg"
+    ],
+    "tipoanuncio": 1,
+    "creado": "17/08/2026",
+    "fvencimiento": "27/08/2026"
+  },
+  {
+    "idanuncio": 10,
+    "subcategory": "Juguetes",
+    "keywords": "pintando numeros arte oleo manualidades cuadros pintura artesania creativo joel oleo arte",
+    "web": "https://slaverfrancois.github.io/blazarsystem-enlaza2pe-users/joel-oseo-arte-pintando-numeros.html",
+    "featured": false,
+    "titulo": "<strong style='color: #007bff;'>Pintando con Números — Óleo y Arte</strong>",
+    "descripcion": "Kits y clases de pintando con números, arte decorativo y manualidades creativas. <strong style='color:red;'>Precio a consultar</strong> — Contacto: <a href='tel:+549990020497'>+54 9 990 020 497</a>",
+    "imagenes": [
+      "img/id10/foto1.jpg"
+    ],
+    "tipoanuncio": 1,
+    "creado": "17/08/2026",
+    "fvencimiento": "27/08/2026"
+  },
+  {
+    "idanuncio": 11,
+    "subcategory": "Drywalleros",
+    "keywords": "drywall construccion tabiqueria cielo raso divisiones interiores yeso instalacion dariel villacorta",
+    "web": "https://slaverfrancois.github.io/blazarsystem-enlaza2pe-users/dariel-villacorta-drywall.html",
+    "featured": false,
+    "titulo": "<strong style='color: #007bff;'>Construcción en Drywall — Dariel Villacorta</strong>",
+    "descripcion": "Instalación de tabiquería, cielos rasos y divisiones interiores en drywall. Trabajo garantizado. <strong style='color:red;'>Precio a consultar</strong> — Contacto: <a href='tel:+549994776302'>+54 9 994 776 302</a>",
+    "imagenes": [
+      "img/id11/foto1.jpg"
+    ],
+    "tipoanuncio": 1,
+    "creado": "17/08/2026",
+    "fvencimiento": "27/08/2026"
+  },
+  {
+    "idanuncio": 12,
+    "subcategory": "Carpintero",
+    "keywords": "carpintero carpinteria muebles madera puertas ventanas closet cocina instalacion gabriel barrera",
+    "web": "https://slaverfrancois.github.io/blazarsystem-enlaza2pe-users/gabriel-barrera-carpintero.html",
+    "featured": false,
+    "titulo": "<strong style='color: #007bff;'>Carpintero — Gabriel Barrera</strong>",
+    "descripcion": "Fabricación e instalación de muebles, puertas, ventanas y closets a medida en madera. <strong style='color:red;'>Precio a consultar</strong> — Contacto: <a href='tel:+549970685231'>+54 9 970 685 231</a>",
+    "imagenes": [
+      "img/id12/foto1.jpg"
+    ],
+    "tipoanuncio": 1,
+    "creado": "17/08/2026",
+    "fvencimiento": "27/08/2026"
+  }
+]

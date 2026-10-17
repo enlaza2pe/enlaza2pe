@@ -53,6 +53,12 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     }
 
+            /*
+            .replaceAll("ñ", "n")
+            .replaceAll(" ", "-")
+            .replaceAll("/", "");
+            */
+
     // =====================================================
     // NORMALIZAR SINGULAR / PLURAL
     // =====================================================
@@ -130,11 +136,11 @@ document.addEventListener("DOMContentLoaded", async () => {
     try {
 
         const respuesta =
-            await fetch("json/anuncios.json");
+            await fetch("json/anuncios-promociones.json");
 
         if (!respuesta.ok) {
             throw new Error(
-                "No se pudo cargar anuncios.json"
+                "No se pudo cargar anuncios-promociones.json"
             );
         }
 
@@ -143,7 +149,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     } catch (error) {
 
         console.error(
-            "Error cargando anuncios.json:",
+            "Error cargando anuncios-promociones.json:",
             error
         );
 
@@ -199,9 +205,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         ],
 
         processTerm: term => {
-
             return normalizarTexto(term);
-
         }
 
     });
@@ -214,8 +218,6 @@ document.addEventListener("DOMContentLoaded", async () => {
         "anuncios indexados."
     );
 */
-
-
 
     // =====================================================
     // BUSQUEDA EN TIEMPO REAL
@@ -233,8 +235,7 @@ document.addEventListener("DOMContentLoaded", async () => {
                  clearButton.style.display =
                      searchInput.value.trim()
                          ? "flex"
-                         : "none";
- 
+                         : "none"; 
              }
  
              clearTimeout(
@@ -242,8 +243,7 @@ document.addEventListener("DOMContentLoaded", async () => {
              );
  
              temporizadorBusqueda =
-                 setTimeout(() => {
- 
+                 setTimeout(() => { 
                      ejecutarBusqueda(
                          searchInput.value
                      );
@@ -902,18 +902,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     // CARD
     // =====================================================
 
-    /* function crearCardBusqueda(
-         anuncio,
-         palabrasCoincidentes
-     ) {
- 
-         return diseño1(
-             anuncio,
-             palabrasCoincidentes
-         );
- 
-     }*/
-
     function crearCardBusqueda(
         anuncio,
         palabrasCoincidentes
@@ -1242,14 +1230,14 @@ function actualizarAlturaNav() {
         return;
     }
 
-    const altura =
+   /* const altura =
         nav.offsetHeight-15;
 
     document.documentElement.style
         .setProperty(
             "--nav-height",
             `${altura}px`
-        );
+        );*/
 }
 
 

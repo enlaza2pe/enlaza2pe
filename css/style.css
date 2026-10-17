@@ -2326,12 +2326,12 @@ textarea.form-control {
 
 .site-nav {
   position: fixed;
-  top: 0;
+  bottom: 0;
   left: 0;
   width: 100%;
   z-index: 1000;
   background: transparent;
-  backdrop-filter: blur(44px);
+  backdrop-filter: blur(15px);
   border-bottom: 1px solid rgba(0, 0, 0, .05);
   padding: 5px 0px 5px;
 }
@@ -4377,27 +4377,6 @@ textarea {
   color: #0f172a;
 }
 
-
-#titulo-resultados {
-  position: relative;
-  padding-bottom: 8px;
-  font-size: 22px;
-  font-weight: 700;
-  color: #0f172a;
-  /* oscuro fuerte */
-  margin-bottom: 20px;
-}
-
-#titulo-resultados::after {
-  content: "";
-  width: 70px;
-  height: 3px;
-  background: #2563eb;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-
 /*invitacion a publicar*/
 
 /* CONTENEDOR */
@@ -4408,13 +4387,7 @@ textarea {
   padding: 25px;
   animation: blzFadeIn 0.6s ease;
 }
-
-/* TÍTULO */
-.blz-cta-title {
-  font-weight: 700;
-  color: #9a3412;
-  margin-bottom: 10px;
-}
+ 
 
 /* TEXTO */
 .blz-cta-text {
@@ -4830,11 +4803,11 @@ body {
   transition: all 0.25s ease;
 }
 
-/* icono */
+/* icono *//*
 .blz-cta-icon {
   font-size: 20px;
   animation: pulseSoft 2.5s infinite;
-}
+}*/
 
 @keyframes pulseSoft {
   0% {
@@ -4854,10 +4827,11 @@ body {
 }
 
 /* contenido */
+/*
 .blz-cta-content {
   flex: 1;
   text-align: left;
-}
+}*/
 
 .blz-cta-inline-title {
   font-weight: 600;
@@ -5361,6 +5335,7 @@ CONTENEDOR ACCIONES
   width: 100%;
   display: flex;
   gap: 10px;
+  justify-content: center;
 }
 
 .blz-nav-logo {
@@ -5382,7 +5357,7 @@ BOTONES BASE
   justify-content: center;
   gap: 8px;
   padding: 0 10px;
-  font-size: 13px;
+  font-size: 19px;
   font-weight: 700;
   cursor: pointer;
   text-decoration: none;
@@ -5517,11 +5492,11 @@ DESKTOP
     height: 42px;
   }
 
-  .blz-nav-buttons {
-    width: auto;
+  .blz-nav-buttons { 
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+   /* justify-content: flex-end;*/
+    justify-content: center;
     gap: 16px;
 
   }
@@ -6353,7 +6328,7 @@ NO RESULTS
 
   .hero-logo {
     justify-content: center;
-    margin-top: 15px;
+    margin-top: 30px;
     margin-bottom: 5px;
   }
 
