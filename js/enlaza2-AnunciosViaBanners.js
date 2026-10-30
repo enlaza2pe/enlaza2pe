@@ -61,7 +61,7 @@ Promise.all([
     return r.json();
   }),
 
-  fetch("json/anuncios-Empleos.json").then(r => {
+  fetch("json/anuncios-empleos.json").then(r => {
     if (!r.ok) throw new Error("Error cargando Empleos");
     return r.json();
   }),
