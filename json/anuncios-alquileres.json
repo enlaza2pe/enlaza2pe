@@ -1,19 +1,18 @@
 [
   {
-    "idanuncio": 1,
-    "subcategory": "Psicología",
-    "keywords": "psicologa psicologia terapeuta terapia salud mental ansiedad depresion emocion bienestar consulta sesion jimena bazan",
-    "_web": "https://slaverfrancois.github.io/blazarsystem-enlaza2pe-users/jimena-bazan-psicologia.html",
-    "web": "https://slaverfrancois.github.io/blazarsystem-enlaza2pe-users/marta-lopez-45672134.html",
-    "featured": false,
-    "titulo": "<strong style='color: #007bff;'>Psicóloga Jimena Bazán</strong>",
-    "descripcion": "Atención psicológica profesional, sesiones individuales para ansiedad, depresión y bienestar emocional. <strong style='color:red;'>Precio a consultar</strong> — Contacto: <a href='tel:+549969313166'>+54 9 969 313 166</a>",
+    "idanuncio": 1, 
+    "subcategory": "Depa",
+    "keywords": "alquiler departamento depa cuartos habitaciones vivienda hogar renta inmobiliaria estrenar amoblado",
+    "boton": "VER PÁGINA",
+    "web": "https://github.io",
+    "featured": true,
+    "titulo": "<strong style='color: #2e7550;'>Alquiler de Departamento Estreno</strong>",
+    "descripcion": "Hermoso departamento de 2 habitaciones, sala-comedor espaciosa, cocina equipada y excelente iluminación natural. <strong style='color:#4157d2;'>S/ 1,200 Mensual</strong> — Contacto para visitas: <a href='tel:+51900000000'>+51 900 000 000</a>",
     "imagenes": [
-      "img/id1/foto1.jpg",
-      "img/id1/foto2.jpg"
+      "img/alquileres/id1-a.jpg"
     ],
     "tipoanuncio": 1,
-    "creado": "17/08/2026",
-    "fvencimiento": "27/08/2026"
+    "creado": "21/10/2026",
+    "fvencimiento": "21/11/2026"
   }
 ]

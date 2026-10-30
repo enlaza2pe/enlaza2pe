@@ -40,6 +40,11 @@ const templatesBanner = {
   strawberry: {
     clase: "cta-banner--raspberry",
     particulas: particulasJoin()
+  },
+
+  vote: {
+    clase: "cta-banner--vote",
+    particulas: particulasVote()
   }
 
 };
@@ -56,8 +61,8 @@ Promise.all([
     return r.json();
   }),
 
-  fetch("json/anuncios-empleos.json").then(r => {
-    if (!r.ok) throw new Error("Error cargando empleos");
+  fetch("json/anuncios-Empleos.json").then(r => {
+    if (!r.ok) throw new Error("Error cargando Empleos");
     return r.json();
   }),
 
@@ -101,7 +106,7 @@ Promise.all([
       "Envíos a domicilio": anunciosDelivery,
       "Empleos": anunciosEmpleos,
       "Servicios Generales": anunciosServicios,
-      "Promos": anunciosPromociones
+      "Promos de tiendas": anunciosPromociones
     };
 
     renderBanners();
@@ -127,10 +132,10 @@ function crearBanner(grupo, esPrimero) {
     );
   }
 
-    // Si es el primer elemento renderizado de la lista, le inyectamos la clase 'is-active' de entrada
+  // Si es el primer elemento renderizado de la lista, le inyectamos la clase 'is-active' de entrada
   const claseActiva = esPrimero ? "is-active" : "";
 
-   return `
+  return `
     <a class="cta-banner ${tpl ? tpl.clase : ""} ${claseActiva}" 
        data-categoria="${grupo.categoria}" 
        aria-pressed="${esPrimero ? "true" : "false"}" 
@@ -151,180 +156,191 @@ function crearBanner(grupo, esPrimero) {
 function renderBanners() {
   const contenedor = document.getElementById("contenedor-banners");
   if (!contenedor) return;
+
+  // Renderizado limpio identificando el primer elemento activo
   contenedor.innerHTML = categorias
-    .map(grupo => crearBanner(grupo))
+    .map((grupo, index) => crearBanner(grupo, index === 0))
     .join("");
-  console.log("Navegación renderizada:", contenedor.innerHTML);
+
+  // ESCUCHADOR DE EVENTOS: Llama a cargarCategoria al hacer clic en un banner
+  contenedor.querySelectorAll(".cta-banner").forEach(btn => {
+    btn.addEventListener("click", function(e) {
+      e.preventDefault(); // Evita que el '#' recargue o mueva la pantalla al tope
+      const cat = this.dataset.categoria;
+      cargarCategoria(cat);
+    });
+  });
+
+  // EFECTO DE REBOTE AUTOMÁTICO (HINT ANIMATION)
+  setTimeout(() => {
+    contenedor.scrollTo({ left: 350, behavior: "smooth" });
+    setTimeout(() => {
+      contenedor.scrollTo({ left: 0, behavior: "smooth" });
+      setTimeout(() => {
+        contenedor.scrollTo({ left: 350, behavior: "smooth" });
+        setTimeout(() => {
+          contenedor.scrollTo({ left: 0, behavior: "smooth" });
+        }, 500);
+      }, 700);
+    }, 700);
+  }, 1900);
 }
+
+
 
 /*   CLICK EN UNA CATEGORÍA */
 document.addEventListener("click", function (e) {
   const btn = e.target.closest("#contenedor-banners [data-categoria]");
   if (!btn) return;
   e.preventDefault();
-  
+
   const categoria = btn.dataset.categoria;
-  
+
   // Al hacer click de forma manual, pasa a cargarse con su diseño/clase compacta respectiva
-  if(typeof ejecutarConLoader === 'function') {
-      ejecutarConLoader(() => {
-        cargarCategoria(categoria, { scroll: true, compacto: true });
-      });
-  } else {
+  if (typeof ejecutarConLoader === 'function') {
+    ejecutarConLoader(() => {
       cargarCategoria(categoria, { scroll: true, compacto: true });
+    });
+  } else {
+    cargarCategoria(categoria, { scroll: true, compacto: true });
   }
 });
 
 /* CARGAR CATEGORIAS */
-function cargarCategoria(
-  categoria,
-  { scroll = true, compacto = true } = {}
-) {
-  const grupo = categorias.find(
-    x => x.categoria === categoria
-  );
-
+function cargarCategoria(categoria, { scroll = true, compacto = true } = {}) {
+  const grupo = categorias.find(x => x.categoria === categoria);
   if (!grupo) return;
 
-  /* Activar únicamente la categoría elegida */
-  document.querySelectorAll(
-    "#contenedor-banners [data-categoria]"
-  ).forEach(btn => {
+  document.querySelectorAll("#contenedor-banners [data-categoria]").forEach(btn => {
     const activo = btn.dataset.categoria === categoria;
     btn.classList.toggle("is-active", activo);
     btn.setAttribute("aria-pressed", String(activo));
   });
 
-  /* Desplazar la barra hasta la categoría elegida */
-  const botonActivo = document.querySelector(
-    "#contenedor-banners [data-categoria].is-active"
-  );
+  const botonActivo = document.querySelector("#contenedor-banners [data-categoria].is-active");
 
+  // AJUSTE UX: Desplaza el banner presionado hacia el centro visible del contenedor
   if (scroll && botonActivo) {
     botonActivo.scrollIntoView({
       behavior: "smooth",
-      block: "nearest",
-      inline: "nearest"
+      block: "nearest", // No altera el scroll vertical de la página entera
+      inline: "center"  // <--- CLAVE: Centra el banner y revela los bordes de los vecinos
     });
   }
 
-  /* Anuncios del JSON correspondiente */
   anunciosCategoriaActual = window.anunciosPorCategoria[categoria] || [];
-
   renderBadges(grupo);
   renderAnuncios(anunciosCategoriaActual);
-
-  document.getElementById("titulo-resultados").textContent = "Anuncios de " + categoria;
+  
+  document.getElementById("titulo-resultados").textContent = "Resultados para " + categoria;
   document.getElementById("resultados-bar").style.display = "block";
   document.getElementById("contenedor-banners").classList.toggle("modo-compacto", compacto);
+}
 
-  /* Solo desplazarse a resultados cuando el usuario elige *//*
-  if (scroll) {
-    document.getElementById("resultados-bar")
-      .scrollIntoView({
-        behavior: "smooth",
-        block: "start"
-      });
-  }*/
-} 
-
-/* RENDER BADGES CON RADIO BUTTON */ 
 function renderBadges(grupo) {
   const contenedor = document.getElementById("subcategorias-container");
   if (!contenedor) return;
+
+  // 1. LIMPIEZA Y CONFIGURACIÓN DEL CONTENEDOR (UNA FILA CONTINUA)
   contenedor.innerHTML = "";
+  contenedor.style.display = "flex";
+  contenedor.style.gap = "6px";
+  contenedor.style.width = "100%";
+  contenedor.style.maxWidth = "100%";
+  contenedor.style.boxSizing = "border-box";
+  contenedor.style.overflowX = "auto";
+  contenedor.style.webkitOverflowScrolling = "touch";
 
   const subcategorias = [
     "Todos",
     ...grupo.subcategory.filter(sub => sub.toLowerCase() !== "todos")
   ];
 
-  // Mapeo rápido basado en el template para obtener el color de contorno ideal
   const coloresTemplate = {
-    refer: "#4157d2",      // Azul/Violeta
-    diwali: "#9A2E8F",     // Púrpura/Magenta
-    candy: "#FF6FAE",      // Rosa/Naranja
-    festival: "#A767D9",   // Violeta a Rosa
-    practice: "#2F4A52",   // Teal oscuro
-    join: "#2e7550",       // Verde
-    strawberry: "#E61B56"  // Frambuesa
+    refer: "#4157d2", diwali: "#9A2E8F", candy: "#FF6FAE",
+    festival: "#A767D9", practice: "#2F4A52", join: "#2e7550", strawberry: "#E61B56", vote: "#B88200"
   };
-
-  // Obtenemos el color según el template actual o usamos un color base por defecto (#7C6FE8)
   const colorBorde = coloresTemplate[grupo.template] || '#7C6FE8';
+  console.log(colorBorde);
 
-  subcategorias.forEach((sub, index) => {
+  // 2. RENDERIZADO EN UNA SOLA FILA DIRECTA (Eliminamos divisiones matemáticas)
+  contenedor.innerHTML = subcategorias.map((sub, index) => {
     const id = `blz-radio-${index}`;
-    
-    // Inyectamos el color exacto obtenido en el border-color inline
-    contenedor.innerHTML += `
+    return `
       <label class="blz-badge ${index === 0 ? 'activo' : ''}" 
              for="${id}" 
              data-subcategoria="${sub}" 
-             style="border: 1px solid ${colorBorde}; color: ${colorBorde}; display: inline-flex; align-items: center; padding: 4px 7px; margin: 2px; border-radius: 10px; cursor: pointer; font-weight:700;">
-        <input type="radio" id="${id}" name="blz-subcategoria" value="${sub}" ${index === 0 ? "checked" : ""} style="margin-right: 3px;">
-        <span class="blz-radio"></span>
+             style="--color-dinamico: ${colorBorde}; color: ${colorBorde}; display: inline-flex; align-items: center; padding: 4px 7px; border-radius: 10px; cursor: pointer; font-weight:700; white-space: nowrap; position: relative;">
+        <input type="radio" id="${id}" name="blz-subcategoria" value="${sub}" ${index === 0 ? "checked" : ""}>
+        <span class="blz-radio" style="border-color: ${colorBorde};"></span>
         <span class="blz-badge-text">${sub}</span>
       </label>
     `;
-  });
+  }).join("");
+
+  // 3. EFECTO DE REBOTE AUTOMÁTICO (HINT ANIMATION)
+  setTimeout(() => {
+    // Solo aplica el rebote si la fila realmente desborda el ancho de la pantalla móvil
+    if (contenedor.scrollWidth > contenedor.clientWidth) {
+      contenedor.scrollTo({ left: 400, behavior: "smooth" });
+
+      setTimeout(() => {
+        contenedor.scrollTo({ left: 0, behavior: "smooth" });
+      }, 190);
+    }
+  }, 1000);
 }
 
 
-/*  EVENT CLICK EN BADGE */
+/* EVENT CLICK EN BADGE */
 document.addEventListener("click", function (e) {
   const badge = e.target.closest("[data-subcategoria]");
+  console.log(badge);
   if (!badge) return;
-  
   const subcategoria = badge.dataset.subcategoria;
-
-  // Actualizar clase visual activa en las etiquetas
-  document.querySelectorAll("#subcategorias-container .blz-badge").forEach(lbl => {
-     lbl.classList.remove("activo");
-  });
+  document.querySelectorAll("#subcategorias-container .blz-badge").forEach(lbl => lbl.classList.remove("activo"));
   badge.classList.add("activo");
-
-  if(typeof ejecutarConLoader === 'function') {
-      ejecutarConLoader(() => {
-        filtrarSubcategoria(subcategoria);
-      });
+  if (typeof ejecutarConLoader === 'function') {
+    ejecutarConLoader(() => { filtrarSubcategoria(subcategoria); });
   } else {
-      filtrarSubcategoria(subcategoria);
+    filtrarSubcategoria(subcategoria);
   }
 });
 
-
 /* FILTRAR SUBCATEGORIA */
-
 function filtrarSubcategoria(subcategoria) {
-
+ console.log("aua: " +subcategoria);
   const filtrados = subcategoria === "Todos"
     ? anunciosCategoriaActual
     : anunciosCategoriaActual.filter(
       a => a.subcategory === subcategoria
     );
 
-  renderAnuncios(filtrados);
+  renderAnuncios(filtrados, subcategoria);
   document.getElementById("titulo-resultados").textContent = "Resultados para: " + subcategoria;
-  document.getElementById("resultados-bar").style.display = "block";
+    console.log("juasjuas");
 }
- 
+
 
 /* RENDER ANUNCIOS */
-function renderAnuncios(lista) {
-  const contenedorTipo1 = document.getElementById("tipo1");
-  if (!contenedorTipo1) return;
+function renderAnuncios(lista, subcategoria) {
   
+console.log(subcategoria);
+  const contenedorTipo1 = document.getElementById("tipo1");
+
+  if (!contenedorTipo1) return;
+
   contenedorTipo1.innerHTML = "";
   lista.forEach(a => {
     switch (a.tipoanuncio) {
       case 1:
-        contenedorTipo1.innerHTML += diseño1(a);
+        contenedorTipo1.innerHTML += diseño1(a, subcategoria);
         break;
     }
   });
 }
- 
+
+
 
 /* RENDER PARTICULAS de BANNERS  */
 function particulasRefer() {

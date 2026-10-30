@@ -5,6 +5,11 @@
   --font-display: 'Baloo 2', sans-serif;
 }
 
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 .banners-wrap{
     display:grid;
     grid-template-columns:
@@ -19,7 +24,7 @@
 
 .cta-banner {
   position: relative;
-  display: block;
+  /*display: block;*/
   overflow: hidden;
   border-radius: var(--radius);
   padding: 28px 28px;
@@ -28,6 +33,19 @@
   box-shadow: 0 10px 24px -8px rgba(0, 0, 0, 0.25);
   background-color: #ffffff;
   color: #A0A5A8;  
+    flex: 0 0 42%;
+     min-width: 140px; /* Evita que se encojan demasiado en pantallas muy pequeñas */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+/* Ajuste para pantallas medianas/grandes (Tablets en adelante) */
+@media (min-width: 600px) {
+  .cta-banner {
+    flex: 0 0 auto; /* En escritorio se desactiva el corte y se muestran normales */
+  }
 }
 
 .cta-banner.is-active {
@@ -205,8 +223,7 @@
 }   
  
 .resultados-bar{
-    margin:10px auto;
-    padding:10px 10px;
+    margin:10px auto; 
     background:#fff;
     border-radius:18px;
 }
@@ -269,10 +286,14 @@
 /* OCULTAR RADIO NATIVO */
 .blz-badge input[type="radio"] {
     position: absolute;
+    top: 0;
+    left: 0;
     opacity: 0;
     width: 1px;
     height: 1px;
+    pointer-events: none;
 }
+
 
 /* CÍRCULO DEL RADIO */
 .blz-radio {
@@ -335,7 +356,7 @@
 #titulo-resultados {
   position: relative;
   padding: 12px 11px 10px;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
   color: #0f172a; 
 }
@@ -388,6 +409,27 @@
 /* =========================================
    NAVEGACIÓN HORIZONTAL DE CATEGORÍAS
 ========================================= */
+/* Contenedor que alberga los banners/categorías */
+#contenedor-banners {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important; /* Fuerza a las categorías a mantenerse en una sola línea */
+  gap: 10px;
+  padding: 10px 15px;
+  overflow-x: auto !important; /* Permite el scroll manual */
+  scroll-behavior: smooth;
+  width: 100%;
+  box-sizing: border-box;
+  
+  /* Ocultar barra de scroll nativa */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+#contenedor-banners::-webkit-scrollbar {
+  display: none; /* Chrome, Safari y Opera */
+}
+
 
 #contenedor-banners.banners-wrap {
   display: flex;
@@ -402,9 +444,7 @@
   padding: 5px;
   margin: 0 auto;
 
-  background: #fff;
-  border: 1px solid #865eca;
-  border-radius: 20px;
+  background: #fff; 
 
   overflow-x: auto;
   overflow-y: hidden;
@@ -589,7 +629,7 @@
 
 /* ---------- BANNER 7: VOTE FOR YOUR GAME ---------- */
 #contenedor-banners .cta-banner--vote.is-active {
-  background: linear-gradient(105deg, #F0915A 0%, #E76E8B 55%, #DE5A9E 100%) !important;
+  background: linear-gradient(105deg, #D49B00 0%, #B88200 55%, #9C6A00 100%) !important;
 }
 
 /* ---------- BANNER 8: RASPBERRY ---------- */
@@ -634,6 +674,55 @@
     outline-offset: 2px;
   }
 
+
+/* Contenedor principal para posicionar las flechas */ 
+.blz-scroll-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 100%; /* Evita romper el layout horizontal en móviles */
+  overflow: hidden; /* Corta radicalmente el espacio en blanco fantasma */
+  box-sizing: border-box;
+}
+
+/* Contenedor optimizado en 2 filas exactas adaptables a la pantalla */
+#subcategorias-container {
+  display: grid;
+  /* Crea exactamente 2 filas de altura automática adaptada al badge */
+  grid-template-rows: repeat(2, auto);
+  /* Distribuye los elementos en columnas automáticas según su tamaño */
+  grid-auto-flow: column;
+  /* Permite que sigan avanzando a la derecha de forma fluida */
+  grid-auto-columns: max-content; 
+  
+  gap: 6px; 
+  width: 100%;
+  max-width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+  
+  /* Habilita el desplazamiento horizontal táctil nativo */
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  
+  /* Oculta barras de scroll en Firefox e IE */
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
+}
+
+/* Ocultar barra de scroll nativa en Chrome, Safari y Edge */
+#subcategorias-container::-webkit-scrollbar { 
+  display: none; 
+}
+
+/* Ocultar barra de scroll nativa en Firefox e IE */
+#subcategorias-container {
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
+}
+
+     
 /* =========================================
    MÓVILES NO TOCAR
 ========================================= */

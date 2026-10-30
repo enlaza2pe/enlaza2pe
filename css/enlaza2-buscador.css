@@ -128,34 +128,13 @@
 
 
 /* Badge flotante */
-
-/*
-.blz-subcategory-badge {
-    position: absolute;
-    top: 1rem;
-    left: 1rem;
-    z-index: 10;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.375rem;
-    padding: 0.35rem 0.75rem;
-    background-color: #d8ad3d;
-    color: #4f4430;
-    border-radius: 4px;
-    font-size: 0.75rem;
-    font-weight: 600;
-    line-height: 1;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
-    pointer-events: none;
-}*/
-
+ 
 .blz-subcategory-badge {
     position: absolute;
     top: 6px;
     left: 6px;
     z-index: 5;
-    padding: 3px 6px;
-    background-color: #d8ad3d;
+    padding: 3px 6px; 
     color: #ffffff;
     border-radius: 4px;
     font-size: 0.65rem;
