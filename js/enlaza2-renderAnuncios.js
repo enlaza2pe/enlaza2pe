@@ -43,11 +43,11 @@ function diseño1(a, categoria, palabrasCoincidentes = []) {
                     <!-- Zona Superior: Textos -->
                     <div class="blz-card-body-text">
                         <!-- TÍTULO: Aseguramos color oscuro y legible -->
-                        <h2 class="blz-card-title">
+                        <h1 class="blz-card-title">
                             <a href="javascript:void(0)" onclick="abrirVista('${a.web}')" >
                                 ${a.titulo ?? ""}
                             </a>
-                        </h2>
+                        </h1>
                         <!-- DESCRIPCIÓN -->
                         <p class="blz-card-description">
                             ${a.descripcion ?? ""}

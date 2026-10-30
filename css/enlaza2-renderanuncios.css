@@ -82,8 +82,7 @@
 .blz-card-title {
     font-size: 1.4rem !important;
     margin: 0 0 4px 0 !important;
-    line-height: 1.2 !important;
-    font-weight: 700 !important;
+    line-height: 1.2 !important; 
 }
 
 .blz-card-title a {
@@ -179,12 +178,12 @@
 
     /* Reducimos ligeramente el tamaño de la letra del título en celular */
     .blz-card-title {
-        font-size: 0.98rem !important;
+        font-size: 1.05rem !important;
     }
 
     /* Reducimos el tamaño de la descripción para que no empuje los botones */
     .blz-card-description {
-        font-size: 0.78rem !important;
+        font-size: 0.89rem !important;
         margin-bottom: 4px !important;
     }
 }

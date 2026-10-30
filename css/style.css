@@ -4486,25 +4486,27 @@ textarea {
 
 .blz-bottom-sheet {
   position: fixed;
-  bottom: -100%;
+  bottom: 0%;
   left: 0;
   width: 100%;
-  height: 90vh;
+  height: 85vh;
 
   background: #fff;
-  z-index: 9999;
+  z-index: 1000;
 
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
 
   box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.274);
 
-  transition: bottom 0.4s ease;
+  /* Se esconde completamente abajo */
+  transform: translateY(100%); 
+  transition: transform 0.3s ease;
 }
 
 /* ACTIVO */
 .blz-bottom-sheet.active {
-  bottom: 0;
+  transform: translateY(0); 
 }
 
 .blz-bottom-sheet iframe {
@@ -4544,7 +4546,7 @@ textarea {
   height: 100%;
 
   background: rgba(0, 0, 0, 0.4);
-  z-index: 9998;
+  z-index: 999;
 
   display: none;
 }
