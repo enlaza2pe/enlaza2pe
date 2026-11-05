@@ -13,7 +13,8 @@
     ],
     "tipoanuncio": 1,
     "creado": "17/08/2026",
-    "fvencimiento": "27/08/2026"
+    "fvencimiento": "27/08/2026",
+    "_origen_fecha_archivo": "poste 3/11/2026 evidencia_anuncio_001.jpg"
   },
   {
     "idanuncio": 6,
@@ -29,6 +30,7 @@
     ],
     "tipoanuncio": 1,
     "creado": "17/08/2026",
-    "fvencimiento": "27/08/2026"
+    "fvencimiento": "27/08/2026",
+    "_origen_fecha_archivo": "poste 3/11/2026 evidencia_anuncio_001.jpg"
   }
 ]

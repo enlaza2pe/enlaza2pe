@@ -114,14 +114,13 @@
 .blz-card-actions {
     display: flex !important;
     flex-direction: row !important;
-    gap: 15px !important;
+    gap: 5px !important;
     width: 100% !important;
     margin-top: auto; /* Anclado magnético al fondo */
 }
 
 /* Estilo unificado para los botones del listado */
 .btn-blz-action {
-    flex: 1; /* Hace que ambos botones midan exactamente lo mismo a lo ancho */
     padding: 6px 4px;
     font-size: 0.79rem;
     font-weight: 700;
@@ -129,6 +128,9 @@
     text-align: center;
     border: none;
     cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Botón Compartir: Sutil */
@@ -136,10 +138,16 @@
     background-color: #f1f5f9;
     color: #475569;
     border: 1px solid #e2e8f0;
+
+    flex: 0 0 auto; 
+    width: auto;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 /* Botón VER: Resaltado */
 .btn-blz-view {
+    flex: 1;
     background-color: #1e3a8afc;
     color: #ffffff;
 }

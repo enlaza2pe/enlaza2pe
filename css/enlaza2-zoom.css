@@ -1,0 +1,112 @@
+/* Posicionamiento del botón de Zoom sobre las imágenes de los anuncios */
+.blz-card-image-side {
+  position: relative;
+}
+.blz-zoom-overlay-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+.blz-zoom-overlay-btn:hover {
+  background: rgba(0, 0, 0, 0.8);
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+/* Estilos de la máscara oscura de fondo del Popup */
+.blz-modal-mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.85);
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.blz-modal-container {
+  position: relative;
+  max-width: 85vw;
+  max-height: 85vh;
+  background: #000;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.blz-modal-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.blz-modal-slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.blz-modal-img {
+  max-width: 85vw;
+  max-height: 85vh;
+  object-fit: contain;
+  display: none;
+}
+.blz-modal-img.activo {
+  display: block;
+}
+
+/* Botón de Cierre (X) */
+.blz-modal-close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  border: none;
+  font-size: 32px;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  line-height: 36px;
+  text-align: center;
+  cursor: pointer;
+  z-index: 101;
+  transition: background 0.3s;
+}
+.blz-modal-close-btn:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* Botones de navegación (Atrás/Adelante) si hay varias imágenes */
+.blz-modal-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  padding: 15px 10px;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 100;
+  border-radius: 4px;
+}
+.blz-modal-nav.prev { left: 10px; }
+.blz-modal-nav.next { right: 10px; }
+.blz-modal-nav:hover { background: rgba(255, 255, 255, 0.3); }
