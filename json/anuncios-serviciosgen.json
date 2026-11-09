@@ -1,82 +1,277 @@
 [
   {
-    "idanuncio": 7,
-    "subcategory": "Mudanza",
-    "keywords": "mudanza flete transporte carga muebles embalaje traslado camion lucas bravo",
-    "boton": "VER PÁGINA",
-    "web": "https://slaverfrancois.github.io/blazarsystem-enlaza2pe-users/lucas-bravo-mudanza.html",
-    "featured": false,
-    "titulo": "<strong style='color: #007bff;'>Mudanzas Lucas Bravo</strong>",
-    "descripcion": "Servicio de mudanza, flete y traslado de muebles con embalaje incluido. Atención en Callao y provincias. <strong style='color:red;'>Precio a consultar</strong> — Contacto: <a href='tel:+549922987835'>+54 9 922 987 835</a>",
-    "imagenes": [
+  "idanuncio": "a_1793915838_0011",
+  "subcategory": ["Electricista", "Gasfitero", "Albañil", "Pintor", "Soldador", "Drywall", "Cerrajero", "Enchapado de cerámicos", "Videovigilancia"],
+  "keywords": "servicios generales gasfiteria electricidad cerrajeria drywall albañileria mantenimiento pintura reparacion lavadora camaras seguridad soldadura",
+  "boton": "WHATSAPP",
+  "contacto": "960411710",
+  "ubicado_en": "CDLR",
+  "featured": true,
+  "titulo": "<strong style='color: #2980b9;'>Servicios Generales para su Hogar - Atención las 24 Horas</strong>",
+  "descripcion": "Revise nuestro catálogo de especialidades. Brindamos soluciones efectivas. Para mayor información escríbanos vía Whatsapp.",
+  "imagenes": [
+    "https://i.ibb.co/8LZbfT0N/image-191a0111.jpg"
+  ],
+  "tipoanuncio": 1,
+  "creado": "7/11/2026",
+  "fvencimiento": "7/12/2026",
+  "_evidencia_legal": "anuncio fisico afiche servicios generales hogar 07/11/2026 contacto_960411710.jpg"
+},
+
+{
+  "idanuncio": "a_1793915838_0017",
+  "subcategory": ["Electricista", "Pintor"],
+  "keywords": "servicios generales electricista pintor instalaciones electricas cortocircuito pintura acabados mantenimiento del hogar sr jose cdlr",
+  "boton": "WHATSAPP",
+  "contacto": "997773478",
+  "ubicado_en": "CDLR",
+  "featured": true,
+  "titulo": "<strong style='color: #c0392b;'>Servicios de Electricista y Pintor - Sr. José</strong>",
+  "descripcion": "Se ofrecen servicios profesionales a domicilio de Electricista y Pintor. Trabajos de calidad garantizada para el hogar o negocio.",
+  "imagenes": [
+    "https://i.ibb.co/v6wZs9vN/image-43f31514.jpg"
+  ],
+  "tipoanuncio": 1,
+  "creado": "7/11/2026",
+  "fvencimiento": "7/12/2026",
+  "_evidencia_legal": "anuncio fisico letrero a mano electricista pintor 07/11/2026 contacto_997773478.jpg"
+},
+
+
+
+
+  {
+  "idanuncio": "sg_1793913251_0001",
+  "subcategory": "Catering y Eventos",
+  "keywords": "catering eventos buffet organizacion fiestas bocaditos banquetes fina estampa",
+  "boton": "WHATSAPP",
+  "contacto": "960167638",
+  "ubicado_en": "CDL",
+  "featured": true,
+  "titulo": "<strong style='color: #2e7550;'>Catering y Organización de Eventos 'Fina Estampa Eventos'</strong>",
+  "descripcion": "Organizamos todo tipo de eventos. Para cotizaciones, consultas y ver nuestro trabajo visita: <a class='icon-facebook-square' style='font-size: 22px;' href='https://www.facebook.com/p/Fina-Estampa-Eventos-100051088967955/' target='_blank' rel='noopener noreferrer'></a>",
+  "imagenes": [
+    "https://i.ibb.co/RGjrTxDH/485055074-1213431947036426-1502793078766358456-n.jpg"
+  ],
+  "tipoanuncio": 1,
+  "creado": "5/11/2026",
+  "fvencimiento": "5/12/2026",
+  "_evidencia_legal": "Cartel Fina Estampa Eventos - WhatsApp 960167638"
+}
+,
+
+ 
+
+
+{
+  "idanuncio": "a_1793915838_0048",
+  "subcategory": "Mudanza",
+  "keywords": "servicio de carga mudanza fletes transporte camioneta chofer mudanzas transporte mercaderia cdlr",
+  "boton": "WHATSAPP",
+  "contacto": "986692012",
+  "ubicado_en": "CDLR",
+  "featured": true,
+  "titulo": "<strong style='color: #1a5694;'>Servicio de Carga y Mudanza</strong>",
+  "descripcion": "Servicio a domicilio y empresas. Puntualidad y seguridad en el transporte de tus pertenencias. Consultas por WhatsApp.",
+  "imagenes": [
+    "https://i.ibb.co/DfYVB6Hp/image-37d4e454.jpg"
+  ],
+  "tipoanuncio": 1,
+  "creado": "8/11/2026",
+  "fvencimiento": "8/12/2026",
+  "_evidencia_legal": "anuncio fisico letrero servicio de carga mudanza 08/11/2026 contacto_986692012.jpg"
+}
+,
+
+{
+  "idanuncio": "a_1793915838_0050",
+  "subcategory": "Técnico Reparaciones",
+  "keywords": "reparamos maquinas de coser a domicilio servicio tecnico reparacion compra venta repuestos cdlr",
+  "boton": "WHATSAPP",
+  "contacto": "952818217",
+  "ubicado_en": "CDLR",
+  "featured": true,
+  "titulo": "<strong style='color: #1a5694;'>Reparación de Máquinas de Coser a Domicilio</strong>",
+  "descripcion": "Ofrecemos servicio especializado de reparación de máquinas de coser a domicilio, compra-venta y repuestos generales.",
+  "imagenes": [
+    "https://i.ibb.co/0Ry9kZf9/image-f23c306f.jpg"
+  ],
+  "tipoanuncio": 1,
+  "creado": "8/11/2026",
+  "fvencimiento": "8/12/2026",
+  "_evidencia_legal": "anuncio fisico letrero blanco alargado maquinas de coser 08/11/2026 contacto_952818217.jpg"
+}
+,
+
+{
+  "idanuncio": "a_1793915838_0054",
+  "subcategory": "Gasfitero",
+  "keywords": "servicios generales gasfitero desatoramiento de desague baño cocina lavanderia mantenimiento limpieza tuberias cdlr",
+  "boton": "WHATSAPP",
+  "contacto": "964412684",
+  "ubicado_en": "CDLR",
+  "featured": true,
+  "titulo": "<strong style='color: #c0392b;'>Desatoramiento de Desagüe, Baño, Cocina y Lavandería</strong>",
+  "descripcion": "Servicios técnicos especializados de desatoramiento y limpieza. 997092388.",
+  "imagenes": [
+    "https://i.ibb.co/MyVXJkZ1/image-496d725d.jpg"
+  ],
+  "tipoanuncio": 1,
+  "creado": "8/11/2026",
+  "fvencimiento": "8/12/2026",
+  "_evidencia_legal": "anuncio fisico cartel desatoramiento desague lavanderia 08/11/2026 contacto_997092388.jpg"
+},
+
+
+{
+  "idanuncio": "a_1793915838_0060",
+  "subcategory": ["Pintor", "Gasfitero", "Albañil", "Electricista", "Drywall","Limpieza cisterna/tanque","Instalacion Rack", "Desagüe-Rejilla-Sumidero", "Sanitario", "Techos y Paredes", "Enchapado de cerámicos"],
+  "keywords": "servicios generales pintor gasfitero albañil electricista drywall limpieza cisterna tanque elevado instalacion puertas chapas racks griferias sumideros sanitarios filtraciones techos paredes desatoro tuberias bombas de agua instalaciones electricas mayolicas milagros miguel cdlr",
+  "boton": "WHATSAPP",
+  "contacto": "982397174",
+  "ubicado_en": "CDLR",
+  "featured": true,
+  "titulo": "<strong style='color: #c0392b;'>Servicios Generales - Especialistas Sra. Milagros y/o Sr. Miguel</strong>",
+  "descripcion": "Lea nuestra cartilla de todas nuestras especialidades en la imagen. Contáctenos por whatsapp",
+  "imagenes": [
+    "https://i.ibb.co/5Xd5zjRX/image-e63366b1.jpg"
+  ],
+  "tipoanuncio": 1,
+  "creado": "8/11/2026",
+  "fvencimiento": "8/12/2026",
+  "_evidencia_legal": "anuncio fisico letrero dividido servicios generales milagros miguel 08/11/2026 contacto_982397147.jpg"
+}
+,
+
+
+{
+  "idanuncio": "a_1793915838_0062",
+  "subcategory": ["Soldador", "Puertas metálicas", "Técnico Reparaciones"],
+  "keywords": "servicios generales soldador soldadura fabricacion reparacion puertas metalicas enrollables manuales electricas ivan neira cdlr 24 horas",
+  "boton": "WHATSAPP",
+  "contacto": "992219415",
+  "ubicado_en": "CDLR",
+  "featured": true,
+  "titulo": "<strong style='color: #1a5694;'>Fabricación y Reparación de Puertas metálicas enrollables manuales y eléctricas - Técnico Ivan Neira</strong>",
+  "descripcion": "Soldadura en general con atención inmediata las 24 horas, inclusive domingos y feriados. Tlf auxiliar: 997412442.",
+  "imagenes": [
+    "https://i.ibb.co/WvvNVgCp/image-176f9c69.jpg"
+  ],
+  "tipoanuncio": 1,
+  "creado": "8/11/2026",
+  "fvencimiento": "8/12/2026",
+  "_evidencia_legal": "anuncio fisico letrero tecnico ivan neira 08/11/2026 contacto_992219415.jpg"
+}
+,
+
+{
+  "idanuncio": "a_1793915838_0063",
+  "subcategory": ["Soldador", "Puertas metálicas", "Técnico Reparaciones"],
+  "keywords": "servicios generales soldador soldadura rejas de seguridad ventanas puertas cercos estructuras metalicas wuilver vargas cdlr",
+  "boton": "WHATSAPP",
+  "contacto": "998503848",
+  "ubicado_en": "CDLR",
+  "featured": true,
+  "titulo": "<strong style='color: #c0392b;'>Fabricación y Reparación de puertas metálicas enrollables, Ventanas, Rejas y Cercos - Técnico Wuilver Vargas</strong>",
+  "descripcion": "Soldadura general. Atención 24 horas, domingos y feriados. Trabajos en todo Lima-Callao. Tlf auxiliar: 918035811.",
+  "imagenes": [
+    "https://i.ibb.co/WvvNVgCp/image-176f9c69.jpg"
+  ],
+  "tipoanuncio": 1,
+  "creado": "8/11/2026",
+  "fvencimiento": "8/12/2026",
+  "_evidencia_legal": "anuncio fisico volante tecnico wuilver vargas 08/11/2026 contacto_998503848.jpg"
+}
+,
+
+
+{
+  "idanuncio": "a_1793915838_0064",
+  "subcategory": ["Gasfitero", "Albañil", "Pintor", "Electricista", "Demoledor", "Remodelación"],
+  "keywords": "servicios generales gasfitero albañil pintor electricista fuga de agua tarrajeos demoliciones pintura ampliacion remodelaciones encofrado techos columnas enchapado ceramico porcelanato maestro alfredo cdlr",
+  "boton": "WHATSAPP",
+  "contacto": "977374111",
+  "ubicado_en": "CDLR",
+  "featured": true,
+  "titulo": "<strong style='color: #2c3e50;'>Servicios de Albañilería, Demolición, Pintado, Enchapados y Gasfitería - Maestro Alfredo</strong>",
+  "descripcion": "Además de trabajos de Electricidad, Ampliación/Remodelación, Encofrado Techos/Columnas. 2° TLF: 916187013.",
+  "imagenes": [
+    "https://i.ibb.co/9kYfX7DK/image-19bd7212.jpg"
+  ],
+  "tipoanuncio": 1,
+  "creado": "8/11/2026",
+  "fvencimiento": "8/12/2026",
+  "_evidencia_legal": "anuncio fisico afiche de servicios de gasfiteria y albañileria 08/11/2026 maestro_alfredo.jpg"
+}
+,
+
+
+
+
+
+
+{
+    "_idanuncio": 7,
+    "_subcategory": "Mudanza",
+    "_keywords": "mudanza flete transporte carga muebles embalaje traslado camion lucas bravo",
+    "_boton": "VER PÁGINA",
+    "_web": "https://slaverfrancois.github.io/blazarsystem-enlaza2pe-users/lucas-bravo-mudanza.html",
+    "_featured": false,
+    "_titulo": "<strong style='color: #007bff;'>Mudanzas Lucas Bravo</strong>",
+    "_descripcion": "Servicio de mudanza, flete y traslado de muebles con embalaje incluido. Atención en Callao y provincias. <strong style='color:red;'>Precio a consultar</strong> — Contacto: <a href='tel:+549922987835'>+54 9 922 987 835</a>",
+    "_imagenes": [
       "img/id7/foto1.jpg"
     ],
-    "tipoanuncio": 1,
-    "creado": "17/08/2026",
-    "fvencimiento": "27/08/2026"
+    "_tipoanuncio": 1,
+    "_creado": "17/08/2026",
+    "_fvencimiento": "27/08/2026"
   },
   {
-    "idanuncio": 13,
-    "subcategory": "Soldador",
-    "keywords": "soldador construccion metalica metal acero rejas puertas escaleras estructuras soldadura cesar paulo",
-    "boton": "VER PÁGINA",
-    "web": "https://slaverfrancois.github.io/blazarsystem-enlaza2pe-users/cesar-paulo-construcciones-metalicas.html",
-    "featured": false,
-    "titulo": "<strong style='color: #007bff;'>Construcciones Metálicas — César Paulo</strong>",
-    "descripcion": "Fabricación de rejas, puertas metálicas, escaleras y estructuras de acero con soldadura de calidad. <strong style='color:red;'>Precio a consultar</strong> — Contacto: <a href='tel:+549938887289'>+54 9 938 887 289</a>",
-    "imagenes": [
-      "img/id13/foto1.jpg"
-    ],
-    "tipoanuncio": 1,
-    "creado": "17/08/2026",
-    "fvencimiento": "27/08/2026"
-  },
-  {
-    "idanuncio": 17,
-    "subcategory": "Taxista",
-    "keywords": "taxi taxista transporte servicio auto privado traslado aeropuerto samir coloma",
-    "boton": "VER PÁGINA",
-    "web": "https://slaverfrancois.github.io/blazarsystem-enlaza2pe-users/samir-coloma-taxista.html",
-    "featured": false,
-    "titulo": "<strong style='color: #007bff;'>Taxista Profesional — Samir Coloma</strong>",
-    "descripcion": "Servicio de taxi profesional, traslados al aeropuerto, distritos y provincias. Puntual y seguro. <strong style='color:red;'>Precio a consultar</strong> — Contacto: <a href='tel:+549959043525'>+54 9 959 043 525</a>",
-    "imagenes": [
+    "_idanuncio": 17,
+    "_subcategory": "Taxista",
+    "_keywords": "taxi taxista transporte servicio auto privado traslado aeropuerto samir coloma",
+    "_boton": "VER PÁGINA",
+    "_web": "https://slaverfrancois.github.io/blazarsystem-enlaza2pe-users/samir-coloma-taxista.html",
+    "_featured": false,
+    "_titulo": "<strong style='color: #007bff;'>Taxista Profesional — Samir Coloma</strong>",
+    "_descripcion": "Servicio de taxi profesional, traslados al aeropuerto, distritos y provincias. Puntual y seguro. <strong style='color:red;'>Precio a consultar</strong> — Contacto: <a href='tel:+549959043525'>+54 9 959 043 525</a>",
+    "_imagenes": [
       "img/id17/foto1.jpg"
     ],
-    "tipoanuncio": 1,
-    "creado": "17/08/2026",
-    "fvencimiento": "27/08/2026"
+    "_tipoanuncio": 1,
+    "_creado": "17/08/2026",
+    "_fvencimiento": "27/08/2026"
   },
   {
-    "idanuncio": 11,
-    "subcategory": "Drywalleros",
-    "keywords": "drywall construccion tabiqueria cielo raso divisiones interiores yeso instalacion dariel villacorta",
-    "boton": "VER PÁGINA",
-    "web": "https://slaverfrancois.github.io/blazarsystem-enlaza2pe-users/dariel-villacorta-drywall.html",
-    "featured": false,
-    "titulo": "<strong style='color: #007bff;'>Construcción en Drywall — Dariel Villacorta</strong>",
-    "descripcion": "Instalación de tabiquería, cielos rasos y divisiones interiores en drywall. Trabajo garantizado. <strong style='color:red;'>Precio a consultar</strong> — Contacto: <a href='tel:+549994776302'>+54 9 994 776 302</a>",
-    "imagenes": [
+    "_idanuncio": 11,
+    "_subcategory": "Drywalleros",
+    "_keywords": "drywall construccion tabiqueria cielo raso divisiones interiores yeso instalacion dariel villacorta",
+    "_boton": "VER PÁGINA",
+    "_web": "https://slaverfrancois.github.io/blazarsystem-enlaza2pe-users/dariel-villacorta-drywall.html",
+    "_featured": false,
+    "_titulo": "<strong style='color: #007bff;'>Construcción en Drywall — Dariel Villacorta</strong>",
+    "_descripcion": "Instalación de tabiquería, cielos rasos y divisiones interiores en drywall. Trabajo garantizado. <strong style='color:red;'>Precio a consultar</strong> — Contacto: <a href='tel:+549994776302'>+54 9 994 776 302</a>",
+    "_imagenes": [
       "img/id11/foto1.jpg"
     ],
-    "tipoanuncio": 1,
-    "creado": "17/08/2026",
-    "fvencimiento": "27/08/2026"
+    "_tipoanuncio": 1,
+    "_creado": "17/08/2026",
+    "_fvencimiento": "27/08/2026"
   },
   {
-    "idanuncio": 12,
-    "subcategory": "Carpintero",
-    "keywords": "carpintero carpinteria muebles madera puertas ventanas closet cocina instalacion gabriel barrera",
-    "boton": "VER PÁGINA",
-    "web": "https://slaverfrancois.github.io/blazarsystem-enlaza2pe-users/gabriel-barrera-carpintero.html",
-    "featured": false,
-    "titulo": "<strong style='color: #007bff;'>Carpintero — Gabriel Barrera</strong>",
-    "descripcion": "Fabricación e instalación de muebles, puertas, ventanas y closets a medida en madera. <strong style='color:red;'>Precio a consultar</strong> — Contacto: <a href='tel:+549970685231'>+54 9 970 685 231</a>",
-    "imagenes": [
+    "_idanuncio": 12,
+    "_subcategory": "Carpintero",
+    "_keywords": "carpintero carpinteria muebles madera puertas ventanas closet cocina instalacion gabriel barrera",
+    "_boton": "VER PÁGINA",
+    "_web": "https://slaverfrancois.github.io/blazarsystem-enlaza2pe-users/gabriel-barrera-carpintero.html",
+    "_featured": false,
+    "_titulo": "<strong style='color: #007bff;'>Carpintero — Gabriel Barrera</strong>",
+    "_descripcion": "Fabricación e instalación de muebles, puertas, ventanas y closets a medida en madera. <strong style='color:red;'>Precio a consultar</strong> — Contacto: <a href='tel:+549970685231'>+54 9 970 685 231</a>",
+    "_imagenes": [
       "img/id12/foto1.jpg"
     ],
-    "tipoanuncio": 1,
-    "creado": "17/08/2026",
-    "fvencimiento": "27/08/2026"
+    "_tipoanuncio": 1,
+    "_creado": "17/08/2026",
+    "_fvencimiento": "27/08/2026"
   }
 ]

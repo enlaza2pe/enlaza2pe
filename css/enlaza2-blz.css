@@ -378,24 +378,29 @@ PALABRA DINÁMICA
   overflow: hidden;
   background-color: #f0f0f0; /* Fondo neutral mientras cargan */
   border-radius: 6px 0 0 6px; /* Ajusta según el diseño de tu tarjeta */
+  display: block;
 }
 
 /* Modificar el comportamiento de las imágenes del carrusel */
 .blz-card-custom-img {
-  width: 100%;
+  width: 100% !important;
   height: 100% !important;
-  object-fit: cover; /* Recorta y centra la imagen automáticamente sin deformarla */
+  object-fit: cover; /* Centra y adapta imágenes gigantes automáticamente */
+  object-position: center; /* Asegura el foco visual en el medio de la foto */
   position: absolute;
   top: 0;
   left: 0;
   opacity: 0;
-  transition: opacity 0.5s ease-in-out;
+  visibility: hidden;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+  z-index: 1;
 }
 
 /* Solo la imagen activa será visible */
 .blz-card-custom-img.activo {
   opacity: 1;
-  position: relative;
+  visibility: visible;
+  z-index: 2;
 }
 
 .blz-slider img {

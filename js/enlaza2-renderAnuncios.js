@@ -10,23 +10,21 @@ const COLORES_SUBCATEGORIAS = {
   vote: "#B88200"
 };
 
-function diseño1(a, categoria, palabrasCoincidentes = []) {
-  console.log(categoria);
+function diseño1(a, categoria, palabrasCoincidentes = []) { 
   const globos = palabrasCoincidentes
     .map(palabra => ` <span class="blz-search-keyword"> ${escaparHTML(palabra)} </span> `)
     .join("");
 
   const colorHex = COLORES_SUBCATEGORIAS[globos] || "";
   const estiloColor = colorHex ? `style="background-color: ${colorHex};"` : "";
-  const subcategoria = a.subcategory
-    ? ` <span class="blz-subcategory-badge" ${estiloColor}> ${escaparHTML(a.subcategory)} </span> `
-    : "";
+  //const subcategoria = a.subcategory ? ` <span class="blz-subcategory-badge" ${estiloColor}> ${escaparHTML(a.subcategory)} </span> `: "";
 
   const escaparComillas = (texto) => String(texto ?? '').replace(/'/g, "\\'");
 
   // SOLUCIÓN AL POPUP: Convertimos el JSON en una cadena URL segura para que no rompa el atributo onclick
   const imagenesCodificadas = encodeURIComponent(JSON.stringify(a.imagenes ?? []));
 
+  //${subcategoria} ---se retiro cuando estaba encima de la clase : "blz-img-container-fix"
   return `
   <div class="col-12 col-md-6 mb-3">
     <div class="blz-horizontal-card">
@@ -34,12 +32,11 @@ function diseño1(a, categoria, palabrasCoincidentes = []) {
         <div class="blz-card-image-side" style="position: relative;">
           <!-- BOTÓN DE ZOOM EN EL CENTRO -->
           <button type="button" class="blz-zoom-overlay-btn" onclick="event.stopPropagation(); event.preventDefault(); abrirPopupGaleria('${imagenesCodificadas}')" aria-label="Ver galería">
-            🔍
+            <span class="bi bi-zoom-in"></span>
           </button>
           
           <a href="javascript:void(0)"  class="blz-card-image-wrapper"  onclick="event.stopPropagation(); event.preventDefault(); abrirPopupGaleria('${imagenesCodificadas}')">
-            ${subcategoria}
-            <div class="blz-img-container-fix">
+               <div class="blz-img-container-fix">
               ${crearGaleria(a.imagenes)}
             </div>
           </a>
@@ -47,7 +44,7 @@ function diseño1(a, categoria, palabrasCoincidentes = []) {
         <div class="blz-card-content-side">
           <div class="blz-card-body-text">
             <h1 class="blz-card-title">
-              <a href="javascript:void(0)" onclick="abrirVista('${escaparComillas(a.web)}')" >
+              <a href="javascript:void(0)">
                 ${a.titulo ?? ""}
               </a>
             </h1>
@@ -107,7 +104,6 @@ function abrirPopupGaleria(imagenesCodificadas) {
   const modalHTML = `
     <div id="blzCustomModal" class="blz-modal-mask" onclick="cerrarPopupGaleria()">
       <div class="blz-modal-container" onclick="event.stopPropagation()">
-        <button type="button" class="blz-modal-close-btn" onclick="cerrarPopupGaleria()">&times;</button>
         <div class="blz-modal-content">
           <div class="blz-modal-slider">
             ${imagenes.map((img, i) => `
@@ -119,12 +115,15 @@ function abrirPopupGaleria(imagenesCodificadas) {
             <button type="button" class="blz-modal-nav next" onclick="cambiarImagenModal(1)">❯</button>
           ` : ""}
         </div>
+        <!-- Botón redondo blanco debajo de la galería -->
+        <button type="button" class="blz-modal-close-btn-round" onclick="cerrarPopupGaleria()">CERRAR</button>
       </div>
     </div>
   `;
 
   document.body.insertAdjacentHTML("beforeend", modalHTML);
 }
+
 
 
 function cerrarPopupGaleria() {
@@ -167,21 +166,21 @@ function procesarContacto(contacto, tituloAnuncio) {
 
   const urlEvaluar = contacto.toLowerCase().trim();
 
-  if (urlEvaluar.includes('facebook.com') || urlEvaluar.includes('fb.com')) {
+  if (urlEvaluar.includes('facebook.com') || urlEvaluar.includes('fb.com')) { //(BOTÓN) A FACEBOOK
     let urlDestino = contacto.trim();
     if (!urlDestino.match(/^https?:\/\//i)) {
       urlDestino = `https://${urlDestino}`;
     }
     window.location.href = urlDestino;
-  }
+  } //(BOTÓN)A PAGINA WEB PROPIA ó CATALOGO ENLAZA2.PE
   else if (urlEvaluar.includes("http://") || urlEvaluar.includes("https://") || urlEvaluar.includes("www.")) {
     let urlDestino = contacto;
     if (urlEvaluar.includes("www.") && !urlEvaluar.includes("http")) {
-      urlDestino = "https://" + contacto;
+      urlDestino = "https://";
     }
     abrirVista(urlDestino);
   }
-  else {
+  else { //(BOTÓN)AL WHATSAPP
     let numeroLimpio = String(contacto).replace(/\D/g, '');
     if (numeroLimpio.length === 9) {
       numeroLimpio = "51" + numeroLimpio;

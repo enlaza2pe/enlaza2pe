@@ -1,36 +1,77 @@
 [
+
   {
-    "idanuncio": 2,
-    "subcategory": "Juguetes",
-    "keywords": "juguetes jugueteria venta juegos ninos bebes peluches didacticos educativos entretenimiento li jun",
-    "boton": "VER PÁGINA",
-    "web": "https://slaverfrancois.github.io/blazarsystem-enlaza2pe-users/li-jin-juguetes.html",
-    "featured": false,
-    "titulo": "<strong style='color: #007bff;'>Juguetes Li Jin</strong>",
-    "descripcion": "Venta de juguetes, juegos didácticos y educativos para niños y bebés. <strong style='color:red;'>Precio a consultar</strong> — Contacto: <a href='tel:+549987685571'>+54 9 987 685 571</a>",
-    "imagenes": [
+  "idanuncio": "a_1793915838_0061",
+  "subcategory": "Farmacia",
+  "keywords": "farmacia deasol botica medicamentos salud pedidos delivery delivery farmacia 24 horas cdlr",
+  "boton": "WHATSAPP",
+  "contacto": "923626053",
+  "ubicado_en": "CDLR",
+  "featured": true,
+  "titulo": "<strong style='color: #27ae60;'>Farma Deasol - Delivery Atención 24 horas, todos los días</strong>",
+  "descripcion": "¡Tu salud, nuestro compromiso!. Escríbenos por WhatsApp para realizar tus pedidos de medicamentos y productos de salud.",
+  "imagenes": [
+    "https://i.ibb.co/pjdY0mHd/image-15cb9721.jpg"
+  ],
+  "tipoanuncio": 1,
+  "creado": "8/11/2026",
+  "fvencimiento": "8/12/2026",
+  "_evidencia_legal": "anuncio fisico banner vertical farma deasol 08/11/2026 contacto_923626053.jpg"
+}
+,
+
+{
+  "idanuncio": "a_1793915838_0065",
+  "subcategory": "Avícola",
+  "keywords": "avicola patrick pollo huevos gallina filetes pechuga pierna san fernando redondas delivery cdlr",
+  "boton": "WHATSAPP",
+  "contacto": "997198915",
+  "ubicado_en": "CDLR",
+  "featured": true,
+  "titulo": "<strong style='color: #1a5694;'>Avícola Patrick - Delivery Pollo Fresco y Servicio</strong>",
+  "descripcion": "Ofrecemos la mejor calidad en pollos enteros, piernas especiales, pechuga especial, filetes, huevos y gallinas. 2° TLF 996714584.",
+  "imagenes": [
+    "https://i.ibb.co/6ccPGGBF/image-f4b0abd8.jpg"
+  ],
+  "tipoanuncio": 1,
+  "creado": "8/11/2026",
+  "fvencimiento": "8/12/2026",
+  "_evidencia_legal": "anuncio fisico banner vertical avicola patrick 08/11/2026 contacto_997198915.jpg"
+},
+
+
+  {
+    "_idanuncio": 2,
+    "_subcategory": "Juguetes",
+    "_keywords": "juguetes jugueteria venta juegos ninos bebes peluches didacticos educativos entretenimiento li jun",
+    "_boton": "VER PÁGINA",
+    "_web": "https://slaverfrancois.github.io/blazarsystem-enlaza2pe-users/li-jin-juguetes.html",
+    "_featured": false,
+    "_titulo": "<strong style='color: #007bff;'>Juguetes Li Jin</strong>",
+    "_descripcion": "Venta de juguetes, juegos didácticos y educativos para niños y bebés. <strong style='color:red;'>Precio a consultar</strong> — Contacto: <a href='tel:+549987685571'>+54 9 987 685 571</a>",
+    "_imagenes": [
       "img/id2/foto1.jpg"
     ],
-    "tipoanuncio": 1,
-    "creado": "17/08/2026",
-    "fvencimiento": "27/08/2026",
+    "_tipoanuncio": 1,
+    "_creado": "17/08/2026",
+    "_fvencimiento": "27/08/2026",
     "_origen_fecha_archivo": "poste 3/11/2026 evidencia_anuncio_001.jpg"
   },
   {
-    "idanuncio": 6,
-    "subcategory": "Restaurante",
-    "keywords": "chifa comida china arroz chaufa tallarin saltado wonton sopa dim sum delivery restaurante long chen",
-    "boton": "VER PÁGINA",
-    "web": "https://slaverfrancois.github.io/blazarsystem-enlaza2pe-users/long-chen-chifa.html",
-    "featured": false,
-    "titulo": "<strong style='color: #007bff;'>Chifa Long Chen</strong>",
-    "descripcion": "Auténtica comida chifa: arroz chaufa, tallarín saltado, wonton y más. Delivery disponible. <strong style='color:red;'>Precio a consultar</strong> — Contacto: <a href='tel:+549964378096'>+54 9 964 378 096</a>",
-    "imagenes": [
+    "_idanuncio": 6,
+    "_subcategory": "Restaurante",
+    "_keywords": "chifa comida china arroz chaufa tallarin saltado wonton sopa dim sum delivery restaurante long chen",
+    "_boton": "VER PÁGINA",
+    "_web": "https://slaverfrancois.github.io/blazarsystem-enlaza2pe-users/long-chen-chifa.html",
+    "_featured": false,
+    "_titulo": "<strong style='color: #007bff;'>Chifa Long Chen</strong>",
+    "_descripcion": "Auténtica comida chifa: arroz chaufa, tallarín saltado, wonton y más. Delivery disponible. <strong style='color:red;'>Precio a consultar</strong> — Contacto: <a href='tel:+549964378096'>+54 9 964 378 096</a>",
+    "_imagenes": [
       "img/id6/foto1.jpg"
     ],
-    "tipoanuncio": 1,
-    "creado": "17/08/2026",
-    "fvencimiento": "27/08/2026",
+    "_tipoanuncio": 1,
+    "_creado": "17/08/2026",
+    "_fvencimiento": "27/08/2026",
     "_origen_fecha_archivo": "poste 3/11/2026 evidencia_anuncio_001.jpg"
   }
 ]

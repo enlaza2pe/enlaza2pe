@@ -1,0 +1,36 @@
+[
+  {
+    "_idanuncio": 13,
+    "_subcategory": "Soldador",
+    "_keywords": "soldador construccion metalica metal acero rejas puertas escaleras estructuras soldadura cesar paulo",
+    "_boton": "VER PÁGINA",
+    "_web": "https://slaverfrancois.github.io/blazarsystem-enlaza2pe-users/cesar-paulo-construcciones-metalicas.html",
+    "_featured": false,
+    "_titulo": "<strong style='color: #007bff;'>Construcciones Metálicas — César Paulo</strong>",
+    "_descripcion": "Fabricación de rejas, puertas metálicas, escaleras y estructuras de acero con soldadura de calidad. <strong style='color:red;'>Precio a consultar</strong> — Contacto: <a href='tel:+549938887289'>+54 9 938 887 289</a>",
+    "_imagenes": [
+      "img/id13/foto1.jpg"
+    ],
+    "_tipoanuncio": 1,
+    "_creado": "17/08/2026",
+    "_fvencimiento": "27/08/2026"
+  },
+  {
+    "idanuncio": "a_1793915838_0002",
+    "subcategory": "Profesores",
+    "keywords": "clases matematicas fisica rm razonamiento matematico uni preuniversitario profe marlon profesor docente tareas",
+    "boton": "WHATSAPP",
+    "contacto": "916665706",
+    "ubicado_en": "CDLR",
+    "featured": true,
+    "titulo": "<strong style='color: #1a5694;'>Clases de Matemáticas, Física y RM - Profe Marlon</strong>",
+    "descripcion": "Dicto clases nivel UNI y Preuniversitario. Método exclusivo. Preparación para exámenes. Contacto secundario: 910646018.",
+    "imagenes": [
+      "https://i.ibb.co/PZfS511K/image-207e6996.jpg"
+    ],
+    "tipoanuncio": 1,
+    "creado": "6/11/2026",
+    "fvencimiento": "6/12/2026",
+    "_evidencia_legal": "anuncio fisico afiche de clases 06/11/2026 profe_marlon.jpg"
+  }
+]

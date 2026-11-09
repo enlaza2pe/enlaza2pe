@@ -76,6 +76,11 @@ Promise.all([
     return r.json();
   }),
 
+  fetch("json/anuncios-asesoresprofesional.json").then(r => {
+    if (!r.ok) throw new Error("Error cargando promociones");
+    return r.json();
+  }),
+
   fetch("json/categorias-menu.json").then(r => {
     if (!r.ok) throw new Error("Error cargando categorías");
     return r.json();
@@ -87,6 +92,7 @@ Promise.all([
     anunciosEmpleos,
     anunciosServicios,
     anunciosPromociones,
+    anunciosAsesorias,
     categoriasData
   ]) => {
 
@@ -96,6 +102,7 @@ Promise.all([
       ...anunciosDelivery,
       ...anunciosEmpleos,
       ...anunciosServicios,
+      ...anunciosAsesorias,
       ...anunciosPromociones
     ];
 
@@ -106,6 +113,7 @@ Promise.all([
       "Envíos a domicilio": anunciosDelivery,
       "Empleos": anunciosEmpleos,
       "Servicios Generales": anunciosServicios,
+      "Asesoría Profesional": anunciosAsesorias,
       "Promos de tiendas": anunciosPromociones
     };
 
@@ -154,37 +162,31 @@ function crearBanner(grupo, esPrimero) {
 }
 
 function renderBanners() {
-  const contenedor = document.getElementById("contenedor-banners");
+  const contenedor = document.getElementById('contenedor-banners');
   if (!contenedor) return;
 
   // Renderizado limpio identificando el primer elemento activo
   contenedor.innerHTML = categorias
     .map((grupo, index) => crearBanner(grupo, index === 0))
-    .join("");
+    .join('');
 
   // ESCUCHADOR DE EVENTOS: Llama a cargarCategoria al hacer clic en un banner
-  contenedor.querySelectorAll(".cta-banner").forEach(btn => {
-    btn.addEventListener("click", function(e) {
-      e.preventDefault(); // Evita que el '#' recargue o mueva la pantalla al tope
+  contenedor.querySelectorAll('.cta-banner').forEach(btn => {
+    btn.addEventListener('click', function (e) {
+      e.preventDefault(); // Evita que el # recargue o mueva la pantalla al tope
       const cat = this.dataset.categoria;
       cargarCategoria(cat);
     });
   });
 
-  // EFECTO DE REBOTE AUTOMÁTICO (HINT ANIMATION)
+  // EFECTO DE REBOTE AUTOMÁTICO (HINT ANIMATION) - Inicia al instante
+  contenedor.scrollTo({ left: 650, behavior: 'smooth' });
+
   setTimeout(() => {
-    contenedor.scrollTo({ left: 350, behavior: "smooth" });
-    setTimeout(() => {
-      contenedor.scrollTo({ left: 0, behavior: "smooth" });
-      setTimeout(() => {
-        contenedor.scrollTo({ left: 350, behavior: "smooth" });
-        setTimeout(() => {
-          contenedor.scrollTo({ left: 0, behavior: "smooth" });
-        }, 500);
-      }, 700);
-    }, 700);
-  }, 1900);
+    contenedor.scrollTo({ left: 0, behavior: 'smooth' });
+  }, 700);
 }
+
 
 
 
@@ -231,7 +233,7 @@ function cargarCategoria(categoria, { scroll = true, compacto = true } = {}) {
   anunciosCategoriaActual = window.anunciosPorCategoria[categoria] || [];
   renderBadges(grupo);
   renderAnuncios(anunciosCategoriaActual);
-  
+
   document.getElementById("titulo-resultados").textContent = "Resultados para " + categoria;
   document.getElementById("resultados-bar").style.display = "block";
   document.getElementById("contenedor-banners").classList.toggle("modo-compacto", compacto);
@@ -261,7 +263,6 @@ function renderBadges(grupo) {
     festival: "#A767D9", practice: "#2F4A52", join: "#2e7550", strawberry: "#E61B56", vote: "#B88200"
   };
   const colorBorde = coloresTemplate[grupo.template] || '#7C6FE8';
-  console.log(colorBorde);
 
   // 2. RENDERIZADO EN UNA SOLA FILA DIRECTA (Eliminamos divisiones matemáticas)
   contenedor.innerHTML = subcategorias.map((sub, index) => {
@@ -295,7 +296,6 @@ function renderBadges(grupo) {
 /* EVENT CLICK EN BADGE */
 document.addEventListener("click", function (e) {
   const badge = e.target.closest("[data-subcategoria]");
-  console.log(badge);
   if (!badge) return;
   const subcategoria = badge.dataset.subcategoria;
   document.querySelectorAll("#subcategorias-container .blz-badge").forEach(lbl => lbl.classList.remove("activo"));
@@ -309,23 +309,26 @@ document.addEventListener("click", function (e) {
 
 /* FILTRAR SUBCATEGORIA */
 function filtrarSubcategoria(subcategoria) {
- console.log("aua: " +subcategoria);
   const filtrados = subcategoria === "Todos"
     ? anunciosCategoriaActual
-    : anunciosCategoriaActual.filter(
-      a => a.subcategory === subcategoria
-    );
+    : anunciosCategoriaActual.filter(a => {
+      // Si subcategory es un Array, busca si incluye la opción elegida
+      if (Array.isArray(a.subcategory)) {
+        return a.subcategory.includes(subcategoria);
+      }
+      // Si queda algún anuncio antiguo con texto plano simple, lo evalúa normalmente
+      return a.subcategory === subcategoria;
+    });
 
   renderAnuncios(filtrados, subcategoria);
   document.getElementById("titulo-resultados").textContent = "Resultados para: " + subcategoria;
-    console.log("juasjuas");
 }
+
 
 
 /* RENDER ANUNCIOS */
 function renderAnuncios(lista, subcategoria) {
-  
-console.log(subcategoria);
+
   const contenedorTipo1 = document.getElementById("tipo1");
 
   if (!contenedorTipo1) return;

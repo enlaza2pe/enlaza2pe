@@ -211,13 +211,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     });
 
     miniSearch.addAll(documentos);
-
-    /*console.log(
-        "MiniSearch listo:",
-        anuncios.length,
-        "anuncios indexados."
-    );
-*/
+ 
 
     // =====================================================
     // BUSQUEDA EN TIEMPO REAL
@@ -368,15 +362,7 @@ document.addEventListener("DOMContentLoaded", async () => {
                     fuzzy: false
                 }
             );
-
-        console.log(
-            "Búsqueda:",
-            textoOriginal,
-            "Términos:",
-            terminos,
-            "Resultados:",
-            resultados.length
-        );
+ 
 
         // ---------------------------------------------
         // CONVERTIR RESULTADOS A ANUNCIOS

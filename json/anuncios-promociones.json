@@ -1,114 +1,114 @@
 [
   {
-    "idanuncio": 8,
-    "subcategory": "Plantas",
-    "keywords": "plantas flores jardineria vivero macetas ornamentales interior exterior alan coloma",
-    "boton": "VER PÁGINA",
-    "web": "https://slaverfrancois.github.io/blazarsystem-enlaza2pe-users/alan-coloma-plantas.html",
-    "featured": false,
-    "titulo": "<strong style='color: #007bff;'>Plantas — Alan Coloma</strong>",
-    "descripcion": "Venta de plantas ornamentales, flores y macetas para interiores y exteriores. <strong style='color:red;'>Precio a consultar</strong> — Contacto: <a href='tel:+549922462274'>+54 9 922 462 274</a>",
-    "imagenes": [
+    "_idanuncio": 8,
+    "_subcategory": "Plantas",
+    "_keywords": "plantas flores jardineria vivero macetas ornamentales interior exterior alan coloma",
+    "_boton": "VER PÁGINA",
+    "_web": "https://slaverfrancois.github.io/blazarsystem-enlaza2pe-users/alan-coloma-plantas.html",
+    "_featured": false,
+    "_titulo": "<strong style='color: #007bff;'>Plantas — Alan Coloma</strong>",
+    "_descripcion": "Venta de plantas ornamentales, flores y macetas para interiores y exteriores. <strong style='color:red;'>Precio a consultar</strong> — Contacto: <a href='tel:+549922462274'>+54 9 922 462 274</a>",
+    "_imagenes": [
       "img/id8/foto1.jpg"
     ],
-    "tipoanuncio": 1,
-    "creado": "17/08/2026",
-    "fvencimiento": "27/08/2026"
-  },
-  {
-    "idanuncio": 10,
-    "subcategory": "Juguetes",
-    "keywords": "pintando numeros arte oleo manualidades cuadros pintura artesania creativo joel oleo arte",
-    "boton": "VER PÁGINA",
-    "web": "https://slaverfrancois.github.io/blazarsystem-enlaza2pe-users/joel-oseo-arte-pintando-numeros.html",
-    "featured": false,
-    "titulo": "<strong style='color: #007bff;'>Pintando con Números — Óleo y Arte</strong>",
-    "descripcion": "Kits y clases de pintando con números, arte decorativo y manualidades creativas. <strong style='color:red;'>Precio a consultar</strong> — Contacto: <a href='tel:+549990020497'>+54 9 990 020 497</a>",
-    "imagenes": [
+    "_tipoanuncio": 1,
+    "_creado": "17/08/2026",
+    "_fvencimiento": "27/08/2026"
+  }, 
+  {  
+    "_idanuncio": 10,
+    "_subcategory": "Juguetes",
+    "_keywords": "pintando numeros arte oleo manualidades cuadros pintura artesania creativo joel oleo arte",
+    "_boton": "VER PÁGINA",
+    "_web": "https://slaverfrancois.github.io/blazarsystem-enlaza2pe-users/joel-oseo-arte-pintando-numeros.html",
+    "_featured": false,
+    "_titulo": "<strong style='color: #007bff;'>Pintando con Números — Óleo y Arte</strong>",
+    "_descripcion": "Kits y clases de pintando con números, arte decorativo y manualidades creativas. <strong style='color:red;'>Precio a consultar</strong> — Contacto: <a href='tel:+549990020497'>+54 9 990 020 497</a>",
+    "_imagenes": [
       "img/id10/foto1.jpg"
     ],
-    "tipoanuncio": 1,
-    "creado": "17/08/2026",
-    "fvencimiento": "27/08/2026"
-  },
-  {
-    "idanuncio": 9,
-    "subcategory": "Psicólogo",
-    "keywords": "consejero parejas terapia relaciones matrimonio convivencia conflictos comunicacion amor jonas coloma",
-    "boton": "VER PÁGINA",
-    "web": "https://slaverfrancois.github.io/blazarsystem-enlaza2pe-users/jonas-coloma-consejero-parejas.html",
-    "featured": false,
-    "titulo": "<strong style='color: #007bff;'>Consejero de Parejas — Jonás Coloma</strong>",
-    "descripcion": "Consejería profesional para parejas, manejo de conflictos, comunicación y fortalecimiento de relaciones. <strong style='color:red;'>Precio a consultar</strong> — Contacto: <a href='tel:+549930533980'>+54 9 930 533 980</a>",
-    "imagenes": [
+    "_tipoanuncio": 1,
+    "_creado": "17/08/2026",
+    "_fvencimiento": "27/08/2026"
+  }, 
+  {  
+    "_idanuncio": 9,
+    "_subcategory": "Psicólogo",
+    "_keywords": "consejero parejas terapia relaciones matrimonio convivencia conflictos comunicacion amor jonas coloma",
+    "_boton": "VER PÁGINA",
+    "_web": "https://slaverfrancois.github.io/blazarsystem-enlaza2pe-users/jonas-coloma-consejero-parejas.html",
+    "_featured": false,
+    "_titulo": "<strong style='color: #007bff;'>Consejero de Parejas — Jonás Coloma</strong>",
+    "_descripcion": "Consejería profesional para parejas, manejo de conflictos, comunicación y fortalecimiento de relaciones. <strong style='color:red;'>Precio a consultar</strong> — Contacto: <a href='tel:+549930533980'>+54 9 930 533 980</a>",
+    "_imagenes": [
       "img/id9/foto1.jpg"
     ],
-    "tipoanuncio": 1,
-    "creado": "17/08/2026",
-    "fvencimiento": "27/08/2026"
-  },
-  {
-    "idanuncio": 14,
-    "subcategory": "Profesor",
-    "keywords": "profesor ingles clases ingles ensenanza idioma conversacion basico avanzado niños adultos adrian rios",
-    "boton": "VER PÁGINA",
-    "web": "https://slaverfrancois.github.io/blazarsystem-enlaza2pe-users/adrian-rios-profesor-ingles.html",
-    "featured": false,
-    "titulo": "<strong style='color: #007bff;'>Profesor de Inglés — Adrián Ríos</strong>",
-    "descripcion": "Clases de inglés para niños y adultos, todos los niveles. Conversación, gramática y preparación para exámenes. <strong style='color:red;'>Precio a consultar</strong> — Contacto: <a href='tel:+549934805470'>+54 9 934 805 470</a>",
-    "imagenes": [
+    "_tipoanuncio": 1,
+    "_creado": "17/08/2026",
+    "_fvencimiento": "27/08/2026"
+  }, 
+  {  
+    "_idanuncio": 14,
+    "_subcategory": "Profesor",
+    "_keywords": "profesor ingles clases ingles ensenanza idioma conversacion basico avanzado niños adultos adrian rios",
+    "_boton": "VER PÁGINA",
+    "_web": "https://slaverfrancois.github.io/blazarsystem-enlaza2pe-users/adrian-rios-profesor-ingles.html",
+    "_featured": false,
+    "_titulo": "<strong style='color: #007bff;'>Profesor de Inglés — Adrián Ríos</strong>",
+    "_descripcion": "Clases de inglés para niños y adultos, todos los niveles. Conversación, gramática y preparación para exámenes. <strong style='color:red;'>Precio a consultar</strong> — Contacto: <a href='tel:+549934805470'>+54 9 934 805 470</a>",
+    "_imagenes": [
       "img/id14/foto1.jpg"
     ],
-    "tipoanuncio": 1,
-    "creado": "17/08/2026",
-    "fvencimiento": "27/08/2026"
-  },
-  {
-    "idanuncio": 15,
-    "subcategory": "Profesor",
-    "keywords": "profesora primaria clases ensenanza ninos educacion basica matematica lenguaje refuerzo escolar veronica moreno",
-    "boton": "VER PÁGINA",
-    "web": "https://slaverfrancois.github.io/blazarsystem-enlaza2pe-users/veronica-moreno-profesora-primaria.html",
-    "featured": false,
-    "titulo": "<strong style='color: #007bff;'>Profesora de Primaria — Verónica Moreno</strong>",
-    "descripcion": "Clases y refuerzo escolar para nivel primaria en matemática, comunicación y todas las áreas. <strong style='color:red;'>Precio a consultar</strong> — Contacto: <a href='tel:+549956666887'>+54 9 956 666 887</a>",
-    "imagenes": [
+    "_tipoanuncio": 1,
+    "_creado": "17/08/2026",
+    "_fvencimiento": "27/08/2026"
+  }, 
+  {  
+    "_idanuncio": 15,
+    "_subcategory": "Profesor",
+    "_keywords": "profesora primaria clases ensenanza ninos educacion basica matematica lenguaje refuerzo escolar veronica moreno",
+    "_boton": "VER PÁGINA",
+    "_web": "https://slaverfrancois.github.io/blazarsystem-enlaza2pe-users/veronica-moreno-profesora-primaria.html",
+    "_featured": false,
+    "_titulo": "<strong style='color: #007bff;'>Profesora de Primaria — Verónica Moreno</strong>",
+    "_descripcion": "Clases y refuerzo escolar para nivel primaria en matemática, comunicación y todas las áreas. <strong style='color:red;'>Precio a consultar</strong> — Contacto: <a href='tel:+549956666887'>+54 9 956 666 887</a>",
+    "_imagenes": [
       "img/id15/foto1.jpg"
     ],
-    "tipoanuncio": 1,
-    "creado": "17/08/2026",
-    "fvencimiento": "27/08/2026"
-  },
-  {
-    "idanuncio": 16,
-    "subcategory": "Profesor",
-    "keywords": "profesora secundaria clases refuerzo escolar adolescentes matematica ciencias historia comunicacion flor marina",
-    "boton": "VER PÁGINA",
-    "web": "https://slaverfrancois.github.io/blazarsystem-enlaza2pe-users/flor-marina-profesora-secundaria.html",
-    "featured": false,
-    "titulo": "<strong style='color: #007bff;'>Profesora de Secundaria — Flor Marina</strong>",
-    "descripcion": "Clases de refuerzo escolar para nivel secundaria en todas las áreas curriculares. <strong style='color:red;'>Precio a consultar</strong> — Contacto: <a href='tel:+549902512528'>+54 9 902 512 528</a>",
-    "imagenes": [
+    "_tipoanuncio": 1,
+    "_creado": "17/08/2026",
+    "_fvencimiento": "27/08/2026"
+  }, 
+  {  
+    "_idanuncio": 16,
+    "_subcategory": "Profesor",
+    "_keywords": "profesora secundaria clases refuerzo escolar adolescentes matematica ciencias historia comunicacion flor marina",
+    "_boton": "VER PÁGINA",
+    "_web": "https://slaverfrancois.github.io/blazarsystem-enlaza2pe-users/flor-marina-profesora-secundaria.html",
+    "_featured": false,
+    "_titulo": "<strong style='color: #007bff;'>Profesora de Secundaria — Flor Marina</strong>",
+    "_descripcion": "Clases de refuerzo escolar para nivel secundaria en todas las áreas curriculares. <strong style='color:red;'>Precio a consultar</strong> — Contacto: <a href='tel:+549902512528'>+54 9 902 512 528</a>",
+    "_imagenes": [
       "img/id16/foto1.jpg"
     ],
-    "tipoanuncio": 1,
-    "creado": "17/08/2026",
-    "fvencimiento": "27/08/2026"
-  },
-  {
-    "idanuncio": 18,
-    "subcategory": "Contador",
-    "keywords": "contadora contabilidad contable tributaria impuestos sunat declaracion planillas balance financiero empresa noelia moreno",
-    "boton": "VER PÁGINA",
-    "web": "https://slaverfrancois.github.io/blazarsystem-enlaza2pe-users/noelia-moreno-contadora.html",
-    "featured": false,
-    "titulo": "<strong style='color: #007bff;'>Contadora — Noelia Moreno</strong>",
-    "descripcion": "Servicios de contabilidad, declaraciones tributarias SUNAT, planillas y asesoría financiera para empresas y personas naturales. <strong style='color:red;'>Precio a consultar</strong> — Contacto: <a href='tel:+549959153507'>+54 9 959 153 507</a>",
-    "imagenes": [
+    "_tipoanuncio": 1,
+    "_creado": "17/08/2026",
+    "_fvencimiento": "27/08/2026"
+  }, 
+  {  
+    "_idanuncio": 18,
+    "_subcategory": "Contador",
+    "_keywords": "contadora contabilidad contable tributaria impuestos sunat declaracion planillas balance financiero empresa noelia moreno",
+    "_boton": "VER PÁGINA",
+    "_web": "https://slaverfrancois.github.io/blazarsystem-enlaza2pe-users/noelia-moreno-contadora.html",
+    "_featured": false,
+    "_titulo": "<strong style='color: #007bff;'>Contadora — Noelia Moreno</strong>",
+    "_descripcion": "Servicios de contabilidad, declaraciones tributarias SUNAT, planillas y asesoría financiera para empresas y personas naturales. <strong style='color:red;'>Precio a consultar</strong> — Contacto: <a href='tel:+549959153507'>+54 9 959 153 507</a>",
+    "_imagenes": [
       "img/id18/foto1.jpg"
     ],
-    "tipoanuncio": 1,
-    "creado": "17/08/2026",
-    "fvencimiento": "27/08/2026"
+    "_tipoanuncio": 1,
+    "_creado": "17/08/2026",
+    "_fvencimiento": "27/08/2026"
   }
 ]

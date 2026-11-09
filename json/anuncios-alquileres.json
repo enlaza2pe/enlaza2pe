@@ -1,60 +1,669 @@
 [
+  
   {
-    "idanuncio": "a_1793739233_0001", 
-    "subcategory": "Cuartos",
-    "keywords": "alquiler cuartos habitaciones vivienda hogar renta",
-    "boton": "MENSAJEAR POR <span class='icon-facebook-square' style='font-size: 22px;'></span>",
-    "contacto": "facebook.com/share/1Eq2Gjo3oG/",
-    "ubicado_en": "SMP",
+    "idanuncio": "a_1793915838_0001",
+    "subcategory": "Depa",
+    "keywords": "alquiler mini departamento cuartos habitaciones vivienda hogar renta cdlr",
+    "boton": "WHATSAPP",
+    "contacto": "987037204",
+    "ubicado_en": "CDLR",
     "featured": true,
-    "titulo": "<strong style='color: #2e7550;'>Alquiler Habitación c/ baño compartido SMP</strong>",
-    "descripcion": "Alquiler habitación con baño compartido. Referencia 2da de palao, a cuadras del cayetano heredia <strong style='color:#4157d2;'>S/ 320 Mensual</strong>",
+    "titulo": "<strong style='color: #2e7550;'>Alquiler Mini-Departamento - 4to Piso</strong>",
+    "descripcion": "Incluye 1 cuarto, sala-comedor, cocina y baño (todo independiente). Ubicado en Av. López Pazos 620 Carmen de la Legua Reynoso",
     "imagenes": [
+      "https://i.ibb.co/4ZH21CvL/image-a187731a.jpg"
+    ],
+    "tipoanuncio": 1,
+    "creado": "3/11/2026",
+    "fvencimiento": "3/12/2026",
+    "_evidencia_legal": "anuncio fisico letrero 3/11/2026 evidencia_1793739233.jpg"
+  },
+
+
+  {
+  "idanuncio": "a_1793915838_0007",
+  "subcategory": "Depa",
+  "keywords": "alquiler departamento cuartos habitaciones vivienda hogar renta av lopez pazos 3 dormitorios cdlr",
+  "boton": "WHATSAPP",
+  "contacto": "981321155",
+  "ubicado_en": "CDLR",
+  "featured": true,
+  "titulo": "<strong style='color: #c0392b;'>Se Alquila Depa - 90 m² (4° Piso)</strong>",
+  "descripcion": "Cuenta con 3 dormitorios, 2 baños, sala-comedor y cocina. Ubicado en Av. López Pazos 1411. Contacto: Maria Melendez.",
+  "imagenes": [
+    "https://i.ibb.co/4ZH21CvL/image-a187731a.jpg"
+  ],
+  "tipoanuncio": 1,
+  "creado": "6/11/2026",
+  "fvencimiento": "6/12/2026",
+  "_evidencia_legal": "anuncio fisico letrero dividido de alquiler de departamento 06/11/2026 lopez_pazos_1411.jpg"
+},
+{
+  "idanuncio": "a_1793915838_0008",
+  "subcategory": "Casa",
+  "keywords": "venta de casa se vende propiedad inmueble local comercial av miguel grau carmen de la legua reynoso cdlr",
+  "boton": "WHATSAPP",
+  "contacto": "981321155",
+  "ubicado_en": "CDLR",
+  "featured": true,
+  "titulo": "<strong style='color: #27ae60;'>Se Vende Casa de 5 Pisos - 90 m² Carmen de la legua</strong>",
+  "descripcion": "Incluídos 13 cuartos, 5 baños y un local comercial en el 1° piso. Ubicada en Av. Miguel Grau 514-516. Contacto: María Meléndez.",
+  "imagenes": [
+    "https://i.ibb.co/fYscVcdy/image-4f0e0ac6.jpg"
+  ],
+  "tipoanuncio": 1,
+  "creado": "6/11/2026",
+  "fvencimiento": "6/12/2026",
+  "_evidencia_legal": "anuncio fisico letrero dividido de venta de casa 06/11/2026 miguel_grau_514.jpg"
+},
+{
+  "idanuncio": "a_1793915838_0009",
+  "subcategory": "Depa",
+  "keywords": "alquiler departamento cuartos habitaciones vivienda hogar renta manco capac matrimonio cdlr",
+  "boton": "WHATSAPP",
+  "contacto": "913111682",
+  "ubicado_en": "CDLR",
+  "featured": true,
+  "titulo": "<strong style='color: #2c3e50;'>Se Alquila Departamento - 1er Piso (Para Matrimonio)</strong>",
+  "descripcion": "Ubicado en Manco Cápac 486. Restricciones del propietario: No extranjeros, no mascotas. Escribe al whatsapp",
+  "imagenes": [
+    "https://i.ibb.co/4ZH21CvL/image-a187731a.jpg"
+  ],
+  "tipoanuncio": 1,
+  "creado": "7/11/2026",
+  "fvencimiento": "7/12/2026",
+  "_evidencia_legal": "anuncio fisico letrero de alquiler de departamento 07/11/2026 manco_capac_486.jpg"
+},
+
+{
+  "idanuncio": "a_1793915838_0012",
+  "subcategory": "Cuartos",
+  "keywords": "alquiler cuarto habitacion amplio pareja persona sola sin niño ventanas calle carmen de la legua reynoso renta cdlr",
+  "boton": "WHATSAPP",
+  "contacto": "921722455",
+  "ubicado_en": "CDLR",
+  "featured": true,
+  "titulo": "<strong style='color: #c0392b;'>Se Alquila Cuarto Amplio de 30 m²</strong>",
+  "descripcion": "El cuarto cuenta con dos ventanas a la calle. Ideal para pareja o persona sola, sin niño. Ubicado en Carmen de la Legua Reynoso.",
+  "imagenes": [
+    "https://i.ibb.co/FkvQ8kGx/image-f9eda6da.jpg"
+  ],
+  "tipoanuncio": 1,
+  "creado": "7/11/2026",
+  "fvencimiento": "7/12/2026",
+  "_evidencia_legal": "anuncio fisico letrero alquiler de cuarto 07/11/2026 contacto_921722455.jpg"
+},
+
+{
+  "idanuncio": "a_1793915838_0018",
+  "subcategory": "Cuartos",
+  "keywords": "alquiler cuarto habitacion puerta calle baño propio jr lobaton señor de los milagros renta cdlr",
+  "boton": "WHATSAPP",
+  "contacto": "972968723",
+  "ubicado_en": "CDLR",
+  "featured": true,
+  "titulo": "<strong style='color: #27ae60;'>Se Alquila Cuarto con Puerta a la Calle y Baño Propio</strong>",
+  "descripcion": "Cuarto independiente. Ubicado en Jr. Lobatón, Villa Señor de los Milagros, Carmen de la Legua Reynoso.",
+  "imagenes": [
+    "https://i.ibb.co/FkvQ8kGx/image-f9eda6da.jpg"
+  ],
+  "tipoanuncio": 1,
+  "creado": "7/11/2026",
+  "fvencimiento": "7/12/2026",
+  "_evidencia_legal": "anuncio fisico letrero se alquila cuarto jr lobaton 07/11/2026 contacto_972968723.jpg"
+},
+
+{
+  "idanuncio": "a_1793915838_0021",
+  "subcategory": "Cuartos",
+  "keywords": "alquiler cuarto habitacion persona sola pareja sin niños pasaje san pedro reynoso renta cdlr",
+  "boton": "WHATSAPP",
+  "contacto": "910004899",
+  "ubicado_en": "CDLR",
+  "featured": true,
+  "titulo": "<strong style='color: #2c3e50;'>Se Alquila Cuarto - Psj. San Pedro (Reynoso)</strong>",
+  "descripcion": "Se alquila cuarto ideal para persona sola o pareja sin niños. Ubicado en Psj. San Pedro 125, Carmen de la Legua Reynoso.",
+  "imagenes": [
+    "https://i.ibb.co/FkvQ8kGx/image-f9eda6da.jpg"
+  ],
+  "tipoanuncio": 1,
+  "creado": "7/11/2026",
+  "fvencimiento": "7/12/2026",
+  "_evidencia_legal": "anuncio fisico cartel impreso alquiler cuarto reynoso 07/11/2026 contacto_910004899.jpg"
+},
+
+{
+  "idanuncio": "a_1793915838_0022",
+  "subcategory": ["Depa", "Cuartos"],
+  "keywords": "alquiler habitacion cuarto alquiler para dama caballero persona sola av universitaria morales duarez cdlr renta",
+  "boton": "WHATSAPP",
+  "contacto": "903330091",
+  "ubicado_en": "CDLR",
+  "featured": true,
+  "titulo": "<strong style='color: #2c3e50;'>Alquilo Habitación para Dama o Caballero - Persona Sola</strong>",
+  "descripcion": "Referencia de ubicación: Cruce de Av. Universitaria con Av. Morales Duarez.",
+  "imagenes": [
+    "https://i.ibb.co/FkvQ8kGx/image-f9eda6da.jpg"
+  ],
+  "tipoanuncio": 1,
+  "creado": "7/11/2026",
+  "fvencimiento": "7/12/2026",
+  "_evidencia_legal": "anuncio fisico afiche impreso alquilo habitacion universitaria morales duarez 07/11/2026 contacto_903330091.jpg"
+},
+
+
+
+
+{
+  "idanuncio": "a_1793915838_0023",
+  "subcategory": "Depa",
+  "keywords": "alquiler departamento 4to piso sala comedor 2 dormitorios baño av lopez pazos carmen de la legua reynoso renta cdlr",
+  "boton": "WHATSAPP",
+  "contacto": "987824700",
+  "ubicado_en": "CDLR",
+  "featured": true,
+  "titulo": "<strong style='color: #2c3e50;'>Se Alquila Departamento - 4to. Piso</strong>",
+  "descripcion": "Distribución: Sala-comedor, 2 dormitorios y baño. Ubicado en Av. López Pazos 327, Carmen de la Legua Reynoso.",
+  "imagenes": [
+    "https://i.ibb.co/4ZH21CvL/image-a187731a.jpg"
+  ],
+  "tipoanuncio": 1,
+  "creado": "7/11/2026",
+  "fvencimiento": "7/12/2026",
+  "_evidencia_legal": "anuncio fisico letrero blanco alquiler departamento 07/11/2026 lopez_pazos_327.jpg"
+},
+
+{
+  "idanuncio": "a_1793915838_0024",
+  "subcategory": "Cuartos",
+  "keywords": "se alquila habitacion cuarto pasaje san pablo reynoso carmen de la legua renta cdlr tlf 7459838",
+  "boton": "WHATSAPP",
+  "contacto": "935711816",
+  "ubicado_en": "CDLR",
+  "featured": true,
+  "titulo": "<strong style='color: #1a5694;'>Se Alquila Habitación - Psje. San Pablo (Reynoso)</strong>",
+  "descripcion": "Dirección: Pasaje San Pablo 176 - Reynoso, Carmen de la Legua Reynoso. Teléfono fijo: 7459838.",
+  "imagenes": [
+    "https://i.ibb.co/FkvQ8kGx/image-f9eda6da.jpg"
+  ],
+  "tipoanuncio": 1,
+  "creado": "7/11/2026",
+  "fvencimiento": "7/12/2026",
+  "_evidencia_legal": "anuncio fisico letrero blanco alquiler habitacion 07/11/2026 san_pablo_176.jpg"
+},
+
+ 
+{
+  "idanuncio": "a_1793915838_0027",
+  "subcategory": "Cuartos",
+  "keywords": "alquilo habitaciones amobladas cuarto habitacion amoblada renta vivienda cdlr",
+  "boton": "WHATSAPP",
+  "contacto": "982727955",
+  "ubicado_en": "CDLR",
+  "featured": true,
+  "titulo": "<strong style='color: #2c3e50;'>Alquilo Habitaciones Amobladas</strong>",
+  "descripcion": "Para mayor información, comunicarse directamente a través de WhatsApp.",
+  "imagenes": [
+    "https://i.ibb.co/FkvQ8kGx/image-f9eda6da.jpg"
+  ],
+  "tipoanuncio": 1,
+  "creado": "7/11/2026",
+  "fvencimiento": "7/12/2026",
+  "_evidencia_legal": "anuncio fisico letrero blanco alquilo habitaciones amobladas 07/11/2026 contacto_982727955.jpg"
+},
+
+{
+  "idanuncio": "a_1793915838_0028",
+  "subcategory": "Local Comercial",
+  "keywords": "galeria la exitosa se alquila local comercial tienda negocio jr independencia reynoso cdlr",
+  "boton": "WHATSAPP",
+  "contacto": "939290251",
+  "ubicado_en": "CDLR",
+  "featured": true,
+  "titulo": "<strong style='color: #1a5694;'>Galería La Exitosa - Se alquila local comercial</strong>",
+  "descripcion": "Excelente oportunidad de negocio. Jr. Independencia 315, Carmen de la Legua Reynoso. Contacto secundario: 905724437.",
+  "imagenes": [
+    "https://i.ibb.co/23FgDPfZ/image-6badf1a5.jpg"
+  ],
+  "tipoanuncio": 1,
+  "creado": "7/11/2026",
+  "fvencimiento": "7/12/2026",
+  "_evidencia_legal": "anuncio fisico letrero galeria la exitosa local comercial 07/11/2026 contacto_939290251.jpg"
+},
+
+{
+  "idanuncio": "a_1793915838_0029",
+  "subcategory": "Cuartos",
+  "keywords": "se alquila cuartos habitaciones av lopez pazos carrion comisaria municipalidad reynoso renta cdlr",
+  "boton": "WHATSAPP",
+  "contacto": "941723511",
+  "ubicado_en": "CDLR",
+  "featured": true,
+  "titulo": "<strong style='color: #2c3e50;'>Se Alquila Cuarto en la Av. López Pazos 1107 (Cruce con Carrión)</strong>",
+  "descripcion": "Ubicado en Carmen de la Legua Reynoso. Referencia: A 1 cuadra de la Comisaría y a 2 cuadras de la Municipalidad.",
+  "imagenes": [
+    "https://i.ibb.co/FkvQ8kGx/image-f9eda6da.jpg"
+  ],
+  "tipoanuncio": 1,
+  "creado": "7/11/2026",
+  "fvencimiento": "7/12/2026",
+  "_evidencia_legal": "anuncio fisico letrero se alquila cuartos lopez pazos 1107 07/11/2026 contacto_941723511.jpg"
+},
+ 
+
+{
+  "idanuncio": "a_1793915838_0030",
+  "subcategory": "Depa",
+  "keywords": "se alquila mini departamento cuarto habitacion sala comedor baño dormitorio jr mariano melgar renta cdlr",
+  "boton": "WHATSAPP",
+  "contacto": "927324236",
+  "ubicado_en": "CDLR",
+  "featured": true,
+  "titulo": "<strong style='color: #c0392b;'>Se Alquila Mini Departamento - En Jr. Mariano Melgar 369</strong>",
+  "descripcion": "Distribución interna: Sala, comedor, baño y dormitorio. Ubicado en Carmen de la Legua Reynoso.",
+  "imagenes": [
+    "https://i.ibb.co/4ZH21CvL/image-a187731a.jpg"
+  ],
+  "tipoanuncio": 1,
+  "creado": "7/11/2026",
+  "fvencimiento": "7/12/2026",
+  "_evidencia_legal": "anuncio fisico letrero alquiler mini departamento 07/11/2026 contacto_927324236.jpg"
+},
+
+{
+  "idanuncio": "a_1793915838_0031",
+  "subcategory": "Depa",
+  "keywords": "alquilo monoambiente amplio cuarto habitacion 2do piso vista a la calle baño lavanderia persona sola pareja reynoso renta cdlr",
+  "boton": "WHATSAPP",
+  "contacto": "991332308",
+  "ubicado_en": "CDLR",
+  "featured": true,
+  "titulo": "<strong style='color: #d35400;'>Alquilo Monoambiente Amplio - Carmen de la Legua Reynoso</strong>",
+  "descripcion": "En el 2do piso con vista a la calle. Cuenta con baño independiente y lavandería. Para persona sola o parejas.",
+  "imagenes": [
+    "https://i.ibb.co/4ZH21CvL/image-a187731a.jpg"
+  ],
+  "tipoanuncio": 1,
+  "creado": "7/11/2026",
+  "fvencimiento": "7/12/2026",
+  "_evidencia_legal": "anuncio fisico letrero alquilo monoambiente amplio 07/11/2026 contacto_991332308.jpg"
+},
+
+{
+  "idanuncio": "a_1793915838_0032",
+  "subcategory": "Depa",
+  "keywords": "se alquila mini departamento para pareja jr sergio morocho vsm villa señor de los milagros renta cdlr",
+  "boton": "WHATSAPP",
+  "contacto": "994153036",
+  "ubicado_en": "CDLR",
+  "featured": true,
+  "titulo": "<strong style='color: #2c3e50;'>Se Alquila Mini Departamento para Pareja</strong>",
+  "descripcion": "Nos ubicamos en Jr. Sergio Morocho 270, Villa Señor de los Milagros, Carmen de la Legua Reynoso.",
+  "imagenes": [
+    "https://i.ibb.co/4ZH21CvL/image-a187731a.jpg"
+  ],
+  "tipoanuncio": 1,
+  "creado": "7/11/2026",
+  "fvencimiento": "7/12/2026",
+  "_evidencia_legal": "anuncio fisico letrero se alquila mini departamento pareja 07/11/2026 contacto_994153036.jpg"
+}
+
+,
+
+{
+  "idanuncio": "a_1793915838_0033",
+  "subcategory": "Depa",
+  "keywords": "alquiler mini departamento cuarto sala comedor cocina baño independiente av lopez pazos carmen de la legua reynoso renta cdlr",
+  "boton": "WHATSAPP",
+  "contacto": "987037204",
+  "ubicado_en": "CDLR",
+  "featured": true,
+  "titulo": "<strong style='color: #1a5694;'>Alquiler Mini-Departamento - 4to Piso (Av. López Pazos 620)</strong>",
+  "descripcion": "Incluye 1 cuarto, sala-comedor, cocina y baño (todo independiente). Carmen de la Legua Reynoso.",
+  "imagenes": [
+      "https://i.ibb.co/4ZH21CvL/image-a187731a.jpg"
+  ],
+  "tipoanuncio": 1,
+  "creado": "7/11/2026",
+  "fvencimiento": "7/12/2026",
+  "_evidencia_legal": "anuncio fisico letrero azul y rojo mini departamento 07/11/2026 contacto_987037204.jpg"
+},
+
+{
+  "idanuncio": "a_1793915838_0034",
+  "subcategory": "Local",
+  "keywords": "se alquila local comercial negocio tienda alquiler avenida principal reynoso cdlr",
+  "boton": "WHATSAPP",
+  "contacto": "969986856",
+  "ubicado_en": "CDLR",
+  "featured": true,
+  "titulo": "<strong style='color: #1a5694;'>Se Alquila Local Comercial</strong>",
+  "descripcion": "Amplio espacio disponible en zona estratégica de Carmen de la Legua Reynoso. Informes al WhatsApp.",
+  "imagenes": [
+    "https://i.ibb.co/23FgDPfZ/image-6badf1a5.jpg"
+  ],
+  "tipoanuncio": 1,
+  "creado": "7/11/2026",
+  "fvencimiento": "7/12/2026",
+  "_evidencia_legal": "anuncio fisico cartel impreso local comercial azul 07/11/2026 contacto_969986856.jpg"
+}
+,
+
+{
+  "idanuncio": "a_1793915838_0035",
+  "subcategory": "Cuartos",
+  "keywords": "se alquila habitacion cuarto para persona sola los manzanos conquistadores renta cdlr",
+  "boton": "WHATSAPP",
+  "contacto": "917131979",
+  "ubicado_en": "CDLR",
+  "featured": true,
+  "titulo": "<strong style='color: #2c3e50;'>Se Alquila Habitación para Persona Sola</strong>",
+  "descripcion": "Ubicada en Calle Los Manzanos 127, Referencia: Cerca a Av Faucett con Av 28 de Julio, Carmen de la Legua-Reynoso.",
+  "imagenes": [
+    "https://i.ibb.co/FkvQ8kGx/image-f9eda6da.jpg"
+  ],
+  "tipoanuncio": 1,
+  "creado": "7/11/2026",
+  "fvencimiento": "7/12/2026",
+  "_evidencia_legal": "anuncio fisico letrero blanco habitacion persona sola 07/11/2026 contacto_917131979.jpg"
+}
+
+,
+{
+  "idanuncio": "a_1793915838_0036",
+  "subcategory": "Depa",
+  "keywords": "se alquila departamento habitaciones sala comedor cocina baño lavanderia av lopez pazos municipalidad bulevar renta cdlr",
+  "boton": "WHATSAPP",
+  "contacto": "976710673",
+  "ubicado_en": "CDLR",
+  "featured": true,
+  "titulo": "<strong style='color: #2c3e50;'>Se Alquila Departamento - Av. López Pazos 727</strong>",
+  "descripcion": "Tiene con 2 habitaciones, sala-comedor, cocina, baño y lavandería. Referencia: A una cuadra de la Muni de Carmen de la legua. 974450948.",
+  "imagenes": [
+     "https://i.ibb.co/4ZH21CvL/image-a187731a.jpg"
+  ],
+  "tipoanuncio": 1,
+  "creado": "7/11/2026",
+  "fvencimiento": "7/12/2026",
+  "_evidencia_legal": "anuncio fisico letrero blanco departamento cdlr 07/11/2026 contacto_976710673.jpg"
+}
+,
+{
+  "idanuncio": "a_1793915838_0037",
+  "subcategory": "Cuartos",
+  "keywords": "se alquila cuarto cerca a bimbo baño compartido puerta independiente persona sola estudiante 3er piso renta cdlr",
+  "boton": "WHATSAPP",
+  "contacto": "951073697",
+  "ubicado_en": "CDLR",
+  "featured": true,
+  "titulo": "<strong style='color: #c0392b;'>Se Alquila Cuarto - Cerca a Bimbo (3er Piso) S/. 250 mensual (incluye S/.30 de luz y S/.30 de agua)</strong>",
+  "descripcion": "Puerta independiente. Ideal para persona sola o estudiante. Baño compartido. Contrato de Garantía: 1x1. Tlf: 918207002.",
+  "imagenes": [
+    "https://i.ibb.co/FkvQ8kGx/image-f9eda6da.jpg"
+  ],
+  "tipoanuncio": 1,
+  "creado": "7/11/2026",
+  "fvencimiento": "7/12/2026",
+  "_evidencia_legal": "anuncio fisico cartel impreso cuarto bimbo 07/11/2026 contacto_951073697.jpg"
+}
+
+,
+{
+  "idanuncio": "a_1793915838_0038",
+  "subcategory": "Depa",
+  "keywords": "se alquila mini departamento boleta de pago no extranjeros seguridad garantizada renta cdlr",
+  "boton": "WHATSAPP",
+  "contacto": "993469942",
+  "ubicado_en": "CDLR",
+  "featured": true,
+  "titulo": "<strong style='color: #c0392b;'>Se Alquila Mini Departamento - Seguridad Garantizada</strong>",
+  "descripcion": "Depa para máximo 2 personas. Ojo: Contar con boleta de pago y no extranjeros.",
+  "imagenes": [
+     "https://i.ibb.co/4ZH21CvL/image-a187731a.jpg"
+  ],
+  "tipoanuncio": 1,
+  "creado": "7/11/2026",
+  "fvencimiento": "7/12/2026",
+  "_evidencia_legal": "anuncio fisico letrero rojo y negro mini departamento 07/11/2026 contacto_993469942.jpg"
+}
+,
+{
+  "idanuncio": "a_1793915838_0041",
+  "subcategory": "Casas",
+  "keywords": "venta de casa se vende propiedad inmueble 4 pisos 10 dormitorios av manco capac ideal inversion cdlr",
+  "boton": "WHATSAPP",
+  "contacto": "934553211",
+  "ubicado_en": "CDLR",
+  "featured": true,
+  "titulo": "<strong style='color: #27ae60;'>¡Ocasión! Se Vende Casa de 4 Pisos - 10 Dormitorios</strong>",
+  "descripcion": "Ideal inversión. Ubicada en Av. Manco Cápac 662, Int. 'A', Carmen de la Legua Reynoso.",
+  "imagenes": [
+    "https://i.ibb.co/fYscVcdy/image-4f0e0ac6.jpg"
+  ],
+  "tipoanuncio": 1,
+  "creado": "8/11/2026",
+  "fvencimiento": "8/12/2026",
+  "_evidencia_legal": "anuncio fisico letrero verde ocasion se vende casa 08/11/2026 contacto_934553211.jpg"
+}
+
+,
+  {
+    "_idanuncio": "a_1793739233_0001",
+    "_subcategory": "Cuartos",
+    "_keywords": "alquiler cuartos habitaciones vivienda hogar renta",
+    "_boton": "MENSAJEAR POR <span class='icon-facebook-square' style='font-size: 22px;'></span>",
+    "_contacto": "facebook.com/share/1Eq2Gjo3oG/",
+    "_ubicado_en": "SMP",
+    "_featured": true,
+    "_titulo": "<strong style='color: #2e7550;'>Alquiler Habitación c/ baño compartido SMP</strong>",
+    "_descripcion": "Alquiler habitación con baño compartido. Referencia 2da de palao, a cuadras del cayetano heredia <strong style='color:#4157d2;'>S/ 320 Mensual</strong>",
+    "_imagenes": [
       "https://i.ibb.co/PsgQGFDm/615829793-1601463964522970-3978393367062111425-n.jpg",
       "https://i.ibb.co/xtMchQ0Q/461162765-992335215981022-8298973649858743560-n.jpg"
     ],
-    "tipoanuncio": 1,
-    "creado": "3/11/2026",
-    "fvencimiento": "3/12/2026",
+    "_tipoanuncio": 1,
+    "_creado": "3/11/2026",
+    "_fvencimiento": "3/12/2026",
     "_evidencia_legal": "facebook marketplace 3/11/2026 evidencia_1793739233.jpg"
   },
-  
-  {
-    "idanuncio": "a_1793739233_0001", 
-    "subcategory": "Cuartos",
-    "keywords": "alquiler cuartos habitaciones vivienda hogar renta",
-    "boton": "WHATSAPP",
-    "contacto": "999888777",  
-    "ubicado_en": "SMP",
-    "featured": true,
-    "titulo": "<strong style='color: #2e7550;'>Alquiler Habitación c/ baño compartido SMP</strong>",
-    "descripcion": "Alquiler habitación con baño compartido. Referencia 2da de palao, a cuadras del cayetano heredia <strong style='color:#4157d2;'>S/ 320 Mensual</strong>",
-    "imagenes": [
+    {
+    "_idanuncio": "a_1793739233_0001",
+    "_subcategory": "Cuartos",
+    "_keywords": "alquiler cuartos habitaciones vivienda hogar renta",
+    "_boton": "VER CATÁLOGO",
+    "_contacto": "http://pintandoconnumeros.com/",
+    "_ubicado_en": "SMP",
+    "_featured": true,
+    "_titulo": "<strong style='color: #2e7550;'>Alquiler Habitación c/ baño compartido SMP</strong>",
+    "_descripcion": "Alquiler habitación con baño compartido. Referencia 2da de palao, a cuadras del cayetano heredia <strong style='color:#4157d2;'>S/ 320 Mensual</strong>",
+    "_imagenes": [
       "https://i.ibb.co/PsgQGFDm/615829793-1601463964522970-3978393367062111425-n.jpg"
     ],
-    "tipoanuncio": 1,
-    "creado": "3/11/2026",
-    "fvencimiento": "3/12/2026",
+    "_tipoanuncio": 1,
+    "_creado": "3/11/2026",
+    "_fvencimiento": "3/12/2026",
     "_evidencia_legal": "facebook marketplace 3/11/2026 evidencia_1793739233.jpg"
   },
 
-    {
-    "idanuncio": "a_1793739233_0001", 
-    "subcategory": "Cuartos",
-    "keywords": "alquiler cuartos habitaciones vivienda hogar renta",
-    "boton": "VER CATÁLOGO",
-    "contacto": "http://pintandoconnumeros.com/",  
-    "ubicado_en": "SMP",
-    "featured": true,
-    "titulo": "<strong style='color: #2e7550;'>Alquiler Habitación c/ baño compartido SMP</strong>",
-    "descripcion": "Alquiler habitación con baño compartido. Referencia 2da de palao, a cuadras del cayetano heredia <strong style='color:#4157d2;'>S/ 320 Mensual</strong>",
-    "imagenes": [
-      "https://i.ibb.co/PsgQGFDm/615829793-1601463964522970-3978393367062111425-n.jpg"
-    ],
-    "tipoanuncio": 1,
-    "creado": "3/11/2026",
-    "fvencimiento": "3/12/2026",
-    "_evidencia_legal": "facebook marketplace 3/11/2026 evidencia_1793739233.jpg"
-  }
+  {
+  "idanuncio": "a_1793915838_0045",
+  "subcategory": "Local Comercial",
+  "keywords": "se alquila local comercial tienda negocio calle julio c tello mercado de reynoso renta cdlr",
+  "boton": "WHATSAPP",
+  "contacto": "989929913",
+  "ubicado_en": "CDLR",
+  "featured": true,
+  "titulo": "<strong style='color: #c0392b;'>Se Alquila Local Comercial - Frente al Mercado de Reynoso</strong>",
+  "descripcion": "Ideal para negocio. Ubicado en la calle Julio C. Tello, Mercado de Reynoso, Carmen de la Legua Reynoso.",
+  "imagenes": [
+    "https://i.ibb.co/23FgDPfZ/image-6badf1a5.jpg"
+  ],
+  "tipoanuncio": 1,
+  "creado": "8/11/2026",
+  "fvencimiento": "8/12/2026",
+  "_evidencia_legal": "anuncio fisico letrero se alquila local julio c tello 08/11/2026 contacto_989929913.jpg"
+},
+
+{
+  "idanuncio": "a_1793915838_0047",
+  "subcategory": ["Cuartos","Depa"],
+  "keywords": "se alquila cuarto habitacion 3er piso baño propio manco capac reynoso renta cdlr",
+  "boton": "WHATSAPP",
+  "contacto": "997156226",
+  "ubicado_en": "CDLR",
+  "featured": true,
+  "titulo": "<strong style='color: #d35400;'>Se Alquila Cuarto - 3° Piso con Baño Propio</strong>",
+  "descripcion": "Ubicado en Av. Manco Cápac 416, Reynoso, Carmen de la Legua Reynoso.",
+  "imagenes": [
+    "https://i.ibb.co/FkvQ8kGx/image-f9eda6da.jpg"
+  ],
+  "tipoanuncio": 1,
+  "creado": "8/11/2026",
+  "fvencimiento": "8/12/2026",
+  "_evidencia_legal": "anuncio fisico cartel naranja se alquila cuarto manco capac 08/11/2026 contacto_997156226.jpg"
+},
+
+{
+  "idanuncio": "a_1793915838_0049",
+  "subcategory": "Local Comercial",
+  "keywords": "se alquila local comercial tienda negocio av jose santos chocano reynoso frente al hospital san jose renta cdlr",
+  "boton": "WHATSAPP",
+  "contacto": "950201613",
+  "ubicado_en": "CDLR",
+  "featured": true,
+  "titulo": "<strong style='color: #2c3e50;'>Se Alquila Local Comercial - Frente al Hospital San José</strong>",
+  "descripcion": "Ideal para negocio. Ubicado en Av. José Santos Chocano, Reynoso. Más detalles al whatsapp",
+  "imagenes": [
+    "https://i.ibb.co/23FgDPfZ/image-6badf1a5.jpg"
+  ],
+  "tipoanuncio": 1,
+  "creado": "8/11/2026",
+  "fvencimiento": "8/12/2026",
+  "_evidencia_legal": "anuncio fisico letrero blanco local comercial chocano 08/11/2026 contacto_950201613.jpg"
+}
+,
+{
+  "idanuncio": "a_1793915838_0051",
+  "subcategory": "Cuartos",
+  "keywords": "se alquila cuarto habitacion 1er piso baño compartido manco capac reynoso renta cdlr",
+  "boton": "WHATSAPP",
+  "contacto": "997156226",
+  "ubicado_en": "CDLR",
+  "featured": true,
+  "titulo": "<strong style='color: #d35400;'>Se Alquila Cuarto - 1° Piso (Av. Manco Cápac 416, Reynoso)</strong>",
+  "descripcion": "Se alquila habitación independiente ubicada en el 1° Piso. Cuenta con baño compartido.",
+  "imagenes": [
+    "https://i.ibb.co/FkvQ8kGx/image-f9eda6da.jpg"
+  ],
+  "tipoanuncio": 1,
+  "creado": "8/11/2026",
+  "fvencimiento": "8/12/2026",
+  "_evidencia_legal": "anuncio fisico cartel amarillo se alquila cuarto 1er piso 08/11/2026 contacto_997156226.jpg"
+}
+,
+
+{
+  "idanuncio": "a_1793915838_0053",
+  "subcategory": "Depa",
+  "keywords": "alquilo departamento en estreno 2 cuartos habitaciones jose olaya politecnico vsm renta",
+  "boton": "WHATSAPP",
+  "contacto": "913071945",
+  "ubicado_en": "CDLR",
+  "featured": true,
+  "titulo": "<strong style='color: #2c3e50;'>Alquilo Departamento en Estreno - 2 Cuartos</strong>",
+  "descripcion": "Referencia de ubicación: Espalda del Colegio Politécnico - Urb José Olaya (Dulanto - Callao)",
+  "imagenes": [
+    "https://i.ibb.co/4ZH21CvL/image-a187731a.jpg"
+  ],
+  "tipoanuncio": 1,
+  "creado": "8/11/2026",
+  "fvencimiento": "8/12/2026",
+  "_evidencia_legal": "anuncio fisico letrero alquilo departamento estreno 2 cuartos 08/11/2026 contacto_913071945.jpg"
+}
+
+,
+
+{
+  "idanuncio": "a_1793915838_0055",
+  "subcategory": "Cuartos",
+  "keywords": "se alquila habitacion cuarto para persona sola alquiler renta cdlr",
+  "boton": "WHATSAPP",
+  "contacto": "964303346",
+  "ubicado_en": "CDLR",
+  "featured": true,
+  "titulo": "<strong style='color: #2c3e50;'>Se Alquila Habitación para Persona Sola</strong>",
+  "descripcion": "Toda información sólo escribir al WhatsApp.",
+  "imagenes": [
+    "https://i.ibb.co/FkvQ8kGx/image-f9eda6da.jpg"
+  ],
+  "tipoanuncio": 1,
+  "creado": "8/11/2026",
+  "fvencimiento": "8/12/2026",
+  "_evidencia_legal": "anuncio fisico letrero blanco habitacion persona sola 08/11/2026 contacto_964303346.jpg"
+}
+
+,
+
+{
+  "idanuncio": "a_1793915838_0056",
+  "subcategory": "Depa",
+  "keywords": "alquilo mini departamento espacios amplios ventilados personal de la marina essalud cerca al hospital san jose cdlr renta",
+  "boton": "WHATSAPP",
+  "contacto": "923300692",
+  "ubicado_en": "CDLR",
+  "featured": true,
+  "titulo": "<strong style='color: #2c3e50;'>Alquilo Mini Departamento - Cerca al Hospital San José</strong>",
+  "descripcion": "Se alquila mini departamento con espacios amplios y ventilados. Perfil ideal preferente: Personal de la Marina o EsSalud.",
+  "imagenes": [
+    "https://i.ibb.co/4ZH21CvL/image-a187731a.jpg"
+  ],
+  "tipoanuncio": 1,
+  "creado": "8/11/2026",
+  "fvencimiento": "8/12/2026",
+  "_evidencia_legal": "anuncio fisico letrero blanco en poste mini departamento 08/11/2026 contacto_923300692.jpg"
+},
+
+{
+  "idanuncio": "a_1793915838_0057",
+  "subcategory": "Cuartos",
+  "keywords": "se alquila cuarto amoblado habitacion amoblada qr escanea codigo qr renta cdlr",
+  "boton": "WHATSAPP",
+  "contacto": "960596387",
+  "ubicado_en": "CDLR",
+  "featured": true,
+  "titulo": "<strong style='color: #d35400;'>¡Se Alquila Cuarto Amoblado! - Excelente Ocasión</strong>",
+  "descripcion": "Se alquila habitación completamente amoblada y lista para habitar. Para más detalle: contáctanos rápido vía WhatsApp.",
+  "imagenes": [
+    "https://i.ibb.co/FkvQ8kGx/image-f9eda6da.jpg"
+  ],
+  "tipoanuncio": 1,
+  "creado": "8/11/2026",
+  "fvencimiento": "8/12/2026",
+  "_evidencia_legal": "anuncio fisico afiche oscuro cuarto amoblado con qr 08/11/2026 contacto_960596387.jpg"
+}
+
+,
+
+{
+  "idanuncio": "a_1793915838_0058",
+  "subcategory": "Cuartos",
+  "keywords": "se alquila cuarto habitacion baño propio puerta a la calle solo peruanos renta cdlr",
+  "boton": "WHATSAPP",
+  "contacto": "913071945",
+  "ubicado_en": "CDLR",
+  "featured": true,
+  "titulo": "<strong style='color: #1a5694;'>Se Alquila Cuarto con Baño Propio y Puerta a la Calle</strong>",
+  "descripcion": "Restricciones: Solo para peruanos. Sólo informes por mensaje de WhatsApp.",
+  "imagenes": [
+    "https://i.ibb.co/FkvQ8kGx/image-f9eda6da.jpg"
+  ],
+  "tipoanuncio": 1,
+  "creado": "8/11/2026",
+  "fvencimiento": "8/12/2026",
+  "_evidencia_legal": "anuncio fisico letrero blanco cuarto baño propio solo peruanos 08/11/2026 contacto_913071945.jpg"
+}
+
+
+
 
 ]
