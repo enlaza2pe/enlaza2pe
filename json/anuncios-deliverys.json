@@ -39,7 +39,164 @@
   "_evidencia_legal": "anuncio fisico banner vertical avicola patrick 08/11/2026 contacto_997198915.jpg"
 },
 
+{
+  "idanuncio": "a_1793915838_0066",
+  "subcategory": ["Restaurante", "Comida Rápida", "Bar y Coctelería"],
+  "keywords": "el rebecon hamburgueseria peruana chicharrones balde de cerveza pilsen cocteles delivery libertad 398 reynoso madrugada cdlr",
+  "boton": "WHATSAPP",
+  "contacto": "974312962",
+  "ubicado_en": "CDLR",
+  "featured": true,
+  "titulo": "<strong style='color: #d35400;'>El Rebecón - Hamburguesería, Chicharrones y Bebidas de Reynoso. Delivery hasta las 12:30 a.m.</strong>",
+  "descripcion": "Vea nuestras promociones de comida y bebidas en la foto. Contáctenos al whatsapp",
+  "imagenes": [
+    "https://i.ibb.co/ZprwtK8m/image-228b9132.jpg"
+  ],
+  "tipoanuncio": 1,
+  "creado": "11/11/2026",
+  "fvencimiento": "11/12/2026",
+  "_evidencia_legal": "anuncio fisico banner dividido en 3 partes el rebecon 11/11/2026 contacto_974312962.jpg"
+}
+,
 
+{
+  "idanuncio": "a_1793915838_0067",
+  "subcategory": ["Chifa", "Restaurante", "Comida Rápida"],
+  "keywords": "chifa cristian caldo de gallina chaufa de pollo aeropuerto combinado tallarin saltado pollo con verdura frijolito saltado sopa de pollo delivery cdlr",
+  "boton": "WHATSAPP",
+  "contacto": "993096950",
+  "ubicado_en": "CDLR",
+  "featured": true,
+  "titulo": "<strong style='color: #c0392b;'>Chifa \"Cristian\" - Delivery de Caldo de Gallina y Platos a la Carta de Reynoso</strong>",
+  "descripcion": "Servicio de delivery disponible. Carta y precios: Revise nuestra carta en la foto",
+  "imagenes": [
+    "https://i.ibb.co/PsS7q2LF/image-dbf2f1ce.jpg"
+  ],
+  "tipoanuncio": 1,
+  "creado": "11/11/2026",
+  "fvencimiento": "11/12/2026",
+  "_evidencia_legal": "anuncio fisico cartel vertical chifa cristian 11/11/2026 contacto_993096950.jpg"
+}
+,
+
+{
+  "idanuncio": "a_1793915838_0068",
+  "subcategory": ["Restaurante", "Cevichería", "Comida Rápida"],
+  "keywords": "gogo sabor restaurante cevicheria menu comida criolla arroz con pollo aji de gallina frejoles con seco tallarines lomo saltado delivery reynoso cdlr",
+  "boton": "WHATSAPP",
+  "contacto": "908850862",
+  "ubicado_en": "CDLR",
+  "featured": true,
+  "titulo": "<strong style='color: #d35400;'>Gogo Sabor - Restaurante y Cevichería (Menú y Comida Criolla en Reynoso)</strong>",
+  "descripcion": "Lo mejor en menú, comida criolla y platos marinos con servicio delivery. Vean nuestras especialidades en la imagen.",
+  "imagenes": [
+    "https://i.ibb.co/TD7mzpx3/image-573062ac.jpg"
+  ],
+  "tipoanuncio": 1,
+  "creado": "11/11/2026",
+  "fvencimiento": "11/12/2026",
+  "_evidencia_legal": "anuncio fisico banner vertical gogo sabor 11/11/2026 contacto_908850862.jpg"
+},
+
+{
+  "idanuncio": "a_1793915838_0069",
+  "subcategory": ["Chifa", "Restaurante", "Comida Rápida"],
+  "keywords": "chifa pino comida china chaufa tallarin saltado aeropuerto delivery entregas rapidas recoger pedido cdlr",
+  "boton": "WHATSAPP",
+  "contacto": "900900636",
+  "ubicado_en": "CDLR",
+  "featured": true,
+  "titulo": "<strong style='color: #d4af37;'>Chifa Pino - Entregas Rápidas y Recojo en Tienda</strong>",
+  "descripcion": "Revisa en la imagen nuestros platos. Delivery Horario de atención: 12:00 PM a 11:00 PM.",
+  "imagenes": [
+    "https://i.ibb.co/QvTk7QFz/image-8de7f285.jpg"
+  ],
+  "tipoanuncio": 1,
+  "creado": "11/11/2026",
+  "fvencimiento": "11/12/2026",
+  "_evidencia_legal": "anuncio fisico volante chifa pino 11/11/2026 contacto_900900636.jpg"
+}
+,
+
+{
+  "idanuncio": "a_1793915838_0070",
+  "subcategory": ["Pizzería", "Restaurante", "Comida Rápida"],
+  "keywords": "donna pizza pizzeria menu italiano pizzas americana española portuguesa hawaiana delivery av 1ro de mayo carmen de la legua cdlr",
+  "boton": "WHATSAPP",
+  "contacto": "900983912",
+  "ubicado_en": "CDLR",
+  "featured": true,
+  "titulo": "<strong style='color: #c0392b;'>Donna Pizza - Menú Italiano y Pizzas con Delivery</strong>",
+  "descripcion": "Lo mejor en pastas y pizzas con servicio delivery en Carmen de la Legua. Vea nuestras especialidades en la foto.",
+  "imagenes": [
+    "https://i.ibb.co/q3T0dPHj/image-16a93bad.jpg"
+  ],
+  "tipoanuncio": 1,
+  "creado": "11/11/2026",
+  "fvencimiento": "11/12/2026",
+  "_evidencia_legal": "anuncio fisico banner vertical donna pizza 11/11/2026 contacto_900983912.jpg"
+}
+,
+
+{
+  "idanuncio": "a_1793915838_0071",
+  "subcategory": ["Pollería", "Restaurante", "Comida Rápida"],
+  "keywords": "polleria don nilo pollo a la brasa papas fritas ensalada delivery yape visa tarjeta cdlr",
+  "boton": "WHATSAPP",
+  "contacto": "908589370",
+  "ubicado_en": "CDLR",
+  "featured": true,
+  "titulo": "<strong style='color: #c0392b;'>Pollería Don Nilo - Pollo a la Brasa y Servicio Delivery</strong>",
+  "descripcion": "Disfruta del mejor pollo a la brasa en Pollería Don Nilo. Aceptamos pagos con tarjeta Visa y billeteras digitales. Haz tu pedido por WhatsApp.",
+  "imagenes": [
+    "https://i.ibb.co/1YYmN2bw/image-b043f97e.jpg"
+  ],
+  "tipoanuncio": 1,
+  "creado": "11/11/2026",
+  "fvencimiento": "11/12/2026",
+  "_evidencia_legal": "anuncio fisico cartel polleria don nilo 11/11/2026 contacto_908589370.jpg"
+}
+,
+
+{
+  "idanuncio": "a_1793915838_0072",
+  "subcategory": ["Pizzería", "Restaurante", "Comida Rápida"],
+  "keywords": "real pizza pizzeria pizzas delivery reparto a domicilio telefono fijo celular cdlr",
+  "boton": "WHATSAPP",
+  "contacto": "916924027",
+  "ubicado_en": "CDLR",
+  "featured": true,
+  "titulo": "<strong style='color: #c0392b;'>Real Pizza - Servicio Delivery Rápido</strong>",
+  "descripcion": "Disfruta de las mejores pizzas con entrega rápida a domicilio en Real Pizza. Pedidos directos por WhatsApp.",
+  "imagenes": [
+    "https://i.ibb.co/xStSRRKC/image-f5fad32a.jpg"
+  ],
+  "tipoanuncio": 1,
+  "creado": "11/11/2026",
+  "fvencimiento": "11/12/2026",
+  "_evidencia_legal": "anuncio fisico letrero luminoso circular real pizza 11/11/2026 contacto_916924027.jpg"
+}
+,
+{
+  "idanuncio": "a_1793915838_0073",
+  "subcategory": ["Restaurante", "Comida Rápida", "Juguería"],
+  "keywords": "fuente de soda alfredo hamburguesas broaster salchipapa jugos maracuya delivery yape plin villa señor de los milagros carmen de la legua reynoso cdlr",
+  "boton": "WHATSAPP",
+  "contacto": "942192527",
+  "ubicado_en": "CDLR",
+  "featured": true,
+  "titulo": "<strong style='color: #d35400;'>Fuente de Soda Alfredo - Delivery de Hamburguesas, Broaster y Jugos (Desde 1999)</strong>",
+  "descripcion": "Tradición y sabor desde 1999. Disfruta de nuestras especialidades en la imagen. Aceptamos Yape y Plin.",
+  "imagenes": [
+    "https://i.ibb.co/Xfpr9PsR/image-e27d1ded.jpg"
+  ],
+  "tipoanuncio": 1,
+  "creado": "11/11/2026",
+  "fvencimiento": "11/12/2026",
+  "_evidencia_legal": "anuncio fisico cartel fuente de soda alfredo 11/11/2026 contacto_942192527.jpg"
+}
+
+,
   {
     "_idanuncio": 2,
     "_subcategory": "Juguetes",

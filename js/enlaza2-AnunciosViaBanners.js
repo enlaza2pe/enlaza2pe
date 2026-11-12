@@ -71,11 +71,6 @@ Promise.all([
     return r.json();
   }),
 
-  fetch("json/anuncios-promociones.json").then(r => {
-    if (!r.ok) throw new Error("Error cargando promociones");
-    return r.json();
-  }),
-
   fetch("json/anuncios-asesoresprofesional.json").then(r => {
     if (!r.ok) throw new Error("Error cargando promociones");
     return r.json();
@@ -90,8 +85,7 @@ Promise.all([
     anunciosAlq,
     anunciosDelivery,
     anunciosEmpleos,
-    anunciosServicios,
-    anunciosPromociones,
+    anunciosServicios, 
     anunciosAsesorias,
     categoriasData
   ]) => {
@@ -102,8 +96,7 @@ Promise.all([
       ...anunciosDelivery,
       ...anunciosEmpleos,
       ...anunciosServicios,
-      ...anunciosAsesorias,
-      ...anunciosPromociones
+      ...anunciosAsesorias 
     ];
 
     categorias = categoriasData;
@@ -113,8 +106,7 @@ Promise.all([
       "Envíos a domicilio": anunciosDelivery,
       "Empleos": anunciosEmpleos,
       "Servicios Generales": anunciosServicios,
-      "Asesoría Profesional": anunciosAsesorias,
-      "Promos de tiendas": anunciosPromociones
+      "Asesoría Profesional": anunciosAsesorias 
     };
 
     renderBanners();
@@ -140,7 +132,7 @@ function crearBanner(grupo, esPrimero) {
     );
   }
 
-  // Si es el primer elemento renderizado de la lista, le inyectamos la clase 'is-active' de entrada
+  // Si es el 1° elemento renderizado de la lista, le inyectamos clase 'is-active' de entrada
   const claseActiva = esPrimero ? "is-active" : "";
 
   return `
@@ -161,6 +153,7 @@ function crearBanner(grupo, esPrimero) {
   `;
 }
 
+/*Banners configurados como sticky navbar en css*/
 function renderBanners() {
   const contenedor = document.getElementById('contenedor-banners');
   if (!contenedor) return;
@@ -188,15 +181,18 @@ function renderBanners() {
 }
 
 
-
-
 /*   CLICK EN UNA CATEGORÍA */
 document.addEventListener("click", function (e) {
   const btn = e.target.closest("#contenedor-banners [data-categoria]");
   if (!btn) return;
   e.preventDefault();
-
   const categoria = btn.dataset.categoria;
+    // 1. Añadimos visualmente la clase compacta al contenedor inmediatamente
+  const contenedor = document.getElementById('contenedor-banners');
+  if (contenedor) {
+    contenedor.classList.add('modo-compacto'); 
+  }
+
 
   // Al hacer click de forma manual, pasa a cargarse con su diseño/clase compacta respectiva
   if (typeof ejecutarConLoader === 'function') {
@@ -206,6 +202,7 @@ document.addEventListener("click", function (e) {
   } else {
     cargarCategoria(categoria, { scroll: true, compacto: true });
   }
+ 
 });
 
 /* CARGAR CATEGORIAS */
@@ -342,8 +339,7 @@ function renderAnuncios(lista, subcategoria) {
     }
   });
 }
-
-
+ 
 
 /* RENDER PARTICULAS de BANNERS  */
 function particulasRefer() {
