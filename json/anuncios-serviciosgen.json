@@ -7,10 +7,10 @@
   "contacto": "960411710",
   "ubicado_en": "CDLR",
   "featured": true,
-  "titulo": "<strong style='color: #2980b9;'>Servicios Generales para su Hogar - Atención las 24 Horas</strong>",
-  "descripcion": "Revise nuestro catálogo de especialidades. Brindamos soluciones efectivas. Para mayor información escríbanos vía Whatsapp.",
+  "titulo": "<strong style='color: #2980b9;'>Servicios Generales para su Hogar - Sr Víctor Morán - Atención las 24 Horas</strong>",
+  "descripcion": "Revise el catálogo de especialidades. Brinda soluciones efectivas.",
   "imagenes": [
-    "https://i.ibb.co/8LZbfT0N/image-191a0111.jpg"
+    "https://i.ibb.co/Wvh5DL8y/image-aaca6523.jpg"
   ],
   "tipoanuncio": 1,
   "creado": "7/11/2026",
@@ -27,7 +27,7 @@
   "ubicado_en": "CDLR",
   "featured": true,
   "titulo": "<strong style='color: #c0392b;'>Servicios de Electricista y Pintor - Sr. José</strong>",
-  "descripcion": "Se ofrecen servicios profesionales a domicilio de Electricista y Pintor. Trabajos de calidad garantizada para el hogar o negocio.",
+  "descripcion": "Ofrece servicios profesionales a domicilio de Electricista y Pintor. Trabajos de calidad garantizada para el hogar o negocio.",
   "imagenes": [
     "https://i.ibb.co/v6wZs9vN/image-43f31514.jpg"
   ],
@@ -49,7 +49,7 @@
   "ubicado_en": "CDL",
   "featured": true,
   "titulo": "<strong style='color: #2e7550;'>Catering y Organización de Eventos 'Fina Estampa Eventos'</strong>",
-  "descripcion": "Organizamos todo tipo de eventos. Para cotizaciones, consultas y ver nuestro trabajo visita: <a class='icon-facebook-square' style='font-size: 22px;' href='https://www.facebook.com/p/Fina-Estampa-Eventos-100051088967955/' target='_blank' rel='noopener noreferrer'></a>",
+  "descripcion": "Organiza todo tipo de eventos. Cotizaciones, consultas y ver trabajo visitar: <a class='icon-facebook-square' style='font-size: 22px;' href='https://www.facebook.com/p/Fina-Estampa-Eventos-100051088967955/' target='_blank' rel='noopener noreferrer'></a>",
   "imagenes": [
     "https://i.ibb.co/RGjrTxDH/485055074-1213431947036426-1502793078766358456-n.jpg"
   ],
@@ -60,7 +60,66 @@
 }
 ,
 
- 
+{
+  "idanuncio": "a_1793915838_0083",
+  "subcategory": "Mudanza",
+  "keywords": "driver carga carga y mudanza fletes transporte camion mudanzas domicilio empresas cdlr",
+  "boton": "WHATSAPP",
+  "contacto": "904370146",
+  "ubicado_en": "CDLR",
+  "featured": true,
+  "titulo": "<strong style='color: #27ae60;'>Driver Carga - Servicio de Carga y Mudanza</strong>",
+  "descripcion": "Empresa especializada en servicios de carga y mudanza residencial y comercial en Carmen de la Legua Reynoso y alrededores. Atención directa y cotizaciones vía WhatsApp al 904 370 146.",
+  "imagenes": [
+    "https://i.ibb.co/3bYmYVD/image-e5f25ffc.jpg"
+  ],
+  "tipoanuncio": 1,
+  "creado": "13/11/2026",
+  "fvencimiento": "13/12/2026",
+  "_evidencia_legal": "anuncio fisico banner verde driver carga mudanza 13/11/2026 contacto_904370146.jpg"
+}
+,
+
+{
+  "idanuncio": "a_1793915838_0084",
+  "subcategory": "Mudanza",
+  "keywords": "carga y mudanza el gato fletes transporte mudanzas traslado mercaderia cdlr",
+  "boton": "WHATSAPP",
+  "contacto": "950674382",
+  "ubicado_en": "CDLR",
+  "featured": true,
+  "titulo": "<strong style='color: #2c3e50;'>Carga y Mudanza \"El Gato\" - Transporte y Fletes</strong>",
+  "descripcion": "Servicio de carga, fletes y mudanzas en general. Dispone de dos líneas de atención telefónica y WhatsApp para consultas y reservas: 950 674 382 y línea de emergencia o apoyo adicional.",
+  "imagenes": [
+    "https://i.ibb.co/dwrptqM4/image-c06dd0e.jpg"
+  ],
+  "tipoanuncio": 1,
+  "creado": "13/11/2026",
+  "fvencimiento": "13/12/2026",
+  "_evidencia_legal": "anuncio fisico cartel carga y mudanza el gato 13/11/2026 contacto_950674382.jpg"
+}
+,
+
+{
+  "idanuncio": "a_1793915838_0085",
+  "subcategory": "Mudanza",
+  "keywords": "cargas y mudanzas fletes transporte mudanzas traslado muebles mercaderia cdlr",
+  "boton": "WHATSAPP",
+  "contacto": "991166076",
+  "ubicado_en": "CDLR",
+  "featured": true,
+  "titulo": "<strong style='color: #2c3e50;'>Servicio de Cargas y Mudanzas en General</strong>",
+  "descripcion": "Servicio dedicado al transporte de carga y mudanzas para hogares y negocios. Para información y cotizaciones, comunicarse a los teléfonos 991 166 076 o 958 291 698.",
+  "imagenes": [
+    "https://i.ibb.co/CpRZXZzx/image-de2de6c3.jpg"
+  ],
+  "tipoanuncio": 1,
+  "creado": "13/11/2026",
+  "fvencimiento": "13/12/2026",
+  "_evidencia_legal": "anuncio fisico cartel blanco cargas y mudanzas 13/11/2026 contacto_991166076.jpg"
+}
+
+ ,
 
 
 {
@@ -92,7 +151,7 @@
   "ubicado_en": "CDLR",
   "featured": true,
   "titulo": "<strong style='color: #1a5694;'>Reparación de Máquinas de Coser a Domicilio</strong>",
-  "descripcion": "Ofrecemos servicio especializado de reparación de máquinas de coser a domicilio, compra-venta y repuestos generales.",
+  "descripcion": "Ofrece servicio especializado de reparación de máquinas de coser a domicilio, compra-venta y repuestos generales.",
   "imagenes": [
     "https://i.ibb.co/0Ry9kZf9/image-f23c306f.jpg"
   ],
@@ -132,7 +191,7 @@
   "ubicado_en": "CDLR",
   "featured": true,
   "titulo": "<strong style='color: #c0392b;'>Servicios Generales - Especialistas Sra. Milagros y/o Sr. Miguel</strong>",
-  "descripcion": "Lea nuestra cartilla de todas nuestras especialidades en la imagen. Contáctenos por whatsapp",
+  "descripcion": "Revise cartilla de especialidades en la imagen. Contactar por whatsapp",
   "imagenes": [
     "https://i.ibb.co/5Xd5zjRX/image-e63366b1.jpg"
   ],
@@ -184,6 +243,66 @@
 }
 ,
 
+{
+  "idanuncio": "a_1793915838_0086",
+  "subcategory": ["Albañil", "Gasfitero"],
+  "keywords": "construcciones techos tarrajeos ladrillos mayolicas porcelanatos gasfiteria cisterna tanques desague desatoros maestro juan cdlr",
+  "boton": "WHATSAPP",
+  "contacto": "961553461",
+  "ubicado_en": "CDLR",
+  "featured": true,
+  "titulo": "<strong style='color: #2c3e50;'>Maestro Juan M. - Construcciones, Mayólicas y Gasfitería</strong>",
+  "descripcion": "Especialista en trabajos de construcción y mantenimiento integral para el hogar. Realiza techos, tarrajeos, asentado de ladrillos, colocación de mayólicas y porcelanatos, gasfitería, limpieza o instalación de cisternas y tanques, y desatoros de desagüe. Atención y cotizaciones al 961 553 461.",
+  "imagenes": [
+    "https://i.ibb.co/JwJpjwNz/image-ec33a5fa.jpg"
+  ],
+  "tipoanuncio": 1,
+  "creado": "13/11/2026",
+  "fvencimiento": "13/12/2026",
+  "_evidencia_legal": "anuncio fisico letrero maestro juan construcciones 13/11/2026 contacto_961553461.jpg"
+}
+,
+
+{
+  "idanuncio": "a_1793915838_0087",
+  "subcategory": ["Tapicero", "Carpintero"],
+  "keywords": "tapiceria jose torres muebles sillas pintura carpinteria jr callao 222 carmen de la legua reynoso cdlr",
+  "boton": "WHATSAPP",
+  "contacto": "934709856",
+  "ubicado_en": "CDLR",
+  "featured": true,
+  "titulo": "<strong style='color: #5d3a1a;'>Tapicería José Torres - Muebles, Pintura y Carpintería</strong>",
+  "descripcion": "Taller dedicado al tapizado, restauración y pintura de muebles y sillas, además de trabajos de carpintería en general. Ubicado en Jr. Callao N° 222, Carmen de la Legua Reynoso. Consultas y presupuestos al 934 709 856.",
+  "imagenes": [
+    "https://i.ibb.co/hJ3KcKcm/image-76003334.jpg"
+  ],
+  "tipoanuncio": 1,
+  "creado": "13/11/2026",
+  "fvencimiento": "13/12/2026",
+  "_evidencia_legal": "anuncio fisico letrero blanco tapiceria jose torres 13/11/2026 contacto_934709856.jpg"
+}
+,
+
+{
+  "idanuncio": "a_1793915838_0088",
+  "subcategory": "Tapicero",
+  "keywords": "se lavan juego de muebles sillas colchones cortinas alfombras tapizado funda de muebles instalacion rieles tubos cdlr",
+  "boton": "WHATSAPP",
+  "contacto": "978907983",
+  "ubicado_en": "CDLR",
+  "featured": true,
+  "titulo": "<strong style='color: #1a5694;'>Lavado y Tapizado de Muebles, Colchones y Cortinas</strong>",
+  "descripcion": "Servicio especializado de lavado de juegos de muebles, juegos de sillas, colchones, cortinas y alfombras. También realiza tapizado, confección de fundas para muebles e instalación de rieles y tubos. Líneas de atención: 978 907 983 y 948 977 434.",
+  "imagenes": [
+    "https://i.ibb.co/cS7HZDYP/image-2a341a35.jpg"
+  ],
+  "tipoanuncio": 1,
+  "creado": "13/11/2026",
+  "fvencimiento": "13/12/2026",
+  "_evidencia_legal": "anuncio fisico cartel blanco lavado y tapizado muebles 13/11/2026 contacto_978907983.jpg"
+}
+,
+
 
 {
   "idanuncio": "a_1793915838_0064",
@@ -194,7 +313,7 @@
   "ubicado_en": "CDLR",
   "featured": true,
   "titulo": "<strong style='color: #2c3e50;'>Servicios de Albañilería, Demolición, Pintado, Enchapados y Gasfitería - Maestro Alfredo</strong>",
-  "descripcion": "Además de trabajos de Electricidad, Ampliación/Remodelación, Encofrado Techos/Columnas. 2° TLF: 916187013.",
+  "descripcion": "Trabajos de Electricidad, Ampliación/Remodelación, Encofrado Techos/Columnas. 2° TLF: 916187013.",
   "imagenes": [
     "https://i.ibb.co/9kYfX7DK/image-19bd7212.jpg"
   ],

@@ -32,5 +32,25 @@
     "creado": "6/11/2026",
     "fvencimiento": "6/12/2026",
     "_evidencia_legal": "anuncio fisico afiche de clases 06/11/2026 profe_marlon.jpg"
-  }
+  },
+
+  {
+  "idanuncio": "a_1793915838_0091",
+  "subcategory": ["Abogado", "Servicios Profesionales"],
+  "keywords": "estudio juridico benites ayvar abogados asociados asesoria legal tramites av 1ro de mayo 286 carmen de la legua reynoso cdlr",
+  "boton": "WHATSAPP",
+  "contacto": "999975047",
+  "ubicado_en": "CDLR",
+  "featured": true,
+  "titulo": "<strong style='color: #1a5694;'>Estudio Jurídico Benites Ayvar - Abogados Asociados</strong>",
+  "descripcion": "Estudio jurídico que brinda servicios de asesoría y patrocinio legal mediante atención previa cita. Ubicado en Av. 1ro de Mayo N° 286 (2do Piso), Carmen de la Legua - Reynoso. Dispone de atención por WhatsApp al 999 975 047 y teléfono fijo (01) 469-3263.",
+  "imagenes": [
+    "https://ibb.co"
+  ],
+  "tipoanuncio": 1,
+  "creado": "13/11/2026",
+  "fvencimiento": "13/12/2026",
+  "_evidencia_legal": "anuncio fisico letrero estudio juridico benites ayvar 13/11/2026 contacto_999975047.jpg"
+}
+
 ]

@@ -55,14 +55,11 @@ body {
     /* En escritorio se desactiva el corte y se muestran normales */
   }
 }
-
+/*
 .cta-banner.is-active {
-  background-color: #0056B3;
-  /* El color de tu marca (ej: azul, negro, etc.) */
-  color: #FFFFFF;
-  /* Al cambiar el color a blanco, el SVG se vuelve BLANCO */
+  background-color: #0056B3; 
 }
-
+*/
 .cta-banner:hover {
   background-color: #333333;
   color: #FFFFFF;

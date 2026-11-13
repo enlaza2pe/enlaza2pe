@@ -1,8 +1,6 @@
 /* ==========================================
    CLON BANNER + BADGES ATAJO
-   Navegación flotante compacta
 ========================================== */
-
 #clon-banner-badges-atajo {
   position: fixed;
   top: 0;
@@ -15,7 +13,7 @@
   padding: 6px 0;
   box-sizing: border-box;
   background: rgba(255, 255, 255, 0.97);
-  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.304);
   backdrop-filter: blur(10px);
   transform: translateY(-110%);
   opacity: 0;
@@ -24,7 +22,6 @@
   transition: transform 0.25s ease, opacity 0.25s ease, visibility 0.25s ease;
 }
 
-/* Barra visible */
 #clon-banner-badges-atajo.visible {
   transform: translateY(0);
   opacity: 1;
@@ -32,14 +29,25 @@
   pointer-events: auto;
 }
 
-/* Contenedor de banners clonados */
+/* Contenedor de banners clonados (Ensamblado con estilos de banners-wrap) */
 #clon-banner-badges-atajo .atajo-banners {
-  display: flex;
-  gap: 5px;
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  padding: 0 10px;
+  box-sizing: border-box;
+  background: transparent;
   overflow-x: auto;
   overflow-y: hidden;
-  padding: 0 10px;
+  overscroll-behavior-x: contain;
+  scroll-behavior: smooth;
   scrollbar-width: none;
+  -ms-overflow-style: none;
   -webkit-overflow-scrolling: touch;
 }
 
@@ -47,32 +55,176 @@
   display: none;
 }
 
-/* Banners compactos */
-#clon-banner-badges-atajo .cta-banner {
-  min-height: 45px;
-  height: auto;
-  padding: 3px 9px;
-  flex-shrink: 0;
-  box-sizing: border-box;
-  display: flex;
+/* Base de cada banner clonado (Compacto en fila) */
+#clon-banner-badges-atajo .atajo-banners .cta-banner {
+  position: relative;
+  isolation: isolate;
+  display: inline-flex;
+  flex-direction: row;
+  flex: 0 0 auto;
   align-items: center;
+  justify-content: center;
+  text-align: center;
   gap: 6px;
+  min-height: 44px;
+  height: auto;
+  padding: 5px 12px;
+  width: fit-content;
+  max-width: none;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 29px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 180ms ease, color 180ms ease;
+  box-shadow: none !important;
 }
 
-/* Iconos compactos */
-#clon-banner-badges-atajo .cta-icon {
-  transform: scale(0.85);
-  flex-shrink: 0;
+/* Estado INACTIVO */
+#clon-banner-badges-atajo .atajo-banners .cta-banner:not(.is-active) {
+  background: #f1f0f3 !important;
+  color: #6a5757 !important;
+  box-shadow: none !important;
 }
 
-/* Textos compactos */
-#clon-banner-badges-atajo .cta-title {
-  font-size: 16px;
-  line-height: 1.1;
+#clon-banner-badges-atajo .atajo-banners .cta-banner:not(.is-active) .particles {
+  display: none !important;
+}
+
+/* Estructura interna: Icono, Contenedor y Título */
+#clon-banner-badges-atajo .atajo-banners .cta-icon {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  flex: 0 0 22px;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  pointer-events: none;
+  color: inherit;
+}
+
+#clon-banner-badges-atajo .atajo-banners .cta-icon svg {
+  display: block;
+  width: 22px;
+  height: 22px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+#clon-banner-badges-atajo .atajo-banners .cta-content {
+  position: relative;
+  z-index: 1;
+  display: block;
+  flex: 0 1 auto;
+  pointer-events: none;
+  width: fit-content;
+  max-width: none;
+  min-width: 0;
+}
+
+#clon-banner-badges-atajo .atajo-banners .cta-title-row {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+#clon-banner-badges-atajo .atajo-banners .cta-title {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: fit-content;
+  max-width: none;
+  color: inherit;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.15;
   white-space: nowrap;
 }
 
-/* Contenedor de badges clonados */
+/* ==========================================
+   COLORES DE BANNERS ACTIVOS EN ATAJO-BANNERS
+========================================== */
+#clon-banner-badges-atajo .atajo-banners .cta-banner--refer.is-active {
+  background: linear-gradient(135deg, #5E72D8 0%, #6E80E4 55%, #9baef9 100%) !important;
+}
+
+#clon-banner-badges-atajo .atajo-banners .cta-banner--diwali.is-active {
+  background: radial-gradient(circle at 82% 22%, rgba(255, 255, 255, 0.14), transparent 60%), linear-gradient(115deg, #3B1B52 0%, #5C2370 32%, #9A2E8F 62%, #E8569E 100%) !important;
+}
+
+#clon-banner-badges-atajo .atajo-banners .cta-banner--candy.is-active {
+  background: linear-gradient(105deg, #FF6FAE 0%, #FF8C72 55%, #FFC15C 100%) !important;
+}
+
+#clon-banner-badges-atajo .atajo-banners .cta-banner--festival.is-active {
+  background: linear-gradient(120deg, #7C6FE8 0%, #A767D9 50%, #E867A8 100%) !important;
+}
+
+#clon-banner-badges-atajo .atajo-banners .cta-banner--practice.is-active {
+  background: linear-gradient(100deg, #2F4A52 0%, #5C6B5C 45%, #C7B481 100%) !important;
+}
+
+#clon-banner-badges-atajo .atajo-banners .cta-banner--join.is-active {
+  background: linear-gradient(110deg, #2E9B63 0%, #1F8E92 55%, #1B7FA8 100%) !important;
+}
+
+#clon-banner-badges-atajo .atajo-banners .cta-banner--vote.is-active {
+  background: linear-gradient(105deg, #D49B00 0%, #B88200 55%, #9C6A00 100%) !important;
+}
+
+#clon-banner-badges-atajo .atajo-banners .cta-banner--raspberry.is-active {
+  background: linear-gradient(105deg, #E61B56 0%, #FF4D6D 55%, #FF85A2 100%) !important;
+}
+
+/* Propiedades generales del estado ACTIVO */
+#clon-banner-badges-atajo .atajo-banners .cta-banner.is-active {
+  color: #fff !important;
+  box-shadow: 0 6px 16px -6px rgba(0, 0, 0, 0.25) !important;
+  letter-spacing: normal;
+}
+
+#clon-banner-badges-atajo .atajo-banners .cta-banner.is-active .particles {
+  display: block;
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  border-radius: inherit;
+  pointer-events: none;
+}
+
+#clon-banner-badges-atajo .atajo-banners .cta-banner.is-active .cta-icon,
+#clon-banner-badges-atajo .atajo-banners .cta-banner.is-active .cta-content {
+  position: relative;
+  z-index: 1;
+}
+
+#clon-banner-badges-atajo .atajo-banners .cta-banner.is-active .cta-title {
+  color: #fff !important;
+}
+
+#clon-banner-badges-atajo .atajo-banners .cta-banner--diwali.is-active .cta-title {
+  color: #FFE9B8 !important;
+}
+
+#clon-banner-badges-atajo .atajo-banners .cta-banner.is-active .cta-icon svg {
+  stroke: currentColor !important;
+}
+
+#clon-banner-badges-atajo .atajo-banners .cta-banner:focus-visible {
+  outline: 2px solid #9c8cff;
+  outline-offset: 2px;
+}
+
+/* ==========================================
+   CONTENEDOR DE BADGES CLONADOS
+========================================== */
 #clon-banner-badges-atajo .atajo-badges {
   display: flex;
   gap: 4px;
@@ -89,7 +241,6 @@
   display: none;
 }
 
-/* Badges compactos */
 #clon-banner-badges-atajo .blz-badge {
   padding: 3px 6px !important;
   gap: 3px;
@@ -102,22 +253,11 @@
   white-space: nowrap;
 }
 
-/* Radio compacto */
 #clon-banner-badges-atajo .blz-radio {
   transform: scale(0.85);
   flex-shrink: 0;
 }
 
-/* Estado activo: conserva los estilos originales */
-#clon-banner-badges-atajo .cta-banner.is-active {
-  /* Hereda el diseño original */
-}
-
-#clon-banner-badges-atajo .blz-badge.activo {
-  /* Hereda el diseño original */
-}
-
-/* Ocultar badges si no hay categoría cargada */
 #clon-banner-badges-atajo .atajo-badges:empty {
   display: none;
 }
@@ -132,57 +272,53 @@
   }
 
   #clon-banner-badges-atajo .atajo-banners {
-    display: flex !important;
-    flex-wrap: nowrap !important;
     gap: 8px;
     padding: 0 10px;
-    overflow-x: auto !important;
   }
 
-  /* Botones compactos con altura uniforme */
-  #clon-banner-badges-atajo .cta-banner {
+  #clon-banner-badges-atajo .atajo-banners .cta-banner {
     display: inline-flex !important;
     align-items: center !important;
     justify-content: center !important;
     flex: 0 0 auto !important;
     width: auto !important;
-    min-width: 95px !important;
-    max-width: 135px !important;
-    height: 46px !important;
-    min-height: 46px !important;
-    padding: 4px 12px !important;
-    gap: 6px !important;
+    min-width: 105px !important;
+    max-width: 145px !important;
+    height: 48px !important;
+    min-height: 48px !important;
+    padding: 4px 10px !important;
+    gap: 2px !important;
     overflow: hidden !important;
     text-align: center !important;
   }
 
-  /* Icono ajustado */
-  /* Forzar visibilidad y tamaño del icono */
-  #clon-banner-badges-atajo .cta-icon {
+  #clon-banner-badges-atajo .atajo-banners .cta-icon {
     display: inline-flex !important;
     align-items: center !important;
     justify-content: center !important;
     position: static !important;
-    width: 22px !important;
-    height: 22px !important;
-    min-width: 22px !important;
-    min-height: 22px !important;
+    width: 20px !important;
+    height: 20px !important;
+    min-width: 20px !important;
+    min-height: 20px !important;
     opacity: 1 !important;
     visibility: visible !important;
     flex-shrink: 0 !important;
     transform: none !important;
   }
 
-  /* Asegura que cualquier imagen o SVG interno se ajuste a esa caja */
-  #clon-banner-badges-atajo .cta-icon img,
-  #clon-banner-badges-atajo .cta-icon svg {
-    width: 100% !important;
-    height: 100% !important;
+  #clon-banner-badges-atajo .atajo-banners .cta-icon img,
+  #clon-banner-badges-atajo .atajo-banners .cta-icon svg {
+    width: 20px !important;
+    height: 20px !important;
     display: block !important;
   }
 
-  /* Texto con salto de línea controlado */
-  #clon-banner-badges-atajo .cta-title {
+  #clon-banner-badges-atajo .atajo-banners .cta-content {
+    max-width: 95px !important;
+  }
+
+  #clon-banner-badges-atajo .atajo-banners .cta-title {
     position: static !important;
     width: auto !important;
     font-size: 13px !important;

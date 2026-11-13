@@ -54,9 +54,9 @@ function diseño1(a, categoria, palabrasCoincidentes = []) {
             ${globos ? `<div class="blz-search-keywords">${globos}</div>` : ""}
           </div>
           <div class="blz-card-actions" style="display: flex; gap: 8px; width: 100%;">
-            <button type="button" class="btn-blz-action btn-blz-share" onclick="event.stopPropagation(); compartirAnuncio('${escaparComillas(a.web)}')" >
+         <!--   <button type="button" class="btn-blz-action btn-blz-share" onclick="event.stopPropagation(); compartirAnuncio('${escaparComillas(a.web)}')" >
               <span class="icon-share-square-o" style='font-size: 22px;'></span>
-            </button>
+            </button> -->
             <button type="button" class="btn-blz-action btn-blz-view" onclick="event.stopPropagation(); procesarContacto('${escaparComillas(a.contacto)}', '${escaparComillas(a.titulo)}')" >
               ${a.boton ?? "CONTACTAR"}
             </button>

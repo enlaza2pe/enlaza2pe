@@ -405,8 +405,107 @@
   "fvencimiento": "8/12/2026",
   "_evidencia_legal": "anuncio fisico letrero blanco se solicita ayudante cajera 08/11/2026 contacto_912872461.jpg"
 }
+,
+
+{
+  "idanuncio": "a_1793915838_0089",
+  "subcategory": "Ofertas de Empleo",
+  "keywords": "empleo trabajo contratando ayudante de cocina cocinera con experiencia solo damas mujeres cdlr",
+  "boton": "WHATSAPP",
+  "contacto": "901716569",
+  "ubicado_en": "CDLR",
+  "featured": true,
+  "titulo": "<strong style='color: #2c3e50;'>Se Necesita Ayudante de Cocina con Experiencia (Solo Damas)</strong>",
+  "descripcion": "Convocatoria laboral para cubrir el puesto de ayudante de cocina. El anuncio especifica como requisitos contar con experiencia previa en el rubro y está dirigido exclusivamente a personal femenino. Consultas y postulaciones vía WhatsApp al 901 716 569.",
+  "imagenes": [
+    "https://ibb.co"
+  ],
+  "tipoanuncio": 1,
+  "creado": "13/11/2026",
+  "fvencimiento": "13/12/2026",
+  "_evidencia_legal": "anuncio fisico letrero blanco ayudante de cocina damas 13/11/2026 contacto_901716569.jpg"
+}
+,
+
+{
+  "idanuncio": "a_1793915838_0092",
+  "subcategory": "Ofertas de Empleo",
+  "keywords": "empleo trabajo contratando se busca señorita atencion al publico ventas con o sin experiencia cdlr",
+  "boton": "WHATSAPP",
+  "contacto": "963254801",
+  "ubicado_en": "CDLR",
+  "featured": true,
+  "titulo": "<strong style='color: #2c3e50;'>Se Busca Señorita para Atención al Público (Con o Sin Experiencia)</strong>",
+  "descripcion": "Oferta laboral dirigida a personal femenino para desempeñarse en el área de atención al público. Se aceptan postulantes con o sin experiencia previa. Para mayor información comunicarse al 963 254 801.",
+  "imagenes": [
+    "https://ibb.co"
+  ],
+  "tipoanuncio": 1,
+  "creado": "13/11/2026",
+  "fvencimiento": "13/12/2026",
+  "_evidencia_legal": "anuncio fisico letrero blanco atencion al publico 13/11/2026 contacto_963254801.jpg"
+}
+,{
+  "idanuncio": "a_1793915838_0093",
+  "subcategory": "Ofertas de Empleo",
+  "keywords": "empleo trabajo contratando se necesita cocinero con experiencia cocina restaurante cdlr",
+  "boton": "WHATSAPP",
+  "contacto": "929888789",
+  "ubicado_en": "CDLR",
+  "featured": true,
+  "titulo": "<strong style='color: #2c3e50;'>Se Necesita Cocinero con Experiencia</strong>",
+  "descripcion": "Requerimiento de personal para el puesto de cocinero con experiencia comprobada en cocina. Los interesados pueden comunicarse directamente al número 929 888 789.",
+  "imagenes": [
+    "https://ibb.co"
+  ],
+  "tipoanuncio": 1,
+  "creado": "13/11/2026",
+  "fvencimiento": "13/12/2026",
+  "_evidencia_legal": "anuncio fisico letrero blanco cocinero con experiencia 13/11/2026 contacto_929888789.jpg"
+}
 
  
+,
+
+{
+  "idanuncio": "a_1793915838_0094",
+  "subcategory": "Ofertas de Empleo",
+  "keywords": "empleo trabajo contratando ayudante de mantenimiento con o sin experiencia personal masculino sueldo 1300 bonos carmen de la legua cdlr",
+  "boton": "WHATSAPP",
+  "contacto": "955012196",
+  "ubicado_en": "CDLR",
+  "featured": true,
+  "titulo": "<strong style='color: #2c3e50;'>Se Solicita Ayudante de Mantenimiento - Sueldo S/. 1,300</strong>",
+  "descripcion": "Convocatoria laboral en Carmen de la Legua para ayudante de mantenimiento, dirigida exclusivamente a personal masculino con o sin experiencia. Ofrece un sueldo mensual de S/. 1,300, además de bonos, incentivos y grato ambiente laboral. Postulaciones vía WhatsApp al 955 012 196.",
+  "imagenes": [
+    "https://ibb.co"
+  ],
+  "tipoanuncio": 1,
+  "creado": "13/11/2026",
+  "fvencimiento": "13/12/2026",
+  "_evidencia_legal": "anuncio fisico volante amarillo ayudante mantenimiento 13/11/2026 contacto_955012196.jpg"
+}
+
+,
+
+{
+  "idanuncio": "a_1793915838_0095",
+  "subcategory": "Ofertas de Empleo",
+  "keywords": "empleo trabajo contratando se necesita moza mesera restaurante atencion salon cdlr",
+  "boton": "WHATSAPP",
+  "contacto": "929888789",
+  "ubicado_en": "CDLR",
+  "featured": true,
+  "titulo": "<strong style='color: #2c3e50;'>Se Necesita Moza para Atención en Restaurante</strong>",
+  "descripcion": "Aviso de empleo para cubrir el puesto de moza. Las personas interesadas en la vacante pueden solicitar información llamando o escribiendo al teléfono 929 888 789.",
+  "imagenes": [
+    "https://ibb.co"
+  ],
+  "tipoanuncio": 1,
+  "creado": "13/11/2026",
+  "fvencimiento": "13/12/2026",
+  "_evidencia_legal": "anuncio fisico letrero blanco se necesita moza 13/11/2026 contacto_929888789.jpg"
+}
 
 
 

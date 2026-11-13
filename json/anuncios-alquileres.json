@@ -662,6 +662,46 @@
   "fvencimiento": "8/12/2026",
   "_evidencia_legal": "anuncio fisico letrero blanco cuarto baño propio solo peruanos 08/11/2026 contacto_913071945.jpg"
 }
+,
+
+{
+  "idanuncio": "a_1793915838_0090",
+  "subcategory": "Casa",
+  "keywords": "casa en venta se vende propiedad inmueble vivienda cdlr",
+  "boton": "WHATSAPP",
+  "contacto": "938563103",
+  "ubicado_en": "CDLR",
+  "featured": true,
+  "titulo": "<strong style='color: #27ae60;'>Casa en Venta - Oportunidad Inmobiliaria</strong>",
+  "descripcion": "Propiedad inmueble disponible para venta directa. Los interesados en conocer detalles, metraje o coordinar una visita pueden comunicarse vía WhatsApp al teléfono 938 563 103.",
+  "imagenes": [
+    "https://ibb.co"
+  ],
+  "tipoanuncio": 1,
+  "creado": "13/11/2026",
+  "fvencimiento": "13/12/2026",
+  "_evidencia_legal": "anuncio fisico cartel casa en venta 13/11/2026 contacto_938563103.jpg"
+}
+,
+
+{
+  "idanuncio": "a_1793915838_0096",
+  "subcategory": "Depa",
+  "keywords": "se alquila cuartos de estreno habitaciones con baño jr inca ripac 128 ref hospital san jose carmen de la legua reynoso renta cdlr",
+  "boton": "WHATSAPP",
+  "contacto": "914431530",
+  "ubicado_en": "CDLR",
+  "featured": true,
+  "titulo": "<strong style='color: #c0392b;'>Se Alquila Cuartos de Estreno con Baño - Ref. Hospital San José</strong>",
+  "descripcion": "Habitaciones de estreno disponibles para alquiler, cada una equipada con baño propio. El inmueble está ubicado en Jr. Inca Ripac 128, Carmen de la Legua Reynoso (referencia cerca al Hospital San José). Teléfonos de contacto: 914 431 530 y 913 489 786.",
+  "imagenes": [
+    "https://ibb.co"
+  ],
+  "tipoanuncio": 1,
+  "creado": "13/11/2026",
+  "fvencimiento": "13/12/2026",
+  "_evidencia_legal": "anuncio fisico letrero cuartos de estreno inca ripac 13/11/2026 contacto_914431530.jpg"
+}
 
 
 
