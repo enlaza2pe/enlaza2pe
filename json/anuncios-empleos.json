@@ -19,7 +19,7 @@
   },
   {
   "idanuncio": "a_1793915838_0004",
-  "subcategory": "Cocineros",
+  "subcategory": "Cocina",
   "keywords": "empleo trabajo contratando ayudante de cocina cocinero restaurante joven tiempo completo con experiencia cdlr",
   "boton": "WHATSAPP",
   "contacto": "987314547",
@@ -56,7 +56,7 @@
 
 {
   "idanuncio": "a_1793915838_0006",
-  "subcategory": "Azafata-Mozo-Meseros",
+  "subcategory": ["Azafata-Mozo-Meseros","Cocina"],
   "keywords": "empleo trabajo contratando azafata señorita medio tiempo restaurante moza con o sin experiencia cdlr",
   "boton": "WHATSAPP",
   "contacto": "987314547",
@@ -169,7 +169,7 @@
 },
 {
   "idanuncio": "a_1793915838_0059",
-  "subcategory": ["Azafata-Mozo-Meseros","Atención al cliente"],
+  "subcategory": ["Azafata-Mozo-Meseros","Atención al cliente","Cocina"],
   "keywords": "empleo trabajo contratando urgente necesito mozo multifuncional cevicheria atencion al cliente restaurante mozo cdlr",
   "boton": "WHATSAPP",
   "contacto": "902052796",
@@ -187,7 +187,7 @@
 },
 {
   "idanuncio": "a_1793915838_0019",
-  "subcategory": "Cocineros",
+  "subcategory": "Cocina",
   "keywords": "empleo trabajo contratando urgente ayudante de cocina cocinera dama mujer con experiencia lunes a viernes faucett bocanegra cdlr",
   "boton": "WHATSAPP",
   "contacto": "998731494",
@@ -264,7 +264,7 @@
 
 {
   "idanuncio": "a_1793915838_0040",
-  "subcategory": ["Cocineros","Azafata-Mozo-Meseros"],
+  "subcategory": ["Cocina","Azafata-Mozo-Meseros"],
   "keywords": "empleo trabajo contratando señorita ayudante de cocina restaurante moza cocina cdlr",
   "boton": "WHATSAPP",
   "contacto": "925909025",
@@ -349,7 +349,7 @@
 
 {
   "idanuncio": "a_1793915838_0044",
-  "subcategory": ["Azafata-Mozo-Meseros", "Chauferos"],
+  "subcategory": ["Azafata-Mozo-Meseros", "Chauferos", "Cocina"],
   "keywords": "empleo trabajo contratando ayudante de cocina mozos meseras azafatas chauferos chifa restaurante con o sin experiencia cdlr",
   "boton": "WHATSAPP",
   "contacto": "982575300",
@@ -405,20 +405,19 @@
   "fvencimiento": "8/12/2026",
   "_evidencia_legal": "anuncio fisico letrero blanco se solicita ayudante cajera 08/11/2026 contacto_912872461.jpg"
 }
-,
-
+, 
 {
   "idanuncio": "a_1793915838_0089",
-  "subcategory": "Ofertas de Empleo",
+  "subcategory": "Cocina",
   "keywords": "empleo trabajo contratando ayudante de cocina cocinera con experiencia solo damas mujeres cdlr",
   "boton": "WHATSAPP",
   "contacto": "901716569",
   "ubicado_en": "CDLR",
   "featured": true,
   "titulo": "<strong style='color: #2c3e50;'>Se Necesita Ayudante de Cocina con Experiencia (Solo Damas)</strong>",
-  "descripcion": "Convocatoria laboral para cubrir el puesto de ayudante de cocina. El anuncio especifica como requisitos contar con experiencia previa en el rubro y está dirigido exclusivamente a personal femenino. Consultas y postulaciones vía WhatsApp al 901 716 569.",
+  "descripcion": "Requisitos: contar con experiencia previa en el rubro. Consultas y postulaciones vía WhatsApp.",
   "imagenes": [
-    "https://ibb.co"
+    "https://i.ibb.co/RpY38PWW/image-c5b352ad.jpg"
   ],
   "tipoanuncio": 1,
   "creado": "13/11/2026",
@@ -429,16 +428,16 @@
 
 {
   "idanuncio": "a_1793915838_0092",
-  "subcategory": "Ofertas de Empleo",
+  "subcategory": ["Atención al cliente", "Panadería"],
   "keywords": "empleo trabajo contratando se busca señorita atencion al publico ventas con o sin experiencia cdlr",
   "boton": "WHATSAPP",
   "contacto": "963254801",
   "ubicado_en": "CDLR",
   "featured": true,
-  "titulo": "<strong style='color: #2c3e50;'>Se Busca Señorita para Atención al Público (Con o Sin Experiencia)</strong>",
-  "descripcion": "Oferta laboral dirigida a personal femenino para desempeñarse en el área de atención al público. Se aceptan postulantes con o sin experiencia previa. Para mayor información comunicarse al 963 254 801.",
+  "titulo": "<strong style='color: #2c3e50;'>Se Busca Señorita para Atención al Público de Panadería (Con o Sin Experiencia)</strong>",
+  "descripcion": "Oferta laboral. Se aceptan postulantes con o sin experiencia previa.",
   "imagenes": [
-    "https://ibb.co"
+    "https://i.ibb.co/RpY38PWW/image-c5b352ad.jpg"
   ],
   "tipoanuncio": 1,
   "creado": "13/11/2026",
@@ -447,21 +446,41 @@
 }
 ,{
   "idanuncio": "a_1793915838_0093",
-  "subcategory": "Ofertas de Empleo",
+  "subcategory": "Cocina",
   "keywords": "empleo trabajo contratando se necesita cocinero con experiencia cocina restaurante cdlr",
   "boton": "WHATSAPP",
   "contacto": "929888789",
   "ubicado_en": "CDLR",
   "featured": true,
   "titulo": "<strong style='color: #2c3e50;'>Se Necesita Cocinero con Experiencia</strong>",
-  "descripcion": "Requerimiento de personal para el puesto de cocinero con experiencia comprobada en cocina. Los interesados pueden comunicarse directamente al número 929 888 789.",
+  "descripcion": "Requerimiento experiencia comprobada en cocina. Los interesados pueden comunicarse directamente al número de whatsapp.",
   "imagenes": [
-    "https://ibb.co"
+    "https://i.ibb.co/RpY38PWW/image-c5b352ad.jpg"
   ],
   "tipoanuncio": 1,
   "creado": "13/11/2026",
   "fvencimiento": "13/12/2026",
   "_evidencia_legal": "anuncio fisico letrero blanco cocinero con experiencia 13/11/2026 contacto_929888789.jpg"
+}
+,
+
+{
+  "idanuncio": "a_1793915838_0095",
+  "subcategory": ["Cocina", "Azafata-Mozo-Meseros"],
+  "keywords": "empleo trabajo contratando se necesita moza mesera restaurante atencion salon cdlr",
+  "boton": "WHATSAPP",
+  "contacto": "929888789",
+  "ubicado_en": "CDLR",
+  "featured": true,
+  "titulo": "<strong style='color: #2c3e50;'>Se Necesita Moza para Atención en Restaurante</strong>",
+  "descripcion": "Aviso de empleo para cubrir el puesto de moza. Las interesadas en la vacante pueden solicitar información llamando o escribiendo al whatsapp.",
+  "imagenes": [
+    "https://i.ibb.co/RpY38PWW/image-c5b352ad.jpg"
+  ],
+  "tipoanuncio": 1,
+  "creado": "13/11/2026",
+  "fvencimiento": "13/12/2026",
+  "_evidencia_legal": "anuncio fisico letrero blanco se necesita moza 13/11/2026 contacto_929888789.jpg"
 }
 
  
@@ -469,16 +488,16 @@
 
 {
   "idanuncio": "a_1793915838_0094",
-  "subcategory": "Ofertas de Empleo",
+  "subcategory": "Mantenimiento",
   "keywords": "empleo trabajo contratando ayudante de mantenimiento con o sin experiencia personal masculino sueldo 1300 bonos carmen de la legua cdlr",
   "boton": "WHATSAPP",
   "contacto": "955012196",
   "ubicado_en": "CDLR",
   "featured": true,
-  "titulo": "<strong style='color: #2c3e50;'>Se Solicita Ayudante de Mantenimiento - Sueldo S/. 1,300</strong>",
-  "descripcion": "Convocatoria laboral en Carmen de la Legua para ayudante de mantenimiento, dirigida exclusivamente a personal masculino con o sin experiencia. Ofrece un sueldo mensual de S/. 1,300, además de bonos, incentivos y grato ambiente laboral. Postulaciones vía WhatsApp al 955 012 196.",
+  "titulo": "<strong style='color: #2c3e50;'>Se Solicita Ayudante de Mantenimiento - Sueldo S/. 1,300 + bonos + incentivos y grato ambiente laboral</strong>",
+  "descripcion": "Convocatoria laboral en Carmen de la Legua para ayudante de mantenimiento, dirigida exclusivamente a personal masculino con o sin experiencia. Postulaciones vía WhatsApp.",
   "imagenes": [
-    "https://ibb.co"
+    "https://i.ibb.co/RpY38PWW/image-c5b352ad.jpg"
   ],
   "tipoanuncio": 1,
   "creado": "13/11/2026",
@@ -489,22 +508,22 @@
 ,
 
 {
-  "idanuncio": "a_1793915838_0095",
-  "subcategory": "Ofertas de Empleo",
-  "keywords": "empleo trabajo contratando se necesita moza mesera restaurante atencion salon cdlr",
+  "idanuncio": "a_1793915838_0102",
+  "subcategory": "Sastrería",
+  "keywords": "empleo trabajo contratando costureros costureras jovenes con o sin experiencia maquina recta y remalladora urb pando san miguel av venezuela san marcos cdlr",
   "boton": "WHATSAPP",
-  "contacto": "929888789",
-  "ubicado_en": "CDLR",
+  "contacto": "966191159",
+  "ubicado_en": "SM",
   "featured": true,
-  "titulo": "<strong style='color: #2c3e50;'>Se Necesita Moza para Atención en Restaurante</strong>",
-  "descripcion": "Aviso de empleo para cubrir el puesto de moza. Las personas interesadas en la vacante pueden solicitar información llamando o escribiendo al teléfono 929 888 789.",
+  "titulo": "<strong style='color: #c0392b;'>Se Necesita jóvenes Costureros(as) con/sin experiencia en Máquina Recta y Remalladora</strong>",
+  "descripcion": "Taller en San Miguel, Calle Las Casuarinas Mz. J Lote 02, Urb. Pando",
   "imagenes": [
-    "https://ibb.co"
+    "https://i.ibb.co/RpY38PWW/image-c5b352ad.jpg"
   ],
   "tipoanuncio": 1,
-  "creado": "13/11/2026",
-  "fvencimiento": "13/12/2026",
-  "_evidencia_legal": "anuncio fisico letrero blanco se necesita moza 13/11/2026 contacto_929888789.jpg"
+  "creado": "14/11/2026",
+  "fvencimiento": "14/12/2026",
+  "_evidencia_legal": "anuncio fisico cartel costureros recta remalladora 14/11/2026 contacto_966191159.jpg"
 }
 
 

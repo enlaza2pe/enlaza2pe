@@ -157,7 +157,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }, 4000);
 });
-
+/*
 function procesarContacto(contacto, tituloAnuncio) {
   if (!contacto) {
     alert("Este anuncio no cuenta con datos de contacto activos.");
@@ -189,5 +189,55 @@ function procesarContacto(contacto, tituloAnuncio) {
     const mensaje = `Hola, vi tu anuncio "${tituloLimpio}" en Enlaza2.pe y deseo más información.`;
     const urlWhatsapp = "https://wa.me/" + numeroLimpio + "?text=" + encodeURIComponent(mensaje);
     window.open(urlWhatsapp, '_blank');
+  }
+}
+
+*/
+
+function procesarContacto(contacto, tituloAnuncio) {
+  if (!contacto) {
+    alert("Este anuncio no cuenta con datos de contacto activos.");
+    return;
+  }
+
+  const urlEvaluar = contacto.toLowerCase().trim();
+
+  // Caso 1: Facebook
+  if (urlEvaluar.includes('facebook.com') || urlEvaluar.includes('fb.com')) {
+    let urlDestino = contacto.trim();
+    if (!urlDestino.match(/^https?:\/\//i)) {
+      urlDestino = `https://${urlDestino}`;
+    }
+    window.location.href = urlDestino;
+  } 
+  // Caso 2: Página web externa
+  else if (urlEvaluar.includes("http://") || urlEvaluar.includes("https://") || urlEvaluar.includes("www.")) {
+    let urlDestino = contacto.trim();
+    if (urlEvaluar.includes("www.") && !urlEvaluar.includes("http")) {
+      urlDestino = "https://" + urlDestino;
+    }
+    abrirVista(urlDestino);
+  } 
+  // Caso 3: WhatsApp (Número de celular)
+  else {
+    let numeroLimpio = String(contacto).replace(/\D/g, '');
+    if (numeroLimpio.length === 9) {
+      numeroLimpio = "51" + numeroLimpio;
+    }
+
+    const tituloLimpio = tituloAnuncio.replace(/<[^>]*>/g, '');
+    const mensaje = `Hola, vi tu anuncio "${tituloLimpio}" en Enlaza2.pe y deseo más información.`;
+    const urlWhatsapp = "https://wa.me/" + numeroLimpio + "?text=" + encodeURIComponent(mensaje);
+
+    // Detecta si es un dispositivo móvil
+    const esMovil = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+
+    if (esMovil) {
+      // En celular: abre la app de WhatsApp directamente sin crear pestaña about:blank
+      window.location.href = urlWhatsapp;
+    } else {
+      // En computadora: abre WhatsApp Web en una pestaña nueva
+      window.open(urlWhatsapp, '_blank', 'noopener,noreferrer');
+    }
   }
 }

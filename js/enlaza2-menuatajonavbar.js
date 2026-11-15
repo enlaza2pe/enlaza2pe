@@ -4,11 +4,9 @@
   let clonBanners;
   let clonBadges;
   let barraClon;
-  let bloqueandoScroll = false;
+  let estabaVisible = false;
 
-  // ===
   // 1. CREAR ESTRUCTURA DEL CLON
-  // ===
   function crearEstructuraClon() {
     if (document.getElementById(ID_CLON)) return;
     barraClon = document.createElement("div");
@@ -24,9 +22,7 @@
     clonBadges = barraClon.querySelector(".atajo-badges");
   }
 
-  // ===
   // 2. CLONAR BANNERS ORIGINALES
-  // ===
   function clonarBanners() {
     const originales = document.querySelectorAll(
       "#contenedor-banners .cta-banner"
@@ -40,9 +36,7 @@
     });
   }
 
-  // ===
   // 3. CLONAR BADGES ORIGINALES
-  // ===
   function clonarBadges() {
     const originales = document.querySelectorAll(
       "#subcategorias-container .blz-badge"
@@ -63,9 +57,7 @@
     });
   }
 
-  // ===
   // 4. ACTUALIZAR ESTADOS ACTIVOS
-  // ===
   function sincronizarClones() {
     if (!barraClon) return;
 
@@ -113,9 +105,7 @@
     });
   }
 
-  // ===
-  // 4.5. SINCRONIZAR UBICACIÓN HORIZONTAL (SCROLL)
-  // ===
+  // 4.5. COPIAR UBICACIÓN HORIZONTAL DE FORMA INSTANTÁNEA (SIN REBOTE)
   function copiarPosicionScroll(origen, destino) {
     if (!origen || !destino) return;
     const maxOrigen = origen.scrollWidth - origen.clientWidth;
@@ -123,7 +113,11 @@
     if (maxOrigen <= 0 || maxDestino <= 0) return;
 
     const proporcion = origen.scrollLeft / maxOrigen;
-    destino.scrollLeft = proporcion * maxDestino;
+    // Usamos scrollTo con behavior 'instant' para evitar la frenada de scroll-behavior: smooth
+    destino.scrollTo({
+      left: proporcion * maxDestino,
+      behavior: "instant"
+    });
   }
 
   function sincronizarScrollDesdeOriginal() {
@@ -133,9 +127,14 @@
     copiarPosicionScroll(origBadges, clonBadges);
   }
 
-  // ===
+  function sincronizarScrollHaciaOriginal() {
+    const origBanners = document.getElementById("contenedor-banners");
+    const origBadges = document.getElementById("subcategorias-container");
+    copiarPosicionScroll(clonBanners, origBanners);
+    copiarPosicionScroll(clonBadges, origBadges);
+  }
+
   // 5. REFRESCAR LOS CLONES
-  // ===
   function actualizarClones() {
     clonarBanners();
     clonarBadges();
@@ -143,9 +142,7 @@
     sincronizarScrollDesdeOriginal();
   }
 
-  // ===
-  // 6. VISIBILIDAD SEGÚN SCROLL
-  // ===
+  // 6. VISIBILIDAD SEGÚN SCROLL (Sincroniza solo en el cambio de estado)
   function controlarVisibilidad() {
     if (!barraClon) return;
     const limite = window.innerHeight * 0.55;
@@ -155,18 +152,23 @@
     const mostrar =
       window.scrollY >= limite && window.scrollY > 0 && hayResultados;
 
+    // Solo sincroniza cuando la barra cambia entre oculta y visible
+    if (mostrar !== estabaVisible) {
+      if (mostrar) {
+        // El usuario bajó: el clon toma la ubicación donde quedó el original
+        sincronizarScrollDesdeOriginal();
+      } else {
+        // El usuario subió: el original toma la ubicación donde quedó el clon
+        sincronizarScrollHaciaOriginal();
+      }
+      estabaVisible = mostrar;
+    }
+
     barraClon.classList.toggle("visible", mostrar);
     barraClon.setAttribute("aria-hidden", String(!mostrar));
-
-    // Asegura la misma posición horizontal al aparecer la barra
-    if (mostrar) {
-      sincronizarScrollDesdeOriginal();
-    }
   }
 
-  // ===
   // 7. CLICK EN BANNER CLONADO
-  // ===
   barraClonListener();
   function barraClonListener() {
     document.addEventListener(
@@ -185,17 +187,15 @@
         );
         if (!original) return;
 
-        // Activar el banner original
+        // Guardamos dónde estaba el clon antes de activar
+        sincronizarScrollHaciaOriginal();
         original.click();
-        // Regresar al inicio absoluto
         window.scrollTo({ top: 0, behavior: "smooth" });
       },
       true
     );
 
-    // ===
     // 8. CLICK EN BADGE CLONADO
-    // ===
     document.addEventListener(
       "click",
       function (e) {
@@ -213,18 +213,15 @@
         );
         if (!original) return;
 
-        // Activar el badge original
+        sincronizarScrollHaciaOriginal();
         original.click();
-        // Regresar al inicio absoluto
         window.scrollTo({ top: 0, behavior: "smooth" });
       },
       true
     );
   }
 
-  // ===
   // 9. OBSERVAR CAMBIOS EN LOS ORIGINALES
-  // ===
   function observarOriginales() {
     const banners = document.getElementById("contenedor-banners");
     const badges = document.getElementById("subcategorias-container");
@@ -259,54 +256,11 @@
     }
   }
 
-  // ===
-  // 9.5. ESPEJAR DESPLAZAMIENTO HORIZONTAL EN TIEMPO REAL
-  // ===
-  function vincularScrollHorizontal() {
-    const origBanners = document.getElementById("contenedor-banners");
-    const origBadges = document.getElementById("subcategorias-container");
-
-    const enlazar = (elA, elB) => {
-      if (!elA || !elB) return;
-      elA.addEventListener(
-        "scroll",
-        () => {
-          if (bloqueandoScroll) return;
-          bloqueandoScroll = true;
-          copiarPosicionScroll(elA, elB);
-          requestAnimationFrame(() => {
-            bloqueandoScroll = false;
-          });
-        },
-        { passive: true }
-      );
-
-      elB.addEventListener(
-        "scroll",
-        () => {
-          if (bloqueandoScroll) return;
-          bloqueandoScroll = true;
-          copiarPosicionScroll(elB, elA);
-          requestAnimationFrame(() => {
-            bloqueandoScroll = false;
-          });
-        },
-        { passive: true }
-      );
-    };
-
-    enlazar(origBanners, clonBanners);
-    enlazar(origBadges, clonBadges);
-  }
-
-  // ===
   // 10. INICIALIZACIÓN
-  // ===
   function iniciarClonAtajo() {
     crearEstructuraClon();
     actualizarClones();
     observarOriginales();
-    vincularScrollHorizontal();
     window.addEventListener("scroll", controlarVisibilidad, { passive: true });
     window.addEventListener("resize", controlarVisibilidad);
     controlarVisibilidad();

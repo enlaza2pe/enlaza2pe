@@ -54,7 +54,7 @@
       "Ventas",
       "Atención al cliente",
       "Cuidadoras",
-      "Cocineros",
+      "Cocina",
       "Azafata-Mozo-Meseros",
       "Chauferos",
       "Delivery",
@@ -66,6 +66,8 @@
       "Cajeros",
       "Car Wash",
       "Paseador canino",
+      "Mantenimiento",
+      "Sastrería",
       "Otros"
     ]
   },
