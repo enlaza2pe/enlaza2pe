@@ -34,8 +34,7 @@
 	<link rel="stylesheet" href="css/enlaza2-blz.css">
 	<link rel="stylesheet" href="css/enlaza2-publicacion.css">
 	<link rel="stylesheet" href="css/enlaza2-footer.css">
-	 <link rel="stylesheet" href="css/enlaza2-renderanuncios.css">
-	<link rel="stylesheet" href="css/enlaza2-zoom.css">
+	<link rel="stylesheet" href="css/enlaza2-renderanuncios.css">
 	<link rel="stylesheet" href="css/enlaza2-stickybar.css">
 
 
@@ -95,7 +94,7 @@
 
 					<div class="blz-footer-links">
 						<a href="javascript:void(0)" onclick="abrirTerms()">
-							<u>Indicaciones importantes</u>
+							<u>Reglas, normas e indicaciones</u>
 						</a>
 					</div>
 
@@ -204,29 +203,15 @@
 	<!--seccion de CTA (call to action) de busqueda-->
 
 	<main id="app" class="estado-home">
+
+		<!--INICIO HERO-->
 		<section id="hero">
 			<div class="bg-cream">
-				<div class="max-w-screen-xl mx-auto flex flex-col lg:flex-row">
-					<!--Left Col-->
+				<div class="max-w-screen-xl mx-auto flex flex-col lg:flex-row items-center justify-between">
+					<!-- Columna Izquierda -->
 					<div id="hero-col-izquierda"
-						class="hero-col-izquierda flex flex-col w-full lg:w-6/12 justify-center  lg:text-left  md:mb-0">
-						<!--BUSCAR COMENTADO-->
-						<!--
-						<div data-aos="fade-up" data-aos-once="true" data-aos-delay="700"
-							class="w-full flex items-center justify-center lg:justify-start">
+						class="hero-col-izquierda flex flex-col w-full lg:w-6/12 justify-center lg:text-left md:mb-0">
 
-							<div class="blz-search-box">
-
-								<span class="blz-search-icon"><i class="bi bi-search"></i></span>
-
-								<input id="search" type="text" placeholder="Buscar en enlaza2.pe" />
- 
-								<button class="blz-clear-btn" id="btn-clear-search"><i class="bi bi-x-lg"></i></button>
-
-							</div>
-
-						</div>
--->
 						<!-- LOGO DEL PROYECTO -->
 						<div class="hero-logo my-4 flex justify-center lg:justify-start" data-aos="fade-up"
 							data-aos-once="true" data-aos-delay="900">
@@ -238,31 +223,22 @@
 						<p data-aos="fade-right" data-aos-once="true" data-aos-delay="1100"
 							class="titulo-hero text-5xl font-bold leading-tight text-darken">
 							<span class="text-yellow-500">Recorremos</span> las calles de tu distrito por tí
-							<!--Todos los anuncios de tu distrito, aquí-->
 						</p>
-
-						<!--	<p id="typing" data-aos="fade-down" data-aos-once="true" data-aos-delay="300"
-							class="text-2xl mb-8  text-5xl my-4 font-bold  "></p>-->
-
 					</div>
-					<!--Right Col-->
-					<!--	<div class="blz-hero-gallery">
 
-						<img src="img/girl.png" class="blz-slide active" alt="">
-						<img src="img/girl1.png" class="blz-slide" alt="">
-						<img src="img/girl2.png" class="blz-slide" alt="">
-
+					<!-- Columna Derecha (Descomentada para Desktop) -->
+					<div class="blz-hero-gallery">
+						<img src="img/carmelo.png" class="blz-slide active" alt="">
 					</div>
-					-->
 				</div>
 			</div>
 		</section>
-
+		<!--FIN HERO-->
 
 		<!-- NAVEGACIÓN HORIZONTAL DE CATEGORÍAS -->
-		<section id="bloque-categorias">
-			<div class="blz-categorias-header"> 
-				<p>Selecciona la categoría de tu búsqueda:</p>
+		<section>
+			<div class="blz-categorias-header">
+				<!--este es la curva del hero-->
 			</div>
 
 			<section>
@@ -270,7 +246,7 @@
 				</div>
 			</section>
 		</section>
-	
+
 
 		<!-- SUBCATEGORIAS -->
 		<section id="resultados-bar" class="resultados-bar container" style="display:none;">
@@ -314,37 +290,36 @@
 	</div>
 
 	<!-- PIE DE PÁGINA -->
-	<footer class="site-footer mt-5">
-		<div class="container">
-			<!-- PIE LEGAL -->
-			<div class="blz-footer-bottom">
-				<p>
-					©
-					<script>document.write(new Date().getFullYear());</script>
-					<strong>enlaza2.pe</strong>
-					<!--<span class="blz-footer-separator">|</span>
-					proyecto <a href="https://blazarsystem.pe" target="_blank" rel="noopener">
-						Blazar System
-					</a>-->
-				</p>
-			</div>
-			<!-- SEPARADOR -->
-			<div class="blz-footer-divider"></div>
+	<!-- PIE DE PÁGINA -->
+<footer class="site-footer mt-5">
+  <div class="container">
+    <!-- BLOQUE PRINCIPAL: MARCA + BENEFICIOS -->
+    <div class="blz-footer-info">
+      <div class="blz-footer-about">
+        <h4>© <script>document.write(new Date().getFullYear());</script> Enlaza2.pe</h4>
+        <p>
+          Plataforma comunitaria de anuncios de <strong>alquileres, empleos, servicios generales, delivery y asesorías</strong> en tu distrito.
+        </p>
+      </div>
 
-			<div class="blz-footer-info mb-5">
-  <div class="blz-footer-about">
-    <p>
-      <strong>Enlaza2.pe:</strong> Plataforma comunitaria de anuncios de <strong>alquileres, empleos, servicios genelales, delivery y asesorías</strong>.<br>
-      <i class="bi bi-megaphone-fill"></i> Anuncios directos &nbsp;|&nbsp; 
-      <i class="bi bi-grid-fill"></i> Búsqueda por categorías &nbsp;|&nbsp; 
-      <i class="bi bi-people-fill"></i> Para independientes y/o empresas &nbsp;|&nbsp; 
-      <i class="bi bi-telephone-fill"></i> Contacto directo
-    </p>
+      <!-- PÍLDORAS DE VALOR -->
+      <div class="blz-footer-features">
+        <span><i class="bi bi-megaphone-fill"></i> Anuncios directos</span>
+        <span><i class="bi bi-grid-fill"></i> Búsqueda por categorías</span>
+        <span><i class="bi bi-people-fill"></i> Independientes y empresas</span>
+        <span><i class="bi bi-telephone-fill"></i> Contacto directo</span>
+      </div>
+    </div>
+
+    <!-- SEPARADOR -->
+    <div class="blz-footer-divider"></div>
+
+    <!-- PIE LEGAL (AL FINAL COMO CORRESPONDE) -->
+    <div class="blz-footer-bottom">
+    </div>
   </div>
-</div>
+</footer>
 
-		</div>
-	</footer>
 
 
 	<!-- =========================================
@@ -401,7 +376,7 @@
 	<script src="js/indicacionesimportantes/enlaza2-blz-terms.js"></script>
 	<script src="js/formulario/enlaza2-formulario.js"></script>
 	<script src="js/enlaza2-AnunciosViaBanners.js"></script>
-	<script src="js/enlaza2-menuatajonavbar.js"></script> 
+	<script src="js/enlaza2-menuatajonavbar.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/minisearch@7.2.0/dist/umd/index.min.js"></script>
 	<script src="js/enlaza2-buscador.js"></script>
 

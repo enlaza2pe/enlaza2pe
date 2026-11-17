@@ -59,7 +59,5 @@ function activarCategoria() {
         "estado-categoria"
     );
 
-    app.classList.add("estado-categoria");
-    //document.getElementById("contenedor-banners").classList.add("modo-compacto");
-
+    app.classList.add("estado-categoria"); 
 }

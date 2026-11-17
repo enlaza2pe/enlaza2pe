@@ -1,36 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&display=swap");
 :root {
   --radius: 18px;
-  --font-display: 'Baloo 2', sans-serif;
+  --font-display: "Baloo 2", sans-serif;
 }
-
 html,
 body {
   max-width: 100%;
   overflow-x: hidden;
 }
-
 .banners-wrap {
   display: grid;
-  grid-template-columns:
-    repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 24px;
-
   width: 100%;
   max-width: 1400px;
   margin: auto;
 }
-
 .hero-col-izquierda {
   margin-bottom: 2.1rem !important;
-}
-
-/* ---------- BASE BANNER ---------- */
-
+} /* ---- BASE BANNER ---- */
 .cta-banner {
-  position: relative;
-  /*display: block;*/
+  position: relative; /*display: block;*/
   overflow: hidden;
   border-radius: var(--radius);
   padding: 28px 28px;
@@ -38,34 +28,23 @@ body {
   isolation: isolate;
   box-shadow: 0 10px 24px -8px rgba(0, 0, 0, 0.25);
   background-color: #ffffff;
-  color: #A0A5A8;
+  color: #a0a5a8;
   flex: 0 0 42%;
-  min-width: 140px;
-  /* Evita que se encojan demasiado en pantallas muy pequeñas */
+  min-width: 140px; /* Evita que se encojan demasiado en pantallas muy pequeñas */
   display: flex;
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
-}
-
-/* Ajuste para pantallas medianas/grandes (Tablets en adelante) */
+} /* Ajuste para pantallas medianas/grandes (Tablets en adelante) */
 @media (min-width: 600px) {
   .cta-banner {
-    flex: 0 0 auto;
-    /* En escritorio se desactiva el corte y se muestran normales */
+    flex: 0 0 auto; /* En escritorio se desactiva el corte y se muestran normales */
   }
-}
-/*
-.cta-banner.is-active {
-  background-color: #0056B3; 
-}
-*/
+} /* .cta-banner.is-active{background-color: #0056B3;}*/
 .cta-banner:hover {
   background-color: #333333;
-  color: #FFFFFF;
-  /* El SVG también se pintará blanco aquí */
+  color: #ffffff; /* El SVG también se pintará blanco aquí */
 }
-
 .cta-title-row {
   display: flex;
   justify-content: space-between;
@@ -74,22 +53,16 @@ body {
   box-sizing: border-box;
   max-width: 100%;
 }
-
 .cta-content {
   position: relative;
   z-index: 2;
-}
-
-
-/* ---------- PARTICLES (shared) ---------- */
-
+} /* ---- PARTICLES (shared) ---- */
 .particles {
   position: absolute;
   inset: 0;
   z-index: 1;
   pointer-events: none;
 }
-
 .particle {
   position: absolute;
   top: var(--y);
@@ -102,224 +75,167 @@ body {
   animation: drift var(--d) ease-in-out infinite;
   animation-delay: var(--del);
 }
-
 @keyframes drift {
-
   0%,
   100% {
     transform: translate(0, 0) scale(1);
     opacity: var(--o);
   }
-
   50% {
     transform: translate(4px, -10px) scale(1.15);
     opacity: calc(var(--o) * 1.5);
   }
-}
-
-/* ---------- BANNER 1: REFER (blue/violet) ---------- */
-
+} /* ---- BANNER 1: REFER (blue/violet) ---- */
 .cta-banner--refer {
-  background: linear-gradient(135deg, #5E72D8 0%, #6E80E4 55%, #9baef9 100%);
-}
-
-/* ---------- BANNER 2: DIWALI (purple/magenta) ---------- */
-
+  background: linear-gradient(135deg, #5e72d8 0%, #6e80e4 55%, #9baef9 100%);
+} /* ---- BANNER 2: DIWALI (purple/magenta) ---- */
 .cta-banner--diwali {
-  background:
-    radial-gradient(circle at 82% 22%, rgba(255, 255, 255, 0.14), transparent 60%),
-    linear-gradient(115deg, #3B1B52 0%, #5C2370 32%, #9A2E8F 62%, #E8569E 100%);
+  background: radial-gradient(
+      circle at 82% 22%,
+      rgba(255, 255, 255, 0.14),
+      transparent 60%
+    ),
+    linear-gradient(115deg, #3b1b52 0%, #5c2370 32%, #9a2e8f 62%, #e8569e 100%);
 }
-
 .cta-banner--diwali .cta-title {
-  color: #FFE9B8;
+  color: #ffe9b8;
 }
-
 .particle--glow {
-  background: radial-gradient(circle, rgba(255, 110, 180, 0.9) 0%, rgba(255, 110, 180, 0) 70%);
+  background: radial-gradient(
+    circle,
+    rgba(255, 110, 180, 0.9) 0%,
+    rgba(255, 110, 180, 0) 70%
+  );
   filter: blur(6px);
   animation: glow-pulse var(--d) ease-in-out infinite;
   animation-delay: var(--del);
 }
-
 @keyframes glow-pulse {
-
   0%,
   100% {
     opacity: var(--o);
     transform: scale(1);
   }
-
   50% {
     opacity: calc(var(--o) * 1.3);
     transform: scale(1.08);
   }
 }
-
 .particle--dot {
-  background: #FFD9EC;
-}
-
-/* ---------- BANNER 3: CANDY (pink/orange) ---------- */
-
+  background: #ffd9ec;
+} /* ---- BANNER 3: CANDY (pink/orange) ---- */
 .cta-banner--candy {
-  background: linear-gradient(105deg, #FF6FAE 0%, #FF8C72 55%, #FFC15C 100%);
-}
-
-/* ---------- RESPONSIVE MOBILE ---------- */
-
+  background: linear-gradient(105deg, #ff6fae 0%, #ff8c72 55%, #ffc15c 100%);
+} /* ---- RESPONSIVE MOBILE ---- */
 @media (max-width: 480px) {
   body {
     /*padding-top: 16px;*/
   }
-
   .cta-banner {
     padding: 12px 20px;
   }
-
   .cta-content {
     max-width: 100%;
   }
-
   .cta-eyebrow {
     font-size: 17.5px;
     background: #cfaeae2e;
   }
-
   .cta-title {
     font-size: 18px;
     font-weight: 600;
   }
-
   .cta-button {
     font-size: 13px;
     padding: 11px 20px;
   }
 }
-
 @media (max-width: 360px) {
   .cta-content {
     max-width: 100%;
   }
-
-}
-
-/* Respect reduced motion preference */
+} /* Respect reduced motion preference */
 @media (prefers-reduced-motion: reduce) {
   .particle {
     animation: none;
   }
-}
-
-
-/* ---------- SPARKLE PARTICLE (estrella de 4 puntas) ---------- */
-
+} /* ---- SPARKLE PARTICLE (estrella de 4 puntas) ---- */
 .particle--sparkle {
   background: #ffffff;
-  clip-path: polygon(50% 0%, 61% 35%, 100% 50%, 61% 65%, 50% 100%, 39% 65%, 0% 50%, 39% 35%);
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    100% 50%,
+    61% 65%,
+    50% 100%,
+    39% 65%,
+    0% 50%,
+    39% 35%
+  );
   animation: twinkle var(--d) ease-in-out infinite;
   animation-delay: var(--del);
 }
-
 @keyframes twinkle {
-
   0%,
   100% {
     opacity: calc(var(--o) * 0.5);
     transform: scale(0.7) rotate(0deg);
   }
-
   50% {
     opacity: var(--o);
     transform: scale(1.15) rotate(12deg);
   }
 }
-
-
-@media(max-width:768px) {
-
+@media (max-width: 768px) {
   .banners-wrap {
     grid-template-columns: 1fr;
     gap: 16px;
   }
-
 }
-
-@media(min-width:769px) and (max-width:1200px) {
+@media (min-width: 769px) and (max-width: 1200px) {
   .banners-wrap {
     grid-template-columns: repeat(2, 1fr);
   }
-
 }
-
 .resultados-bar {
   margin: 10px auto;
   background: #fff;
   border-radius: 18px;
 }
-
 .resultados-bar-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 10px;
   margin-top: 5px;
-}
-
-
-
-/*BADGES MODERNOS*/
-
+} /*BADGES MODERNOS*/
 .blz-badges-wrap {
-  flex-wrap: nowrap;
-  /* 1. Evita que los elementos salten de línea */
-  overflow-x: auto;
-  /* 2. Activa el scroll horizontal cuando desborde */
-  overflow-y: hidden;
-  /* Oculta cualquier desborde vertical no deseado */
+  flex-wrap: nowrap; /* 1. Evita que los elementos salten de línea */
+  overflow-x: auto; /* 2. Activa el scroll horizontal cuando desborde */
+  overflow-y: hidden; /* Oculta cualquier desborde vertical no deseado */
   gap: 4px;
-  padding: 1px 2px;
-  /* Opcional: un pequeño colchón para que no se corten las sombras o bordes */
-
-  /* 3. Hace que el scroll se sienta fluido y suave en dispositivos móviles */
+  padding: 1px 2px; /* Opcional: un pequeño colchón para que no se corten las sombras o bordes */ /* 3. Hace que el scroll se sienta fluido y suave en dispositivos móviles */
   -webkit-overflow-scrolling: touch;
   scroll-behavior: smooth;
-}
-
-/* Opcional: Oculta la barra de scroll visual si buscas un diseño más limpio (estilo apps nativas) */
+  scrollbar-width: none;
+} /* Opcional: Oculta la barra de scroll visual si buscas un diseño más limpio (estilo apps nativas) */
 .blz-badges-wrap::-webkit-scrollbar {
   display: none;
 }
-
-.blz-badges-wrap {
-  scrollbar-width: none;
-  /* Para Firefox */
-}
-
 .blz-badge {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 2px;
-
   padding: 3px 5px;
-  min-height: 36px;
-
-  /* 4. Crucial: Evita que los badges se encojan o se deformen para caber a la fuerza */
-  flex-shrink: 0;
-
-  /*border: 2px solid #456b96;*/
+  min-height: 36px; /* 4. Crucial: Evita que los badges se encojan o se deformen para caber a la fuerza */
+  flex-shrink: 0; /*border: 2px solid #456b96;*/
   border-radius: 29px;
-
   background: #ffffff;
   color: #31577f;
-
   font-size: 16px;
-
   cursor: pointer;
-}
-
-/* OCULTAR RADIO NATIVO */
+} /* OCULTAR RADIO NATIVO */
 .blz-badge input[type="radio"] {
   position: absolute;
   top: 0;
@@ -328,65 +244,45 @@ body {
   width: 1px;
   height: 1px;
   pointer-events: none;
-}
-
-
-/* CÍRCULO DEL RADIO */
+} /* CÍRCULO DEL RADIO */
 .blz-radio {
   width: 22px;
   height: 22px;
   min-width: 22px;
-
   border: 2px solid #456b96;
   border-radius: 50%;
   background: #ffffff;
-
   display: inline-flex;
   align-items: center;
   justify-content: center;
-
   box-sizing: border-box;
-  transition: border-color .2s ease;
-}
-
-/* RADIO SELECCIONADO */
-.blz-badge input[type="radio"]:checked+.blz-radio::after {
+  transition: border-color 0.2s ease;
+} /* RADIO SELECCIONADO */
+.blz-badge input[type="radio"]:checked + .blz-radio::after {
   content: "";
   width: 12px;
   height: 12px;
   border-radius: 50%;
   background: #31577f;
-}
-
-/* FONDO SIEMPRE BLANCO */
-.blz-badge:hover {
-  background: #ffffff;
-  /*  border-color: #31577f;*/
-}
-
-/* OPCIÓN ACTIVA: SIN FONDO DE COLOR */
+} /* FONDO SIEMPRE BLANCO */
+.blz-badge:hover,
 .blz-badge.activo {
-  background: #ffffff;
-}
-
+  background: #ffffff; 
+} 
 /* ACCESIBILIDAD CON TECLADO */
 .blz-badge:focus-within {
   outline: 2px solid #8aa9cb;
   outline-offset: 3px;
 }
-
-@media (max-width:768px) {
+@media (max-width: 768px) {
   .resultados-header {
     flex-direction: column;
     align-items: flex-start;
   }
-
   #titulo-resultados {
     font-size: 1.2rem;
   }
-
 }
-
 #titulo-resultados {
   position: relative;
   padding: 12px 11px 10px;
@@ -394,7 +290,6 @@ body {
   font-weight: 600;
   color: #0f172a;
 }
-
 #titulo-resultados::after {
   content: "";
   width: 70px;
@@ -403,128 +298,50 @@ body {
   position: absolute;
   bottom: 0;
   left: 0;
-}
-
-/*compactar banner, titulo, btn, descripcion y particulas*/
-
-.banners-wrap.modo-compacto {
-  display: grid;
-  grid-template-columns:
-    repeat(auto-fit, minmax(180px, 1fr));
-  gap: 10px;
-}
-
-.banners-wrap.modo-compacto .cta-banner {
-  height: 72px;
-  min-height: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0 18px;
-}
-
-.banners-wrap.modo-compacto .cta-title {
-  display: none;
-}
-
-.banners-wrap.modo-compacto .cta-button {
-  display: none;
-}
-
-.banners-wrap.modo-compacto .cta-title {
-  margin: 0;
-  font-size: 16px;
-  font-weight: 700;
-  color: white;
-}
-
-.banners-wrap.modo-compacto .particles {
-  opacity: .25;
-}
-
-/* =========================================
-   NAVEGACIÓN HORIZONTAL DE CATEGORÍAS
-========================================= */
-
-/* ========================================================
-   NUEVO PADRE: Controla el fijado vertical en la pantalla
-======================================================== */
+} 
+/* == NAVEGACIÓN HORIZONTAL DE CATEGORÍAS == */ /* == NUEVO PADRE: Controla el fijado vertical en la pantalla == */
 .wrapper-banners-sticky {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  z-index: 1001;
-  /* Un número alto para ganarle a cualquier otra tarjeta */
+  z-index: 1001; /* Un número alto para ganarle a cualquier otra tarjeta */
   width: 100%;
   background: #ffffff;
-  display: block;
-  /* Asegura que se comporte como un bloque contenedor sólido */
-}
-
-
+  display: block; /* Asegura que se comporte como un bloque contenedor sólido */
+} 
 
 /* Contenedor que alberga los banners/categorías */
 #contenedor-banners {
   display: flex !important;
   flex-direction: row !important;
-  flex-wrap: nowrap !important;
-  /* Fuerza a las categorías a mantenerse en una sola línea */
+  flex-wrap: nowrap !important; /* Fuerza a las categorías a mantenerse en una sola línea */
   gap: 10px;
-  padding: 10px 15px;
-  /*overflow-x: auto !important;*/
-  /* Permite el scroll manual */
+  padding: 10px 15px; /*overflow-x: auto !important;*/ /* Permite el scroll manual */
   scroll-behavior: smooth;
   width: 100%;
   box-sizing: border-box;
-  background: transparent;
-  /* Hereda el fondo del padre */
-
-  /* Ocultar barra de scroll nativa */
+  background: transparent; /* Hereda el fondo del padre */ /* Ocultar barra de scroll nativa */
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
-
-#contenedor-banners::-webkit-scrollbar {
-  display: none;
-  /* Chrome, Safari y Opera */
-}
-
-
-#contenedor-banners.banners-wrap {
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
-  gap: 8px;
-
-  width: 100%;
+#contenedor-banners.banners-wrap {  
+  align-items: center;  
   max-width: 100%;
-  min-width: 0;
-  box-sizing: border-box;
-  padding: 5px;
+  min-width: 0; 
   margin: 0 auto;
-
   background: #fff;
-
   overflow-x: auto;
   overflow-y: hidden;
   overscroll-behavior-x: contain;
   -webkit-overflow-scrolling: touch;
-  scrollbar-width: none;
-  scroll-behavior: smooth;
+  scrollbar-width: none; 
 }
-
 #contenedor-banners.banners-wrap::-webkit-scrollbar {
   display: none;
-}
-
-/* =========================================
-   CATEGORÍAS: ESTADO INACTIVO
-========================================= */
-
+} /* == CATEGORÍAS: ESTADO INACTIVO == */
 #contenedor-banners .cta-banner {
   position: relative;
   isolation: isolate;
-
   display: flex;
   flex-direction: column;
   flex: 0 0 auto;
@@ -533,83 +350,53 @@ body {
   justify-content: flex-start;
   gap: 10px;
   padding: 10px 12px;
-
   width: fit-content;
   max-width: none;
   min-height: 44px;
   padding: 5px 10px;
   box-sizing: border-box;
-
   border: 0;
   border-radius: 29px;
-
   text-decoration: none;
   white-space: normal;
   cursor: pointer;
-
-  transition: background 180ms ease, color 180ms ease;
-
-  /*background: #f5f4f8 !important;*/
-  /* Gris neutro por defecto */
-  /*color: #777783 !important;      /* Texto gris */
+  transition: background 180ms ease, color 180ms ease; /*background: #f5f4f8 !important;*/ /* Gris neutro por defecto */ /*color: #777783 !important; /* Texto gris */
   box-shadow: none !important;
   letter-spacing: -1px;
-}
-
-/* Los diseños decorativos no deben colorear
-   las categorías que están inactivas */
+} /* Los diseños decorativos no deben colorear las categorías que están inactivas */
 #contenedor-banners .cta-banner:not(.is-active) {
   background: #f5f4f8 !important;
   box-shadow: none !important;
   letter-spacing: -1px;
-}
-
-/* Las partículas solo se muestran en la activa */
+} /* Las partículas solo se muestran en la activa */
 #contenedor-banners .cta-banner:not(.is-active) .particles {
   display: none !important;
-}
-
-/* =========================================
-   ICONOS
-========================================= */
-
+} /* == ICONOS == */
 #contenedor-banners .cta-icon {
   position: relative;
   z-index: 1;
-
   display: inline-flex;
   flex: 0 0 22px;
   align-items: center;
   justify-content: center;
-
-  width: 22px;
-  height: 22px;
-  pointer-events: none;
-
-  color: inherit;
-
-}
-
-#contenedor-banners .cta-icon svg {
-  display: block;
   width: 42px;
   height: 42px;
-
+  pointer-events: none;
+  color: inherit;
+}
+#contenedor-banners .cta-icon svg {
+  display: block;
+  width: 22px;
+  height: 22px;
   fill: none;
   stroke: currentColor;
   stroke-width: 1.7;
   stroke-linecap: round;
   stroke-linejoin: round;
-}
-
-/* =========================================
-   TEXTO: SIEMPRE VISIBLE, MÁXIMO DOS LÍNEAS
-========================================= */
-
+} /* == TEXTO: SIEMPRE VISIBLE,MÁXIMO DOS LÍNEAS == */
 #contenedor-banners .cta-content {
   position: relative;
   z-index: 1;
-
   display: block;
   flex: 0 1 auto;
   pointer-events: none;
@@ -617,95 +404,100 @@ body {
   max-width: 78px;
   min-width: 0;
 }
-
 #contenedor-banners .cta-title-row {
   display: block;
   margin: 0;
   padding: 0;
 }
-
 #contenedor-banners .cta-title {
   display: -webkit-box;
   margin: 0;
   padding: 0;
-
   width: fit-content;
   max-width: 90px;
-
   color: inherit;
   font-family: inherit;
   font-size: 25px;
   font-weight: 600;
   line-height: 1.15;
-
   white-space: normal;
   overflow-wrap: normal;
   word-break: normal;
-
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
   overflow: hidden;
-}
-
-/* =========================================
-    CATEGORÍA ACTIVA
-    Conserva el diseño de templatesBanner
-  ========================================= */
-
-/* ---------- BANNER 1: REFER ---------- */
+} /* == CATEGORÍA ACTIVA Conserva el diseño de templatesBanner == */ /* ---- BANNER 1: REFER ---- */
 #contenedor-banners .cta-banner--refer.is-active {
-  background: linear-gradient(135deg, #5E72D8 0%, #6E80E4 55%, #9baef9 100%) !important;
-}
-
-/* ---------- BANNER 2: DIWALI ---------- */
+  background: linear-gradient(
+    135deg,
+    #5e72d8 0%,
+    #6e80e4 55%,
+    #9baef9 100%
+  ) !important;
+} /* ---- BANNER 2: DIWALI ---- */
 #contenedor-banners .cta-banner--diwali.is-active {
-  background:
-    radial-gradient(circle at 82% 22%, rgba(255, 255, 255, 0.14), transparent 60%),
-    linear-gradient(115deg, #3B1B52 0%, #5C2370 32%, #9A2E8F 62%, #E8569E 100%) !important;
+  background: radial-gradient(
+      circle at 82% 22%,
+      rgba(255, 255, 255, 0.14),
+      transparent 60%
+    ),
+    linear-gradient(115deg, #3b1b52 0%, #5c2370 32%, #9a2e8f 62%, #e8569e 100%) !important;
 }
-
 #contenedor-banners .cta-banner--diwali.is-active .cta-title {
-  color: #FFE9B8 !important;
-  /* Color especial de título para Diwali */
-}
-
-/* ---------- BANNER 3: CANDY ---------- */
+  color: #ffe9b8 !important; /* Color especial de título para Diwali */
+} /* ---- BANNER 3: CANDY ---- */
 #contenedor-banners .cta-banner--candy.is-active {
-  background: linear-gradient(105deg, #FF6FAE 0%, #FF8C72 55%, #FFC15C 100%) !important;
-}
-
-/* ---------- BANNER 4: FESTIVAL CONTEST ---------- */
+  background: linear-gradient(
+    105deg,
+    #ff6fae 0%,
+    #ff8c72 55%,
+    #ffc15c 100%
+  ) !important;
+} /* ---- BANNER 4: FESTIVAL CONTEST ---- */
 #contenedor-banners .cta-banner--festival.is-active {
-  background: linear-gradient(120deg, #7C6FE8 0%, #A767D9 50%, #E867A8 100%) !important;
-}
-
-/* ---------- BANNER 5: PRACTICE LEAGUES ---------- */
+  background: linear-gradient(
+    120deg,
+    #7c6fe8 0%,
+    #a767d9 50%,
+    #e867a8 100%
+  ) !important;
+} /* ---- BANNER 5: PRACTICE LEAGUES ---- */
 #contenedor-banners .cta-banner--practice.is-active {
-  background: linear-gradient(100deg, #2F4A52 0%, #5C6B5C 45%, #C7B481 100%) !important;
-}
-
-/* ---------- BANNER 6: JOIN WITH FRIENDS ---------- */
+  background: linear-gradient(
+    100deg,
+    #2f4a52 0%,
+    #5c6b5c 45%,
+    #c7b481 100%
+  ) !important;
+} /* ---- BANNER 6: JOIN WITH FRIENDS ---- */
 #contenedor-banners .cta-banner--join.is-active {
-  background: linear-gradient(110deg, #2E9B63 0%, #1F8E92 55%, #1B7FA8 100%) !important;
-}
-
-/* ---------- BANNER 7: VOTE FOR YOUR GAME ---------- */
+  background: linear-gradient(
+    110deg,
+    #2e9b63 0%,
+    #1f8e92 55%,
+    #1b7fa8 100%
+  ) !important;
+} /* ---- BANNER 7: VOTE FOR YOUR GAME ---- */
 #contenedor-banners .cta-banner--vote.is-active {
-  background: linear-gradient(105deg, #D49B00 0%, #B88200 55%, #9C6A00 100%) !important;
-}
-
-/* ---------- BANNER 8: RASPBERRY ---------- */
+  background: linear-gradient(
+    105deg,
+    #d49b00 0%,
+    #b88200 55%,
+    #9c6a00 100%
+  ) !important;
+} /* ---- BANNER 8: RASPBERRY ---- */
 #contenedor-banners .cta-banner--raspberry.is-active {
-  background: linear-gradient(105deg, #E61B56 0%, #FF4D6D 55%, #FF85A2 100%) !important;
+  background: linear-gradient(
+    105deg,
+    #e61b56 0%,
+    #ff4d6d 55%,
+    #ff85a2 100%
+  ) !important;
 }
-
 #contenedor-banners .cta-banner.is-active {
   box-shadow: 0 10px 24px -8px rgba(0, 0, 0, 0.25) !important;
   letter-spacing: normal;
-}
-
-/* Las partículas de la categoría activa
-    aparecen por encima del fondo */
+} /* Las partículas de la categoría activa aparecen por encima del fondo */
 #contenedor-banners .cta-banner.is-active .particles {
   display: block;
   position: absolute;
@@ -715,114 +507,250 @@ body {
   border-radius: inherit;
   pointer-events: none;
 }
-
 #contenedor-banners .cta-banner.is-active .cta-icon,
 #contenedor-banners .cta-banner.is-active .cta-content {
   position: relative;
   z-index: 1;
 }
-
 #contenedor-banners .cta-banner.is-active .cta-title {
   color: #fff !important;
 }
-
 #contenedor-banners .cta-banner.is-active .cta-icon svg {
   stroke: currentColor;
-}
-
-/* Teclado */
+} /* Teclado */
 #contenedor-banners .cta-banner:focus-visible {
   outline: 2px solid #9c8cff;
   outline-offset: 2px;
-}
-
-
-/* Contenedor principal para posicionar las flechas */
-.blz-scroll-wrapper {
-  position: relative;
-  display: flex;
-  align-items: center;
-  width: 100%;
-  max-width: 100%;
-  /* Evita romper el layout horizontal en móviles */
-  overflow: hidden;
-  /* Corta radicalmente el espacio en blanco fantasma */
-  box-sizing: border-box;
-}
-
-/* Contenedor optimizado en 2 filas exactas adaptables a la pantalla */
+} /* Contenedor optimizado en 2 filas exactas adaptables a la pantalla */
 #subcategorias-container {
-  display: grid;
-  /* Crea exactamente 2 filas de altura automática adaptada al badge */
-  grid-template-rows: repeat(2, auto);
-  /* Distribuye los elementos en columnas automáticas según su tamaño */
-  grid-auto-flow: column;
-  /* Permite que sigan avanzando a la derecha de forma fluida */
+  display: grid; /* Crea exactamente 2 filas de altura automática adaptada al badge */
+  grid-template-rows: repeat(
+    2,
+    auto
+  ); /* Distribuye los elementos en columnas automáticas según su tamaño */
+  grid-auto-flow: column; /* Permite que sigan avanzando a la derecha de forma fluida */
   grid-auto-columns: max-content;
-
   gap: 6px;
   width: 100%;
   max-width: 100%;
   padding: 5px;
-  box-sizing: border-box;
-
-  /* Habilita el desplazamiento horizontal táctil nativo */
+  box-sizing: border-box; /* Habilita el desplazamiento horizontal táctil nativo */
   overflow-x: auto;
-  scroll-behavior: smooth;
-
-  /* Oculta barras de scroll en Firefox e IE */
+  scroll-behavior: smooth; /* Oculta barras de scroll en Firefox e IE */
   -ms-overflow-style: none;
   scrollbar-width: none;
-}
-
-/* Ocultar barra de scroll nativa en Chrome, Safari y Edge */
+} /* Ocultar barra de scroll nativa en Chrome,Safari y Edge */
 #subcategorias-container::-webkit-scrollbar {
   display: none;
 }
-
-/* Ocultar barra de scroll nativa en Firefox e IE */
-#subcategorias-container {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
-
-/* =========================================
-   MÓVILES NO TOCAR
-========================================= */
-
+ /* == MÓVILES NO TOCAR == */
 @media (max-width: 600px) {
   #contenedor-banners.banners-wrap {
     gap: 12px;
     padding: 0px;
   }
-
   #contenedor-banners .cta-banner {
     max-width: 152px;
     min-height: 130px;
     gap: 8px;
     padding: 15px 5px;
   }
-
   #contenedor-banners .cta-icon,
   #contenedor-banners .cta-icon svg {
     width: 66px;
     height: 57px;
   }
-
   #contenedor-banners .cta-icon {
     flex-basis: 20px;
     flex: 0 0 40px;
     width: 66px;
     height: 50px;
   }
-
   #contenedor-banners .cta-content {
     max-width: 99px;
   }
-
   #contenedor-banners .cta-title {
     font-size: 18px;
     max-width: 100px;
+  }
+}
+
+
+
+/* =========================================================
+   CATEGORÍAS FLOTANTES SOBRE LA CURVA (SOLO DESKTOP 769PX+)
+   (No afecta en nada a la versión móvil)
+========================================================= */
+@media (min-width: 769px) {
+  /* 1. Oculta el espacio vacío del header de categorías para que suban limpio */
+  .blz-categorias-header {
+    display: none !important;
+  }
+
+  /* 2. Eleva el bloque de categorías para que flote sobre la curva del Hero */
+  #hero + section {
+    position: relative;
+    z-index: 20;
+    margin-top: -5.2rem !important;
+    background: transparent !important;
+  }
+
+  /* 3. Contenedor transparente y centrado horizontalmente */
+  #contenedor-banners,
+  #contenedor-banners.banners-wrap {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    justify-content: center !important;
+    align-items: stretch !important;
+    gap: 18px !important;
+    width: 100% !important;
+    max-width: 1220px !important;
+    margin: 0 auto !important;
+    padding: 0px 20px 24px !important;
+    background: transparent !important;
+    overflow: visible !important;
+  }
+
+  /* 4. Tarjetas grandes, proporcionadas y con sombra flotante */
+  #contenedor-banners .cta-banner {
+    flex: 1 1 0 !important;
+    min-width: 175px !important;
+    max-width: 220px !important;
+    min-height: 155px !important;
+    padding: 22px 16px !important;
+    gap: 12px !important;
+    justify-content: center !important;
+    align-items: center !important;
+    border-radius: 30px !important;
+    box-shadow: 0 14px 30px -10px rgba(15, 23, 42, 0.14) !important;
+    transition: transform 0.22s ease, box-shadow 0.22s ease, background 0.22s ease !important;
+  }
+
+  #contenedor-banners .cta-banner:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 35px -10px rgba(15, 23, 42, 0.2) !important;
+  }
+
+  /* Tarjetas inactivas en blanco limpio con texto oscuro (como en el ejemplo) */
+  #contenedor-banners .cta-banner:not(.is-active) {
+    background: #ffffff !important;
+    color: #334155 !important;
+  }
+
+  /* 5. Iconos más grandes y nítidos */
+  #contenedor-banners .cta-icon {
+    flex: 0 0 auto !important;
+    width: 48px !important;
+    height: 48px !important;
+  }
+
+  #contenedor-banners .cta-icon svg {
+    width: 44px !important;
+    height: 44px !important;
+  }
+
+  /* 6. Libera el ancho del texto para que NO se recorten las palabras */
+  #contenedor-banners .cta-content {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  #contenedor-banners .cta-title {
+    width: 100% !important;
+    max-width: 100% !important;
+    font-size: 19px !important;
+    font-weight: 700 !important;
+    line-height: 1.25 !important;
+    white-space: normal !important;
+    overflow: visible !important;
+    text-align: center !important;
+    letter-spacing: -0.01em !important;
+  }
+
+
+  /* =========================================================
+   BADGES DE SUBCATEGORÍAS VISIBLES Y ELEGANTES (SOLO DESKTOP)
+   (Mantiene intacta la versión móvil hasta 768px)
+========================================================= */
+.resultados-bar {
+    max-width: 1220px;
+    margin: 12px auto 20px;
+    padding: 0 20px;
+  }
+
+  /* Muestra todos los badges visibles en pantalla sin scroll horizontal */
+  #subcategorias-container,
+  #subcategorias-container.blz-badges-wrap {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 8px 10px !important;
+    width: 100% !important;
+    max-width: 1120px !important;
+    margin: 0 auto 14px !important;
+    padding: 8px 12px !important;
+    overflow: visible !important;
+  }
+
+  /* Estilo elegante y tamaño de fuente reducido */
+  #subcategorias-container .blz-badge {
+    font-size: 13px !important;
+    font-weight: 500 !important;
+    line-height: 1.2 !important;
+    padding: 6px 13px !important;
+    min-height: 32px !important;
+    gap: 6px !important;
+    border-radius: 999px !important;
+    white-space: nowrap !important;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease !important;
+  }
+
+  #subcategorias-container .blz-badge:hover {
+    transform: translateY(-1px);
+  }
+
+  /* Ajuste proporcional del círculo / radio button */
+  #subcategorias-container .blz-badge input[type="radio"],
+  #subcategorias-container .blz-radio {
+    width: 14px !important;
+    height: 14px !important;
+    margin: 0 !important;
+    transform: scale(0.95);
+  }
+
+  .resultados-bar-header {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #f1f5f9;
+  }
+
+  #titulo-resultados {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1e293b;
+  }
+}
+
+/* Ajuste extra para monitores amplios */
+@media (min-width: 1150px) {
+  #hero + section {
+    margin-top: -5.8rem !important;
+  }
+
+  #contenedor-banners,
+  #contenedor-banners.banners-wrap {
+    gap: 22px !important;
+    max-width: 1260px !important;
+  }
+
+  #contenedor-banners .cta-banner {
+    min-height: 168px !important;
+    padding: 24px 18px !important;
+  }
+
+  #contenedor-banners .cta-title {
+    font-size: 20px !important;
   }
 }

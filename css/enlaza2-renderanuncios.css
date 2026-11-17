@@ -1,197 +1,285 @@
-/* =====================================================
-   IMPLEMENTACIÓN DE NUEVAS CLASES (DISEÑO HORIZONTAL)
-===================================================== */
-
 .blz-horizontal-card {
-    background: #ffffff;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-    border: 1px solid #e2e8f0;
-    width: 100%;
+ background: #ffffff;
+ border-radius: 12px;
+ overflow: hidden;
+ box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+ border: 1px solid #e2e8f0;
+ width: 100%;
 }
-
-/* Forzamos el flujo de izquierda a derecha sin importar Bootstrap */
 .blz-card-flex-wrapper {
-    display: flex !important;
-    flex-direction: row !important;
-    width: 100% !important;
-    min-height: 140px;
+ display: flex !important;
+ flex-direction: row !important;
+ width: 100% !important;
+ min-height: 140px;
 }
-
-/* Área de la imagen fija al 35% */
 .blz-card-image-side {
-    width: 35% !important;
-    min-width: 35% !important;
-    max-width: 35% !important;
-    position: relative;
-    background-color: #f1f5f9;
+ width: 35% !important;
+ min-width: 35% !important;
+ max-width: 35% !important;
+ position: relative;
+ background-color: #f1f5f9;
 }
-
-
-
-/* Efecto sutil al pasar el mouse (solo en PC) */
 @media (min-width: 768px) {
-    .blz-horizontal-card:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    }
+ .blz-horizontal-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+ }
 }
-
-
 .style-row-container {
-    display: flex !important;
-    flex-direction: row !important;
-    flex-wrap: nowrap !important;
-    width: 100% !important;
-    margin: 0 !important;
+ display: flex !important;
+ flex-direction: row !important;
+ flex-wrap: nowrap !important;
+ width: 100% !important;
+ margin: 0 !important;
 }
-
 .blz-card-image-wrapper {
-    display: block;
-    width: 100%;
-    height: 100%;
-    position: relative;
+ display: block;
+ width: 100%;
+ height: 100%;
+ position: relative;
 }
-
-/* Corrige el escalado de cualquier imagen interna de la galería */
 .blz-img-container-fix,
 .blz-img-container-fix img,
 .blz-card-image-side img {
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: cover !important;
-    object-position: center !important;
-    display: block;
+ width: 100% !important;
+ height: 100% !important;
+ object-fit: cover !important;
+ object-position: center !important;
+ display: block;
 }
-
-/* Área de contenido al 65% orientada en vertical */
 .blz-card-content-side {
-    width: 65% !important;
-    min-width: 65% !important;
-    max-width: 65% !important;
-    padding: 12px;
-    display: flex !important;
-    flex-direction: column !important;
-    justify-content: space-between !important; /* Manda los botones al fondo */
-    box-sizing: border-box;
+ width: 65% !important;
+ min-width: 65% !important;
+ max-width: 65% !important;
+ padding: 12px;
+ display: flex !important;
+ flex-direction: column !important;
+ justify-content: space-between !important;
+ box-sizing: border-box;
 }
-
-
-/* Ajustes tipográficos legibles */
 .blz-card-title {
-    font-size: 1.4rem !important;
-    margin: 0 0 4px 0 !important;
-    line-height: 1.2 !important; 
+ font-size: 1.4rem !important;
+ margin: 0 0 4px 0 !important;
+ line-height: 1.2 !important;
 }
-
 .blz-card-title a {
-    color: #0066cc !important; /* Azul estándar de enlaces para tu público */
-    text-decoration: none !important;
+ color: #0066cc !important;
+ text-decoration: none !important;
 }
-
 .blz-card-description {
-    font-size: 1rem !important;
-    color: #64748B !important;
-    margin: 0 0 6px 0 !important;
-    line-height: 1.3 !important;
-    display: -webkit-box;
-    -webkit-line-clamp: 5;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
+ font-size: 1rem !important;
+ color: #64748b !important;
+ margin: 0 0 6px 0 !important;
+ line-height: 1.3 !important;
+ display: -webkit-box;
+ -webkit-line-clamp: 5;
+ -webkit-box-orient: vertical;
+ overflow: hidden;
+ text-overflow: ellipsis;
 }
-
-
-
 .blz-card-body-text {
-    margin: 0;
-    padding: 0;
-    flex-grow: 1; /* Permite que el texto ocupe el espacio disponible empujando los botones hacia abajo */
+ margin: 0;
+ padding: 0;
+ flex-grow: 1;
 }
-
-/* Contenedor de Botones Inferior */
 .blz-card-actions {
-    display: flex !important;
-    flex-direction: row !important;
-    gap: 5px !important;
-    width: 100% !important;
-    margin-top: auto; /* Anclado magnético al fondo */
+ display: flex !important;
+ flex-direction: row !important;
+ gap: 5px !important;
+ width: 100% !important;
+ margin-top: auto;
 }
-
-/* Estilo unificado para los botones del listado */
 .btn-blz-action {
-    padding: 6px 4px;
-    font-size: 0.79rem;
-    font-weight: 700;
-    border-radius: 6px;
-    text-align: center;
-    border: none;
-    cursor: pointer;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+ padding: 6px 4px;
+ font-size: 0.79rem;
+ font-weight: 700;
+ border-radius: 6px;
+ text-align: center;
+ border: none;
+ cursor: pointer;
+ display: inline-flex;
+ align-items: center;
+ justify-content: center;
 }
-
-/* Botón Compartir: Sutil */
 .btn-blz-share {
-    background-color: #f1f5f9;
-    color: #475569;
-    border: 1px solid #e2e8f0;
-
-    flex: 0 0 auto; 
-    width: auto;
-    padding-left: 10px;
-    padding-right: 10px;
+ background-color: #f1f5f9;
+ color: #475569;
+ border: 1px solid #e2e8f0;
+ flex: 0 0 auto;
+ width: auto;
+ padding-left: 10px;
+ padding-right: 10px;
 }
-
-/* Botón VER: Resaltado */
 .btn-blz-view {
-    flex: 1;
-    background-color: #1e3a8afc;
-    color: #ffffff;
+ flex: 1;
+ background-color: #1e3a8afc;
+ color: #ffffff;
+}
+/* Posicionamiento del botón de Zoom sobre las imágenes de los anuncios */
+.blz-card-image-side {
+  position: relative;
+}
+.blz-zoom-overlay-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+.blz-zoom-overlay-btn:hover {
+  background: rgba(0, 0, 0, 0.8);
+  transform: translate(-50%, -50%) scale(1.1);
 }
 
-/* Ajustes finos para teléfonos muy pequeños */
+/* Estilos de la máscara oscura de fondo del Popup */
+.blz-modal-mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.85);
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.blz-modal-container {
+  position: relative;
+  max-width: 85vw;
+  max-height: 85vh;
+  background: transparent;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.blz-modal-close-btn-round {
+  background-color: #ffffff;
+  color: #333333;
+  border: none;
+  border-radius: 25%; /* Hace que sea completamente redondo */
+  width: 70px;        /* Diámetro del botón redondo */
+  height: 50px;       /* Diámetro del botón redondo */
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.blz-modal-close-btn-round:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.05); /* Efecto sutil al pasar el mouse */
+}
+
+.blz-modal-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.blz-modal-slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.blz-modal-img {
+  max-width: 85vw;
+  max-height: 85vh;
+  object-fit: contain;
+  display: none;
+}
+.blz-modal-img.activo {
+  display: block;
+}
+
+/* Botón de Cierre (X) */
+.blz-modal-close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  border: none;
+  font-size: 32px;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  line-height: 36px;
+  text-align: center;
+  cursor: pointer;
+  z-index: 101;
+  transition: background 0.3s;
+}
+.blz-modal-close-btn:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* Botones de navegación (Atrás/Adelante) si hay varias imágenes */
+.blz-modal-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  padding: 15px 10px;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 100;
+  border-radius: 4px;
+}
+.blz-modal-nav.prev { left: 10px; }
+.blz-modal-nav.next { right: 10px; }
+.blz-modal-nav:hover { background: rgba(255, 255, 255, 0.3); }
+
 @media (max-width: 375px) {
-    .blz-card-actions {
-        gap: 4px !important;
-    }
-    .blz-card-actions .btn {
-        padding: 4px 6px !important;
-        font-size: 0.7rem !important;
-    }
+ .blz-card-actions {
+  gap: 4px !important;
+ }
+ .blz-card-actions .btn {
+  padding: 4px 6px !important;
+  font-size: 0.7rem !important;
+ }
 }
-
-
-/* =====================================================
-   AJUSTE AUTOMÁTICO EXCLUSIVO PARA CELULARES (MOBILE)
-===================================================== */
-
 @media (max-width: 576px) {
-    /* Le damos más porcentaje a la imagen en pantallas chicas (42%) */
-    .blz-card-image-side {
-        width: 42% !important;
-        min-width: 42% !important;
-        max-width: 42% !important;
-    }
-
-    /* Ajustamos el bloque de texto al 58% restante */
-    .blz-card-content-side {
-        width: 58% !important;
-        min-width: 58% !important;
-        max-width: 58% !important;
-        padding: 8px 10px; /* Un poco menos de espacio interno para ganar legibilidad */
-    }
-
-    /* Reducimos ligeramente el tamaño de la letra del título en celular */
-    .blz-card-title {
-        font-size: 1.05rem !important;
-    }
-
-    /* Reducimos el tamaño de la descripción para que no empuje los botones */
-    .blz-card-description {
-        font-size: 0.89rem !important;
-        margin-bottom: 4px !important;
-    }
+ .blz-card-image-side {
+  width: 42% !important;
+  min-width: 42% !important;
+  max-width: 42% !important;
+ }
+ .blz-card-content-side {
+  width: 58% !important;
+  min-width: 58% !important;
+  max-width: 58% !important;
+  padding: 8px 10px;
+ }
+ .blz-card-title {
+  font-size: 1.05rem !important;
+ }
+ .blz-card-description {
+  font-size: 0.89rem !important;
+  margin-bottom: 4px !important;
+ }
 }

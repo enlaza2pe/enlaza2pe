@@ -30,87 +30,88 @@
     ],
     "tipoanuncio": 1,
     "creado": "6/11/2026",
+    "plan": "3meses",
     "fvencimiento": "6/12/2026",
     "_evidencia_legal": "anuncio fisico afiche de clases 06/11/2026 profe_marlon.jpg"
   },
-
   {
-  "idanuncio": "a_1793915838_0091",
-  "subcategory": "Abogados",
-  "keywords": "estudio juridico benites ayvar abogados asociados asesoria legal tramites av 1ro de mayo carmen de la legua reynoso cdlr",
-  "boton": "WHATSAPP",
-  "contacto": "999975047",
-  "ubicado_en": "CDLR",
-  "featured": true,
-  "titulo": "<strong style='color: #1a5694;'>Estudio Jurídico Benites Ayvar - Abogados Asociados</strong>",
-  "descripcion": "Estudio jurídico brinda servicios de asesoría y patrocinio legal mediante atención previa cita. Ubicado en Av. 1ro de Mayo cdra 2, Reynoso.",
-  "imagenes": [
-    "https://i.ibb.co/XZfq0YcH/image-191ed8f.jpg"
-  ],
-  "tipoanuncio": 1,
-  "creado": "13/11/2026",
-  "fvencimiento": "13/12/2026",
-  "_evidencia_legal": "anuncio fisico letrero estudio juridico benites ayvar 13/11/2026 contacto_999975047.jpg"
-}
-,
-
-{
-  "idanuncio": "a_1793915838_0097",
-  "subcategory": "Profesores",
-  "keywords": "asesoria matematica primaria secundaria pre clases particulares a domicilio preparacion examenes practicas solucion de tareas av manco capac 328 carmen de la legua reynoso cdlr",
-  "boton": "WHATSAPP",
-  "contacto": "943436661",
-  "ubicado_en": "CDLR",
-  "featured": true,
-  "titulo": "<strong style='color: #c0392b;'>Asesoría Matemática - Primaria, Secundaria y Pre Universitaria</strong>",
-  "descripcion": "Ofrece clases particulares a domicilio, preparación para exámenes y prácticas, y solución de tareas con amplia experiencia. Av Manco Cápac cdra 3, Reynoso.",
-  "imagenes": [
-    "https://i.ibb.co/LdjXxsR5/image-5252ac53.jpg"
-  ],
-  "tipoanuncio": 1,
-  "creado": "14/11/2026",
-  "fvencimiento": "14/12/2026",
-  "_evidencia_legal": "anuncio fisico volante asesoria matematica 14/11/2026 contacto_943436661.jpg"
-}
-,
-{
-  "idanuncio": "a_1793915838_0104",
-  "subcategory": "Profesores",
-  "keywords": "clases pre universitarias matematicas desde cero prof humbert asesorias diarias resolucion de separatas escolar pre basico repaso uni catolica pucp u lima agraria san marcos utec usmp upc cdlr",
-  "boton": "WHATSAPP",
-  "contacto": "916665706",
-  "ubicado_en": "CDLR",
-  "featured": true,
-  "titulo": "<strong style='color: #1a5694;'>Clases Pre Universitarias - Matemáticas desde Cero (Prof. Humbert)</strong>",
-  "descripcion": "Clases presenciales de matemáticas desde cero. Con horarios a escoger. Asesorías diarias, resolución de separatas y enseñanza por niveles para escolar, pre-básico y repaso, orientado a la preparación para UNI, Católica (PUCP), U. de Lima, Agraria, San Marcos, UTEC, USMP y UPC. Tlf aux 910 646 018.",
-  "imagenes": [
-    "https://i.ibb.co/yB6XTgHg/image-e8872776.jpg"
-  ],
-  "tipoanuncio": 1,
-  "creado": "14/11/2026",
-  "fvencimiento": "14/12/2026",
-  "_evidencia_legal": "anuncio fisico volante clases pre universitarias prof humbert 14/11/2026 contacto_916665706.jpg"
-}
-,
-
-{
-  "idanuncio": "a_1793915838_0105",
-  "subcategory": ["Albañil", "Servicios para el Hogar", "Servicios Profesionales"],
-  "keywords": "constructora curve arquitectura ingenieria acabados interiorismo construccion remodelacion ampliacion drywall melamina pintura gasfiteria electricidad jiron miguel grau cdra 4 carmen de la legua reynoso cdlr",
-  "boton": "WHATSAPP",
-  "contacto": "939885086",
-  "ubicado_en": "CDLR",
-  "featured": true,
-  "titulo": "<strong style='color: #2c3e50;'>Constructora Curve - Arquitectura, Ingeniería y Acabados</strong>",
-  "descripcion": "Empresa especialista en arquitectura, ingeniería, construcción, acabados, interiorismo y mantenimiento.",
-  "imagenes": [
-    "https://i.ibb.co/Kzctcwkm/image-8e8ab719.jpg"
-  ],
-  "tipoanuncio": 1,
-  "creado": "14/11/2026",
-  "fvencimiento": "14/12/2026",
-  "_evidencia_legal": "anuncio fisico banner unificado constructora curve 14/11/2026 contacto_939885086.jpg"
-}
-
-
+    "idanuncio": "a_1793915838_0091",
+    "subcategory": "Abogados",
+    "keywords": "estudio juridico benites ayvar abogados asociados asesoria legal tramites av 1ro de mayo carmen de la legua reynoso cdlr",
+    "boton": "WHATSAPP",
+    "contacto": "999975047",
+    "ubicado_en": "CDLR",
+    "featured": true,
+    "titulo": "<strong style='color: #1a5694;'>Estudio Jurídico Benites Ayvar - Abogados Asociados</strong>",
+    "descripcion": "Estudio jurídico brinda servicios de asesoría y patrocinio legal mediante atención previa cita. Ubicado en Av. 1ro de Mayo cdra 2, Reynoso.",
+    "imagenes": [
+      "https://i.ibb.co/XZfq0YcH/image-191ed8f.jpg"
+    ],
+    "tipoanuncio": 1,
+    "creado": "13/11/2026",
+    "plan": "3meses",
+    "fvencimiento": "13/12/2026",
+    "_evidencia_legal": "anuncio fisico letrero estudio juridico benites ayvar 13/11/2026 contacto_999975047.jpg"
+  },
+  {
+    "idanuncio": "a_1793915838_0097",
+    "subcategory": "Profesores",
+    "keywords": "asesoria matematica primaria secundaria pre clases particulares a domicilio preparacion examenes practicas solucion de tareas av manco capac 328 carmen de la legua reynoso cdlr",
+    "boton": "WHATSAPP",
+    "contacto": "943436661",
+    "ubicado_en": "CDLR",
+    "featured": true,
+    "titulo": "<strong style='color: #c0392b;'>Asesoría Matemática - Primaria, Secundaria y Pre Universitaria</strong>",
+    "descripcion": "Ofrece clases particulares a domicilio, preparación para exámenes y prácticas, y solución de tareas con amplia experiencia. Av Manco Cápac cdra 3, Reynoso.",
+    "imagenes": [
+      "https://i.ibb.co/LdjXxsR5/image-5252ac53.jpg"
+    ],
+    "tipoanuncio": 1,
+    "creado": "14/11/2026",
+    "plan": "3meses",
+    "fvencimiento": "14/12/2026",
+    "_evidencia_legal": "anuncio fisico volante asesoria matematica 14/11/2026 contacto_943436661.jpg"
+  },
+  {
+    "idanuncio": "a_1793915838_0104",
+    "subcategory": "Profesores",
+    "keywords": "clases pre universitarias matematicas desde cero prof humbert asesorias diarias resolucion de separatas escolar pre basico repaso uni catolica pucp u lima agraria san marcos utec usmp upc cdlr",
+    "boton": "WHATSAPP",
+    "contacto": "916665706",
+    "ubicado_en": "CDLR",
+    "featured": true,
+    "titulo": "<strong style='color: #1a5694;'>Clases Pre Universitarias - Matemáticas desde Cero (Prof. Humbert)</strong>",
+    "descripcion": "Clases presenciales de matemáticas desde cero. Con horarios a escoger. Asesorías diarias, resolución de separatas y enseñanza por niveles para escolar, pre-básico y repaso, orientado a la preparación para UNI, Católica (PUCP), U. de Lima, Agraria, San Marcos, UTEC, USMP y UPC. Tlf aux 910 646 018.",
+    "imagenes": [
+      "https://i.ibb.co/yB6XTgHg/image-e8872776.jpg"
+    ],
+    "tipoanuncio": 1,
+    "creado": "14/11/2026",
+    "plan": "3meses",
+    "fvencimiento": "14/12/2026",
+    "_evidencia_legal": "anuncio fisico volante clases pre universitarias prof humbert 14/11/2026 contacto_916665706.jpg"
+  },
+  {
+    "idanuncio": "a_1793915838_0105",
+    "subcategory": [
+      "Albañil",
+      "Servicios para el Hogar",
+      "Servicios Profesionales"
+    ],
+    "keywords": "constructora curve arquitectura ingenieria acabados interiorismo construccion remodelacion ampliacion drywall melamina pintura gasfiteria electricidad jiron miguel grau cdra 4 carmen de la legua reynoso cdlr",
+    "boton": "WHATSAPP",
+    "contacto": "939885086",
+    "ubicado_en": "CDLR",
+    "featured": true,
+    "titulo": "<strong style='color: #2c3e50;'>Constructora Curve - Arquitectura, Ingeniería y Acabados</strong>",
+    "descripcion": "Empresa especialista en arquitectura, ingeniería, construcción, acabados, interiorismo y mantenimiento.",
+    "imagenes": [
+      "https://i.ibb.co/Kzctcwkm/image-8e8ab719.jpg"
+    ],
+    "tipoanuncio": 1,
+    "creado": "14/11/2026",
+    "plan": "3meses",
+    "fvencimiento": "14/12/2026",
+    "_evidencia_legal": "anuncio fisico banner unificado constructora curve 14/11/2026 contacto_939885086.jpg"
+  }
 ]
