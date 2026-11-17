@@ -76,32 +76,19 @@
 				<!-- Grupo botones -->
 				<div class="blz-nav-buttons">
 					<!-- Publicar -->
-					<!--<div onclick="abrirFormularioPublicar()">
+					<div onclick="abrirFormularioPublicar()">
 						<div id="btnNavPublicar" class="blz-nav-btn blz-publish-btn js-menu-toggle">
 							<span class="blz-plus-circle">+</span>
 							<span>Crear Anuncio</span>
 						</div>
-					</div>-->
-					<a href="https://wa.me/51991490519?text=%F0%9F%91%8BHola%2C%20quiero%20publicar%20mi%20anuncio%20en%20enlaza2.pe"
-						target="_blank" style="text-decoration: none; color: inherit;">
-						<div>
-							<div id="btnNavPublicar" class="blz-nav-btn blz-publish-btn js-menu-toggle">
-								<span class="blz-plus-circle">+</span>
-								<span>Crear Anuncio</span>
-							</div>
-						</div>
-					</a>
-
+					</div>
 					<div class="blz-footer-links">
 						<a href="javascript:void(0)" onclick="abrirTerms()">
 							<u>Reglas, normas e indicaciones</u>
 						</a>
 					</div>
-
 				</div>
-
 			</div>
-
 		</div>
 	</nav>
 
@@ -116,85 +103,105 @@
 	<!---=================================PUBLICAR==============================================-->
 
 
+	<!---===== PUBLICAR (TODO EN UN SOLO PASO) =====-->
 	<div class="js-clone-nav">
 		<div id="menu-formulario">
 			<div class="blz-publicar-wrapper">
 				<div class="blz-publicar-card">
-					<!-- PASO 1 -->
-					<div id="miniStep1" class="blz-form-step">
-						<!-- TODO EL FORMULARIO DEL PASO 1 -->
-						<!-- CABECERA -->
-						<div class="blz-form-header">
-							<div class="blz-form-icon">
-								<i class="bi bi-megaphone-fill"></i>
-							</div>
-							<div>
-								<h3>Sube aquí tu servicio, negocio o producto para que las personas te contacten
-									fácilmente.
-								</h3>
-							</div>
-						</div>
 
-						<!-- FORMULARIO -->
-						<div class="blz-form-body">
-							<!-- SERVICIO -->
-							<div class="blz-field">
-								<label for="miniServicio">Describe el contenido de tu anuncio:</label>
-								<div class="blz-input-box blz-textarea-box">
-									<textarea id="miniServicio" maxlength="350"
-										placeholder="Ej.: Hago Albañilería, gasfitería, electricidad..."></textarea>
-									<div class="blz-counter">
-										<span id="countServicio">350</span>
-									</div>
-								</div>
-							</div>
-
-							<!-- DATOS -->
-							<div class="blz-field">
-								<label for="miniNombreTelefono">Número o Correo de contacto:</label>
-								<div class="blz-input-box">
-									<input type="text" id="miniNombreTelefono" maxlength="80">
-									<div class="blz-counter">
-										<span id="countDatos">80</span>
-									</div>
-								</div>
-							</div>
-
-							<!-- HONEYPOT -->
-							<input type="text" id="gonzalo" name="website" autocomplete="off" tabindex="-1"
-								class="blz-honeypot">
-							<!-- BOTÓN -->
-							<button type="button" id="btnPublicarMini" class="blz-btn-publicar">
-								<span class="blz-btn-icon">
-									<i class="bi bi-send-fill"></i>
-								</span>
-								<span>Procesar</span>
-							</button>
-							<h3>Al procesar estaremos preparando tu anuncio en menos de 12 hr</h3>
-						</div>
+					<!-- CABECERA SIMPLIFICADA -->
+					<div class="blz-form-header">
+						<h2>Publicar anuncio</h2>
 					</div>
 
+					<!-- CUERPO DEL FORMULARIO -->
+					<div class="blz-form-body">
+						<div class="blz-main-card">
 
-					<!-- PASO 2 -->
-					<div id="miniStep2" class="blz-form-step blz-form-success">
-						<!-- MENSAJE DE ÉXITO -->
-						<div class="blz-success-icon">
-							<i class="bi bi-check-lg"></i>
+							<!-- COLUMNA IZQUIERDA: FOTO (Igual que tus tarjetas publicadas) -->
+							<div class="blz-photo-upload" id="btnSubirFoto"
+								onclick="document.getElementById('miniFoto').click()">
+								<span class="blz-category-badge" id="badgeCategoria"><i class="bi bi-key"></i></span>
+								<input type="file" id="miniFoto" accept="image/*" style="display: none;">
+								<img id="previewFoto" src="" alt="Vista previa" style="display: none;">
+								<div id="placeholderFoto" class="blz-photo-placeholder">
+									<i class="bi bi-camera-fill"></i>
+									<span>Subir foto</span>
+								</div>
+							</div>
+
+							<!-- COLUMNA DERECHA: CAMPOS + COMBOBOX INTEGRADO -->
+							<div class="blz-inputs-column">
+
+								<!-- FILA SUPERIOR: TÍTULO + COMBOBOX DENTRO DE LA TARJETA -->
+								<div class="blz-title-cat-row">
+									<div class="blz-field blz-title-field">
+										<input type="text" id="miniTitulo" maxlength="60"
+											placeholder="Título del anuncio">
+									</div>
+									<div class="blz-category-select">
+										<select id="miniCategoria">
+											<option value="Alquileres" selected>Alquileres</option>
+											<option value="Servicios">Servicios</option>
+											<option value="Empleos">Empleos</option>
+											<option value="Ventas">Ventas</option>
+											<option value="Negocios">Negocios</option>
+										</select>
+									</div>
+								</div>
+
+								<!-- DESCRIPCIÓN -->
+								<div class="blz-field blz-textarea-box">
+									<textarea id="miniDescripcion" maxlength="350" placeholder="Descripción"></textarea>
+									<div class="blz-counter"><span id="countDescripcion">350</span></div>
+								</div>
+
+								<!-- WHATSAPP Y DISTRITO -->
+								<div class="blz-row-fields">
+									<div class="blz-field">
+										<input type="tel" id="miniWhatsapp" maxlength="15" placeholder="WhatsApp">
+									</div>
+									<div class="blz-field">
+										<input type="text" id="miniDistrito" maxlength="40" placeholder="Distrito">
+									</div>
+								</div>
+
+							</div>
 						</div>
 
-						<h3>¡Solicitud enviada!</h3>
-						<p>Recibimos tus datos correctamente.
-							Te contactaremos para ayudarte
-							a publicar tu anuncio.</p>
 
-						<button type="button" id="btnCerrarExito" class="blz-btn-secondary">
-							Entendido
+						<!-- SELECTOR DE DURACIÓN -->
+						<div class="blz-duration-section">
+							<label>Elige duración:</label>
+							<div class="blz-duration-options" id="grupoDuracion">
+								<button type="button" class="blz-dur-btn" data-dias="15" data-precio="5">15 días · S/
+									5</button>
+								<button type="button" class="blz-dur-btn" data-dias="30" data-precio="10">30 días · S/
+									10</button>
+								<button type="button" class="blz-dur-btn active" data-dias="90" data-precio="20">
+									<span class="blz-rec-tag">RECOMENDADO</span>
+									90 días · S/ 20 <small>Recomendado</small>
+								</button>
+								<button type="button" class="blz-dur-btn" data-dias="213" data-precio="35">213 días · S/
+									35</button>
+							</div>
+						</div>
+
+						<!-- HONEYPOT -->
+						<input type="text" id="gonzalo" name="website" autocomplete="off" tabindex="-1"
+							class="blz-honeypot">
+
+						<!-- BOTÓN PUBLICAR DIRECTO -->
+						<button type="button" id="btnPublicarMini" class="blz-btn-publicar">
+							ENVIAR INFORMACIÓN · S/ <span id="precioBoton">20</span>
 						</button>
 					</div>
+
 				</div>
 			</div>
 		</div>
 	</div>
+
 
 
 
@@ -222,7 +229,7 @@
 						<!-- TÍTULO -->
 						<p data-aos="fade-right" data-aos-once="true" data-aos-delay="1100"
 							class="titulo-hero text-5xl font-bold leading-tight text-darken">
-							<span class="text-yellow-500">Recorremos</span> las calles de tu distrito por tí
+							<span class="text-yellow-500">No mires en las paredes,</span> mira tu pantalla
 						</p>
 					</div>
 
@@ -291,34 +298,37 @@
 
 	<!-- PIE DE PÁGINA -->
 	<!-- PIE DE PÁGINA -->
-<footer class="site-footer mt-5">
-  <div class="container">
-    <!-- BLOQUE PRINCIPAL: MARCA + BENEFICIOS -->
-    <div class="blz-footer-info">
-      <div class="blz-footer-about">
-        <h4>© <script>document.write(new Date().getFullYear());</script> Enlaza2.pe</h4>
-        <p>
-          Plataforma comunitaria de anuncios de <strong>alquileres, empleos, servicios generales, delivery y asesorías</strong> en tu distrito.
-        </p>
-      </div>
+	<footer class="site-footer mt-5">
+		<div class="container">
+			<!-- BLOQUE PRINCIPAL: MARCA + BENEFICIOS -->
+			<div class="blz-footer-info">
+				<div class="blz-footer-about">
+					<h4>©
+						<script>document.write(new Date().getFullYear());</script> Enlaza2.pe
+					</h4>
+					<p>
+						Plataforma comunitaria de anuncios de <strong>alquileres, empleos, servicios generales, delivery
+							y asesorías</strong> en tu distrito.
+					</p>
+				</div>
 
-      <!-- PÍLDORAS DE VALOR -->
-      <div class="blz-footer-features">
-        <span><i class="bi bi-megaphone-fill"></i> Anuncios directos</span>
-        <span><i class="bi bi-grid-fill"></i> Búsqueda por categorías</span>
-        <span><i class="bi bi-people-fill"></i> Independientes y empresas</span>
-        <span><i class="bi bi-telephone-fill"></i> Contacto directo</span>
-      </div>
-    </div>
+				<!-- PÍLDORAS DE VALOR -->
+				<div class="blz-footer-features">
+					<span><i class="bi bi-megaphone-fill"></i> Anuncios directos</span>
+					<span><i class="bi bi-grid-fill"></i> Búsqueda por categorías</span>
+					<span><i class="bi bi-people-fill"></i> Independientes y empresas</span>
+					<span><i class="bi bi-telephone-fill"></i> Contacto directo</span>
+				</div>
+			</div>
 
-    <!-- SEPARADOR -->
-    <div class="blz-footer-divider"></div>
+			<!-- SEPARADOR -->
+			<div class="blz-footer-divider"></div>
 
-    <!-- PIE LEGAL (AL FINAL COMO CORRESPONDE) -->
-    <div class="blz-footer-bottom">
-    </div>
-  </div>
-</footer>
+			<!-- PIE LEGAL (AL FINAL COMO CORRESPONDE) -->
+			<div class="blz-footer-bottom">
+			</div>
+		</div>
+	</footer>
 
 
 

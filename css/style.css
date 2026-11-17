@@ -5544,13 +5544,7 @@ DESKTOP
   gap: 12px;
   align-items: center;
 }
-
-.blz-fields {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 7px;
-}
+ 
 
 .blz-servicio-box {
   min-height: 58px;
@@ -5567,10 +5561,7 @@ DESKTOP
   font-size: 1rem;
 }
 
-.blz-field-wrap {
-  position: relative;
-  width: 100%;
-}
+ 
 
 /* CONTADOR DENTRO */
 
@@ -5608,21 +5599,6 @@ DESKTOP
     width: 100%;
     box-sizing: border-box;
     max-width: 100%;
-  }
-
-  /* INPUTS */
-  .blz-fields {
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
-    width: 100%;
-    justify-content: center;
-    top: 0;
-    position: relative;
-  }
-
-  .blz-field-wrap {
-    width: 100%;
   }
 
   .blz-servicio-box,
@@ -5671,28 +5647,7 @@ DESKTOP
     box-sizing: border-box;
     max-width: 100%;
   }
-
-  .blz-fields {
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
-    width: 100%;
-    justify-content: center;
-    top: 0;
-    position: relative;
-  }
-
-  .blz-field-wrap {
-    width: 100%;
-  }
-
-  /* INPUT */
-  .blz-field-wrap-input {
-    position: relative;
-    flex: 0 1 65%;
-    max-width: 70%;
-  }
-
+ 
   .blz-servicio-box,
   .blz-datos-box {
     width: 100%;
