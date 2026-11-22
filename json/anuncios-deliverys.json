@@ -9,6 +9,9 @@
     "featured": true,
     "titulo": "<strong style='color: #27ae60;'>Farma Deasol - Delivery Atención 24 horas, todos los días</strong>",
     "descripcion": "Atención por WhatsApp para realizar pedidos de medicamentos y productos de salud.",
+    "thumbnail": [
+      "https://i.ibb.co/VYTfjKFT/image-15cb9721.jpg"
+    ],
     "imagenes": [
       "https://i.ibb.co/pjdY0mHd/image-15cb9721.jpg"
     ],
@@ -19,22 +22,25 @@
     "_evidencia_legal": "anuncio fisico banner vertical farma deasol 08/11/2026 contacto_923626053.jpg"
   },
   {
-    "idanuncio": "a_1793915838_0065",
-    "subcategory": "Avícola",
-    "keywords": "avicola patrick pollo huevos gallina filetes pechuga pierna san fernando redondas delivery cdlr",
-    "boton": "WHATSAPP",
-    "contacto": "997198915",
-    "ubicado_en": "CDLR",
-    "featured": true,
-    "titulo": "<strong style='color: #1a5694;'>Avícola Patrick - Delivery Pollo Fresco y Servicio</strong>",
-    "descripcion": "Pollos enteros, piernas especiales, pechuga especial, filetes, huevos y gallinas. 2° TLF 996714584.",
-    "imagenes": [
+    "_idanuncio": "a_1793915838_0065",
+    "_subcategory": "Avícola",
+    "_keywords": "avicola patrick pollo huevos gallina filetes pechuga pierna san fernando redondas delivery cdlr",
+    "_boton": "WHATSAPP",
+    "_contacto": "997198915",
+    "_ubicado_en": "CDLR",
+    "_featured": true,
+    "_titulo": "<strong style='color: #1a5694;'>Avícola Patrick - Delivery Pollo Fresco y Servicio</strong>",
+    "_descripcion": "Pollos enteros, piernas especiales, pechuga especial, filetes, huevos y gallinas. 2° TLF 996714584.",
+    "_thumbnail": [
+      "https://i.ibb.co/fVVpZZvH/image-f4b0abd8.jpg"
+    ],
+    "_imagenes": [
       "https://i.ibb.co/6ccPGGBF/image-f4b0abd8.jpg"
     ],
-    "tipoanuncio": 1,
-    "creado": "8/11/2026",
-    "plan": "3meses",
-    "fvencimiento": "8/12/2026",
+    "_tipoanuncio": 1,
+    "_creado": "8/11/2026",
+    "_plan": "3meses",
+    "_fvencimiento": "8/12/2026",
     "_evidencia_legal": "anuncio fisico banner vertical avicola patrick 08/11/2026 contacto_997198915.jpg"
   },
   {
@@ -51,6 +57,9 @@
     "featured": true,
     "titulo": "<strong style='color: #d35400;'>El Rebecón - Hamburguesería, Chicharrones y Bebidas de Reynoso. Delivery hasta las 12:30 a.m.</strong>",
     "descripcion": "Ver promociones de comida y bebidas en la foto. Contacto al whatsapp",
+    "thumbnail": [
+      "https://i.ibb.co/fzWKBtpv/image-228b9132.jpg"
+    ],
     "imagenes": [
       "https://i.ibb.co/ZprwtK8m/image-228b9132.jpg"
     ],
@@ -74,6 +83,9 @@
     "featured": true,
     "titulo": "<strong style='color: #c0392b;'>Chifa \"Cristian\" - Delivery de Caldo de Gallina y Platos a la Carta de Reynoso</strong>",
     "descripcion": "Servicio de delivery disponible. Carta y precios: Ver carta en la imagen",
+    "thumbnail": [
+      "https://i.ibb.co/0pwgH07m/image-dbf2f1ce.jpg"
+    ],
     "imagenes": [
       "https://i.ibb.co/PsS7q2LF/image-dbf2f1ce.jpg"
     ],
@@ -97,6 +109,9 @@
     "featured": true,
     "titulo": "<strong style='color: #d35400;'>Gogo Sabor - Restaurante y Cevichería (Menú y Comida Criolla en Reynoso)</strong>",
     "descripcion": "Menú, comida criolla y platos marinos con servicio delivery. Ver especialidades en la imagen.",
+    "thumbnail": [
+      "https://i.ibb.co/PsPwB3vH/image-573062ac.jpg"
+    ],
     "imagenes": [
       "https://i.ibb.co/TD7mzpx3/image-573062ac.jpg"
     ],
@@ -120,6 +135,9 @@
     "featured": true,
     "titulo": "<strong style='color: #d4af37;'>Chifa Pino - Entregas Rápidas y Recojo en Tienda</strong>",
     "descripcion": "Revisa en la imagen los platos. Delivery Horario de atención: 12:00 PM a 11:00 PM.",
+    "thumbnail": [
+      "https://i.ibb.co/v4ThCqxg/image-8de7f285.jpg"
+    ],
     "imagenes": [
       "https://i.ibb.co/QvTk7QFz/image-8de7f285.jpg"
     ],
@@ -143,6 +161,9 @@
     "featured": true,
     "titulo": "<strong style='color: #c0392b;'>Donna Pizza - Menú Italiano y Pizzas con Delivery</strong>",
     "descripcion": "Pastas y pizzas con servicio delivery en Carmen de la Legua. Especialidades en la foto.",
+    "thumbnail": [
+      "https://i.ibb.co/jPnVT1Cf/image-16a93bad.jpg"
+    ],
     "imagenes": [
       "https://i.ibb.co/q3T0dPHj/image-16a93bad.jpg"
     ],
@@ -166,6 +187,9 @@
     "featured": true,
     "titulo": "<strong style='color: #c0392b;'>Pollería Don Nilo - Pollo a la Brasa y Servicio Delivery</strong>",
     "descripcion": "Aceptan pagos con tarjeta Visa y billeteras digitales. Pedido por WhatsApp.",
+    "thumbnail": [
+      "https://i.ibb.co/200krK5f/image-b043f97e.jpg"
+    ],
     "imagenes": [
       "https://i.ibb.co/1YYmN2bw/image-b043f97e.jpg"
     ],
@@ -189,6 +213,9 @@
     "featured": true,
     "titulo": "<strong style='color: #c0392b;'>Real Pizza - Servicio Delivery Rápido</strong>",
     "descripcion": "Pizzas con entrega rápida a domicilio en Real Pizza. Pedidos directos por WhatsApp.",
+    "thumbnail": [
+      "https://i.ibb.co/hRJRttx7/image-f5fad32a.jpg"
+    ],
     "imagenes": [
       "https://i.ibb.co/xStSRRKC/image-f5fad32a.jpg"
     ],
@@ -212,6 +239,9 @@
     "featured": true,
     "titulo": "<strong style='color: #d35400;'>Fuente de Soda Alfredo - Delivery de Hamburguesas, Broaster y Jugos (Desde 1999)</strong>",
     "descripcion": "Desde 1999. Especialidades en la imagen. Aceptamos Yape y Plin.",
+    "thumbnail": [
+      "https://i.ibb.co/rKMRgh6r/image-e27d1ded.jpg"
+    ],
     "imagenes": [
       "https://i.ibb.co/Xfpr9PsR/image-e27d1ded.jpg"
     ],
@@ -235,6 +265,9 @@
     "featured": true,
     "titulo": "<strong style='color: #d4af37;'>Homie -BURGER- | Delivery ¡Pide directo por WhatsApp!</strong>",
     "descripcion": "Homie's Favs: Smash Burguer, BBQ Wings & papas, Tenders & papas, Chaufa Amazónico y Mostrazos de Alitas. ",
+    "thumbnail": [
+      "https://i.ibb.co/3y21pVGk/image-5d161bea.jpg"
+    ],
     "imagenes": [
       "https://i.ibb.co/Z65dBvtN/image-5d161bea.jpg"
     ],
@@ -258,6 +291,9 @@
     "featured": true,
     "titulo": "<strong style='color: #c0392b;'>Dannus Chicken - Delivery de Pollos a la Brasa, Parrillas, Broaster y Menú Criollo</strong>",
     "descripcion": "Promociones y menú diario. Ver platos y promos en la imagen.",
+    "thumbnail": [
+      "https://i.ibb.co/BKsJZP4K/image-d5164a01.jpg"
+    ],
     "imagenes": [
       "https://i.ibb.co/Fq71wWsq/image-d5164a01.jpg"
     ],
@@ -280,6 +316,9 @@
     "featured": true,
     "titulo": "<strong style='color: #d4af37;'>Punta Brava - El Placer de tu Paladar (Delivery)</strong>",
     "descripcion": "Especialistas en hamburguesas con papas al hilo y naturales + servicio delivery.",
+    "thumbnail": [
+      "https://i.ibb.co/Zz0cJ78D/image-465f2999.jpg"
+    ],
     "imagenes": [
       "https://i.ibb.co/d4Rkcx2Y/image-465f2999.jpg"
     ],
@@ -303,6 +342,9 @@
     "featured": true,
     "titulo": "<strong style='color: #c0392b;'>Bell Restaurante - Pizzas, Pastas y Brasas (Delivery)</strong>",
     "descripcion": "Carta: pizzas artesanales, pastas, pollo broaster y carnes/brasas.",
+    "thumbnail": [
+      "https://i.ibb.co/yBpNYD45/image-1f2c2f79.jpg"
+    ],
     "imagenes": [
       "https://i.ibb.co/XkDW39Yp/image-1f2c2f79.jpg"
     ],
@@ -326,6 +368,9 @@
     "featured": true,
     "titulo": "<strong style='color: #c0392b;'>Andinos Callao - Pollos a la Brasa, Anticuchos y Parrillas (Delivery)</strong>",
     "descripcion": "Especialistas en brasa y parrilla con servicio delivery. Ver en la imagen",
+    "thumbnail": [
+      "https://i.ibb.co/QvmV6c99/image-34d32d43.jpg"
+    ],
     "imagenes": [
       "https://i.ibb.co/k2cThyKK/image-34d32d43.jpg"
     ],
@@ -349,6 +394,9 @@
     "featured": true,
     "titulo": "<strong style='color: #5d3a1a;'>Leños Chicken - Delivery de Pollos a la Brasa, Parrillas y Menús Especiales</strong>",
     "descripcion": "Especialista en pollo a la brasa, brocheta, pechuga o chuleta.",
+    "thumbnail": [
+      "https://i.ibb.co/6Jff5yn7/image-596350b3.jpg"
+    ],
     "imagenes": [
       "https://i.ibb.co/k6WWFGHs/image-596350b3.jpg"
     ],
@@ -372,6 +420,9 @@
     "featured": true,
     "titulo": "<strong style='color: #c0392b;'>Giancarlo's - Pollos a la Brasa (Delivery)</strong>",
     "descripcion": "Establecimiento especializado en pollos a la brasa con servicio de entrega a domicilio. Ubicado en Jr. Víctor A. Belaúnde 490, Carmen de la Legua Reynoso.",
+    "thumbnail": [
+      "https://i.ibb.co/Fbdb8fd6/image-4b6042d.jpg"
+    ],
     "imagenes": [
       "https://i.ibb.co/bgGgNyG1/image-4b6042d.jpg"
     ],
@@ -395,6 +446,9 @@
     "featured": true,
     "titulo": "<strong style='color: #d35400;'>Chifa \"El Chino S.T.\" - Servicio Delivery</strong>",
     "descripcion": "Restaurante de comida oriental y platos de chifa con servicio de reparto a domicilio. Av. 1 de Mayo 691, Carmen de la Legua Reynoso.",
+    "thumbnail": [
+      "https://i.ibb.co/YTWSG8QW/image-c2166dbe.jpg"
+    ],
     "imagenes": [
       "https://i.ibb.co/93v0j2gv/image-c2166dbe.jpg"
     ],
@@ -418,6 +472,9 @@
     "featured": true,
     "titulo": "<strong style='color: #c0392b;'>Don José - Pollos & Parrillas (Delivery)</strong>",
     "descripcion": "Preparación de pollos a la brasa y parrillas con servicio delivery en Carmen de la Legua Reynoso. Av. Manco Cápac 630.",
+    "thumbnail": [
+      "https://i.ibb.co/21FhGBMb/image-3eabd1a3.jpg"
+    ],
     "imagenes": [
       "https://i.ibb.co/sdgR8r1B/image-3eabd1a3.jpg"
     ],

@@ -1,6 +1,9 @@
 let anuncios = [];
 let categorias = [];
 let anunciosCategoriaActual = [];
+let paginaActual = 1;
+const resultadosPorPagina = 30;
+
 
 /* ========================================================
    BANNERS DESIGNS
@@ -85,7 +88,7 @@ Promise.all([
     anunciosAlq,
     anunciosDelivery,
     anunciosEmpleos,
-    anunciosServicios, 
+    anunciosServicios,
     anunciosAsesorias,
     categoriasData
   ]) => {
@@ -96,7 +99,7 @@ Promise.all([
       ...anunciosDelivery,
       ...anunciosEmpleos,
       ...anunciosServicios,
-      ...anunciosAsesorias 
+      ...anunciosAsesorias
     ];
 
     categorias = categoriasData;
@@ -106,7 +109,7 @@ Promise.all([
       "Envíos a domicilio": anunciosDelivery,
       "Empleos": anunciosEmpleos,
       "Servicios Generales": anunciosServicios,
-      "Asesoría Profesional": anunciosAsesorias 
+      "Asesoría Profesional": anunciosAsesorias
     };
 
     renderBanners();
@@ -187,10 +190,10 @@ document.addEventListener("click", function (e) {
   if (!btn) return;
   e.preventDefault();
   const categoria = btn.dataset.categoria;
-    // 1. Añadimos visualmente la clase compacta al contenedor inmediatamente
+  // 1. Añadimos visualmente la clase compacta al contenedor inmediatamente
   const contenedor = document.getElementById('contenedor-banners');
   if (contenedor) {
-    contenedor.classList.add('modo-compacto'); 
+    contenedor.classList.add('modo-compacto');
   }
 
 
@@ -202,7 +205,7 @@ document.addEventListener("click", function (e) {
   } else {
     cargarCategoria(categoria, { scroll: true, compacto: true });
   }
- 
+
 });
 
 /* CARGAR CATEGORIAS */
@@ -324,22 +327,83 @@ function filtrarSubcategoria(subcategoria) {
 
 
 /* RENDER ANUNCIOS */
-function renderAnuncios(lista, subcategoria) {
+function renderAnuncios(lista, subcategoria, pagina = 1) {
 
   const contenedorTipo1 = document.getElementById("tipo1");
 
   if (!contenedorTipo1) return;
 
+  paginaActual = pagina;
   contenedorTipo1.innerHTML = "";
+
+  // Cortar la lista de 30 en 30
+  const inicio = (paginaActual - 1) * resultadosPorPagina;
+  const fin = inicio + resultadosPorPagina;
+  const listaPaginada = lista.slice(inicio, fin);
+
+  let htmlAcumulado = "";
+
+  /*contenedorTipo1.innerHTML = "";
   lista.forEach(a => {
     switch (a.tipoanuncio) {
       case 1:
         contenedorTipo1.innerHTML += diseño1(a, subcategoria);
         break;
     }
+  });*/
+  listaPaginada.forEach(a => {
+    switch (a.tipoanuncio) {
+      case 1:
+        htmlAcumulado += diseño1(a, subcategoria);
+        break;
+    }
   });
+
+  contenedorTipo1.innerHTML = htmlAcumulado;
+
+  renderControlesPaginacion(lista, subcategoria);
 }
- 
+
+
+/* CONTROLES DE NAVEGACIÓN */
+function renderControlesPaginacion(lista, subcategoria) {
+  const contenedorPaginacion = document.getElementById("paginacion");
+  if (!contenedorPaginacion) return;
+
+  const totalPaginas = Math.ceil(lista.length / resultadosPorPagina);
+  contenedorPaginacion.innerHTML = "";
+
+  // Si hay 30 resultados o menos, oculta la paginación
+  if (totalPaginas <= 1) return;
+
+  // Botón Anterior
+  const btnAnterior = document.createElement("button");
+  btnAnterior.textContent = "Anterior";
+  btnAnterior.className = "btn btn-outline-primary btn-sm";
+  btnAnterior.disabled = paginaActual === 1;
+  btnAnterior.onclick = () => {
+    renderAnuncios(lista, subcategoria, paginaActual - 1);
+    document.getElementById("bloque-anuncios").scrollIntoView({ behavior: "smooth" });
+  };
+  contenedorPaginacion.appendChild(btnAnterior);
+
+  // Texto indicador
+  const info = document.createElement("span");
+  info.className = "fw-semibold";
+  info.textContent = `Página ${paginaActual} de ${totalPaginas}`;
+  contenedorPaginacion.appendChild(info);
+
+  // Botón Siguiente
+  const btnSiguiente = document.createElement("button");
+  btnSiguiente.textContent = "Siguiente";
+  btnSiguiente.className = "btn btn-outline-primary btn-sm";
+  btnSiguiente.disabled = paginaActual === totalPaginas;
+  btnSiguiente.onclick = () => {
+    renderAnuncios(lista, subcategoria, paginaActual + 1);
+    document.getElementById("bloque-anuncios").scrollIntoView({ behavior: "smooth" });
+  };
+  contenedorPaginacion.appendChild(btnSiguiente);
+}
 
 /* RENDER PARTICULAS de BANNERS  */
 function particulasRefer() {

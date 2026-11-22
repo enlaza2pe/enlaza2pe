@@ -40,10 +40,11 @@
 
 .blz-form-header {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  gap: 10px;
   margin-bottom: 14px;
-  gap: 15px;
 }
 
 .blz-form-icon {
@@ -62,6 +63,299 @@
 .blz-form-icon i {
   font-size: 21px;
 }
+
+/* Caja del selector con fondo blanco destacado */
+.blz-cat-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #ffffff;
+  padding: 6px 10px;
+  border-radius: 10px;
+  border: 1.5px solid #cbd5e1;
+  width: auto;
+  flex: 1;
+  min-width: 220px;
+}
+
+.blz-cat-box label {
+  font-size: 13px;
+  font-weight: 700;
+  color: #152c5b;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.blz-cat-box select {
+  flex: 1;
+  width: 100%;
+  height: 30px;
+  background-color: transparent;
+  border: none;
+  padding: 0 26px 0 4px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #161b33;
+  cursor: pointer;
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://w3.org' viewBox='0 0 24 24' fill='%23152c5b'%3e%3cpath d='M7 10l5 5 5-5z'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 2px center;
+  background-size: 20px;
+}
+
+.blz-menu-group {
+  font-size: 11px;
+  font-weight: 800;
+  color: #152c5b;
+  background-color: #e2e8f0;
+  padding: 5px 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  position: sticky;
+  top: 0;
+}
+
+.blz-menu-list .blz-menu-item {
+  padding-left: 20px; /* Sangría sutil para diferenciar la opción del título de grupo */
+}
+
+
+/* 1. ANULAR ESTILOS DE LA PLANTILLA MÓVIL DENTRO DEL FORMULARIO */
+#menu-formulario .blz-main-card {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: stretch !important;
+  background-color: #ffffff !important;
+  border-radius: 14px !important;
+  box-shadow: 0 6px 20px rgba(22, 27, 51, 0.08) !important;
+  border: 1px solid #eef0f4 !important;
+  overflow: visible !important; /* Permite que el menú flote por encima */
+  min-height: 220px !important;
+}
+
+/* 2. CONTENEDOR IZQUIERDO DE LA FOTO */
+#menu-formulario .blz-photo-upload {
+  position: relative !important;
+  width: 38% !important;
+  min-width: 165px !important;
+  max-width: 220px !important;
+  min-height: 220px !important;
+  background-color: #e4e7ec !important;
+  border-radius: 14px 0 0 14px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: block !important;
+}
+
+#menu-formulario #previewFoto {
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 220px !important;
+  object-fit: cover !important;
+  display: block !important;
+  border-radius: 14px 0 0 14px !important;
+}
+
+/* 3. BOTÓN FLOTANTE "CAMBIAR FOTO" */
+#menu-formulario .blz-photo-action-pill {
+  position: absolute !important;
+  bottom: 12px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  background-color: #161b33 !important;
+  color: #ffffff !important;
+  border: 1.5px solid rgba(255, 255, 255, 0.3) !important;
+  padding: 7px 14px !important;
+  border-radius: 50px !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  cursor: pointer !important;
+  white-space: nowrap !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important;
+  z-index: 999 !important;
+  pointer-events: auto !important;
+
+    cursor: pointer;
+    user-select: none;
+}
+
+#menu-formulario .blz-photo-action-pill:hover {
+  background-color: #2e6f40 !important;
+}
+
+#menu-formulario .blz-photo-action-pill .blz-chevron {
+    transition: transform .2s ease;
+}
+
+#menu-formulario .blz-photo-action-pill[aria-expanded="true"] .blz-chevron {
+    transform: rotate(180deg);
+}
+
+/* 4. MENÚ DESPLEGABLE OCULTO POR DEFECTO Y FLOTANTE AL ABRIR */
+#menu-formulario .blz-photo-menu {
+  /*display: none !important;
+  position: absolute !important;
+  top: calc(100% + 4px) !important;
+  left: 0 !important;
+  width: 250px !important;
+  background-color: #ffffff !important;
+  border-radius: 12px !important;
+  box-shadow: 0 12px 30px rgba(22, 27, 51, 0.25) !important;
+  border: 1px solid #cbd5e1 !important;
+  z-index: 9999 !important;
+  overflow: hidden !important;
+  text-align: left !important;*/ /*maldito hdp de tp*/
+  top: calc(100% + 6px) !important; /* desplegable debajo del control, en su contexto */
+  left: 0 !important;
+  max-height: min(70vh, 420px) !important;
+  overflow-y: auto !important;
+  overscroll-behavior: contain;
+}
+
+#menu-formulario .blz-photo-menu.abierto {
+  display: block !important;
+}
+
+/* Opción verde superior: Subir mi propia foto */
+#menu-formulario .blz-item-upload {
+  width: 100% !important;
+  background-color: #f0fdf4 !important;
+  color: #166534 !important;
+  font-weight: 700 !important;
+  font-size: 13px !important;
+  padding: 11px 14px !important;
+  border: none !important;
+  border-bottom: 1px solid #dcfce7 !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  cursor: pointer !important;
+  text-align: left !important;
+}
+
+#menu-formulario .blz-menu-divider {
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  color: #64748b !important;
+  background-color: #f8fafc !important;
+  padding: 6px 14px !important;
+  border-bottom: 1px solid #e2e8f0 !important;
+}
+
+#menu-formulario .blz-menu-list {
+  max-height: 200px !important;
+  overflow-y: auto !important;
+  background-color: #ffffff !important;
+}
+
+#menu-formulario .blz-menu-group {
+  font-size: 11px !important;
+  font-weight: 800 !important;
+  color: #152c5b73 !important;
+  background-color: #e2e8f0 !important;
+  padding: 5px 14px !important;
+  text-transform: uppercase !important;
+}
+
+#menu-formulario .blz-menu-list .blz-menu-item {
+  width: 100% !important;
+  background: #ffffff !important;
+  border: none !important;
+  border-bottom: 1px solid #f1f5f9 !important;
+  padding: 8px 14px 8px 20px !important;
+  font-size: 13px !important;
+  color: #161b33 !important;
+  text-align: left !important;
+  cursor: pointer !important;
+  display: block !important;
+}
+
+#menu-formulario .blz-menu-list .blz-menu-item:hover {
+  background-color: #f1f5f9 !important;
+}
+
+#menu-formulario .blz-menu-list .blz-menu-item.active {
+  background-color: #eff6ff !important;
+  color: #152c5b !important;
+  font-weight: 700 !important;
+}
+
+/* 5. COLUMNA DERECHA DE CAMPOS (SIN HUECOS NI DESPLAZAMIENTOS) */
+#menu-formulario .blz-inputs-column {
+  flex: 1 !important;
+  min-width: 0 !important;
+  padding: 16px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  gap: 12px !important;
+}
+
+#menu-formulario .blz-textarea-box {
+  min-height: auto !important;
+  padding-top: 0 !important;
+  position: relative !important;
+}
+
+#menu-formulario .blz-textarea-box textarea {
+  height: 85px !important;
+  margin: 0 !important;
+}
+
+
+/* Alineación limpia para filas con radio button */
+#menu-formulario .blz-radio-row {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 9px !important;
+  margin: 0 !important;
+  cursor: pointer !important;
+  line-height: 1.3 !important;
+}
+
+#menu-formulario .blz-radio-row input[type="radio"] {
+  margin-top: 2px !important;
+  accent-color: #2e6f40;
+  width: 15px !important;
+  height: 15px !important;
+  flex-shrink: 0 !important;
+  cursor: pointer !important;
+}
+
+#menu-formulario .blz-radio-row.active {
+  background-color: #eff6ff !important;
+  color: #152c5b !important;
+  font-weight: 700 !important;
+}
+
+
+/* MÓVIL */
+@media (max-width: 560px) {
+  #menu-formulario .blz-main-card {
+    flex-direction: column !important;
+  }
+  #menu-formulario .blz-photo-upload,
+  #menu-formulario #previewFoto {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-height: 170px !important;
+    border-radius: 14px 14px 0 0 !important;
+  }
+  #menu-formulario .blz-photo-menu {
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    width: 90% !important;
+  }
+}
+
+
 
 .blz-form-header h2 {
   font-size: 22px;
@@ -189,13 +483,45 @@
 }
 
 #previewFoto {
-  width: 100%;
+/**  width: 100%;
   height: 100%;
   object-fit: cover;
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 1;*/
+   width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.blz-photo-action-pill {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 88%;
+  background-color: rgba(22, 27, 51, 0.85);
+  color: #ffffff;
+  padding: 7px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
+  transition: background-color 0.2s ease, transform 0.15s ease;
+  z-index: 2;
+  text-align: center;
+  line-height: 1.1;
+}
+
+.blz-photo-upload:hover .blz-photo-action-pill {
+  background-color: #2e6f40;
+  transform: translateX(-50%) scale(1.03);
 }
 
 .blz-inputs-column {
@@ -301,8 +627,7 @@
   gap: 12px;
 }
 
-#miniWhatsapp,
-#miniDistrito {
+#miniWhatsapp {
   width: 100%;
   height: 38px;
   background-color: #f3f4f6;
@@ -315,14 +640,12 @@
   transition: border-color 0.2s ease, background-color 0.2s ease;
 }
 
-#miniWhatsapp:focus,
-#miniDistrito:focus {
+#miniWhatsapp:focus {
   border-color: #1b3664;
   background-color: #ffffff;
 }
 
-#miniWhatsapp::placeholder,
-#miniDistrito::placeholder {
+#miniWhatsapp::placeholder{
   color: #8c95a4;
 }
 
@@ -368,9 +691,10 @@
 
 /* Estado Activo (Borde verde como en la imagen) */
 .blz-dur-btn.active {
-  border: 2px solid #2e6f40;
-  background-color: #ffffff;
-  font-weight: 600;
+  border: 2px solid;
+  background-color:  #00992a;
+  color: #ffffff;
+  font-weight: 800;
   box-shadow: 0 2px 8px rgba(46, 111, 64, 0.12);
 }
 
@@ -384,12 +708,48 @@
   margin-left: 2px;
 }
 
+.blz-duration-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.blz-duration-header label {
+  margin-bottom: 0 !important;
+}
+
+.blz-yape-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background-color: #ffffff; /* Morado Yape */
+  color: #742284;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px 12px;
+  border-radius: 50px;
+  box-shadow: 0 2px 6px rgba(116, 34, 132, 0.25);
+}
+
+.blz-yape-badge i {
+  color: #00d1b2; /* Acento turquesa Yape */
+  font-size: 13px;
+}
+
+.blz-yape-badge strong {
+  font-weight: 800;
+  letter-spacing: 0.3px;
+}
+
 /* Etiqueta flotante superior "RECOMENDADO" */
 .blz-rec-tag {
   position: absolute;
   top: -10px;
   right: 14px;
-  background-color: #2e6f40;
+  background-color: #02b911;
   color: #ffffff;
   font-size: 9px;
   font-weight: 700;
@@ -513,6 +873,23 @@
   font-weight: 400;
 }
 
+#menu-formulario .blz-photo-upload {
+  overflow: visible !important;
+}
+#menu-formulario #previewFoto {
+  border-radius: 14px 0 0 14px !important; /* el recorte redondeado ahora lo hace la imagen */
+}
+#menu-formulario .blz-photo-menu {
+  top: 0 !important;   /* se abre sobre la foto en vez de salir por debajo */
+}
+/* unificar con el JS (usa is-open, el CSS tenía .abierto) */
+#menu-formulario .blz-photo-menu.is-open {
+  display: block !important;
+}
+@media (max-width: 560px) {
+  #menu-formulario #previewFoto { border-radius: 14px 14px 0 0 !important; }
+}
+
 /* Ajuste solo para pantallas muy pequeñas (celulares) */
 @media (max-width: 560px) {
   .blz-main-card {
@@ -587,4 +964,66 @@
   .blz-publicar-card {
     max-width: 560px;
   }
+}
+
+
+/* Ajustes del selector desplegable y radios (HTML actual) */
+#menu-formulario .blz-photo-upload { z-index: 5 !important; }
+#menu-formulario .blz-photo-menu { z-index: 10000 !important; }
+#menu-formulario .blz-radio-row { width: 100% !important; box-sizing: border-box !important; }
+#menu-formulario .blz-radio-row input[type="radio"] { pointer-events: auto !important; }
+#menu-formulario .blz-radio-row.active { background-color: #eff6ff !important; }
+#menu-formulario .blz-item-upload.active { background-color: #dcfce7 !important; }
+@media (max-width: 560px) {
+  #menu-formulario .blz-photo-menu {
+    top: calc(100% + 6px) !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    width: min(92%, 320px) !important;
+    max-height: 65vh !important;
+  }
+}
+
+/* ===== CORRECCIÓN DEL MENÚ CAMBIAR FOTO ===== */
+
+#menu-formulario #contenedorFoto {
+    position: relative !important;
+    overflow: visible !important;
+}
+
+/* El desplegable */
+#menu-formulario #menuOpcionesFoto {
+    position: absolute !important;
+
+    left: 0 !important;
+    right: 0 !important;
+    top: auto !important;
+    bottom: auto !important;
+
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+
+    transform: none !important;
+    margin: 0 !important;
+
+    z-index: 99999 !important;
+
+    max-height: 320px !important;
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+}
+
+/* Evitar que los textos y radios ensanchen el panel */
+#menu-formulario #menuOpcionesFoto .blz-radio-row {
+    width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+}
+
+/* Evitar que el menú se corte por sus tarjetas contenedoras */
+#menu-formulario .blz-publicar-card,
+#menu-formulario .blz-main-card,
+#menu-formulario .blz-photo-upload {
+    overflow: visible !important;
 }

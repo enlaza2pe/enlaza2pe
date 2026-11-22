@@ -36,6 +36,7 @@
 	<link rel="stylesheet" href="css/enlaza2-footer.css">
 	<link rel="stylesheet" href="css/enlaza2-renderanuncios.css">
 	<link rel="stylesheet" href="css/enlaza2-stickybar.css">
+	<link rel="stylesheet" href="css/enlaza2-ubicacioneswrap.css">
 
 
 
@@ -48,11 +49,11 @@
 <body>
 
 	<!-- Cintillo Wrap en la parte superior de todo -->
-	<div style="background-color: #006; color: #FE1; padding: 0 0; font-weight: bold; width: 100%;">
+	<!--<div style="background-color: #006; color: #FE1; padding: 0 0; font-weight: bold; width: 100%;">
 		<marquee behavior="scroll" direction="left" scrollamount="5">
 			Carmen de la Legua Reynoso
 		</marquee>
-	</div>
+	</div>-->
 
 	<div class="site-mobile-menu site-navbar-target">
 		<div class="site-mobile-menu-header">
@@ -84,7 +85,7 @@
 					</div>
 					<div class="blz-footer-links">
 						<a href="javascript:void(0)" onclick="abrirTerms()">
-							<u>Reglas, normas e indicaciones</u>
+							<u>Ver recomendaciones</u>
 						</a>
 					</div>
 				</div>
@@ -109,101 +110,173 @@
 			<div class="blz-publicar-wrapper">
 				<div class="blz-publicar-card">
 
-					<!-- CABECERA SIMPLIFICADA -->
 					<div class="blz-form-header">
-						<h2>Publicar anuncio</h2>
+						<h2>Edita tu anuncio</h2>
 					</div>
 
-					<!-- CUERPO DEL FORMULARIO -->
-					<div class="blz-form-body">
-						<div class="blz-main-card">
+					<div class="blz-main-card">
+						<!-- Columna izquierda: foto + menú "Cambiar foto" -->
+						<div class="blz-photo-upload" id="contenedorFoto">
+							<input type="file" id="miniFoto" accept="image/*" hidden>
 
-							<!-- COLUMNA IZQUIERDA: FOTO (Igual que tus tarjetas publicadas) -->
-							<div class="blz-photo-upload" id="btnSubirFoto"
-								onclick="document.getElementById('miniFoto').click()">
-								<span class="blz-category-badge" id="badgeCategoria"><i class="bi bi-key"></i></span>
-								<input type="file" id="miniFoto" accept="image/*" style="display: none;">
-								<img id="previewFoto" src="" alt="Vista previa" style="display: none;">
-								<div id="placeholderFoto" class="blz-photo-placeholder">
-									<i class="bi bi-camera-fill"></i>
-									<span>Subir foto</span>
+							<img id="previewFoto" src="https://i.ibb.co/VpzsVQ20/image-4bacd3a.jpg"
+								alt="Cartel del anuncio">
+
+							<!--<button type="button" class="blz-photo-action-pill" id="btnToggleMenuFoto"
+								aria-haspopup="true" aria-expanded="false">
+								<i class="bi bi-camera-fill"></i>
+								<span>Cambiar foto</span>
+								<i class="bi bi-chevron-down" style="font-size: 10px;"></i>
+							</button>-->
+
+							<button type="button" class="blz-photo-action-pill" id="btnToggleMenuFoto" role="combobox"
+								aria-haspopup="listbox" aria-expanded="false" aria-controls="menuOpcionesFoto"
+								autocomplete="off">
+
+								<i class="bi bi-camera-fill"></i>
+								<span id="textoBotonFoto">Cambiar foto</span>
+								<i class="bi bi-chevron-down blz-chevron"></i>
+							</button>
+
+							<div class="blz-photo-menu" id="menuOpcionesFoto">
+								<!-- OPCIÓN 2: Radio buttons de Carteles genéricos -->
+								<!--<div class="blz-menu-divider">Usar carteles genéricos:</div>-->
+
+								<div class="blz-menu-list" id="listaCartelesGenericos">
+									<div class="blz-menu-group">Alquileres</div>
+									<label class="blz-menu-item blz-radio-row active">
+										<input type="radio" name="opcionFotoAnuncio" value="Se alquila (general)"
+											data-cat="Alquileres" checked>
+										<span>"Se alquila"</span>
+									</label>
+									<label class="blz-menu-item blz-radio-row">
+										<input type="radio" name="opcionFotoAnuncio" value="Se alquila cuarto"
+											data-cat="Alquileres">
+										<span>"Se alquila cuarto"</span>
+									</label>
+									<label class="blz-menu-item blz-radio-row">
+										<input type="radio" name="opcionFotoAnuncio" value="Se alquila depa"
+											data-cat="Alquileres">
+										<span>"Se alquila depa"</span>
+									</label>
+									<label class="blz-menu-item blz-radio-row">
+										<input type="radio" name="opcionFotoAnuncio" value="Se alquila local"
+											data-cat="Alquileres">
+										<span>"Se alquila local"</span>
+									</label>
+									<label class="blz-menu-item blz-radio-row">
+										<input type="radio" name="opcionFotoAnuncio" value="Se vende casa"
+											data-cat="Ventas">
+										<span>"Se vende casa"</span>
+									</label>
+
+									<div class="blz-menu-group">Servicios Generales</div>
+									<label class="blz-menu-item blz-radio-row">
+										<input type="radio" name="opcionFotoAnuncio" value="Servicios generales"
+											data-cat="Servicios">
+										<span>"Realizo servicios generales"</span>
+									</label>
+									<label class="blz-menu-item blz-radio-row">
+										<input type="radio" name="opcionFotoAnuncio" value="Servicio de electricista"
+											data-cat="Servicios">
+										<span>"Servicio de electricista"</span>
+									</label>
+									<label class="blz-menu-item blz-radio-row">
+										<input type="radio" name="opcionFotoAnuncio" value="Servicio de albañilería"
+											data-cat="Servicios">
+										<span>"Servicio de albañilería"</span>
+									</label>
+									<label class="blz-menu-item blz-radio-row">
+										<input type="radio" name="opcionFotoAnuncio" value="Servicio de pintor"
+											data-cat="Servicios">
+										<span>"Servicio de pintor"</span>
+									</label>
+									<label class="blz-menu-item blz-radio-row">
+										<input type="radio" name="opcionFotoAnuncio" value="Servicio de gasfitero"
+											data-cat="Servicios">
+										<span>"Servicio de gasfitero"</span>
+									</label>
+
+									<div class="blz-menu-group">Empleos</div>
+									<label class="blz-menu-item blz-radio-row">
+										<input type="radio" name="opcionFotoAnuncio" value="Se necesita trabajador"
+											data-cat="Empleos">
+										<span>"Se necesita trabajador"</span>
+									</label>
+
+									<div class="blz-menu-group">Entrega a domicilio</div>
+									<label class="blz-menu-item blz-radio-row">
+										<input type="radio" name="opcionFotoAnuncio" value="Hago delivery"
+											data-cat="Servicios">
+										<span>"Hago delivery"</span>
+									</label>
+
+									<div class="blz-menu-group">Asesorías profesionales</div>
+									<label class="blz-menu-item blz-radio-row">
+										<input type="radio" name="opcionFotoAnuncio" value="Brindo asesoría profesional"
+											data-cat="Servicios">
+										<span>"Brindo asesoría profesional"</span>
+									</label>
 								</div>
-							</div>
-
-							<!-- COLUMNA DERECHA: CAMPOS + COMBOBOX INTEGRADO -->
-							<div class="blz-inputs-column">
-
-								<!-- FILA SUPERIOR: TÍTULO + COMBOBOX DENTRO DE LA TARJETA -->
-								<div class="blz-title-cat-row">
-									<div class="blz-field blz-title-field">
-										<input type="text" id="miniTitulo" maxlength="60"
-											placeholder="Título del anuncio">
-									</div>
-									<div class="blz-category-select">
-										<select id="miniCategoria">
-											<option value="Alquileres" selected>Alquileres</option>
-											<option value="Servicios">Servicios</option>
-											<option value="Empleos">Empleos</option>
-											<option value="Ventas">Ventas</option>
-											<option value="Negocios">Negocios</option>
-										</select>
-									</div>
-								</div>
-
-								<!-- DESCRIPCIÓN -->
-								<div class="blz-field blz-textarea-box">
-									<textarea id="miniDescripcion" maxlength="350" placeholder="Descripción"></textarea>
-									<div class="blz-counter"><span id="countDescripcion">350</span></div>
-								</div>
-
-								<!-- WHATSAPP Y DISTRITO -->
-								<div class="blz-row-fields">
-									<div class="blz-field">
-										<input type="tel" id="miniWhatsapp" maxlength="15" placeholder="WhatsApp">
-									</div>
-									<div class="blz-field">
-										<input type="text" id="miniDistrito" maxlength="40" placeholder="Distrito">
-									</div>
-								</div>
-
+								<!-- OPCIÓN 1: Radio button "Sí tengo mis imágenes" -->
+								<label class="blz-menu-item blz-item-upload blz-radio-row">
+									<input type="radio" name="opcionFotoAnuncio" value="Foto propia" data-propia="true">
+									<span>YA TENGO IMAGEN (SE TE PEDIRÁ TRAS APROBACIÓN)</span>
+								</label>
 							</div>
 						</div>
 
+						<!-- Columna derecha: campos -->
+						<div class="blz-inputs-column">
+							<div class="blz-field">
+								<input type="text" id="miniTitulo" maxlength="60" placeholder="Título del anuncio">
+							</div>
+							<div class="blz-field blz-textarea-box">
+								<textarea id="miniDescripcion" maxlength="350" placeholder="Descripción"></textarea>
+								<div class="blz-counter"><span id="countDescripcion">350</span></div>
+							</div>
+							<div class="blz-field">
+								<input type="tel" id="miniWhatsapp" maxlength="15" placeholder="WhatsApp">
+							</div>
+						</div>
 
-						<!-- SELECTOR DE DURACIÓN -->
-						<div class="blz-duration-section">
+					</div>
+
+					<!-- Duración -->
+					<div class="blz-duration-section">
+						<div class="blz-duration-header">
 							<label>Elige duración:</label>
-							<div class="blz-duration-options" id="grupoDuracion">
-								<button type="button" class="blz-dur-btn" data-dias="15" data-precio="5">15 días · S/
-									5</button>
-								<button type="button" class="blz-dur-btn" data-dias="30" data-precio="10">30 días · S/
-									10</button>
-								<button type="button" class="blz-dur-btn active" data-dias="90" data-precio="20">
-									<span class="blz-rec-tag">RECOMENDADO</span>
-									90 días · S/ 20 <small>Recomendado</small>
-								</button>
-								<button type="button" class="blz-dur-btn" data-dias="213" data-precio="35">213 días · S/
-									35</button>
-							</div>
+							<span class="blz-yape-badge">
+								<i class="bi bi-qr-code-scan"></i> Pagos con <strong>Yape</strong>
+							</span>
 						</div>
-
-						<!-- HONEYPOT -->
-						<input type="text" id="gonzalo" name="website" autocomplete="off" tabindex="-1"
-							class="blz-honeypot">
-
-						<!-- BOTÓN PUBLICAR DIRECTO -->
-						<button type="button" id="btnPublicarMini" class="blz-btn-publicar">
-							ENVIAR INFORMACIÓN · S/ <span id="precioBoton">20</span>
-						</button>
+						<div class="blz-duration-options" id="grupoDuracion">
+							<button type="button" class="blz-dur-btn" data-dias="15" data-precio="5">15 días · S/
+								5</button>
+							<button type="button" class="blz-dur-btn" data-dias="30" data-precio="10">30 días · S/
+								10</button>
+							<button type="button" class="blz-dur-btn active" data-dias="90" data-precio="20">
+								<span class="blz-rec-tag">RECOMENDADO</span>
+								90 días · S/ 20
+							</button>
+							<button type="button" class="blz-dur-btn" data-dias="213" data-precio="35">213 días · S/
+								35</button>
+						</div>
 					</div>
+
+					<!-- Honeypot anti-bots -->
+					<input type="text" id="gonzalo" name="website" autocomplete="off" tabindex="-1"
+						class="blz-honeypot">
+
+					<button type="button" id="btnPublicarMini" class="blz-btn-publicar">
+						ENVIAR
+					</button>
+					<!--<span id="precioBoton">20</span>-->
 
 				</div>
 			</div>
 		</div>
 	</div>
-
-
-
 
 
 	<!---=================================HERO==============================================-->
@@ -229,7 +302,7 @@
 						<!-- TÍTULO -->
 						<p data-aos="fade-right" data-aos-once="true" data-aos-delay="1100"
 							class="titulo-hero text-5xl font-bold leading-tight text-darken">
-							<span class="text-yellow-500">No mires en las paredes,</span> mira tu pantalla
+							<span class="text-yellow-500">Olvida los carteles de la calle,</span> todo está en tu pantalla
 						</p>
 					</div>
 
@@ -263,6 +336,13 @@
 			</div>
 		</section>
 
+		<!-- UBICADO EN -->
+		<div id="ubicaciones-bar" class="ubicaciones-bar" style="display:none; margin-top: 10px;">
+			<!--<span class="ubicaciones-label">En:</span>-->
+			<div id="ubicaciones-container" class="blz-ubicaciones-wrap"></div>
+		</div>
+
+
 		<!-- ANUNCIOS DINAMICOS RENDERIZADOS -->
 		<section id="bloque-anuncios" class="mt-4">
 
@@ -274,6 +354,10 @@
 			<div class="posts-entry">
 				<div class="container w-95">
 					<div class="row" id="tipo1"></div>
+
+					<!-- CONTENEDOR DE PAGINACIÓN AGREGADO -->
+					<div id="paginacion" class="d-flex justify-content-center align-items-center gap-3 my-4">
+					</div>
 				</div>
 			</div>
 		</section>
@@ -307,8 +391,9 @@
 						<script>document.write(new Date().getFullYear());</script> Enlaza2.pe
 					</h4>
 					<p>
-						Plataforma comunitaria de anuncios de <strong>alquileres, empleos, servicios generales, delivery
-							y asesorías</strong> en tu distrito.
+						El mejor sitio web para encontrar todos los anuncios de <strong>alquileres, empleos, servicios
+							generales, delivery
+							y asesorías</strong> en carmen de la legua.
 					</p>
 				</div>
 
@@ -329,12 +414,6 @@
 			</div>
 		</div>
 	</footer>
-
-
-
-	<!-- =========================================
-     FORMULARIO DE PUBLICACIÓN
-========================================= -->
 
 
 
@@ -389,7 +468,7 @@
 	<script src="js/enlaza2-menuatajonavbar.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/minisearch@7.2.0/dist/umd/index.min.js"></script>
 	<script src="js/enlaza2-buscador.js"></script>
-
+	<script src="js/enlaza2-tiraubicaciones.js"></script>
 </body>
 
 </html>

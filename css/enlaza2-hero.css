@@ -2,27 +2,18 @@
    COLORES Y FONDOS BASE
 ========================================= */
 .bg-cream {
-  background: radial-gradient(circle at 75% 85%,
-      rgba(255, 230, 200, 0.4),
-      transparent 55%),
-    linear-gradient(175deg,
-      #71a8e0 0%,
-      #9cbae0 18%,
-      #d0d4df 35%,
-      #ebe4df 48%,
-      #f5e3dc 58%,
-      #f7d4be 70%,
-      #f7c0a2 84%,
-      #f2b48f 100%);
+  background: radial-gradient(circle at 75% 85%, rgba(255, 180, 90, 0.75), transparent 55%),
+              linear-gradient(175deg, #1270e3 0%, #4d97f5 18%, #a6c3f2 35%, #fcc5b3 48%, #ffa987 58%, #ff854d 70%, #fa6423 84%, #eb4a07 100%);
   clip-path: ellipse(156% 101% at 50% -4%);
 }
+
 
 .bg-yellow-500 {
   background-color: #f48c06;
 }
 
 .text-yellow-500 {
-  color: #ff6f00;
+  color: #f5f0f0;
 }
 
 .text-darken {

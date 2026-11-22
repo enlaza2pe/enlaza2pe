@@ -10,6 +10,13 @@
       "Depa",
       "Local Comercial",
       "Otros"
+    ],
+    "ubicado_en": [
+      "Carmen de la Legua",
+      "Dulanto",
+      "VSM",
+      "Lima",
+      "SMP"
     ]
   },
   {
@@ -43,6 +50,9 @@
       "Catering y Eventos",
       "Desagüe-Rejilla-Sumidero",
       "Puertas metálicas"
+    ],
+    "ubicado_en": [
+      "Carmen de la Legua"
     ]
   },
   {
@@ -69,6 +79,9 @@
       "Mantenimiento",
       "Sastrería",
       "Otros"
+    ],
+    "ubicado_en": [
+      "Carmen de la Legua"
     ]
   },
 
@@ -95,6 +108,9 @@
       "Bodegas",
       "Ferreteria",
       "Otros"
+    ],
+    "ubicado_en": [
+      "Carmen de la Legua"
     ]
   },
 
@@ -109,6 +125,9 @@
       "Abogados", 
       "Ingeniero",
       "Otros"
+    ],
+    "ubicado_en": [
+      "Carmen de la Legua"
     ]
   }
 ]
