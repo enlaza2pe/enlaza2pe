@@ -485,6 +485,52 @@
     "_evidencia_legal": "anuncio fisico tarjeta don jose pollos y parrillas 13/11/2026 contacto_936211952.jpg"
   },
   {
+  "idanuncio": "a_1793915838_0094",
+  "subcategory": "Gas",
+  "keywords": "marcelo gas balon de gas glp domestico delivery oferta",
+  "boton": "WHATSAPP",
+  "contacto": "919015746",
+  "ubicado_en": "CDLR",
+  "featured": true,
+  "titulo": "<strong style='color: #d35400;'>Marcelo Gas - Delivery de Balones de Gas y Ofertas x2</strong>",
+  "descripcion": "Nuevo número de atención. Ofertón Gas x2 a S/ 44.99. Pedidos también al 972 570 416.",
+  "thumbnail": [
+    "https://i.ibb.co/TBttHVJW/image-a5e644ba.jpg"
+  ],
+  "imagenes": [
+    "https://i.ibb.co/RpccCxtj/image-a5e644ba.jpg"
+  ],
+  "tipoanuncio": 1,
+  "creado": "11/11/2026",
+  "plan": "3meses",
+  "fvencimiento": "11/12/2026",
+  "_evidencia_legal": "anuncio fisico cartel marcelo gas 11/11/2026 contacto_919015746.jpg"
+}
+,
+{
+  "idanuncio": "a_1793915838_0075",
+  "subcategory": "Gas",
+  "keywords": "milu gas balon de gas glp rapido delivery gratis oferta",
+  "boton": "WHATSAPP",
+  "contacto": "931794093",
+  "ubicado_en": "CDLR",
+  "featured": true,
+  "titulo": "<strong style='color: #d35400;'>Milu Gas - Delivery Gratis de Balón de Gas 10 Kg a S/ 43.00</strong>",
+  "descripcion": "Entrega a domicilio gratis y descuentos especiales para negocios. Yape y Plin. Atención L-S de 8am a 8pm, Dom. 8am a 3pm.",
+  "thumbnail": [
+    "https://i.ibb.co/qMqR8cd0/image-7cc89ec2.jpg"
+  ],
+  "imagenes": [
+    "https://i.ibb.co/kgbhTwx3/image-7cc89ec2.jpg"
+  ],
+  "tipoanuncio": 1,
+  "creado": "11/11/2026",
+  "plan": "3meses",
+  "fvencimiento": "11/12/2026",
+  "_evidencia_legal": "anuncio fisico cartel milu gas 11/11/2026 contacto_931794093.jpg"
+}
+,
+  {
     "_idanuncio": 2,
     "_subcategory": "Juguetes",
     "_keywords": "juguetes jugueteria venta juegos ninos bebes peluches didacticos educativos entretenimiento li jun",
